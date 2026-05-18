@@ -19,7 +19,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 
 ## Use
 
-Open `index.html` in a browser, paste logs, or click `Load Sample`.
+Open `index.html` in a browser, paste logs, or click `Load Demo`.
 
 No server or build step is required.
 
@@ -60,3 +60,7 @@ Do not paste secrets into any tool unless you are comfortable storing them in th
 - browser extension wrapper
 - OpenAI Responses API trace import
 - repeated failure and retry-loop detection
+
+## Contributing
+
+See `CONTRIBUTING.md`.
