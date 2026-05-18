@@ -35,7 +35,7 @@ It does not request browser permissions.
 
 Required before Chrome Web Store submission:
 
-- create extension icons
+- convert SVG icon into required PNG sizes if the store rejects SVG
 - test unpacked extension manually
 - add privacy policy page
 - confirm no remote code loading

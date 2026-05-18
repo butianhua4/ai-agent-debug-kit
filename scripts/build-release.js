@@ -34,6 +34,7 @@ for (const file of files) {
 
 copyDirectory(path.join(root, "extension"), path.join(packageDir, "extension"));
 fs.copyFileSync(path.join(root, "core.js"), path.join(packageDir, "extension", "core.js"));
+fs.copyFileSync(path.join(root, "assets", "icon.svg"), path.join(packageDir, "extension", "icon.svg"));
 
 fs.writeFileSync(
   path.join(packageDir, "START_HERE.txt"),

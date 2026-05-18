@@ -5,7 +5,11 @@
   "description": "Inspect AI agent logs, tool calls, errors, cost, and risk flags from a lightweight browser extension.",
   "action": {
     "default_title": "AI Agent Debug Kit",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": {
+    "128": "icon.svg"
   },
   "permissions": []
 }
