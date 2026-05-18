@@ -24,6 +24,7 @@ function run(args) {
   const inputPrice = readNumberFlag(args, "--input-price", 1.25);
   const outputPrice = readNumberFlag(args, "--output-price", 10);
   const redact = !args.includes("--no-redact");
+  const json = args.includes("--json");
 
   if (!fileArg) {
     console.error("Missing log file path.");
@@ -36,7 +37,8 @@ function run(args) {
   const report = generateReport(raw, {
     source: filePath,
     pricing: { input: inputPrice, output: outputPrice },
-    redact
+    redact,
+    json
   });
 
   process.stdout.write(report);
@@ -46,6 +48,9 @@ function run(args) {
 function generateReport(raw, options = {}) {
   const events = parseLogs(raw);
   const summary = summarize(events, options.pricing || { input: 1.25, output: 10 });
+  if (options.json) {
+    return `${JSON.stringify(buildJsonReport(events, summary, options.source || "stdin"), null, 2)}\n`;
+  }
   const report = buildReport(events, summary, options.source || "stdin");
   return options.redact === false ? report : redactSensitiveText(report);
 }
@@ -54,7 +59,7 @@ function printHelp() {
   process.stdout.write(`AI Agent Debug Kit CLI
 
 Usage:
-  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--no-redact]
+  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--no-redact] [--json]
 
 Example:
   node cli.js sample-agent-log.jsonl > report.md
@@ -114,7 +119,40 @@ ${buildRecommendationText(summary)}
 `;
 }
 
+function buildJsonReport(events, summary, source) {
+  return {
+    generatedAt: new Date().toISOString(),
+    source,
+    summary: {
+      totalEvents: summary.count,
+      toolCalls: summary.toolCallCount,
+      errors: summary.errorCount,
+      warnings: summary.warningCount,
+      inputTokens: summary.inputTokens,
+      outputTokens: summary.outputTokens,
+      estimatedCost: Number(summary.estimatedCost.toFixed(6))
+    },
+    tools: Array.from(summary.tools.entries()).map(([name, data]) => ({
+      name,
+      calls: data.count,
+      errors: data.errors,
+      durationMs: data.durationMs
+    })),
+    firstErrors: events
+      .filter((event) => event.level === "error")
+      .slice(0, 5)
+      .map((event) => ({
+        event: event.event,
+        tool: event.tool,
+        message: event.message
+      })),
+    riskFlags: buildRiskText(events, summary).split("\n").map((line) => line.replace(/^- /, "")),
+    recommendation: buildRecommendationText(summary)
+  };
+}
+
 module.exports = {
   generateReport,
-  run
+  run,
+  buildJsonReport
 };

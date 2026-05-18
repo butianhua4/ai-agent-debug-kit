@@ -55,4 +55,10 @@ const unredacted = generateReport(secretLog, { source: "secret.jsonl", redact: f
 assert.match(unredacted, /abcdefghijklmnop/);
 assert.match(unredacted, /test@example\.com/);
 
+const jsonReport = JSON.parse(generateReport(sample, { source: "sample-agent-log.jsonl", json: true }));
+assert.equal(jsonReport.summary.totalEvents, 7);
+assert.equal(jsonReport.summary.toolCalls, 5);
+assert.equal(jsonReport.summary.errors, 1);
+assert.ok(jsonReport.tools.some((tool) => tool.name === "shell.exec"));
+
 console.log("Smoke tests passed");
