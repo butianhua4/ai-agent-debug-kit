@@ -74,6 +74,8 @@ Bundle option:
 - No dependencies
 - Can be opened locally
 - Tested with syntax check
+- Has CLI smoke tests and GitHub Actions checks
+- Includes a release package builder
 
 ## Next Product Improvements
 

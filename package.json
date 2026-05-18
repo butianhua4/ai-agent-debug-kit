@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "check": "node --check core.js && node --check script.js && node --check cli.js && node tests/smoke.test.js",
+    "build:release": "node scripts/build-release.js",
     "report": "node cli.js sample-agent-log.jsonl"
   },
   "bin": {

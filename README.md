@@ -47,6 +47,14 @@ node cli.js sample-agent-log.jsonl --input-price 1.25 --output-price 10 --no-red
 npm run check
 ```
 
+## Release Package
+
+```bash
+npm run build:release
+```
+
+The packaged app is created in `dist/`.
+
 ## Supported Log Shapes
 
 JSONL works best:
