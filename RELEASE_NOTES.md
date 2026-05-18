@@ -18,6 +18,7 @@ Highlights:
 - GitHub Actions check workflow
 - release package builder
 - release preflight command
+- CI release artifact upload
 - supported log format documentation
 - product preview image
 - browser extension prototype

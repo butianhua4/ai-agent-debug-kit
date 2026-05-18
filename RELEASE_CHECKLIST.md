@@ -53,6 +53,12 @@ Suggested release notes:
 
 Use `RELEASE_NOTES.md`.
 
+CI artifact:
+
+- Open the latest `Check` workflow run.
+- Download the `ai-agent-debug-kit` artifact.
+- Use the contained zip for manual release upload if needed.
+
 ## GitHub Pages
 
 After pushing:

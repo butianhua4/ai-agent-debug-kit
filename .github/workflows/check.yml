@@ -18,5 +18,12 @@ jobs:
         with:
           node-version: 22
 
-      - name: Run checks
-        run: npm run check
+      - name: Run preflight
+        run: npm run preflight
+
+      - name: Upload release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-agent-debug-kit
+          path: dist/ai-agent-debug-kit.zip
+          if-no-files-found: error

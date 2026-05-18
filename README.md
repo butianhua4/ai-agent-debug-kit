@@ -63,6 +63,8 @@ Full preflight:
 npm run preflight
 ```
 
+GitHub Actions also uploads `ai-agent-debug-kit.zip` as a workflow artifact on each push to `main`.
+
 ## Browser Extension Prototype
 
 The `extension/` folder contains a minimal Manifest V3 popup prototype. See `docs/EXTENSION.md`.
