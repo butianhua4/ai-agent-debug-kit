@@ -42,6 +42,7 @@ It also exports a Markdown report that can be attached to pull requests, inciden
 
 - Runs fully in the browser
 - No account, backend, or build step
+- Includes a Node CLI for local log files
 - Supports JSONL and plain text
 - Detects common error, warning, permission, and secret-risk patterns
 - Estimates token cost from common token fields

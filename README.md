@@ -25,6 +25,20 @@ No server or build step is required.
 
 Snapshots are saved in browser `localStorage`. Logs never leave the browser unless you export and share a report yourself.
 
+## CLI
+
+Generate a Markdown report from a log file:
+
+```bash
+node cli.js sample-agent-log.jsonl > report.md
+```
+
+Optional flags:
+
+```bash
+node cli.js sample-agent-log.jsonl --input-price 1.25 --output-price 10 --no-redact
+```
+
 ## Supported Log Shapes
 
 JSONL works best:

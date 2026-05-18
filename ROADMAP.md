@@ -20,7 +20,6 @@
 
 ## Next
 
-- CLI version for CI logs.
 - Browser extension wrapper.
 - Import OpenAI Responses API traces.
 - Highlight repeated tool failures and retry loops.

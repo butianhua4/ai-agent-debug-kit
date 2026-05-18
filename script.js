@@ -446,7 +446,7 @@ function sanitizeReportText(text) {
 
 function redactSensitiveText(text) {
   return text
-    .replace(/(api[_-]?key|token|secret|password)(["':=\s]+)([a-z0-9._\-]{8,})/gi, "$1$2[REDACTED]")
+    .replace(/(api[_-]?key|token|secret|password)(\s*[:=]\s*["']?)([a-z0-9._\-]{8,})/gi, "$1$2[REDACTED]")
     .replace(/(sk-[a-zA-Z0-9_\-]{12,})/g, "[REDACTED_API_KEY]")
     .replace(/([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)/g, "[REDACTED_EMAIL]");
 }
