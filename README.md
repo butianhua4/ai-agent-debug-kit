@@ -10,6 +10,8 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - rough token cost estimates
 - configurable model pricing
 - run A/B comparison
+- local snapshot history
+- multiple demo scenarios
 - debugging recommendations
 - downloadable Markdown report
 
@@ -18,6 +20,8 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 Open `index.html` in a browser, paste logs, or click `Load Sample`.
 
 No server or build step is required.
+
+Snapshots are saved in browser `localStorage`. Logs never leave the browser unless you export and share a report yourself.
 
 ## Supported Log Shapes
 
@@ -41,10 +45,16 @@ The parser also recognizes common fields:
 
 Agent failures are often hidden in long transcripts. This tool gives developers a quick first-pass view before they open a full trace viewer or incident report.
 
+## Privacy
+
+The app is static and runs in the browser. It does not upload logs or call an external API.
+
+Do not paste secrets into any tool unless you are comfortable storing them in that browser session. Use the exported report only after reviewing it for sensitive data.
+
 ## Roadmap
 
-- import OpenAI Responses API traces
-- compare two runs
-- highlight repeated tool failures
-- add configurable model pricing
-- package as a browser extension
+- pricing presets for popular models
+- CLI version for CI logs
+- browser extension wrapper
+- OpenAI Responses API trace import
+- repeated failure and retry-loop detection

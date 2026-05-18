@@ -20,6 +20,8 @@ Paste JSONL, JSON, or plain-text logs and the tool summarizes:
 - rough token cost
 - configurable input/output token pricing
 - Run A/B comparison
+- local snapshot history
+- multiple demo scenarios
 - risky log patterns
 - tool breakdown
 - debugging recommendations
@@ -43,6 +45,8 @@ It also exports a Markdown report that can be attached to pull requests, inciden
 - Estimates token cost from common token fields
 - Lets users tune input/output pricing per 1M tokens
 - Compares two runs side by side
+- Saves local snapshots in the browser
+- Ships with healthy, failure, cost-spike, and permission demo logs
 - Exports Markdown reports
 - Includes sample agent log
 

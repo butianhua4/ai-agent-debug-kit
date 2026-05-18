@@ -17,13 +17,24 @@ const toolBreakdown = document.querySelector("#toolBreakdown");
 const recommendations = document.querySelector("#recommendations");
 const comparePanel = document.querySelector("#comparePanel");
 const comparison = document.querySelector("#comparison");
+const sampleSelect = document.querySelector("#sampleSelect");
 const loadSample = document.querySelector("#loadSample");
+const saveSnapshot = document.querySelector("#saveSnapshot");
 const exportReport = document.querySelector("#exportReport");
+const historyList = document.querySelector("#historyList");
 const logFields = document.querySelector(".log-fields");
 
 let isCompareMode = false;
+const HISTORY_KEY = "aiAgentDebugKit.history.v1";
 
-const SAMPLE_LOG = [
+const SAMPLE_SCENARIOS = {
+  healthy: [
+    { ts: "2026-05-18T09:10:00.000Z", level: "info", event: "run_started", model: "gpt-5", prompt_tokens: 1420 },
+    { ts: "2026-05-18T09:10:03.200Z", level: "info", event: "tool_call", tool: "web.search", duration_ms: 960, input_tokens: 260, output_tokens: 420 },
+    { ts: "2026-05-18T09:10:07.800Z", level: "info", event: "tool_call", tool: "shell.exec", duration_ms: 2200, command: "npm test", output_tokens: 620 },
+    { ts: "2026-05-18T09:10:11.000Z", level: "info", event: "run_completed", output_tokens: 880 }
+  ],
+  toolFailure: [
   { ts: "2026-05-18T09:10:00.000Z", level: "info", event: "run_started", model: "gpt-5", prompt_tokens: 1840 },
   { ts: "2026-05-18T09:10:03.200Z", level: "info", event: "tool_call", tool: "web.search", duration_ms: 1260, input_tokens: 340, output_tokens: 580 },
   { ts: "2026-05-18T09:10:07.800Z", level: "warn", event: "tool_call", tool: "shell.exec", duration_ms: 4200, command: "npm test", output_tokens: 1800 },
@@ -31,7 +42,20 @@ const SAMPLE_LOG = [
   { ts: "2026-05-18T09:10:19.000Z", level: "info", event: "tool_call", tool: "apply_patch", duration_ms: 890, files: ["src/parser.ts"] },
   { ts: "2026-05-18T09:10:23.600Z", level: "info", event: "tool_call", tool: "shell.exec", duration_ms: 3160, command: "npm test", output_tokens: 940 },
   { ts: "2026-05-18T09:10:30.000Z", level: "info", event: "run_completed", output_tokens: 1220 }
-].map((item) => JSON.stringify(item)).join("\n");
+  ],
+  costSpike: [
+    { ts: "2026-05-18T10:00:00.000Z", level: "info", event: "run_started", model: "gpt-5", prompt_tokens: 42000 },
+    { ts: "2026-05-18T10:00:12.000Z", level: "info", event: "tool_call", tool: "retrieval.search", duration_ms: 3200, input_tokens: 11800, output_tokens: 9200 },
+    { ts: "2026-05-18T10:00:28.000Z", level: "warn", event: "tool_call", tool: "llm.summarize", duration_ms: 12000, message: "Large context window used twice", input_tokens: 38000, output_tokens: 14000 },
+    { ts: "2026-05-18T10:00:43.000Z", level: "info", event: "run_completed", output_tokens: 8800 }
+  ],
+  permission: [
+    { ts: "2026-05-18T11:00:00.000Z", level: "info", event: "run_started", model: "gpt-5-mini", prompt_tokens: 900 },
+    { ts: "2026-05-18T11:00:04.000Z", level: "warn", event: "tool_call", tool: "github.api", duration_ms: 850, message: "Permission denied while reading repository metadata" },
+    { ts: "2026-05-18T11:00:05.000Z", level: "error", event: "tool_result", tool: "github.api", message: "Unauthorized: missing repo scope" },
+    { ts: "2026-05-18T11:00:09.000Z", level: "info", event: "run_completed", output_tokens: 560 }
+  ]
+};
 
 function parseLogs(raw) {
   const lines = raw.split(/\r?\n/).filter((line) => line.trim().length > 0);
@@ -186,6 +210,7 @@ function render() {
   renderTools(summary.tools);
   renderRecommendations(summary);
   renderComparison(summary, compareSummary);
+  renderHistory();
 }
 
 function updateEmpty() {
@@ -200,6 +225,7 @@ function updateEmpty() {
   recommendations.innerHTML = "";
   comparison.innerHTML = "";
   comparePanel.classList.toggle("hidden", !isCompareMode);
+  renderHistory();
 }
 
 function renderTimeline(events) {
@@ -315,6 +341,9 @@ function buildReport() {
     .map((event) => `- ${event.tool || event.event}: ${event.message}`)
     .join("\n") || "- None";
 
+  const riskText = buildRiskText(events, summary);
+  const recommendationText = buildRecommendationText(summary);
+
   return `# AI Agent Debug Report
 
 Generated: ${new Date().toISOString()}
@@ -339,9 +368,15 @@ ${toolRows}
 
 ${firstErrors}
 
+## Risk Flags
+
+${riskText}
+
 ## Recommendation
 
-Review the earliest failing event, redact secrets before sharing logs, and attach this report to the related PR, incident, or evaluation run.
+${recommendationText}
+
+Redact secrets before sharing logs, and attach this report to the related PR, incident, or evaluation run.
 ${compareSummary ? `
 ## Run Comparison
 
@@ -355,6 +390,24 @@ ${compareSummary ? `
 `;
 }
 
+function buildRiskText(events, summary) {
+  const flags = [];
+  if (summary.errorCount > 0) flags.push(`- ${summary.errorCount} error event(s) need review before shipping.`);
+  if (summary.warningCount > 0) flags.push(`- ${summary.warningCount} warning event(s) may indicate retries, limits, or flaky tools.`);
+  if (summary.estimatedCost > 0.1) flags.push("- Token cost is high for a single run. Consider caching or shorter context.");
+  if (events.some((event) => /password|secret|api[_-]?key|token/i.test(event.raw))) flags.push("- Potential secret detected in logs. Redact before sharing.");
+  if (events.some((event) => /permission|denied|unauthorized/i.test(event.raw))) flags.push("- Permission-related text detected. Check auth and sandbox boundaries.");
+  return flags.join("\n") || "- No obvious risk flags detected.";
+}
+
+function buildRecommendationText(summary) {
+  if (summary.errorCount > 0) return "Start with the first failing tool result; later failures may be downstream noise.";
+  if (summary.toolCallCount > 6) return "Long tool chains are harder to debug. Add checkpoints after state-changing calls.";
+  if (summary.inputTokens > 8000) return "Trim repeated context and move stable instructions into a reusable config.";
+  if (summary.toolCallCount === 0) return "No tool calls detected. Use structured JSONL logs for better diagnostics.";
+  return "Run shape looks healthy. Export this report and attach it to the related work item.";
+}
+
 function downloadReport() {
   const report = buildReport();
   const blob = new Blob([report], { type: "text/markdown" });
@@ -366,6 +419,87 @@ function downloadReport() {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+}
+
+function loadHistory() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(items) {
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(items.slice(0, 8)));
+}
+
+function saveCurrentSnapshot() {
+  if (!logInput.value.trim()) return;
+  const events = parseLogs(logInput.value);
+  const summary = summarize(events);
+  const items = loadHistory();
+  items.unshift({
+    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+    createdAt: new Date().toISOString(),
+    mode: isCompareMode ? "compare" : "single",
+    logA: logInput.value,
+    logB: compareInput.value,
+    pricing: getPricing(),
+    summary: {
+      count: summary.count,
+      toolCallCount: summary.toolCallCount,
+      errorCount: summary.errorCount,
+      estimatedCost: summary.estimatedCost
+    }
+  });
+  saveHistory(items);
+  renderHistory();
+}
+
+function renderHistory() {
+  const items = loadHistory();
+  historyList.innerHTML = "";
+  if (items.length === 0) {
+    historyList.innerHTML = '<p class="empty">No saved snapshots yet.</p>';
+    return;
+  }
+
+  for (const item of items) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "history-item";
+    const date = new Date(item.createdAt).toLocaleString();
+    wrapper.innerHTML = `<div><strong>${escapeHtml(date)}</strong><span>${item.mode} · ${item.summary.count} events · ${item.summary.errorCount} errors · $${Number(item.summary.estimatedCost).toFixed(4)}</span></div>`;
+
+    const actions = document.createElement("div");
+    actions.className = "history-actions";
+    const restore = document.createElement("button");
+    restore.type = "button";
+    restore.textContent = "Restore";
+    restore.addEventListener("click", () => restoreSnapshot(item.id));
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.textContent = "Delete";
+    remove.addEventListener("click", () => deleteSnapshot(item.id));
+    actions.append(restore, remove);
+    wrapper.appendChild(actions);
+    historyList.appendChild(wrapper);
+  }
+}
+
+function restoreSnapshot(id) {
+  const item = loadHistory().find((entry) => entry.id === id);
+  if (!item) return;
+  logInput.value = item.logA || "";
+  compareInput.value = item.logB || "";
+  inputPrice.value = item.pricing?.input ?? inputPrice.value;
+  outputPrice.value = item.pricing?.output ?? outputPrice.value;
+  setMode(item.mode === "compare");
+}
+
+function deleteSnapshot(id) {
+  saveHistory(loadHistory().filter((entry) => entry.id !== id));
+  renderHistory();
 }
 
 function escapeHtml(text) {
@@ -383,13 +517,16 @@ function shorten(text, max) {
 }
 
 loadSample.addEventListener("click", () => {
-  logInput.value = SAMPLE_LOG;
+  const sample = SAMPLE_SCENARIOS[sampleSelect.value] || SAMPLE_SCENARIOS.healthy;
+  const sampleLog = sample.map((item) => JSON.stringify(item)).join("\n");
+  logInput.value = sampleLog;
   if (isCompareMode) {
-    compareInput.value = SAMPLE_LOG.replace('"level":"error"', '"level":"info"').replace('"output_tokens":1800', '"output_tokens":800');
+    compareInput.value = sampleLog.replace('"level":"error"', '"level":"info"').replace('"output_tokens":1800', '"output_tokens":800');
   }
   render();
 });
 
+saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 exportReport.addEventListener("click", downloadReport);
 logInput.addEventListener("input", render);
 compareInput.addEventListener("input", render);

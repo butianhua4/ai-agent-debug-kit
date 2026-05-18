@@ -13,7 +13,14 @@
         <h1>Inspect agent logs before they become production incidents.</h1>
       </div>
       <div class="actions">
-        <button id="loadSample" type="button">Load Sample</button>
+        <select id="sampleSelect" aria-label="Sample scenario">
+          <option value="healthy">Healthy Run</option>
+          <option value="toolFailure">Tool Failure</option>
+          <option value="costSpike">Cost Spike</option>
+          <option value="permission">Permission Issue</option>
+        </select>
+        <button id="loadSample" type="button">Load Demo</button>
+        <button id="saveSnapshot" type="button">Save Snapshot</button>
         <button id="exportReport" type="button">Export Markdown</button>
       </div>
     </header>
@@ -96,6 +103,10 @@
           <section>
             <h3>Recommendations</h3>
             <ul id="recommendations" class="flag-list"></ul>
+          </section>
+          <section>
+            <h3>Saved Snapshots</h3>
+            <div id="historyList" class="history-list"></div>
           </section>
         </div>
       </section>
