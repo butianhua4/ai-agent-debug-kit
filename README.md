@@ -57,6 +57,12 @@ npm run build:release
 
 The packaged app is created in `dist/`.
 
+Full preflight:
+
+```bash
+npm run preflight
+```
+
 ## Browser Extension Prototype
 
 The `extension/` folder contains a minimal Manifest V3 popup prototype. See `docs/EXTENSION.md`.

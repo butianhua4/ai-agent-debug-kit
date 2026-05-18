@@ -29,6 +29,30 @@ Files to include:
 - `LICENSE`
 - `.gitignore`
 
+## Preflight
+
+Run before tagging or uploading a release:
+
+```bash
+npm run preflight
+```
+
+This runs checks and builds `dist/ai-agent-debug-kit.zip`.
+
+## Release Upload
+
+Suggested GitHub release title:
+
+`AI Agent Debug Kit v0.4.0`
+
+Suggested release asset:
+
+`dist/ai-agent-debug-kit.zip`
+
+Suggested release notes:
+
+Use `RELEASE_NOTES.md`.
+
 ## GitHub Pages
 
 After pushing:

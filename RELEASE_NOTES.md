@@ -17,6 +17,7 @@ Highlights:
 - smoke tests
 - GitHub Actions check workflow
 - release package builder
+- release preflight command
 - supported log format documentation
 - product preview image
 - browser extension prototype
