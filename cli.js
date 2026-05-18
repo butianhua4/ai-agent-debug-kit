@@ -23,6 +23,7 @@ function run(args) {
   const fileArg = args.find((arg) => !arg.startsWith("--"));
   const inputPrice = readNumberFlag(args, "--input-price", 1.25);
   const outputPrice = readNumberFlag(args, "--output-price", 10);
+  const maxErrors = readNumberFlag(args, "--max-errors", null);
   const redact = !args.includes("--no-redact");
   const json = args.includes("--json");
 
@@ -42,12 +43,21 @@ function run(args) {
   });
 
   process.stdout.write(report);
+  if (maxErrors !== null) {
+    const { summary } = analyze(raw, { input: inputPrice, output: outputPrice });
+    return summary.errorCount > maxErrors ? 2 : 0;
+  }
   return 0;
 }
 
-function generateReport(raw, options = {}) {
+function analyze(raw, pricing = { input: 1.25, output: 10 }) {
   const events = parseLogs(raw);
-  const summary = summarize(events, options.pricing || { input: 1.25, output: 10 });
+  const summary = summarize(events, pricing);
+  return { events, summary };
+}
+
+function generateReport(raw, options = {}) {
+  const { events, summary } = analyze(raw, options.pricing || { input: 1.25, output: 10 });
   if (options.json) {
     return `${JSON.stringify(buildJsonReport(events, summary, options.source || "stdin"), null, 2)}\n`;
   }
@@ -59,7 +69,7 @@ function printHelp() {
   process.stdout.write(`AI Agent Debug Kit CLI
 
 Usage:
-  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--no-redact] [--json]
+  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--max-errors 0] [--no-redact] [--json]
 
 Example:
   node cli.js sample-agent-log.jsonl > report.md
@@ -152,6 +162,7 @@ function buildJsonReport(events, summary, source) {
 }
 
 module.exports = {
+  analyze,
   generateReport,
   run,
   buildJsonReport

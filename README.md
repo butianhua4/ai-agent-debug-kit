@@ -43,7 +43,10 @@ Optional flags:
 ```bash
 node cli.js sample-agent-log.jsonl --input-price 1.25 --output-price 10 --no-redact
 node cli.js sample-agent-log.jsonl --json > report.json
+node cli.js sample-agent-log.jsonl --max-errors 0
 ```
+
+`--max-errors` exits with code `2` when the report exceeds the allowed error count, which makes it useful in CI.
 
 ## Checks
 

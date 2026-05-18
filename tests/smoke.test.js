@@ -1,7 +1,7 @@
 const assert = require("node:assert");
 const fs = require("node:fs");
 const path = require("node:path");
-const { generateReport } = require("../cli");
+const { generateReport, run } = require("../cli");
 const { parseLogs, summarize } = require("../core");
 
 const root = path.resolve(__dirname, "..");
@@ -60,5 +60,17 @@ assert.equal(jsonReport.summary.totalEvents, 7);
 assert.equal(jsonReport.summary.toolCalls, 5);
 assert.equal(jsonReport.summary.errors, 1);
 assert.ok(jsonReport.tools.some((tool) => tool.name === "shell.exec"));
+
+const originalStdoutWrite = process.stdout.write;
+const originalStderrWrite = process.stderr.write;
+process.stdout.write = () => true;
+process.stderr.write = () => true;
+try {
+  assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "1"]), 0);
+  assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "0"]), 2);
+} finally {
+  process.stdout.write = originalStdoutWrite;
+  process.stderr.write = originalStderrWrite;
+}
 
 console.log("Smoke tests passed");

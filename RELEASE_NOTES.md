@@ -27,6 +27,7 @@ Highlights:
 - pretty JSON and wrapped event array parsing
 - file import and drag-and-drop log loading
 - CLI JSON output for automation
+- CLI `--max-errors` CI gate
 - store listing and privacy drafts
 
 Build a local release package:
