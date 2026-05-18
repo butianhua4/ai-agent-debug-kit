@@ -21,6 +21,7 @@ Highlights:
 - product preview image
 - browser extension prototype
 - extension testing notes
+- store listing and privacy drafts
 
 Build a local release package:
 

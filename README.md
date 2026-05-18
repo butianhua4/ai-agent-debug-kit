@@ -106,3 +106,8 @@ See `CONTRIBUTING.md`.
 ## Launch
 
 See `LAUNCH.md` for positioning, launch copy, and product listing material.
+
+## Store And Privacy Drafts
+
+- `docs/STORE_LISTING.md`
+- `docs/PRIVACY.md`
