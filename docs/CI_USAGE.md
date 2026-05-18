@@ -45,6 +45,8 @@ jobs:
       - run: node cli.js sample-agent-log.jsonl --max-errors 0
 ```
 
+A copyable workflow is available at `docs/examples/agent-log-gate.yml`.
+
 ## Pricing
 
 ```bash
@@ -52,4 +54,3 @@ node cli.js agent-run.jsonl --input-price 1.25 --output-price 10
 ```
 
 Prices are dollars per 1M tokens.
-

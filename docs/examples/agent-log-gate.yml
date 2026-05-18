@@ -1,0 +1,30 @@
+name: Agent Log Gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  agent-log-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate JSON report
+        run: node cli.js sample-agent-log.jsonl --json > agent-debug-report.json
+
+      - name: Fail on agent errors
+        run: node cli.js sample-agent-log.jsonl --max-errors 0
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-debug-report
+          path: agent-debug-report.json

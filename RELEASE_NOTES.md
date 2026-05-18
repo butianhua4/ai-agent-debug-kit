@@ -31,6 +31,7 @@ Highlights:
 - CI usage documentation
 - release package manifest and validation
 - repeated message and retry-loop detection
+- copyable GitHub Actions gate example
 - store listing and privacy drafts
 
 Build a local release package:
