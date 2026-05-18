@@ -1,16 +1,27 @@
 const logInput = document.querySelector("#logInput");
+const compareInput = document.querySelector("#compareInput");
+const compareField = document.querySelector("#compareField");
+const singleMode = document.querySelector("#singleMode");
+const compareMode = document.querySelector("#compareMode");
 const lineCount = document.querySelector("#lineCount");
 const parseState = document.querySelector("#parseState");
 const totalEvents = document.querySelector("#totalEvents");
 const toolCalls = document.querySelector("#toolCalls");
 const errors = document.querySelector("#errors");
 const cost = document.querySelector("#cost");
+const inputPrice = document.querySelector("#inputPrice");
+const outputPrice = document.querySelector("#outputPrice");
 const timeline = document.querySelector("#timeline");
 const riskFlags = document.querySelector("#riskFlags");
 const toolBreakdown = document.querySelector("#toolBreakdown");
 const recommendations = document.querySelector("#recommendations");
+const comparePanel = document.querySelector("#comparePanel");
+const comparison = document.querySelector("#comparison");
 const loadSample = document.querySelector("#loadSample");
 const exportReport = document.querySelector("#exportReport");
+const logFields = document.querySelector(".log-fields");
+
+let isCompareMode = false;
 
 const SAMPLE_LOG = [
   { ts: "2026-05-18T09:10:00.000Z", level: "info", event: "run_started", model: "gpt-5", prompt_tokens: 1840 },
@@ -103,7 +114,7 @@ function inferDuration(text) {
   return match[2].toLowerCase() === "s" ? value * 1000 : value;
 }
 
-function summarize(events) {
+function summarize(events, pricing = getPricing()) {
   const tools = new Map();
   let errorCount = 0;
   let warningCount = 0;
@@ -132,21 +143,28 @@ function summarize(events) {
     warningCount,
     inputTokens,
     outputTokens,
-    estimatedCost: estimateCost(inputTokens, outputTokens),
+    estimatedCost: estimateCost(inputTokens, outputTokens, pricing),
     tools
   };
 }
 
-function estimateCost(inputTokens, outputTokens) {
-  const inputPricePerMillion = 1.25;
-  const outputPricePerMillion = 10;
-  return (inputTokens / 1_000_000) * inputPricePerMillion + (outputTokens / 1_000_000) * outputPricePerMillion;
+function getPricing() {
+  return {
+    input: Number(inputPrice.value || 0),
+    output: Number(outputPrice.value || 0)
+  };
+}
+
+function estimateCost(inputTokens, outputTokens, pricing) {
+  return (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
 }
 
 function render() {
   const raw = logInput.value;
-  const lines = raw ? raw.split(/\r?\n/).length : 0;
-  lineCount.textContent = `${lines} line${lines === 1 ? "" : "s"}`;
+  const rawCompare = compareInput.value;
+  const linesA = raw ? raw.split(/\r?\n/).length : 0;
+  const linesB = rawCompare ? rawCompare.split(/\r?\n/).length : 0;
+  lineCount.textContent = isCompareMode ? `${linesA} / ${linesB} lines` : `${linesA} line${linesA === 1 ? "" : "s"}`;
 
   if (!raw.trim()) {
     updateEmpty();
@@ -155,6 +173,8 @@ function render() {
 
   const events = parseLogs(raw);
   const summary = summarize(events);
+  const compareEvents = isCompareMode && rawCompare.trim() ? parseLogs(rawCompare) : [];
+  const compareSummary = compareEvents.length ? summarize(compareEvents) : null;
   parseState.textContent = `${events.length} parsed events`;
   totalEvents.textContent = String(summary.count);
   toolCalls.textContent = String(summary.toolCallCount);
@@ -165,6 +185,7 @@ function render() {
   renderRisks(events, summary);
   renderTools(summary.tools);
   renderRecommendations(summary);
+  renderComparison(summary, compareSummary);
 }
 
 function updateEmpty() {
@@ -177,6 +198,8 @@ function updateEmpty() {
   riskFlags.innerHTML = "";
   toolBreakdown.innerHTML = "";
   recommendations.innerHTML = "";
+  comparison.innerHTML = "";
+  comparePanel.classList.toggle("hidden", !isCompareMode);
 }
 
 function renderTimeline(events) {
@@ -229,6 +252,44 @@ function renderRecommendations(summary) {
   renderFlagList(recommendations, items);
 }
 
+function renderComparison(summaryA, summaryB) {
+  comparePanel.classList.toggle("hidden", !isCompareMode);
+  if (!isCompareMode) return;
+
+  comparison.innerHTML = "";
+  if (!summaryB) {
+    comparison.innerHTML = '<p class="empty">Paste Run B to compare metrics.</p>';
+    return;
+  }
+
+  const rows = [
+    ["Events", summaryA.count, summaryB.count],
+    ["Tool Calls", summaryA.toolCallCount, summaryB.toolCallCount],
+    ["Errors", summaryA.errorCount, summaryB.errorCount],
+    ["Input Tokens", summaryA.inputTokens, summaryB.inputTokens],
+    ["Output Tokens", summaryA.outputTokens, summaryB.outputTokens],
+    ["Cost", summaryA.estimatedCost, summaryB.estimatedCost, true]
+  ];
+
+  comparison.innerHTML = '<div class="compare-row header"><span>Metric</span><span>Run A</span><span>Run B</span><span>Delta</span></div>';
+  for (const [label, a, b, money] of rows) {
+    const delta = b - a;
+    const row = document.createElement("div");
+    row.className = "compare-row";
+    row.innerHTML = `<span>${label}</span><span>${formatMetric(a, money)}</span><span>${formatMetric(b, money)}</span><span class="${delta > 0 ? "delta-up" : delta < 0 ? "delta-down" : ""}">${formatDelta(delta, money)}</span>`;
+    comparison.appendChild(row);
+  }
+}
+
+function formatMetric(value, money = false) {
+  return money ? `$${Number(value).toFixed(4)}` : String(value);
+}
+
+function formatDelta(value, money = false) {
+  const prefix = value > 0 ? "+" : "";
+  return money ? `${prefix}$${Number(value).toFixed(4)}` : `${prefix}${value}`;
+}
+
 function renderFlagList(node, items) {
   node.innerHTML = "";
   for (const [className, text] of items) {
@@ -242,6 +303,8 @@ function renderFlagList(node, items) {
 function buildReport() {
   const events = parseLogs(logInput.value);
   const summary = summarize(events);
+  const compareEvents = isCompareMode && compareInput.value.trim() ? parseLogs(compareInput.value) : [];
+  const compareSummary = compareEvents.length ? summarize(compareEvents) : null;
   const toolRows = Array.from(summary.tools.entries())
     .map(([name, data]) => `| ${name} | ${data.count} | ${data.errors} | ${(data.durationMs / 1000).toFixed(2)}s |`)
     .join("\n") || "| None | 0 | 0 | 0s |";
@@ -279,6 +342,16 @@ ${firstErrors}
 ## Recommendation
 
 Review the earliest failing event, redact secrets before sharing logs, and attach this report to the related PR, incident, or evaluation run.
+${compareSummary ? `
+## Run Comparison
+
+| Metric | Run A | Run B | Delta |
+| --- | ---: | ---: | ---: |
+| Events | ${summary.count} | ${compareSummary.count} | ${compareSummary.count - summary.count} |
+| Tool Calls | ${summary.toolCallCount} | ${compareSummary.toolCallCount} | ${compareSummary.toolCallCount - summary.toolCallCount} |
+| Errors | ${summary.errorCount} | ${compareSummary.errorCount} | ${compareSummary.errorCount - summary.errorCount} |
+| Cost | $${summary.estimatedCost.toFixed(4)} | $${compareSummary.estimatedCost.toFixed(4)} | $${(compareSummary.estimatedCost - summary.estimatedCost).toFixed(4)} |
+` : ""}
 `;
 }
 
@@ -311,9 +384,27 @@ function shorten(text, max) {
 
 loadSample.addEventListener("click", () => {
   logInput.value = SAMPLE_LOG;
+  if (isCompareMode) {
+    compareInput.value = SAMPLE_LOG.replace('"level":"error"', '"level":"info"').replace('"output_tokens":1800', '"output_tokens":800');
+  }
   render();
 });
 
 exportReport.addEventListener("click", downloadReport);
 logInput.addEventListener("input", render);
+compareInput.addEventListener("input", render);
+inputPrice.addEventListener("input", render);
+outputPrice.addEventListener("input", render);
+singleMode.addEventListener("click", () => setMode(false));
+compareMode.addEventListener("click", () => setMode(true));
+
+function setMode(nextCompareMode) {
+  isCompareMode = nextCompareMode;
+  singleMode.classList.toggle("active", !isCompareMode);
+  compareMode.classList.toggle("active", isCompareMode);
+  compareField.classList.toggle("hidden", !isCompareMode);
+  logFields.classList.toggle("compare", isCompareMode);
+  render();
+}
+
 render();

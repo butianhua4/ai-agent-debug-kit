@@ -18,6 +18,8 @@ Paste JSONL, JSON, or plain-text logs and the tool summarizes:
 - tool-call count
 - errors and warnings
 - rough token cost
+- configurable input/output token pricing
+- Run A/B comparison
 - risky log patterns
 - tool breakdown
 - debugging recommendations
@@ -39,6 +41,8 @@ It also exports a Markdown report that can be attached to pull requests, inciden
 - Supports JSONL and plain text
 - Detects common error, warning, permission, and secret-risk patterns
 - Estimates token cost from common token fields
+- Lets users tune input/output pricing per 1M tokens
+- Compares two runs side by side
 - Exports Markdown reports
 - Includes sample agent log
 

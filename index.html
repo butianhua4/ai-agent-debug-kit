@@ -24,7 +24,20 @@
           <h2 id="inputTitle">Agent Log</h2>
           <span id="lineCount">0 lines</span>
         </div>
-        <textarea id="logInput" spellcheck="false" placeholder="Paste JSONL, JSON, or plain agent logs here..."></textarea>
+        <div class="input-tabs" role="tablist" aria-label="Log inputs">
+          <button id="singleMode" class="tab active" type="button">Single</button>
+          <button id="compareMode" class="tab" type="button">Compare</button>
+        </div>
+        <div class="log-fields">
+          <label>
+            <span>Run A</span>
+            <textarea id="logInput" spellcheck="false" placeholder="Paste JSONL, JSON, or plain agent logs here..."></textarea>
+          </label>
+          <label id="compareField" class="hidden">
+            <span>Run B</span>
+            <textarea id="compareInput" spellcheck="false" placeholder="Paste a second run to compare against Run A..."></textarea>
+          </label>
+        </div>
       </section>
 
       <section class="results-pane" aria-labelledby="summaryTitle">
@@ -52,7 +65,22 @@
           </article>
         </div>
 
+        <div class="pricing">
+          <label>
+            <span>Input $ / 1M tokens</span>
+            <input id="inputPrice" type="number" min="0" step="0.01" value="1.25">
+          </label>
+          <label>
+            <span>Output $ / 1M tokens</span>
+            <input id="outputPrice" type="number" min="0" step="0.01" value="10">
+          </label>
+        </div>
+
         <div class="analysis-grid">
+          <section id="comparePanel" class="hidden">
+            <h3>Run Comparison</h3>
+            <div id="comparison" class="comparison"></div>
+          </section>
           <section>
             <h3>Timeline</h3>
             <ol id="timeline" class="timeline"></ol>

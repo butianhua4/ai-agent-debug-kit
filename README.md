@@ -8,6 +8,8 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - tool-call breakdown
 - error and warning flags
 - rough token cost estimates
+- configurable model pricing
+- run A/B comparison
 - debugging recommendations
 - downloadable Markdown report
 
