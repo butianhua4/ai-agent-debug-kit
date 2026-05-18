@@ -42,6 +42,7 @@ Current features:
 - local snapshot history
 - redacted Markdown export
 - Node CLI report generation
+- Manifest V3 browser extension prototype
 
 I am keeping it dependency-free and easy to fork.
 

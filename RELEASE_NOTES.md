@@ -20,6 +20,7 @@ Highlights:
 - supported log format documentation
 - product preview image
 - browser extension prototype
+- extension testing notes
 
 Build a local release package:
 
