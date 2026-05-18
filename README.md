@@ -78,3 +78,7 @@ Do not paste secrets into any tool unless you are comfortable storing them in th
 ## Contributing
 
 See `CONTRIBUTING.md`.
+
+## Launch
+
+See `LAUNCH.md` for positioning, launch copy, and product listing material.
