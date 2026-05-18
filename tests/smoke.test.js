@@ -2,6 +2,7 @@ const assert = require("node:assert");
 const fs = require("node:fs");
 const path = require("node:path");
 const { generateReport } = require("../cli");
+const { parseLogs, summarize } = require("../core");
 
 const root = path.resolve(__dirname, "..");
 const sample = fs.readFileSync(path.join(root, "sample-agent-log.jsonl"), "utf8");
@@ -13,6 +14,12 @@ assert.match(report, /Total events: 7/);
 assert.match(report, /Tool calls: 5/);
 assert.match(report, /Errors: 1/);
 assert.match(report, /shell\.exec/);
+
+const arrayEvents = parseLogs('[{"level":"info","event":"run_started"},{"level":"warn","message":"retry timeout","tool":"search"}]');
+const arraySummary = summarize(arrayEvents, { input: 0, output: 0 });
+assert.equal(arraySummary.count, 2);
+assert.equal(arraySummary.warningCount, 1);
+assert.equal(arraySummary.toolCallCount, 1);
 
 const secretLog = '{"level":"error","event":"tool_result","message":"token: abcdefghijklmnop user test@example.com sk-testsecret123456"}\n';
 const redacted = generateReport(secretLog, { source: "secret.jsonl" });
