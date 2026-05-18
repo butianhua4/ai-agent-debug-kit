@@ -40,6 +40,14 @@ assert.equal(plainSummary.warningCount, 1);
 assert.equal(plainSummary.toolCallCount, 2);
 assert.equal(plainEvents[0].durationMs, 4200);
 
+const repeatedSummary = summarize(parseLogs([
+  '{"level":"warn","message":"retry timeout after 1000ms","tool":"browser"}',
+  '{"level":"warn","message":"retry timeout after 2000ms","tool":"browser"}',
+  '{"level":"warn","message":"retry timeout after 3000ms","tool":"browser"}'
+].join("\n")), { input: 0, output: 0 });
+assert.equal(repeatedSummary.repeatedMessages.length, 1);
+assert.equal(repeatedSummary.repeatedMessages[0].count, 3);
+
 const secretLog = '{"level":"error","event":"tool_result","message":"token: abcdefghijklmnop user test@example.com sk-testsecret123456"}\n';
 const redacted = generateReport(secretLog, { source: "secret.jsonl" });
 
@@ -60,6 +68,7 @@ assert.equal(jsonReport.summary.totalEvents, 7);
 assert.equal(jsonReport.summary.toolCalls, 5);
 assert.equal(jsonReport.summary.errors, 1);
 assert.ok(jsonReport.tools.some((tool) => tool.name === "shell.exec"));
+assert.ok(Array.isArray(jsonReport.repeatedMessages));
 
 const originalStdoutWrite = process.stdout.write;
 const originalStderrWrite = process.stderr.write;

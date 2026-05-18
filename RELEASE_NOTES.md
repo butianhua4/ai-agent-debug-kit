@@ -30,6 +30,7 @@ Highlights:
 - CLI `--max-errors` CI gate
 - CI usage documentation
 - release package manifest and validation
+- repeated message and retry-loop detection
 - store listing and privacy drafts
 
 Build a local release package:

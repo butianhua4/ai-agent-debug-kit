@@ -184,6 +184,7 @@ function renderRecommendations(summary) {
   const items = [];
   if (summary.errorCount > 0) items.push(["bad", "Start with the first failing tool result; later failures may be downstream noise."]);
   if (summary.toolCallCount > 6) items.push(["warn", "Long tool chains are harder to debug. Add checkpoints after state-changing calls."]);
+  if (summary.repeatedMessages.length > 0) items.push(["warn", "Repeated messages detected. Inspect the timeline for retry loops or stuck tool calls."]);
   if (summary.inputTokens > 8000) items.push(["warn", "Trim repeated context and move stable instructions into a reusable config."]);
   if (summary.toolCallCount === 0) items.push(["warn", "No tool calls detected. Use structured JSONL logs for better diagnostics."]);
   if (items.length === 0) items.push(["good", "Run shape looks healthy. Export a report and attach it to the incident or PR."]);

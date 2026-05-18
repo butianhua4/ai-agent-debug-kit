@@ -58,6 +58,14 @@ The parser looks for:
 - `tool=something` or `tool: something`
 - durations like `120ms` or `4.2s`
 
+It also normalizes repeated messages by replacing changing numbers and timestamps, which helps detect retry loops such as:
+
+```text
+retry timeout after 1000ms
+retry timeout after 2000ms
+retry timeout after 3000ms
+```
+
 ## Recognized Fields
 
 - `ts`, `time`, `timestamp`, `created_at`

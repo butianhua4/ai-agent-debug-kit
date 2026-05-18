@@ -19,6 +19,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - model pricing presets
 - redacted report export
 - file import and drag-and-drop log loading
+- repeated failure and retry-loop detection
 - debugging recommendations
 - downloadable Markdown report
 
@@ -109,10 +110,9 @@ Do not paste secrets into any tool unless you are comfortable storing them in th
 ## Roadmap
 
 - pricing presets for popular models
-- CLI version for CI logs
-- browser extension wrapper
 - OpenAI Responses API trace import
-- repeated failure and retry-loop detection
+- richer framework-specific importers
+- packaged browser extension icons and screenshots
 
 ## Contributing
 

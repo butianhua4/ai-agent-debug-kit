@@ -148,6 +148,7 @@ function buildJsonReport(events, summary, source) {
       errors: data.errors,
       durationMs: data.durationMs
     })),
+    repeatedMessages: summary.repeatedMessages,
     firstErrors: events
       .filter((event) => event.level === "error")
       .slice(0, 5)

@@ -115,6 +115,7 @@
 
   function summarize(events, pricing = { input: 1.25, output: 10 }) {
     const tools = new Map();
+    const messageCounts = new Map();
     let errorCount = 0;
     let warningCount = 0;
     let inputTokens = 0;
@@ -125,6 +126,10 @@
       if (event.level === "warn") warningCount += 1;
       inputTokens += event.inputTokens;
       outputTokens += event.outputTokens;
+      const normalizedMessage = normalizeMessage(event.message);
+      if (normalizedMessage) {
+        messageCounts.set(normalizedMessage, (messageCounts.get(normalizedMessage) || 0) + 1);
+      }
 
       if (event.tool) {
         const current = tools.get(event.tool) || { count: 0, durationMs: 0, errors: 0 };
@@ -143,8 +148,22 @@
       inputTokens,
       outputTokens,
       estimatedCost: estimateCost(inputTokens, outputTokens, pricing),
+      repeatedMessages: Array.from(messageCounts.entries())
+        .filter(([, count]) => count > 1)
+        .map(([message, count]) => ({ message, count }))
+        .sort((a, b) => b.count - a.count),
       tools
     };
+  }
+
+  function normalizeMessage(message) {
+    return String(message || "")
+      .toLowerCase()
+      .replace(/\d{4}-\d{2}-\d{2}t[\d:.]+z/g, "<timestamp>")
+      .replace(/\d+/g, "<number>")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 160);
   }
 
   function estimateCost(inputTokens, outputTokens, pricing) {
@@ -156,6 +175,7 @@
     if (summary.errorCount > 0) flags.push(`- ${summary.errorCount} error event(s) need review before shipping.`);
     if (summary.warningCount > 0) flags.push(`- ${summary.warningCount} warning event(s) may indicate retries, limits, or flaky tools.`);
     if (summary.estimatedCost > 0.1) flags.push("- Token cost is high for a single run. Consider caching or shorter context.");
+    if (summary.repeatedMessages.length > 0) flags.push(`- ${summary.repeatedMessages.length} repeated message pattern(s) detected. Check for retry loops.`);
     if (events.some((event) => /password|secret|api[_-]?key|token/i.test(event.raw))) flags.push("- Potential secret detected in logs. Redact before sharing.");
     if (events.some((event) => /permission|denied|unauthorized/i.test(event.raw))) flags.push("- Permission-related text detected. Check auth and sandbox boundaries.");
     return flags.join("\n") || "- No obvious risk flags detected.";
