@@ -21,6 +21,14 @@ assert.equal(arraySummary.count, 2);
 assert.equal(arraySummary.warningCount, 1);
 assert.equal(arraySummary.toolCallCount, 1);
 
+const plainEvents = parseLogs("tool=shell npm test failed after 4.2s\nwarning: retry timeout from browser");
+const plainSummary = summarize(plainEvents, { input: 0, output: 0 });
+assert.equal(plainSummary.count, 2);
+assert.equal(plainSummary.errorCount, 1);
+assert.equal(plainSummary.warningCount, 1);
+assert.equal(plainSummary.toolCallCount, 2);
+assert.equal(plainEvents[0].durationMs, 4200);
+
 const secretLog = '{"level":"error","event":"tool_result","message":"token: abcdefghijklmnop user test@example.com sk-testsecret123456"}\n';
 const redacted = generateReport(secretLog, { source: "secret.jsonl" });
 

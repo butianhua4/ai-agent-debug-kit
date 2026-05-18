@@ -17,6 +17,7 @@ Highlights:
 - smoke tests
 - GitHub Actions check workflow
 - release package builder
+- supported log format documentation
 
 Build a local release package:
 

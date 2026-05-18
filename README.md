@@ -73,6 +73,8 @@ The parser also recognizes common fields:
 - `input_tokens`, `prompt_tokens`
 - `output_tokens`, `completion_tokens`
 
+More examples are in `docs/LOG_FORMATS.md`.
+
 ## Why It Exists
 
 Agent failures are often hidden in long transcripts. This tool gives developers a quick first-pass view before they open a full trace viewer or incident report.
