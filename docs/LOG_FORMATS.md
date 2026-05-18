@@ -13,11 +13,34 @@ Best option for agent logs:
 
 ## JSON Array
 
-One-line arrays are supported:
+One-line and pretty-printed arrays are supported:
 
 ```json
 [{"level":"info","event":"run_started"},{"level":"warn","tool":"search","message":"retry timeout"}]
 ```
+
+Pretty JSON:
+
+```json
+[
+  {
+    "level": "info",
+    "event": "run_started"
+  },
+  {
+    "level": "warn",
+    "tool": "search",
+    "message": "retry timeout"
+  }
+]
+```
+
+Wrapped arrays are also supported when entries are stored under:
+
+- `events`
+- `data`
+- `logs`
+- `items`
 
 ## Plain Text
 

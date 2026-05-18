@@ -6,6 +6,9 @@
   }
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   function parseLogs(raw) {
+    const wholeJsonEvents = parseWholeJson(raw);
+    if (wholeJsonEvents) return wholeJsonEvents;
+
     const lines = raw.split(/\r?\n/).filter((line) => line.trim().length > 0);
     const events = [];
 
@@ -24,6 +27,30 @@
     }
 
     return events;
+  }
+
+  function parseWholeJson(raw) {
+    const trimmed = raw.trim();
+    if (!trimmed || !/^[{[]/.test(trimmed)) return null;
+
+    try {
+      const parsed = JSON.parse(trimmed);
+      const entries = extractEntries(parsed);
+      if (!entries) return null;
+      return entries.map((entry) => normalizeEvent(entry, JSON.stringify(entry)));
+    } catch {
+      return null;
+    }
+  }
+
+  function extractEntries(parsed) {
+    if (Array.isArray(parsed)) return parsed;
+    if (Array.isArray(parsed.events)) return parsed.events;
+    if (Array.isArray(parsed.data)) return parsed.data;
+    if (Array.isArray(parsed.logs)) return parsed.logs;
+    if (Array.isArray(parsed.items)) return parsed.items;
+    if (typeof parsed === "object" && parsed !== null) return [parsed];
+    return null;
   }
 
   function normalizeEvent(entry, raw) {

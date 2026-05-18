@@ -24,6 +24,7 @@ Highlights:
 - browser extension prototype
 - extension testing notes
 - extension manifest validation
+- pretty JSON and wrapped event array parsing
 - store listing and privacy drafts
 
 Build a local release package:

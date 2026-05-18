@@ -21,6 +21,17 @@ assert.equal(arraySummary.count, 2);
 assert.equal(arraySummary.warningCount, 1);
 assert.equal(arraySummary.toolCallCount, 1);
 
+const prettyJsonEvents = parseLogs(`{
+  "events": [
+    { "level": "info", "event": "run_started" },
+    { "level": "error", "tool": "browser", "message": "page failed" }
+  ]
+}`);
+const prettySummary = summarize(prettyJsonEvents, { input: 0, output: 0 });
+assert.equal(prettySummary.count, 2);
+assert.equal(prettySummary.errorCount, 1);
+assert.equal(prettySummary.toolCallCount, 1);
+
 const plainEvents = parseLogs("tool=shell npm test failed after 4.2s\nwarning: retry timeout from browser");
 const plainSummary = summarize(plainEvents, { input: 0, output: 0 });
 assert.equal(plainSummary.count, 2);
