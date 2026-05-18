@@ -28,6 +28,7 @@ const files = [
   "LAUNCH.md",
   "LISTING.md"
 ];
+const packageJson = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(packageDir, { recursive: true });
@@ -59,6 +60,18 @@ Demo:
 Repository:
   https://github.com/butianhua4/ai-agent-debug-kit
 `
+);
+
+fs.writeFileSync(
+  path.join(packageDir, "PACKAGE_MANIFEST.json"),
+  `${JSON.stringify({
+    name: packageJson.name,
+    version: packageJson.version,
+    builtAt: new Date().toISOString(),
+    homepage: "https://butianhua4.github.io/ai-agent-debug-kit/",
+    repository: "https://github.com/butianhua4/ai-agent-debug-kit",
+    files: listFiles(packageDir).map((filePath) => path.relative(packageDir, filePath).replaceAll(path.sep, "/")).sort()
+  }, null, 2)}\n`
 );
 
 createZipFromDirectory(packageDir, zipPath);

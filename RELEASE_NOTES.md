@@ -29,6 +29,7 @@ Highlights:
 - CLI JSON output for automation
 - CLI `--max-errors` CI gate
 - CI usage documentation
+- release package manifest and validation
 - store listing and privacy drafts
 
 Build a local release package:
