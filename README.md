@@ -1,5 +1,7 @@
 # AI Agent Debug Kit
 
+![Check](https://github.com/butianhua4/ai-agent-debug-kit/actions/workflows/check.yml/badge.svg)
+
 A zero-dependency browser tool for inspecting AI agent run logs.
 
 It accepts JSONL, JSON, or plain-text logs and produces:
