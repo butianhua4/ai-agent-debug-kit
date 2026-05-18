@@ -20,7 +20,6 @@
 
 ## Next
 
-- Configurable pricing presets for popular models.
 - CLI version for CI logs.
 - Browser extension wrapper.
 - Import OpenAI Responses API traces.

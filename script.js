@@ -9,8 +9,11 @@ const totalEvents = document.querySelector("#totalEvents");
 const toolCalls = document.querySelector("#toolCalls");
 const errors = document.querySelector("#errors");
 const cost = document.querySelector("#cost");
+const reportTitle = document.querySelector("#reportTitle");
+const pricingPreset = document.querySelector("#pricingPreset");
 const inputPrice = document.querySelector("#inputPrice");
 const outputPrice = document.querySelector("#outputPrice");
+const redactReport = document.querySelector("#redactReport");
 const timeline = document.querySelector("#timeline");
 const riskFlags = document.querySelector("#riskFlags");
 const toolBreakdown = document.querySelector("#toolBreakdown");
@@ -26,6 +29,12 @@ const logFields = document.querySelector(".log-fields");
 
 let isCompareMode = false;
 const HISTORY_KEY = "aiAgentDebugKit.history.v1";
+const PRICING_PRESETS = {
+  custom: null,
+  gpt5: { input: 1.25, output: 10 },
+  mini: { input: 0.25, output: 2 },
+  local: { input: 0, output: 0 }
+};
 
 const SAMPLE_SCENARIOS = {
   healthy: [
@@ -177,6 +186,14 @@ function getPricing() {
     input: Number(inputPrice.value || 0),
     output: Number(outputPrice.value || 0)
   };
+}
+
+function applyPricingPreset() {
+  const preset = PRICING_PRESETS[pricingPreset.value];
+  if (!preset) return;
+  inputPrice.value = preset.input;
+  outputPrice.value = preset.output;
+  render();
 }
 
 function estimateCost(inputTokens, outputTokens, pricing) {
@@ -344,7 +361,9 @@ function buildReport() {
   const riskText = buildRiskText(events, summary);
   const recommendationText = buildRecommendationText(summary);
 
-  return `# AI Agent Debug Report
+  const title = sanitizeReportText(reportTitle.value.trim() || "AI Agent Debug Report");
+
+  return `# ${title}
 
 Generated: ${new Date().toISOString()}
 
@@ -409,7 +428,7 @@ function buildRecommendationText(summary) {
 }
 
 function downloadReport() {
-  const report = buildReport();
+  const report = redactReport.checked ? redactSensitiveText(buildReport()) : buildReport();
   const blob = new Blob([report], { type: "text/markdown" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -419,6 +438,17 @@ function downloadReport() {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+}
+
+function sanitizeReportText(text) {
+  return text.replace(/[<>]/g, "").slice(0, 120);
+}
+
+function redactSensitiveText(text) {
+  return text
+    .replace(/(api[_-]?key|token|secret|password)(["':=\s]+)([a-z0-9._\-]{8,})/gi, "$1$2[REDACTED]")
+    .replace(/(sk-[a-zA-Z0-9_\-]{12,})/g, "[REDACTED_API_KEY]")
+    .replace(/([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)/g, "[REDACTED_EMAIL]");
 }
 
 function loadHistory() {
@@ -494,6 +524,7 @@ function restoreSnapshot(id) {
   compareInput.value = item.logB || "";
   inputPrice.value = item.pricing?.input ?? inputPrice.value;
   outputPrice.value = item.pricing?.output ?? outputPrice.value;
+  pricingPreset.value = "custom";
   setMode(item.mode === "compare");
 }
 
@@ -532,6 +563,8 @@ logInput.addEventListener("input", render);
 compareInput.addEventListener("input", render);
 inputPrice.addEventListener("input", render);
 outputPrice.addEventListener("input", render);
+pricingPreset.addEventListener("change", applyPricingPreset);
+reportTitle.addEventListener("input", render);
 singleMode.addEventListener("click", () => setMode(false));
 compareMode.addEventListener("click", () => setMode(true));
 

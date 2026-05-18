@@ -74,12 +74,29 @@
 
         <div class="pricing">
           <label>
+            <span>Report title</span>
+            <input id="reportTitle" type="text" value="AI Agent Debug Report">
+          </label>
+          <label>
+            <span>Pricing preset</span>
+            <select id="pricingPreset">
+              <option value="custom">Custom</option>
+              <option value="gpt5">GPT-5 style</option>
+              <option value="mini">Mini model</option>
+              <option value="local">Local / zero cost</option>
+            </select>
+          </label>
+          <label>
             <span>Input $ / 1M tokens</span>
             <input id="inputPrice" type="number" min="0" step="0.01" value="1.25">
           </label>
           <label>
             <span>Output $ / 1M tokens</span>
             <input id="outputPrice" type="number" min="0" step="0.01" value="10">
+          </label>
+          <label class="checkbox-label">
+            <span>Redact exported report</span>
+            <input id="redactReport" type="checkbox" checked>
           </label>
         </div>
 

@@ -12,6 +12,8 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - run A/B comparison
 - local snapshot history
 - multiple demo scenarios
+- model pricing presets
+- redacted report export
 - debugging recommendations
 - downloadable Markdown report
 

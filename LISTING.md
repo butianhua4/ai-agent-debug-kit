@@ -22,6 +22,8 @@ Paste JSONL, JSON, or plain-text logs and the tool summarizes:
 - Run A/B comparison
 - local snapshot history
 - multiple demo scenarios
+- model pricing presets
+- optional redaction for exported reports
 - risky log patterns
 - tool breakdown
 - debugging recommendations
@@ -47,6 +49,7 @@ It also exports a Markdown report that can be attached to pull requests, inciden
 - Compares two runs side by side
 - Saves local snapshots in the browser
 - Ships with healthy, failure, cost-spike, and permission demo logs
+- Exports reports with optional redaction for API keys, tokens, secrets, and emails
 - Exports Markdown reports
 - Includes sample agent log
 
