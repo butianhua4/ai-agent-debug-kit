@@ -48,6 +48,8 @@ node cli.js sample-agent-log.jsonl --max-errors 0
 
 `--max-errors` exits with code `2` when the report exceeds the allowed error count, which makes it useful in CI.
 
+More CI examples are in `docs/CI_USAGE.md`.
+
 ## Checks
 
 ```bash

@@ -28,6 +28,7 @@ Highlights:
 - file import and drag-and-drop log loading
 - CLI JSON output for automation
 - CLI `--max-errors` CI gate
+- CI usage documentation
 - store listing and privacy drafts
 
 Build a local release package:
