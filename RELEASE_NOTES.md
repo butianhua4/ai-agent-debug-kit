@@ -23,6 +23,7 @@ Highlights:
 - product preview image
 - browser extension prototype
 - extension testing notes
+- extension manifest validation
 - store listing and privacy drafts
 
 Build a local release package:
