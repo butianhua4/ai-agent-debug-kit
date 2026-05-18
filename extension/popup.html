@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Agent Debug Kit</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>AI Agent Debug Kit</h1>
+      <button id="loadDemo" type="button">Demo</button>
+    </header>
+    <textarea id="logInput" spellcheck="false" placeholder="Paste agent log..."></textarea>
+    <section class="metrics">
+      <div><span>Events</span><strong id="events">0</strong></div>
+      <div><span>Tools</span><strong id="tools">0</strong></div>
+      <div><span>Errors</span><strong id="errors">0</strong></div>
+    </section>
+    <section>
+      <h2>Risk Flags</h2>
+      <ul id="risks"></ul>
+    </section>
+    <script src="core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

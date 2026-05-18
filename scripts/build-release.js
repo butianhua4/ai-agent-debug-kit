@@ -32,6 +32,9 @@ for (const file of files) {
   fs.copyFileSync(source, target);
 }
 
+copyDirectory(path.join(root, "extension"), path.join(packageDir, "extension"));
+fs.copyFileSync(path.join(root, "core.js"), path.join(packageDir, "extension", "core.js"));
+
 fs.writeFileSync(
   path.join(packageDir, "START_HERE.txt"),
   `AI Agent Debug Kit
@@ -63,4 +66,17 @@ try {
 console.log(`Release package ready: ${packageDir}`);
 if (fs.existsSync(zipPath)) {
   console.log(`Release zip ready: ${zipPath}`);
+}
+
+function copyDirectory(source, target) {
+  fs.mkdirSync(target, { recursive: true });
+  for (const entry of fs.readdirSync(source, { withFileTypes: true })) {
+    const sourcePath = path.join(source, entry.name);
+    const targetPath = path.join(target, entry.name);
+    if (entry.isDirectory()) {
+      copyDirectory(sourcePath, targetPath);
+    } else {
+      fs.copyFileSync(sourcePath, targetPath);
+    }
+  }
 }

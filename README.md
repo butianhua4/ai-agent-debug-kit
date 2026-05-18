@@ -57,6 +57,10 @@ npm run build:release
 
 The packaged app is created in `dist/`.
 
+## Browser Extension Prototype
+
+The `extension/` folder contains a minimal Manifest V3 popup prototype. Load it as an unpacked extension in Chromium-based browsers for local testing.
+
 ## Supported Log Shapes
 
 JSONL works best:

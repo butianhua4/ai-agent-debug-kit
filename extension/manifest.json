@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "AI Agent Debug Kit",
+  "version": "0.4.0",
+  "description": "Inspect AI agent logs, tool calls, errors, cost, and risk flags from a lightweight browser extension.",
+  "action": {
+    "default_title": "AI Agent Debug Kit",
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}

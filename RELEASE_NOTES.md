@@ -19,6 +19,7 @@ Highlights:
 - release package builder
 - supported log format documentation
 - product preview image
+- browser extension prototype
 
 Build a local release package:
 
