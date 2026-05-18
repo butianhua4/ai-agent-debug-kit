@@ -24,6 +24,8 @@ No backend, no account, no install required.
 Repo: https://github.com/butianhua4/ai-agent-debug-kit
 Demo: https://butianhua4.github.io/ai-agent-debug-kit/
 
+Preview image: `assets/product-preview.svg`
+
 ## Longer Launch Post
 
 AI agent traces are often too noisy to read quickly. I wanted a small tool that works before you set up a full observability stack.
@@ -95,4 +97,3 @@ Do not post automatically without user approval.
 - Reddit developer communities
 - AI agent Discord/Slack communities
 - Gumroad-style product listing
-

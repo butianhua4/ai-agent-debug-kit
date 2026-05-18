@@ -18,6 +18,7 @@ Highlights:
 - GitHub Actions check workflow
 - release package builder
 - supported log format documentation
+- product preview image
 
 Build a local release package:
 

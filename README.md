@@ -4,6 +4,8 @@
 
 A zero-dependency browser tool for inspecting AI agent run logs.
 
+![AI Agent Debug Kit preview](assets/product-preview.svg)
+
 It accepts JSONL, JSON, or plain-text logs and produces:
 
 - run metrics
