@@ -22,10 +22,12 @@ const comparePanel = document.querySelector("#comparePanel");
 const comparison = document.querySelector("#comparison");
 const sampleSelect = document.querySelector("#sampleSelect");
 const loadSample = document.querySelector("#loadSample");
+const fileInput = document.querySelector("#fileInput");
 const saveSnapshot = document.querySelector("#saveSnapshot");
 const exportReport = document.querySelector("#exportReport");
 const historyList = document.querySelector("#historyList");
 const logFields = document.querySelector(".log-fields");
+const inputPane = document.querySelector(".input-pane");
 
 let isCompareMode = false;
 const HISTORY_KEY = "aiAgentDebugKit.history.v1";
@@ -401,6 +403,12 @@ function deleteSnapshot(id) {
   renderHistory();
 }
 
+async function importFile(file) {
+  if (!file) return;
+  logInput.value = await file.text();
+  render();
+}
+
 function escapeHtml(text) {
   return String(text)
     .replaceAll("&", "&amp;")
@@ -427,6 +435,7 @@ loadSample.addEventListener("click", () => {
 
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 exportReport.addEventListener("click", downloadReport);
+fileInput.addEventListener("change", () => importFile(fileInput.files[0]));
 logInput.addEventListener("input", render);
 compareInput.addEventListener("input", render);
 inputPrice.addEventListener("input", render);
@@ -435,6 +444,18 @@ pricingPreset.addEventListener("change", applyPricingPreset);
 reportTitle.addEventListener("input", render);
 singleMode.addEventListener("click", () => setMode(false));
 compareMode.addEventListener("click", () => setMode(true));
+inputPane.addEventListener("dragover", (event) => {
+  event.preventDefault();
+  inputPane.classList.add("drag-over");
+});
+inputPane.addEventListener("dragleave", () => {
+  inputPane.classList.remove("drag-over");
+});
+inputPane.addEventListener("drop", (event) => {
+  event.preventDefault();
+  inputPane.classList.remove("drag-over");
+  importFile(event.dataTransfer.files[0]);
+});
 
 function setMode(nextCompareMode) {
   isCompareMode = nextCompareMode;

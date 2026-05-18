@@ -18,6 +18,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - multiple demo scenarios
 - model pricing presets
 - redacted report export
+- file import and drag-and-drop log loading
 - debugging recommendations
 - downloadable Markdown report
 

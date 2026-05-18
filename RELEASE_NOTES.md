@@ -25,6 +25,7 @@ Highlights:
 - extension testing notes
 - extension manifest validation
 - pretty JSON and wrapped event array parsing
+- file import and drag-and-drop log loading
 - store listing and privacy drafts
 
 Build a local release package:
