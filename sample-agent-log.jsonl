@@ -1,0 +1,7 @@
+{"ts":"2026-05-18T09:10:00.000Z","level":"info","event":"run_started","model":"gpt-5","prompt_tokens":1840}
+{"ts":"2026-05-18T09:10:03.200Z","level":"info","event":"tool_call","tool":"web.search","duration_ms":1260,"input_tokens":340,"output_tokens":580}
+{"ts":"2026-05-18T09:10:07.800Z","level":"warn","event":"tool_call","tool":"shell.exec","duration_ms":4200,"command":"npm test","output_tokens":1800}
+{"ts":"2026-05-18T09:10:13.100Z","level":"error","event":"tool_result","tool":"shell.exec","duration_ms":4200,"message":"2 tests failed: parser handles empty JSONL"}
+{"ts":"2026-05-18T09:10:19.000Z","level":"info","event":"tool_call","tool":"apply_patch","duration_ms":890,"files":["src/parser.ts"]}
+{"ts":"2026-05-18T09:10:23.600Z","level":"info","event":"tool_call","tool":"shell.exec","duration_ms":3160,"command":"npm test","output_tokens":940}
+{"ts":"2026-05-18T09:10:30.000Z","level":"info","event":"run_completed","output_tokens":1220}

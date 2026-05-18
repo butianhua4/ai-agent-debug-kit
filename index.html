@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Agent Debug Kit</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">AI Agent Debug Kit</p>
+        <h1>Inspect agent logs before they become production incidents.</h1>
+      </div>
+      <div class="actions">
+        <button id="loadSample" type="button">Load Sample</button>
+        <button id="exportReport" type="button">Export Markdown</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="input-pane" aria-labelledby="inputTitle">
+        <div class="section-head">
+          <h2 id="inputTitle">Agent Log</h2>
+          <span id="lineCount">0 lines</span>
+        </div>
+        <textarea id="logInput" spellcheck="false" placeholder="Paste JSONL, JSON, or plain agent logs here..."></textarea>
+      </section>
+
+      <section class="results-pane" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">Summary</h2>
+          <span id="parseState">Waiting for input</span>
+        </div>
+
+        <div class="metrics" aria-label="Run metrics">
+          <article>
+            <span>Total Events</span>
+            <strong id="totalEvents">0</strong>
+          </article>
+          <article>
+            <span>Tool Calls</span>
+            <strong id="toolCalls">0</strong>
+          </article>
+          <article>
+            <span>Errors</span>
+            <strong id="errors">0</strong>
+          </article>
+          <article>
+            <span>Est. Cost</span>
+            <strong id="cost">$0.0000</strong>
+          </article>
+        </div>
+
+        <div class="analysis-grid">
+          <section>
+            <h3>Timeline</h3>
+            <ol id="timeline" class="timeline"></ol>
+          </section>
+          <section>
+            <h3>Risk Flags</h3>
+            <ul id="riskFlags" class="flag-list"></ul>
+          </section>
+          <section>
+            <h3>Tool Breakdown</h3>
+            <div id="toolBreakdown" class="table"></div>
+          </section>
+          <section>
+            <h3>Recommendations</h3>
+            <ul id="recommendations" class="flag-list"></ul>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
