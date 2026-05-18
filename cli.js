@@ -3,31 +3,45 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const args = process.argv.slice(2);
-
-if (args.includes("--help") || args.length === 0) {
-  printHelp();
-  process.exit(0);
+if (require.main === module) {
+  run(process.argv.slice(2));
 }
 
-const fileArg = args.find((arg) => !arg.startsWith("--"));
-const inputPrice = readNumberFlag("--input-price", 1.25);
-const outputPrice = readNumberFlag("--output-price", 10);
-const redact = !args.includes("--no-redact");
+function run(args) {
+  if (args.includes("--help") || args.length === 0) {
+    printHelp();
+    return 0;
+  }
 
-if (!fileArg) {
-  console.error("Missing log file path.");
-  printHelp();
-  process.exit(1);
+  const fileArg = args.find((arg) => !arg.startsWith("--"));
+  const inputPrice = readNumberFlag(args, "--input-price", 1.25);
+  const outputPrice = readNumberFlag(args, "--output-price", 10);
+  const redact = !args.includes("--no-redact");
+
+  if (!fileArg) {
+    console.error("Missing log file path.");
+    printHelp();
+    return 1;
+  }
+
+  const filePath = path.resolve(process.cwd(), fileArg);
+  const raw = fs.readFileSync(filePath, "utf8");
+  const report = generateReport(raw, {
+    source: filePath,
+    pricing: { input: inputPrice, output: outputPrice },
+    redact
+  });
+
+  process.stdout.write(report);
+  return 0;
 }
 
-const filePath = path.resolve(process.cwd(), fileArg);
-const raw = fs.readFileSync(filePath, "utf8");
-const events = parseLogs(raw);
-const summary = summarize(events, { input: inputPrice, output: outputPrice });
-const report = buildReport(events, summary, filePath);
-
-process.stdout.write(redact ? redactSensitiveText(report) : report);
+function generateReport(raw, options = {}) {
+  const events = parseLogs(raw);
+  const summary = summarize(events, options.pricing || { input: 1.25, output: 10 });
+  const report = buildReport(events, summary, options.source || "stdin");
+  return options.redact === false ? report : redactSensitiveText(report);
+}
 
 function printHelp() {
   process.stdout.write(`AI Agent Debug Kit CLI
@@ -40,7 +54,7 @@ Example:
 `);
 }
 
-function readNumberFlag(name, fallback) {
+function readNumberFlag(args, name, fallback) {
   const index = args.indexOf(name);
   if (index === -1) return fallback;
   const value = Number(args[index + 1]);
@@ -229,3 +243,10 @@ function redactSensitiveText(text) {
     .replace(/(sk-[a-zA-Z0-9_\-]{12,})/g, "[REDACTED_API_KEY]")
     .replace(/([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)/g, "[REDACTED_EMAIL]");
 }
+
+module.exports = {
+  generateReport,
+  parseLogs,
+  summarize,
+  redactSensitiveText
+};

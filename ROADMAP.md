@@ -18,6 +18,13 @@
 - Add local snapshot history.
 - Improve report risk flags and recommendation text.
 
+## v4
+
+- Add pricing presets.
+- Add redacted report export.
+- Add CLI report generator.
+- Add smoke tests.
+
 ## Next
 
 - Browser extension wrapper.

@@ -39,6 +39,12 @@ Optional flags:
 node cli.js sample-agent-log.jsonl --input-price 1.25 --output-price 10 --no-redact
 ```
 
+## Checks
+
+```bash
+npm run check
+```
+
 ## Supported Log Shapes
 
 JSONL works best:

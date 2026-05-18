@@ -1,0 +1,22 @@
+{
+  "name": "ai-agent-debug-kit",
+  "version": "0.4.0",
+  "description": "Zero-dependency browser and CLI tool for turning AI agent logs into readable debug reports.",
+  "private": true,
+  "scripts": {
+    "check": "node --check script.js && node --check cli.js && node tests/smoke.test.js",
+    "report": "node cli.js sample-agent-log.jsonl"
+  },
+  "bin": {
+    "agent-debug-kit": "./cli.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "llm",
+    "debugging",
+    "developer-tools",
+    "logs",
+    "jsonl"
+  ],
+  "license": "MIT"
+}
