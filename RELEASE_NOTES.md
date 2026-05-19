@@ -55,3 +55,4 @@ Latest:
 - Buyer guide included in release package.
 - CLI `--max-warnings` CI gate.
 - Timestamped Markdown report filenames in the web app.
+- CLI threshold failures now explain the reason on stderr.

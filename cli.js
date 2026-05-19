@@ -46,8 +46,14 @@ function run(args) {
   process.stdout.write(report);
   if (maxErrors !== null || maxWarnings !== null) {
     const { summary } = analyze(raw, { input: inputPrice, output: outputPrice });
-    if (maxErrors !== null && summary.errorCount > maxErrors) return 2;
-    if (maxWarnings !== null && summary.warningCount > maxWarnings) return 3;
+    if (maxErrors !== null && summary.errorCount > maxErrors) {
+      process.stderr.write(`agent-debug-kit: error threshold exceeded (${summary.errorCount} > ${maxErrors})\n`);
+      return 2;
+    }
+    if (maxWarnings !== null && summary.warningCount > maxWarnings) {
+      process.stderr.write(`agent-debug-kit: warning threshold exceeded (${summary.warningCount} > ${maxWarnings})\n`);
+      return 3;
+    }
   }
   return 0;
 }

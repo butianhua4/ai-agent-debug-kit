@@ -15,6 +15,8 @@ Exit codes:
 - `2`: error count exceeded `--max-errors`
 - `3`: warning count exceeded `--max-warnings`
 
+When a threshold is exceeded, the CLI writes a short reason to stderr.
+
 ## JSON Report
 
 ```bash

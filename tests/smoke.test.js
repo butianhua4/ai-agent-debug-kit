@@ -79,13 +79,21 @@ assert.ok(Array.isArray(jsonReport.repeatedMessages));
 
 const originalStdoutWrite = process.stdout.write;
 const originalStderrWrite = process.stderr.write;
+let stderrOutput = "";
 process.stdout.write = () => true;
-process.stderr.write = () => true;
+process.stderr.write = (chunk) => {
+  stderrOutput += String(chunk);
+  return true;
+};
 try {
   assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "1"]), 0);
+  stderrOutput = "";
   assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "0"]), 2);
+  assert.match(stderrOutput, /error threshold exceeded/);
   assert.equal(run(["sample-agent-log.jsonl", "--max-warnings", "1"]), 0);
+  stderrOutput = "";
   assert.equal(run(["sample-agent-log.jsonl", "--max-warnings", "0"]), 3);
+  assert.match(stderrOutput, /warning threshold exceeded/);
 } finally {
   process.stdout.write = originalStdoutWrite;
   process.stderr.write = originalStderrWrite;
