@@ -146,3 +146,4 @@ See `CHANGELOG.md`.
 
 - `docs/STORE_LISTING.md`
 - `docs/PRIVACY.md`
+- `docs/DIGITAL_PRODUCT.md`
