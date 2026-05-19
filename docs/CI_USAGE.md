@@ -57,3 +57,5 @@ node cli.js agent-run.jsonl --input-price 1.25 --output-price 10
 ```
 
 Prices are dollars per 1M tokens.
+
+Full CLI reference: `docs/CLI_REFERENCE.md`.

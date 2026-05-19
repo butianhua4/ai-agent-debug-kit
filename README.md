@@ -78,6 +78,8 @@ node cli.js sample-agent-log.jsonl --max-errors 0 --max-warnings 0
 
 More CI examples are in `docs/CI_USAGE.md`.
 
+Full CLI reference: `docs/CLI_REFERENCE.md`.
+
 ## Checks
 
 ```bash
