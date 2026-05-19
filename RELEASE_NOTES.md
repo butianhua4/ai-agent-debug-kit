@@ -70,3 +70,4 @@ Latest:
 - Copyable GitHub Actions risk gate workflow.
 - Product page copy for paid download listings.
 - SEO and social preview metadata for the public demo page.
+- Public demo `robots.txt` and `sitemap.xml`.

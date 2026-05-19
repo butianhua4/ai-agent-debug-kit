@@ -20,6 +20,8 @@ const files = [
   "core.js",
   "script.js",
   "cli.js",
+  "robots.txt",
+  "sitemap.xml",
   "sample-agent-log.jsonl",
   "README.md",
   "LICENSE",

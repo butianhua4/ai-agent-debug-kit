@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://butianhua4.github.io/ai-agent-debug-kit/sitemap.xml
