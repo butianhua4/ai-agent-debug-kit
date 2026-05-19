@@ -32,6 +32,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - multiple demo scenarios
 - model pricing presets
 - redacted report export
+- SEO and social preview metadata for the public demo
 - file import and drag-and-drop log loading, including Run B imports for comparison
 - one-click log clearing
 - repeated failure and retry-loop detection
