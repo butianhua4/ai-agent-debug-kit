@@ -81,3 +81,4 @@ Latest:
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.
+- Platform setup checklist for Fiverr, Upwork Project Catalog, and Chinese freelance listings.

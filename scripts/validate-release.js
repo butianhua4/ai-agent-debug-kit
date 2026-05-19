@@ -26,6 +26,7 @@ assert.ok(manifest.files.includes("docs/CLI_REFERENCE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
+assert.ok(manifest.files.includes("docs/PLATFORM_SETUP.md"));
 assert.ok(manifest.files.includes("docs/PRODUCT_PAGE.md"));
 assert.ok(manifest.files.includes("docs/SERVICE_OFFERS.md"));
 assert.ok(manifest.files.includes("docs/examples/agent-risk-gate.yml"));
