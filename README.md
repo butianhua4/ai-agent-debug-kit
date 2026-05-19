@@ -10,6 +10,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 
 - Demo: https://butianhua4.github.io/ai-agent-debug-kit/
 - CI usage: `docs/CI_USAGE.md`
+- Example Markdown report: `docs/examples/sample-report.md`
+- Example JSON report: `docs/examples/sample-report.json`
 - Buyer guide: `BUYER_GUIDE.md`
 - GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`
 - Release readiness: `docs/RELEASE_READINESS.md`

@@ -42,6 +42,8 @@ for (const file of files) {
 }
 
 copyDirectory(path.join(root, "extension"), path.join(packageDir, "extension"));
+copyDirectory(path.join(root, "docs"), path.join(packageDir, "docs"));
+copyDirectory(path.join(root, "assets"), path.join(packageDir, "assets"));
 fs.copyFileSync(path.join(root, "core.js"), path.join(packageDir, "extension", "core.js"));
 fs.copyFileSync(path.join(root, "assets", "icon.svg"), path.join(packageDir, "extension", "icon.svg"));
 
@@ -54,6 +56,10 @@ Open index.html in a browser to use the web app.
 Run the CLI:
 
   node cli.js sample-agent-log.jsonl > report.md
+
+Example reports:
+  docs/examples/sample-report.md
+  docs/examples/sample-report.json
 
 Demo:
   https://butianhua4.github.io/ai-agent-debug-kit/

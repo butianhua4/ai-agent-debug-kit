@@ -24,6 +24,11 @@ The full web app also supports Run A/B comparison, local snapshot history, confi
 
 The extension prototype does not request browser permissions and does not send logs to a server.
 
+Example reports are available in the public repository:
+
+- `docs/examples/sample-report.md`
+- `docs/examples/sample-report.json`
+
 ## Category
 
 Developer Tools
@@ -66,4 +71,3 @@ Do not submit until the user approves:
 - privacy policy URL
 - support contact
 - final extension icons and screenshots
-

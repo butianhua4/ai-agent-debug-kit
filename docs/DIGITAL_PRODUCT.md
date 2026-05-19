@@ -49,6 +49,7 @@ Includes:
 - CLI
 - extension prototype
 - sample log
+- example Markdown and JSON reports
 
 ### Builder Pack, USD 29
 
@@ -94,6 +95,8 @@ No backend. No account. No install required for the browser app.
 - `docs/STORE_LISTING.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
+- `docs/examples/sample-report.md`
+- `docs/examples/sample-report.json`
 - `dist/ai-agent-debug-kit.zip`
 - `BUYER_GUIDE.md`
 
