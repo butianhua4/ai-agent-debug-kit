@@ -483,6 +483,12 @@ pricingPreset.addEventListener("change", applyPricingPreset);
 reportTitle.addEventListener("input", render);
 singleMode.addEventListener("click", () => setMode(false));
 compareMode.addEventListener("click", () => setMode(true));
+document.addEventListener("keydown", (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key === "Enter" && logInput.value.trim()) {
+    event.preventDefault();
+    downloadReport();
+  }
+});
 inputPane.addEventListener("dragover", (event) => {
   event.preventDefault();
   inputPane.classList.add("drag-over");

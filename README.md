@@ -33,6 +33,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - repeated failure and retry-loop detection
 - repeated-pattern section in exported reports
 - timestamped Markdown report filenames
+- Ctrl/Cmd+Enter report export shortcut
 - debugging recommendations
 - downloadable Markdown report
 

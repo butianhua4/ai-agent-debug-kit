@@ -62,3 +62,4 @@ Latest:
 - README quick links for demo, buyer guide, release draft, and mobile progress.
 - CLI reference documentation.
 - Release readiness checklist.
+- Ctrl/Cmd+Enter shortcut for web report export.
