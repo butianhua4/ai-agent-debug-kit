@@ -15,7 +15,7 @@ if (require.main === module) {
 }
 
 function run(args) {
-  if (args.includes("--help") || args.length === 0) {
+  if (args.includes("--help")) {
     printHelp();
     return 0;
   }
@@ -28,16 +28,10 @@ function run(args) {
   const redact = !args.includes("--no-redact");
   const json = args.includes("--json");
 
-  if (!fileArg) {
-    console.error("Missing log file path.");
-    printHelp();
-    return 1;
-  }
-
-  const filePath = path.resolve(process.cwd(), fileArg);
-  const raw = fs.readFileSync(filePath, "utf8");
+  const source = fileArg || "stdin";
+  const raw = readInput(fileArg);
   const report = generateReport(raw, {
-    source: filePath,
+    source: fileArg ? path.resolve(process.cwd(), fileArg) : source,
     pricing: { input: inputPrice, output: outputPrice },
     redact,
     json
@@ -56,6 +50,18 @@ function run(args) {
     }
   }
   return 0;
+}
+
+function readInput(fileArg) {
+  if (fileArg) {
+    return fs.readFileSync(path.resolve(process.cwd(), fileArg), "utf8");
+  }
+
+  try {
+    return fs.readFileSync(0, "utf8");
+  } catch {
+    return "";
+  }
 }
 
 function analyze(raw, pricing = { input: 1.25, output: 10 }) {
@@ -77,10 +83,11 @@ function printHelp() {
   process.stdout.write(`AI Agent Debug Kit CLI
 
 Usage:
-  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--max-errors 0] [--max-warnings 0] [--no-redact] [--json]
+  node cli.js [log-file] [--input-price 1.25] [--output-price 10] [--max-errors 0] [--max-warnings 0] [--no-redact] [--json]
 
 Example:
   node cli.js sample-agent-log.jsonl > report.md
+  type sample-agent-log.jsonl | node cli.js --json
 `);
 }
 
@@ -183,6 +190,7 @@ function buildJsonReport(events, summary, source) {
 module.exports = {
   analyze,
   generateReport,
+  readInput,
   run,
   buildJsonReport
 };

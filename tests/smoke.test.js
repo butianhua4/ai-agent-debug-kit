@@ -76,6 +76,8 @@ assert.equal(jsonReport.summary.toolCalls, 5);
 assert.equal(jsonReport.summary.errors, 1);
 assert.ok(jsonReport.tools.some((tool) => tool.name === "shell.exec"));
 assert.ok(Array.isArray(jsonReport.repeatedMessages));
+const stdinReport = generateReport(sample, { source: "stdin" });
+assert.match(stdinReport, /Source: stdin/);
 
 const originalStdoutWrite = process.stdout.write;
 const originalStderrWrite = process.stderr.write;

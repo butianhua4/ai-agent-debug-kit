@@ -63,3 +63,4 @@ Latest:
 - CLI reference documentation.
 - Release readiness checklist.
 - Ctrl/Cmd+Enter shortcut for web report export.
+- CLI can read logs from stdin.
