@@ -26,7 +26,8 @@ const files = [
   "SECURITY.md",
   "ROADMAP.md",
   "LAUNCH.md",
-  "LISTING.md"
+  "LISTING.md",
+  "BUYER_GUIDE.md"
 ];
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 

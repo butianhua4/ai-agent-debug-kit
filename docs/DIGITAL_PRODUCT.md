@@ -25,6 +25,7 @@ The release zip includes:
 - privacy draft
 - CI workflow example
 - changelog and roadmap
+- buyer guide
 
 ## Suggested Pricing
 
@@ -94,6 +95,7 @@ No backend. No account. No install required for the browser app.
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
 - `dist/ai-agent-debug-kit.zip`
+- `BUYER_GUIDE.md`
 
 ## Blockers Before Paid Listing
 
@@ -102,4 +104,3 @@ No backend. No account. No install required for the browser app.
 - platform fee review
 - final license/business terms
 - final support email or GitHub-only support decision
-

@@ -52,3 +52,4 @@ Latest:
 
 - Run B file import for comparison mode.
 - Expanded Run A/B metrics in exported Markdown reports.
+- Buyer guide included in release package.
