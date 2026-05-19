@@ -59,3 +59,4 @@ Latest:
 - Timestamped Markdown report filenames in the web app.
 - CLI threshold failures now explain the reason on stderr.
 - Web app Clear button for current logs.
+- README quick links for demo, buyer guide, release draft, and mobile progress.

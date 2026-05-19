@@ -23,6 +23,7 @@ No backend, no account, no install required.
 
 Repo: https://github.com/butianhua4/ai-agent-debug-kit
 Demo: https://butianhua4.github.io/ai-agent-debug-kit/
+Release draft: `docs/GITHUB_RELEASE_DRAFT.md`
 
 Preview image: `assets/product-preview.svg`
 
