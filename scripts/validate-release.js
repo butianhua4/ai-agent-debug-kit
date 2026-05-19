@@ -18,5 +18,9 @@ assert.equal(manifest.version, "0.5.0");
 assert.ok(manifest.files.includes("index.html"));
 assert.ok(manifest.files.includes("extension/popup.html"));
 assert.ok(manifest.files.includes("extension/core.js"));
+assert.ok(manifest.files.includes("assets/product-preview.svg"));
+assert.ok(manifest.files.includes("docs/CLI_REFERENCE.md"));
+assert.ok(manifest.files.includes("docs/examples/sample-report.md"));
+assert.ok(manifest.files.includes("docs/examples/sample-report.json"));
 
 console.log("Release validation passed");
