@@ -43,6 +43,7 @@ Current features:
 - redacted Markdown export
 - Node CLI report generation
 - Manifest V3 browser extension prototype
+- feature matrix across web app, CLI, and extension prototype
 
 I am keeping it dependency-free and easy to fork.
 

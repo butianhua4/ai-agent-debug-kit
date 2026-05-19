@@ -24,6 +24,21 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - debugging recommendations
 - downloadable Markdown report
 
+## Feature Matrix
+
+| Feature | Web App | CLI | Extension Prototype |
+| --- | :---: | :---: | :---: |
+| JSONL / JSON / plain-text parsing | Yes | Yes | Yes |
+| Pretty JSON and wrapped arrays | Yes | Yes | Yes |
+| Tool-call breakdown | Yes | Yes | Basic |
+| Cost estimate | Yes | Yes | No |
+| Run A/B comparison | Yes | No | No |
+| Local snapshot history | Yes | No | No |
+| Markdown report export | Yes | Yes | No |
+| JSON report output | No | Yes | No |
+| CI error gate | No | Yes | No |
+| Repeated-pattern detection | Yes | Yes | Yes |
+
 ## Use
 
 Open `index.html` in a browser, paste logs, or click `Load Demo`.
