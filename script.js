@@ -328,7 +328,7 @@ function downloadReport() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "agent-debug-report.md";
+  link.download = buildReportFilename();
   document.body.appendChild(link);
   link.click();
   link.remove();
@@ -337,6 +337,16 @@ function downloadReport() {
 
 function sanitizeReportText(text) {
   return text.replace(/[<>]/g, "").slice(0, 120);
+}
+
+function buildReportFilename() {
+  const title = (reportTitle.value || "agent-debug-report")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 60) || "agent-debug-report";
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
+  return `${title}-${stamp}.md`;
 }
 
 function loadHistory() {

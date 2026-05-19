@@ -21,6 +21,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - file import and drag-and-drop log loading, including Run B imports for comparison
 - repeated failure and retry-loop detection
 - repeated-pattern section in exported reports
+- timestamped Markdown report filenames
 - debugging recommendations
 - downloadable Markdown report
 

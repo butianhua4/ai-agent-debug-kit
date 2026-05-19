@@ -54,3 +54,4 @@ Latest:
 - Expanded Run A/B metrics in exported Markdown reports.
 - Buyer guide included in release package.
 - CLI `--max-warnings` CI gate.
+- Timestamped Markdown report filenames in the web app.
