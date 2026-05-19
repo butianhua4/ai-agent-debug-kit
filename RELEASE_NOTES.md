@@ -75,3 +75,4 @@ Latest:
 - Web app JSON report export.
 - Web app Copy JSON action.
 - Public launch status checklist.
+- GitHub Actions release package artifact for version tags and manual runs.

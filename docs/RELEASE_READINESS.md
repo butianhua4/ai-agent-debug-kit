@@ -12,7 +12,7 @@
 - Browser extension prototype exists.
 - Release zip builds locally.
 - Release manifest is generated and validated.
-- GitHub Actions runs preflight and uploads a zip artifact.
+- GitHub Actions runs preflight and uploads a zip artifact for `main`, PRs, tags, and manual runs.
 - Buyer guide, privacy draft, store listing draft, and digital product draft exist.
 
 ## Preflight Command
@@ -27,6 +27,7 @@ Expected:
 - extension validation passes
 - release zip builds
 - release manifest validation passes
+- GitHub Actions artifact is named `ai-agent-debug-kit-<ref>`
 
 ## Operator Can Continue Without User
 
@@ -54,4 +55,3 @@ When available on desktop:
 1. Open latest GitHub Actions run.
 2. Confirm it is green.
 3. If green, approve creating the `v0.5.0` GitHub Release.
-
