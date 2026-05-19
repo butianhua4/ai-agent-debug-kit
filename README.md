@@ -37,6 +37,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - `robots.txt` and `sitemap.xml` for the public demo
 - JSON-LD software application metadata for the public demo
 - file import and drag-and-drop log loading, including Run B imports for comparison
+- GitHub issue templates for bugs, features, and log-format support
 - one-click log clearing
 - repeated failure and retry-loop detection
 - repeated-pattern section in exported reports

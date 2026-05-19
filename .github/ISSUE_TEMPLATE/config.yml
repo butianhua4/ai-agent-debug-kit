@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Browser demo
+    url: https://butianhua4.github.io/ai-agent-debug-kit/
+    about: Try the public demo before filing a parser or export issue.
+  - name: Release status
+    url: https://github.com/butianhua4/ai-agent-debug-kit/blob/main/docs/LAUNCH_STATUS.md
+    about: Check current launch and release progress.
