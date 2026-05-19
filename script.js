@@ -28,6 +28,7 @@ const clearLogs = document.querySelector("#clearLogs");
 const saveSnapshot = document.querySelector("#saveSnapshot");
 const copyReport = document.querySelector("#copyReport");
 const exportReport = document.querySelector("#exportReport");
+const exportJson = document.querySelector("#exportJson");
 const historyList = document.querySelector("#historyList");
 const logFields = document.querySelector(".log-fields");
 const inputPane = document.querySelector(".input-pane");
@@ -327,10 +328,21 @@ ${compareSummary ? `
 function downloadReport() {
   const report = getPreparedReport();
   const blob = new Blob([report], { type: "text/markdown" });
+  downloadBlob(blob, buildReportFilename());
+}
+
+function downloadJsonReport() {
+  if (!logInput.value.trim()) return;
+  const report = JSON.stringify(buildJsonReport(), null, 2);
+  const blob = new Blob([`${report}\n`], { type: "application/json" });
+  downloadBlob(blob, buildReportFilename("json"));
+}
+
+function downloadBlob(blob, filename) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = buildReportFilename();
+  link.download = filename;
   document.body.appendChild(link);
   link.click();
   link.remove();
@@ -340,6 +352,61 @@ function downloadReport() {
 function getPreparedReport() {
   const report = buildReport();
   return redactReport.checked ? redactSensitiveText(report) : report;
+}
+
+function buildJsonReport() {
+  const events = parseLogs(logInput.value);
+  const summary = summarize(events);
+  const compareEvents = isCompareMode && compareInput.value.trim() ? parseLogs(compareInput.value) : [];
+  const compareSummary = compareEvents.length ? summarize(compareEvents) : null;
+  return {
+    generatedAt: new Date().toISOString(),
+    title: sanitizeReportText(reportTitle.value.trim() || "AI Agent Debug Report"),
+    summary: serializeSummary(summary),
+    tools: Array.from(summary.tools.entries()).map(([name, data]) => ({
+      name,
+      calls: data.count,
+      errors: data.errors,
+      durationMs: data.durationMs
+    })),
+    repeatedMessages: summary.repeatedMessages,
+    firstErrors: events
+      .filter((event) => event.level === "error")
+      .slice(0, 5)
+      .map((event) => ({
+        event: event.event,
+        tool: event.tool,
+        message: event.message
+      })),
+    riskFlags: buildRiskText(events, summary).split("\n").map((line) => line.replace(/^- /, "")),
+    recommendation: buildRecommendationText(summary),
+    comparison: compareSummary ? {
+      summary: serializeSummary(compareSummary),
+      delta: {
+        totalEvents: compareSummary.count - summary.count,
+        toolCalls: compareSummary.toolCallCount - summary.toolCallCount,
+        errors: compareSummary.errorCount - summary.errorCount,
+        warnings: compareSummary.warningCount - summary.warningCount,
+        repeatedPatterns: compareSummary.repeatedMessages.length - summary.repeatedMessages.length,
+        inputTokens: compareSummary.inputTokens - summary.inputTokens,
+        outputTokens: compareSummary.outputTokens - summary.outputTokens,
+        estimatedCost: Number((compareSummary.estimatedCost - summary.estimatedCost).toFixed(6))
+      }
+    } : null
+  };
+}
+
+function serializeSummary(summary) {
+  return {
+    totalEvents: summary.count,
+    toolCalls: summary.toolCallCount,
+    errors: summary.errorCount,
+    warnings: summary.warningCount,
+    inputTokens: summary.inputTokens,
+    outputTokens: summary.outputTokens,
+    estimatedCost: Number(summary.estimatedCost.toFixed(6)),
+    repeatedPatterns: summary.repeatedMessages.length
+  };
 }
 
 async function copyMarkdownReport() {
@@ -384,14 +451,14 @@ function sanitizeReportText(text) {
   return text.replace(/[<>]/g, "").slice(0, 120);
 }
 
-function buildReportFilename() {
+function buildReportFilename(extension = "md") {
   const title = (reportTitle.value || "agent-debug-report")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 60) || "agent-debug-report";
   const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
-  return `${title}-${stamp}.md`;
+  return `${title}-${stamp}.${extension}`;
 }
 
 function loadHistory() {
@@ -517,6 +584,7 @@ loadSample.addEventListener("click", () => {
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 copyReport.addEventListener("click", copyMarkdownReport);
 exportReport.addEventListener("click", downloadReport);
+exportJson.addEventListener("click", downloadJsonReport);
 clearLogs.addEventListener("click", clearCurrentLogs);
 fileInput.addEventListener("change", () => importFile(fileInput.files[0]));
 compareFileInput.addEventListener("change", () => importFile(compareFileInput.files[0], compareInput));

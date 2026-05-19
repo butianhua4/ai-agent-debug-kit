@@ -42,6 +42,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - timestamped Markdown report filenames
 - copy-to-clipboard Markdown reports
 - Ctrl/Cmd+Enter report export shortcut
+- downloadable JSON reports from the web app
 - debugging recommendations
 - downloadable Markdown report
 
@@ -56,7 +57,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 | Run A/B comparison | Yes | No | No |
 | Local snapshot history | Yes | No | No |
 | Markdown report export | Yes | Yes | No |
-| JSON report output | No | Yes | No |
+| JSON report output | Yes | Yes | No |
 | CI error gate | No | Yes | No |
 | Repeated-pattern detection | Yes | Yes | Yes |
 
