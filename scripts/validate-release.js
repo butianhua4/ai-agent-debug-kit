@@ -16,6 +16,7 @@ const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 assert.equal(manifest.name, "ai-agent-debug-kit");
 assert.equal(manifest.version, "0.5.0");
 assert.ok(manifest.files.includes("index.html"));
+assert.ok(manifest.files.includes("SUPPORT.md"));
 assert.ok(manifest.files.includes("robots.txt"));
 assert.ok(manifest.files.includes("sitemap.xml"));
 assert.ok(manifest.files.includes("extension/popup.html"));

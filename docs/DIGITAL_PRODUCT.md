@@ -23,6 +23,7 @@ The release zip includes:
 - launch notes
 - listing copy
 - privacy draft
+- support guide
 - CI workflow example
 - changelog and roadmap
 - buyer guide
@@ -97,6 +98,7 @@ No backend. No account. No install required for the browser app.
 - `docs/LAUNCH_STATUS.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
+- `SUPPORT.md`
 - `docs/examples/sample-report.md`
 - `docs/examples/sample-report.json`
 - `dist/ai-agent-debug-kit.zip`

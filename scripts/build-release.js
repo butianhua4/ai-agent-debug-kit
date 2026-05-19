@@ -24,6 +24,7 @@ const files = [
   "sitemap.xml",
   "sample-agent-log.jsonl",
   "README.md",
+  "SUPPORT.md",
   "LICENSE",
   "SECURITY.md",
   "ROADMAP.md",
