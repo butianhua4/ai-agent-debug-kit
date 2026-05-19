@@ -66,3 +66,4 @@ Latest:
 - CLI can read logs from stdin.
 - CLI `--fail-on-risk` gate for structured risk flags.
 - Public Markdown and JSON sample reports for buyers and reviewers.
+- Web app Copy Markdown action with clipboard fallback.

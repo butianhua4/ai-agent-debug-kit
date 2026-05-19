@@ -26,6 +26,7 @@ const fileInput = document.querySelector("#fileInput");
 const compareFileInput = document.querySelector("#compareFileInput");
 const clearLogs = document.querySelector("#clearLogs");
 const saveSnapshot = document.querySelector("#saveSnapshot");
+const copyReport = document.querySelector("#copyReport");
 const exportReport = document.querySelector("#exportReport");
 const historyList = document.querySelector("#historyList");
 const logFields = document.querySelector(".log-fields");
@@ -324,7 +325,7 @@ ${compareSummary ? `
 }
 
 function downloadReport() {
-  const report = redactReport.checked ? redactSensitiveText(buildReport()) : buildReport();
+  const report = getPreparedReport();
   const blob = new Blob([report], { type: "text/markdown" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -334,6 +335,49 @@ function downloadReport() {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+}
+
+function getPreparedReport() {
+  const report = buildReport();
+  return redactReport.checked ? redactSensitiveText(report) : report;
+}
+
+async function copyMarkdownReport() {
+  if (!logInput.value.trim()) return;
+  const report = getPreparedReport();
+  try {
+    if (navigator.clipboard?.writeText && window.isSecureContext) {
+      await navigator.clipboard.writeText(report);
+    } else {
+      copyTextFallback(report);
+    }
+    flashButtonLabel(copyReport, "Copied");
+  } catch {
+    copyTextFallback(report);
+    flashButtonLabel(copyReport, "Copied");
+  }
+}
+
+function copyTextFallback(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.left = "-9999px";
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+}
+
+function flashButtonLabel(button, label) {
+  const original = button.textContent;
+  button.textContent = label;
+  button.disabled = true;
+  window.setTimeout(() => {
+    button.textContent = original;
+    button.disabled = false;
+  }, 1200);
 }
 
 function sanitizeReportText(text) {
@@ -471,6 +515,7 @@ loadSample.addEventListener("click", () => {
 });
 
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
+copyReport.addEventListener("click", copyMarkdownReport);
 exportReport.addEventListener("click", downloadReport);
 clearLogs.addEventListener("click", clearCurrentLogs);
 fileInput.addEventListener("change", () => importFile(fileInput.files[0]));
