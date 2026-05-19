@@ -61,3 +61,4 @@ Latest:
 - Web app Clear button for current logs.
 - README quick links for demo, buyer guide, release draft, and mobile progress.
 - CLI reference documentation.
+- Release readiness checklist.

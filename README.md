@@ -12,6 +12,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - CI usage: `docs/CI_USAGE.md`
 - Buyer guide: `BUYER_GUIDE.md`
 - GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`
+- Release readiness: `docs/RELEASE_READINESS.md`
 - Digital product pack: `docs/DIGITAL_PRODUCT.md`
 - Mobile progress page: `docs/MOBILE_STATUS.md`
 
