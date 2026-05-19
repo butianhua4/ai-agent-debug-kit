@@ -19,6 +19,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - model pricing presets
 - redacted report export
 - file import and drag-and-drop log loading, including Run B imports for comparison
+- one-click log clearing
 - repeated failure and retry-loop detection
 - repeated-pattern section in exported reports
 - timestamped Markdown report filenames

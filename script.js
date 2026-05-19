@@ -24,6 +24,7 @@ const sampleSelect = document.querySelector("#sampleSelect");
 const loadSample = document.querySelector("#loadSample");
 const fileInput = document.querySelector("#fileInput");
 const compareFileInput = document.querySelector("#compareFileInput");
+const clearLogs = document.querySelector("#clearLogs");
 const saveSnapshot = document.querySelector("#saveSnapshot");
 const exportReport = document.querySelector("#exportReport");
 const historyList = document.querySelector("#historyList");
@@ -431,6 +432,14 @@ function deleteSnapshot(id) {
   renderHistory();
 }
 
+function clearCurrentLogs() {
+  logInput.value = "";
+  compareInput.value = "";
+  fileInput.value = "";
+  compareFileInput.value = "";
+  render();
+}
+
 async function importFile(file, target = logInput) {
   if (!file) return;
   target.value = await file.text();
@@ -463,6 +472,7 @@ loadSample.addEventListener("click", () => {
 
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 exportReport.addEventListener("click", downloadReport);
+clearLogs.addEventListener("click", clearCurrentLogs);
 fileInput.addEventListener("change", () => importFile(fileInput.files[0]));
 compareFileInput.addEventListener("change", () => importFile(compareFileInput.files[0], compareInput));
 logInput.addEventListener("input", render);
