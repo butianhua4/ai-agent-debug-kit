@@ -74,3 +74,4 @@ Latest:
 - JSON-LD software application metadata for the public demo.
 - Web app JSON report export.
 - Web app Copy JSON action.
+- Public launch status checklist.

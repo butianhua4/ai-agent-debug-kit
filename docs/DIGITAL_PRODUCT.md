@@ -94,6 +94,7 @@ No backend. No account. No install required for the browser app.
 - `LISTING.md`
 - `docs/STORE_LISTING.md`
 - `docs/PRODUCT_PAGE.md`
+- `docs/LAUNCH_STATUS.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
 - `docs/examples/sample-report.md`
