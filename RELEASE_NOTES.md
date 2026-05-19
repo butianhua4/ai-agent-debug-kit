@@ -1,8 +1,8 @@
 # Release Notes
 
-## v0.4.0
+## v0.5.0
 
-AI Agent Debug Kit now includes both a browser app and a Node CLI.
+AI Agent Debug Kit now includes a browser app, Node CLI, CI gates, release package, browser extension prototype, and product distribution drafts.
 
 Highlights:
 

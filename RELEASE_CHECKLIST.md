@@ -43,7 +43,7 @@ This runs checks and builds `dist/ai-agent-debug-kit.zip`.
 
 Suggested GitHub release title:
 
-`AI Agent Debug Kit v0.4.0`
+`AI Agent Debug Kit v0.5.0`
 
 Suggested release asset:
 

@@ -14,7 +14,7 @@ assert.ok(fs.existsSync(manifestPath), "package manifest is missing");
 
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 assert.equal(manifest.name, "ai-agent-debug-kit");
-assert.equal(manifest.version, "0.4.0");
+assert.equal(manifest.version, "0.5.0");
 assert.ok(manifest.files.includes("index.html"));
 assert.ok(manifest.files.includes("extension/popup.html"));
 assert.ok(manifest.files.includes("extension/core.js"));

@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.5.0
+
+### Added
+
+- Run B file import for comparison mode.
+- Expanded Run A/B metrics in exported Markdown reports.
+- Buyer guide included in the release package.
+- CLI `--max-warnings` gate.
+- CLI threshold failure messages on stderr.
+- Timestamped Markdown report filenames.
+- README quick links.
+- CLI reference documentation.
+- Mobile status page.
+- GitHub release draft.
+
+### Changed
+
+- Repeated-pattern detection now filters generic event noise.
+- Bounty evaluation notes reject reserved/closed Archestra candidates.
+
 ## 0.4.0
 
 ### Added

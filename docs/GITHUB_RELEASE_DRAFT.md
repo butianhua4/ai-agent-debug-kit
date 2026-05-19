@@ -4,11 +4,11 @@ Do not publish a release until the user confirms.
 
 ## Tag
 
-`v0.4.0`
+`v0.5.0`
 
 ## Title
 
-AI Agent Debug Kit v0.4.0
+AI Agent Debug Kit v0.5.0
 
 ## Asset
 
@@ -20,7 +20,7 @@ The same zip is also uploaded by GitHub Actions as the `ai-agent-debug-kit` arti
 
 ## Release Notes
 
-AI Agent Debug Kit v0.4.0 packages the project as a local-first AI agent log debugging tool.
+AI Agent Debug Kit v0.5.0 packages the project as a local-first AI agent log debugging tool.
 
 ### Highlights
 
@@ -64,9 +64,8 @@ Expected:
 1. Run `npm run preflight`.
 2. Open GitHub Releases.
 3. Create new release.
-4. Tag: `v0.4.0`.
-5. Title: `AI Agent Debug Kit v0.4.0`.
+4. Tag: `v0.5.0`.
+5. Title: `AI Agent Debug Kit v0.5.0`.
 6. Paste release notes above.
 7. Upload `dist/ai-agent-debug-kit.zip`.
 8. Publish only after user confirms.
-
