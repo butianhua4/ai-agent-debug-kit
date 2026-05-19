@@ -16,6 +16,7 @@ node cli.js [log-file] [options]
 | `--output-price <number>` | Output token price per 1M tokens. Default: `10`. |
 | `--max-errors <number>` | Exit with code `2` when error count exceeds this number. |
 | `--max-warnings <number>` | Exit with code `3` when warning count exceeds this number. |
+| `--fail-on-risk <all|ids>` | Exit with code `4` when matching risk flags are found. IDs: `errors`, `warnings`, `cost`, `repeated`, `secrets`, `permission`. |
 | `--help` | Print help. |
 
 When no file is provided, the CLI reads from stdin.
@@ -28,6 +29,7 @@ When no file is provided, the CLI reads from stdin.
 | `1` | CLI usage problem. |
 | `2` | Error threshold exceeded. |
 | `3` | Warning threshold exceeded. |
+| `4` | Risk flag gate failed. |
 
 ## Examples
 
@@ -53,6 +55,12 @@ CI gate:
 
 ```bash
 node cli.js sample-agent-log.jsonl --max-errors 0 --max-warnings 0
+```
+
+Risk gate:
+
+```bash
+node cli.js sample-agent-log.jsonl --fail-on-risk secrets,permission
 ```
 
 Custom pricing:

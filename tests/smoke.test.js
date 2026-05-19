@@ -76,6 +76,7 @@ assert.equal(jsonReport.summary.toolCalls, 5);
 assert.equal(jsonReport.summary.errors, 1);
 assert.ok(jsonReport.tools.some((tool) => tool.name === "shell.exec"));
 assert.ok(Array.isArray(jsonReport.repeatedMessages));
+assert.ok(jsonReport.riskFlags.some((flag) => flag.id === "errors"));
 const stdinReport = generateReport(sample, { source: "stdin" });
 assert.match(stdinReport, /Source: stdin/);
 
@@ -96,6 +97,11 @@ try {
   stderrOutput = "";
   assert.equal(run(["sample-agent-log.jsonl", "--max-warnings", "0"]), 3);
   assert.match(stderrOutput, /warning threshold exceeded/);
+  stderrOutput = "";
+  assert.equal(run(["sample-agent-log.jsonl", "--fail-on-risk", "permission"]), 0);
+  stderrOutput = "";
+  assert.equal(run(["sample-agent-log.jsonl", "--fail-on-risk", "errors,repeated"]), 4);
+  assert.match(stderrOutput, /risk gate failed \(errors/);
 } finally {
   process.stdout.write = originalStdoutWrite;
   process.stderr.write = originalStderrWrite;

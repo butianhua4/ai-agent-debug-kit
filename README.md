@@ -74,10 +74,12 @@ Optional flags:
 node cli.js sample-agent-log.jsonl --input-price 1.25 --output-price 10 --no-redact
 node cli.js sample-agent-log.jsonl --json > report.json
 node cli.js sample-agent-log.jsonl --max-errors 0 --max-warnings 0
+node cli.js sample-agent-log.jsonl --fail-on-risk secrets,permission
 type sample-agent-log.jsonl | node cli.js --json
 ```
 
 `--max-errors` exits with code `2` when the report exceeds the allowed error count. `--max-warnings` exits with code `3` when the warning count is too high.
+`--fail-on-risk` exits with code `4` when selected risk flags are detected, such as `secrets`, `permission`, `repeated`, or `all`.
 
 More CI examples are in `docs/CI_USAGE.md`.
 

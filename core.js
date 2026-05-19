@@ -174,14 +174,19 @@
   }
 
   function buildRiskText(events, summary) {
-    const flags = [];
-    if (summary.errorCount > 0) flags.push(`- ${summary.errorCount} error event(s) need review before shipping.`);
-    if (summary.warningCount > 0) flags.push(`- ${summary.warningCount} warning event(s) may indicate retries, limits, or flaky tools.`);
-    if (summary.estimatedCost > 0.1) flags.push("- Token cost is high for a single run. Consider caching or shorter context.");
-    if (summary.repeatedMessages.length > 0) flags.push(`- ${summary.repeatedMessages.length} repeated message pattern(s) detected. Check for retry loops.`);
-    if (events.some((event) => /password|secret|api[_-]?key|token/i.test(event.raw))) flags.push("- Potential secret detected in logs. Redact before sharing.");
-    if (events.some((event) => /permission|denied|unauthorized/i.test(event.raw))) flags.push("- Permission-related text detected. Check auth and sandbox boundaries.");
+    const flags = collectRiskFlags(events, summary).map((flag) => `- ${flag.message}`);
     return flags.join("\n") || "- No obvious risk flags detected.";
+  }
+
+  function collectRiskFlags(events, summary) {
+    const flags = [];
+    if (summary.errorCount > 0) flags.push({ id: "errors", message: `${summary.errorCount} error event(s) need review before shipping.` });
+    if (summary.warningCount > 0) flags.push({ id: "warnings", message: `${summary.warningCount} warning event(s) may indicate retries, limits, or flaky tools.` });
+    if (summary.estimatedCost > 0.1) flags.push({ id: "cost", message: "Token cost is high for a single run. Consider caching or shorter context." });
+    if (summary.repeatedMessages.length > 0) flags.push({ id: "repeated", message: `${summary.repeatedMessages.length} repeated message pattern(s) detected. Check for retry loops.` });
+    if (events.some((event) => /password|secret|api[_-]?key|token/i.test(event.raw))) flags.push({ id: "secrets", message: "Potential secret detected in logs. Redact before sharing." });
+    if (events.some((event) => /permission|denied|unauthorized/i.test(event.raw))) flags.push({ id: "permission", message: "Permission-related text detected. Check auth and sandbox boundaries." });
+    return flags;
   }
 
   function buildRecommendationText(summary) {
@@ -202,6 +207,7 @@
   return {
     parseLogs,
     summarize,
+    collectRiskFlags,
     buildRiskText,
     buildRecommendationText,
     redactSensitiveText

@@ -64,3 +64,4 @@ Latest:
 - Release readiness checklist.
 - Ctrl/Cmd+Enter shortcut for web report export.
 - CLI can read logs from stdin.
+- CLI `--fail-on-risk` gate for structured risk flags.
