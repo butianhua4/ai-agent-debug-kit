@@ -51,7 +51,7 @@ Suggested release asset:
 
 Suggested release notes:
 
-Use `RELEASE_NOTES.md`.
+Use `docs/GITHUB_RELEASE_DRAFT.md`.
 
 CI artifact:
 

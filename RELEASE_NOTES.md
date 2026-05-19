@@ -48,6 +48,8 @@ See `CHANGELOG.md` for version history.
 
 Digital product packaging draft: `docs/DIGITAL_PRODUCT.md`.
 
+GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
+
 Latest:
 
 - Run B file import for comparison mode.
