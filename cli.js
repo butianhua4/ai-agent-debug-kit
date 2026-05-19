@@ -24,6 +24,7 @@ function run(args) {
   const inputPrice = readNumberFlag(args, "--input-price", 1.25);
   const outputPrice = readNumberFlag(args, "--output-price", 10);
   const maxErrors = readNumberFlag(args, "--max-errors", null);
+  const maxWarnings = readNumberFlag(args, "--max-warnings", null);
   const redact = !args.includes("--no-redact");
   const json = args.includes("--json");
 
@@ -43,9 +44,10 @@ function run(args) {
   });
 
   process.stdout.write(report);
-  if (maxErrors !== null) {
+  if (maxErrors !== null || maxWarnings !== null) {
     const { summary } = analyze(raw, { input: inputPrice, output: outputPrice });
-    return summary.errorCount > maxErrors ? 2 : 0;
+    if (maxErrors !== null && summary.errorCount > maxErrors) return 2;
+    if (maxWarnings !== null && summary.warningCount > maxWarnings) return 3;
   }
   return 0;
 }
@@ -69,7 +71,7 @@ function printHelp() {
   process.stdout.write(`AI Agent Debug Kit CLI
 
 Usage:
-  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--max-errors 0] [--no-redact] [--json]
+  node cli.js <log-file> [--input-price 1.25] [--output-price 10] [--max-errors 0] [--max-warnings 0] [--no-redact] [--json]
 
 Example:
   node cli.js sample-agent-log.jsonl > report.md

@@ -83,6 +83,8 @@ process.stderr.write = () => true;
 try {
   assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "1"]), 0);
   assert.equal(run(["sample-agent-log.jsonl", "--max-errors", "0"]), 2);
+  assert.equal(run(["sample-agent-log.jsonl", "--max-warnings", "1"]), 0);
+  assert.equal(run(["sample-agent-log.jsonl", "--max-warnings", "0"]), 3);
 } finally {
   process.stdout.write = originalStdoutWrite;
   process.stderr.write = originalStderrWrite;
