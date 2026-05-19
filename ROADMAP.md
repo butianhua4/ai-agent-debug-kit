@@ -24,10 +24,16 @@
 - Add redacted report export.
 - Add CLI report generator.
 - Add smoke tests.
+- Add CI error gate and JSON output.
+- Add browser extension prototype.
+- Add release package validation.
+- Add repeated message detection.
 
 ## Next
 
-- Browser extension wrapper.
 - Import OpenAI Responses API traces.
-- Highlight repeated tool failures and retry loops.
-- Export redacted report variants.
+- Framework-specific import presets.
+- Browser extension screenshots and store-ready PNG icons.
+- NPM package mode.
+- GitHub release automation.
+- Report comparison export for CLI.

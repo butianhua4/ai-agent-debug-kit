@@ -138,6 +138,10 @@ See `CONTRIBUTING.md`.
 
 See `LAUNCH.md` for positioning, launch copy, and product listing material.
 
+## Changelog
+
+See `CHANGELOG.md`.
+
 ## Store And Privacy Drafts
 
 - `docs/STORE_LISTING.md`

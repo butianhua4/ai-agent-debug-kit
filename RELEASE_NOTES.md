@@ -43,3 +43,5 @@ npm run build:release
 ```
 
 The package is created in `dist/`.
+
+See `CHANGELOG.md` for version history.
