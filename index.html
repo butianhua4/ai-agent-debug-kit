@@ -45,7 +45,13 @@
             <textarea id="logInput" spellcheck="false" placeholder="Paste JSONL, JSON, or plain agent logs here..."></textarea>
           </label>
           <label id="compareField" class="hidden">
-            <span>Run B</span>
+            <span class="field-title">
+              Run B
+              <label class="mini-file-button">
+                Import
+                <input id="compareFileInput" type="file" accept=".json,.jsonl,.log,.txt,text/plain,application/json">
+              </label>
+            </span>
             <textarea id="compareInput" spellcheck="false" placeholder="Paste a second run to compare against Run A..."></textarea>
           </label>
         </div>

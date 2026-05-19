@@ -23,6 +23,7 @@ const comparison = document.querySelector("#comparison");
 const sampleSelect = document.querySelector("#sampleSelect");
 const loadSample = document.querySelector("#loadSample");
 const fileInput = document.querySelector("#fileInput");
+const compareFileInput = document.querySelector("#compareFileInput");
 const saveSnapshot = document.querySelector("#saveSnapshot");
 const exportReport = document.querySelector("#exportReport");
 const historyList = document.querySelector("#historyList");
@@ -414,9 +415,9 @@ function deleteSnapshot(id) {
   renderHistory();
 }
 
-async function importFile(file) {
+async function importFile(file, target = logInput) {
   if (!file) return;
-  logInput.value = await file.text();
+  target.value = await file.text();
   render();
 }
 
@@ -447,6 +448,7 @@ loadSample.addEventListener("click", () => {
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 exportReport.addEventListener("click", downloadReport);
 fileInput.addEventListener("change", () => importFile(fileInput.files[0]));
+compareFileInput.addEventListener("change", () => importFile(compareFileInput.files[0], compareInput));
 logInput.addEventListener("input", render);
 compareInput.addEventListener("input", render);
 inputPrice.addEventListener("input", render);
