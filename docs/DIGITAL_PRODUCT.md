@@ -24,6 +24,7 @@ The release zip includes:
 - listing copy
 - privacy draft
 - support guide
+- demo script
 - CI workflow example
 - changelog and roadmap
 - buyer guide
@@ -96,6 +97,7 @@ No backend. No account. No install required for the browser app.
 - `docs/STORE_LISTING.md`
 - `docs/PRODUCT_PAGE.md`
 - `docs/LAUNCH_STATUS.md`
+- `docs/DEMO_SCRIPT.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
 - `SUPPORT.md`

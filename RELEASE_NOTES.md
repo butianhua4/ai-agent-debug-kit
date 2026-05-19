@@ -78,3 +78,4 @@ Latest:
 - GitHub Actions release package artifact for version tags and manual runs.
 - GitHub issue template for log-format support requests.
 - Public support guide for safe log sharing and issue reports.
+- Demo script for screenshots, GIFs, and launch videos.
