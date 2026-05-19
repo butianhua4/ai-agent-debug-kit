@@ -68,3 +68,4 @@ Latest:
 - Public Markdown and JSON sample reports for buyers and reviewers.
 - Web app Copy Markdown action with clipboard fallback.
 - Copyable GitHub Actions risk gate workflow.
+- Product page copy for paid download listings.

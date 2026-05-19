@@ -93,6 +93,7 @@ No backend. No account. No install required for the browser app.
 - `LAUNCH.md`
 - `LISTING.md`
 - `docs/STORE_LISTING.md`
+- `docs/PRODUCT_PAGE.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
 - `docs/examples/sample-report.md`

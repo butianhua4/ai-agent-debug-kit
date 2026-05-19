@@ -13,6 +13,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Example Markdown report: `docs/examples/sample-report.md`
 - Example JSON report: `docs/examples/sample-report.json`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
+- Product page copy: `docs/PRODUCT_PAGE.md`
 - Buyer guide: `BUYER_GUIDE.md`
 - GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`
 - Release readiness: `docs/RELEASE_READINESS.md`
