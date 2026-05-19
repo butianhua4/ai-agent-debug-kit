@@ -79,3 +79,4 @@ Latest:
 - GitHub issue template for log-format support requests.
 - Public support guide for safe log sharing and issue reports.
 - Demo script for screenshots, GIFs, and launch videos.
+- Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
