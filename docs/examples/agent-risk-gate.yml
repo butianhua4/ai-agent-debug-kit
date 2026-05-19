@@ -1,0 +1,30 @@
+name: Agent Risk Gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  agent-risk-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate Markdown report
+        run: node cli.js sample-agent-log.jsonl > agent-debug-report.md
+
+      - name: Block sensitive or unstable agent logs
+        run: node cli.js sample-agent-log.jsonl --fail-on-risk secrets,permission,repeated
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-debug-report
+          path: agent-debug-report.md

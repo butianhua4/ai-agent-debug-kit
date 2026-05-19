@@ -14,8 +14,17 @@ Exit codes:
 - `1`: CLI usage problem
 - `2`: error count exceeded `--max-errors`
 - `3`: warning count exceeded `--max-warnings`
+- `4`: selected risk flags matched `--fail-on-risk`
 
 When a threshold is exceeded, the CLI writes a short reason to stderr.
+
+## Risk Gate
+
+```bash
+node cli.js agent-run.jsonl --fail-on-risk secrets,permission,repeated
+```
+
+Use this when the job should fail on sensitive logs, auth/sandbox issues, repeated retry loops, high-cost runs, or any other structured risk flag. Use `--fail-on-risk all` to block on every detected risk.
 
 ## JSON Report
 
@@ -49,6 +58,27 @@ jobs:
 ```
 
 A copyable workflow is available at `docs/examples/agent-log-gate.yml`.
+
+Risk-focused workflow:
+
+```yaml
+name: Agent Risk Gate
+
+on:
+  pull_request:
+
+jobs:
+  agent-risk-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node cli.js sample-agent-log.jsonl --fail-on-risk secrets,permission,repeated
+```
+
+A copyable risk workflow is available at `docs/examples/agent-risk-gate.yml`.
 
 ## Pricing
 
