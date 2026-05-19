@@ -80,3 +80,4 @@ Latest:
 - Public support guide for safe log sharing and issue reports.
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
+- Client delivery template for paid debugging reports.
