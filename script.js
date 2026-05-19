@@ -206,6 +206,8 @@ function renderComparison(summaryA, summaryB) {
     ["Events", summaryA.count, summaryB.count],
     ["Tool Calls", summaryA.toolCallCount, summaryB.toolCallCount],
     ["Errors", summaryA.errorCount, summaryB.errorCount],
+    ["Warnings", summaryA.warningCount, summaryB.warningCount],
+    ["Repeated", summaryA.repeatedMessages.length, summaryB.repeatedMessages.length],
     ["Input Tokens", summaryA.inputTokens, summaryB.inputTokens],
     ["Output Tokens", summaryA.outputTokens, summaryB.outputTokens],
     ["Cost", summaryA.estimatedCost, summaryB.estimatedCost, true]
@@ -311,6 +313,10 @@ ${compareSummary ? `
 | Events | ${summary.count} | ${compareSummary.count} | ${compareSummary.count - summary.count} |
 | Tool Calls | ${summary.toolCallCount} | ${compareSummary.toolCallCount} | ${compareSummary.toolCallCount - summary.toolCallCount} |
 | Errors | ${summary.errorCount} | ${compareSummary.errorCount} | ${compareSummary.errorCount - summary.errorCount} |
+| Warnings | ${summary.warningCount} | ${compareSummary.warningCount} | ${compareSummary.warningCount - summary.warningCount} |
+| Repeated Patterns | ${summary.repeatedMessages.length} | ${compareSummary.repeatedMessages.length} | ${compareSummary.repeatedMessages.length - summary.repeatedMessages.length} |
+| Input Tokens | ${summary.inputTokens} | ${compareSummary.inputTokens} | ${compareSummary.inputTokens - summary.inputTokens} |
+| Output Tokens | ${summary.outputTokens} | ${compareSummary.outputTokens} | ${compareSummary.outputTokens - summary.outputTokens} |
 | Cost | $${summary.estimatedCost.toFixed(4)} | $${compareSummary.estimatedCost.toFixed(4)} | $${(compareSummary.estimatedCost - summary.estimatedCost).toFixed(4)} |
 ` : ""}
 `;

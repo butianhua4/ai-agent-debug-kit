@@ -13,7 +13,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - error and warning flags
 - rough token cost estimates
 - configurable model pricing
-- run A/B comparison
+- run A/B comparison with expanded exported metrics
 - local snapshot history
 - multiple demo scenarios
 - model pricing presets

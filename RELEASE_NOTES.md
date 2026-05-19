@@ -51,3 +51,4 @@ Digital product packaging draft: `docs/DIGITAL_PRODUCT.md`.
 Latest:
 
 - Run B file import for comparison mode.
+- Expanded Run A/B metrics in exported Markdown reports.
