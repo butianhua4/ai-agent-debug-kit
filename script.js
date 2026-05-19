@@ -28,6 +28,7 @@ const clearLogs = document.querySelector("#clearLogs");
 const saveSnapshot = document.querySelector("#saveSnapshot");
 const copyReport = document.querySelector("#copyReport");
 const exportReport = document.querySelector("#exportReport");
+const copyJson = document.querySelector("#copyJson");
 const exportJson = document.querySelector("#exportJson");
 const historyList = document.querySelector("#historyList");
 const logFields = document.querySelector(".log-fields");
@@ -412,16 +413,26 @@ function serializeSummary(summary) {
 async function copyMarkdownReport() {
   if (!logInput.value.trim()) return;
   const report = getPreparedReport();
+  await copyTextWithFeedback(report, copyReport);
+}
+
+async function copyJsonReport() {
+  if (!logInput.value.trim()) return;
+  const report = `${JSON.stringify(buildJsonReport(), null, 2)}\n`;
+  await copyTextWithFeedback(report, copyJson);
+}
+
+async function copyTextWithFeedback(text, button) {
   try {
     if (navigator.clipboard?.writeText && window.isSecureContext) {
-      await navigator.clipboard.writeText(report);
+      await navigator.clipboard.writeText(text);
     } else {
-      copyTextFallback(report);
+      copyTextFallback(text);
     }
-    flashButtonLabel(copyReport, "Copied");
+    flashButtonLabel(button, "Copied");
   } catch {
-    copyTextFallback(report);
-    flashButtonLabel(copyReport, "Copied");
+    copyTextFallback(text);
+    flashButtonLabel(button, "Copied");
   }
 }
 
@@ -584,6 +595,7 @@ loadSample.addEventListener("click", () => {
 saveSnapshot.addEventListener("click", saveCurrentSnapshot);
 copyReport.addEventListener("click", copyMarkdownReport);
 exportReport.addEventListener("click", downloadReport);
+copyJson.addEventListener("click", copyJsonReport);
 exportJson.addEventListener("click", downloadJsonReport);
 clearLogs.addEventListener("click", clearCurrentLogs);
 fileInput.addEventListener("change", () => importFile(fileInput.files[0]));

@@ -73,3 +73,4 @@ Latest:
 - Public demo `robots.txt` and `sitemap.xml`.
 - JSON-LD software application metadata for the public demo.
 - Web app JSON report export.
+- Web app Copy JSON action.

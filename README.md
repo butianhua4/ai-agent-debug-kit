@@ -41,6 +41,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - repeated-pattern section in exported reports
 - timestamped Markdown report filenames
 - copy-to-clipboard Markdown reports
+- copy-to-clipboard JSON reports
 - Ctrl/Cmd+Enter report export shortcut
 - downloadable JSON reports from the web app
 - debugging recommendations
