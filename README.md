@@ -34,6 +34,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - redacted report export
 - SEO and social preview metadata for the public demo
 - `robots.txt` and `sitemap.xml` for the public demo
+- JSON-LD software application metadata for the public demo
 - file import and drag-and-drop log loading, including Run B imports for comparison
 - one-click log clearing
 - repeated failure and retry-loop detection
