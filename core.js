@@ -157,13 +157,16 @@
   }
 
   function normalizeMessage(message) {
-    return String(message || "")
+    const normalized = String(message || "")
       .toLowerCase()
       .replace(/\d{4}-\d{2}-\d{2}t[\d:.]+z/g, "<timestamp>")
       .replace(/\d+/g, "<number>")
       .replace(/\s+/g, " ")
       .trim()
       .slice(0, 160);
+    if (normalized.length < 12) return "";
+    if (/^(event|log|tool_call|tool_result|run_started|run_completed)$/.test(normalized)) return "";
+    return normalized;
   }
 
   function estimateCost(inputTokens, outputTokens, pricing) {

@@ -47,6 +47,7 @@ const repeatedSummary = summarize(parseLogs([
 ].join("\n")), { input: 0, output: 0 });
 assert.equal(repeatedSummary.repeatedMessages.length, 1);
 assert.equal(repeatedSummary.repeatedMessages[0].count, 3);
+assert.equal(summarize(parseLogs('{"event":"tool_call"}\n{"event":"tool_call"}'), { input: 0, output: 0 }).repeatedMessages.length, 0);
 const repeatedReport = generateReport([
   '{"level":"warn","message":"retry timeout after 1000ms","tool":"browser"}',
   '{"level":"warn","message":"retry timeout after 2000ms","tool":"browser"}'
