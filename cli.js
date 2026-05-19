@@ -93,6 +93,10 @@ function buildReport(events, summary, source) {
     .slice(0, 5)
     .map((event) => `- ${event.tool || event.event}: ${event.message}`)
     .join("\n") || "- None";
+  const repeatedRows = summary.repeatedMessages
+    .slice(0, 10)
+    .map((item) => `| ${item.count} | ${item.message} |`)
+    .join("\n") || "| 0 | None |";
 
   return `# AI Agent Debug Report
 
@@ -122,6 +126,12 @@ ${firstErrors}
 ## Risk Flags
 
 ${buildRiskText(events, summary)}
+
+## Repeated Patterns
+
+| Count | Message Pattern |
+| ---: | --- |
+${repeatedRows}
 
 ## Recommendation
 

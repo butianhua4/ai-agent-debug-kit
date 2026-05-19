@@ -32,6 +32,7 @@ Highlights:
 - release package manifest and validation
 - repeated message and retry-loop detection
 - copyable GitHub Actions gate example
+- repeated-pattern section in Markdown reports
 - store listing and privacy drafts
 
 Build a local release package:

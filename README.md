@@ -20,6 +20,7 @@ It accepts JSONL, JSON, or plain-text logs and produces:
 - redacted report export
 - file import and drag-and-drop log loading
 - repeated failure and retry-loop detection
+- repeated-pattern section in exported reports
 - debugging recommendations
 - downloadable Markdown report
 

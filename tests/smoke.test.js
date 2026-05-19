@@ -47,6 +47,12 @@ const repeatedSummary = summarize(parseLogs([
 ].join("\n")), { input: 0, output: 0 });
 assert.equal(repeatedSummary.repeatedMessages.length, 1);
 assert.equal(repeatedSummary.repeatedMessages[0].count, 3);
+const repeatedReport = generateReport([
+  '{"level":"warn","message":"retry timeout after 1000ms","tool":"browser"}',
+  '{"level":"warn","message":"retry timeout after 2000ms","tool":"browser"}'
+].join("\n"), { source: "retries.jsonl" });
+assert.match(repeatedReport, /Repeated Patterns/);
+assert.match(repeatedReport, /retry timeout after <number>ms/);
 
 const secretLog = '{"level":"error","event":"tool_result","message":"token: abcdefghijklmnop user test@example.com sk-testsecret123456"}\n';
 const redacted = generateReport(secretLog, { source: "secret.jsonl" });

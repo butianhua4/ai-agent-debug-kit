@@ -253,6 +253,10 @@ function buildReport() {
     .slice(0, 5)
     .map((event) => `- ${event.tool || event.event}: ${event.message}`)
     .join("\n") || "- None";
+  const repeatedRows = summary.repeatedMessages
+    .slice(0, 10)
+    .map((item) => `| ${item.count} | ${item.message} |`)
+    .join("\n") || "| 0 | None |";
 
   const riskText = buildRiskText(events, summary);
   const recommendationText = buildRecommendationText(summary);
@@ -286,6 +290,12 @@ ${firstErrors}
 ## Risk Flags
 
 ${riskText}
+
+## Repeated Patterns
+
+| Count | Message Pattern |
+| ---: | --- |
+${repeatedRows}
 
 ## Recommendation
 
