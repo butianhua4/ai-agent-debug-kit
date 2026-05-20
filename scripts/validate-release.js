@@ -41,6 +41,7 @@ assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));
 assert.ok(manifest.files.includes("docs/OPPORTUNITY_PIPELINE.md"));
 assert.ok(manifest.files.includes("docs/PLATFORM_SETUP.md"));
+assert.ok(manifest.files.includes("docs/PORTFOLIO_CASE_AGENT_LOG_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/PRODUCT_PAGE.md"));
 assert.ok(manifest.files.includes("docs/QUICK_DIAGNOSIS_OFFER.md"));
 assert.ok(manifest.files.includes("docs/RESCUE_BUYER_BRIEF.md"));
