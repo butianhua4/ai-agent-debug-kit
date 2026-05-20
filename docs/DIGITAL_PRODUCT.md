@@ -28,6 +28,8 @@ The release zip includes:
 - service offer copy
 - AI agent bug report triage offer
 - AI workflow cost and failure audit offer
+- AI workflow quick diagnosis offer
+- Chinese quick diagnosis listing copy
 - platform setup checklist
 - client delivery template
 - client intake form
@@ -108,6 +110,8 @@ No backend. No account. No install required for the browser app.
 - `docs/SERVICE_OFFERS.md`
 - `docs/BUG_REPORT_TRIAGE_OFFER.md`
 - `docs/AI_WORKFLOW_COST_AUDIT_OFFER.md`
+- `docs/QUICK_DIAGNOSIS_OFFER.md`
+- `docs/CHINESE_QUICK_DIAGNOSIS_LISTING.md`
 - `docs/PLATFORM_SETUP.md`
 - `docs/CLIENT_DELIVERY_TEMPLATE.md`
 - `docs/CLIENT_INTAKE_FORM.md`

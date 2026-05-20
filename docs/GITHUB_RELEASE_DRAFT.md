@@ -44,6 +44,8 @@ AI Agent Debug Kit v0.5.0 packages the project as a local-first AI agent log deb
 - Client intake form for safely scoping buyer requests
 - AI-generated bug report and agent log triage offer
 - AI workflow cost and failure audit offer
+- AI workflow quick diagnosis offer for low-friction first orders
+- Chinese quick diagnosis listing copy
 - GitHub Actions checks and artifact upload
 
 ### Copy/Paste Release Body
@@ -67,6 +69,8 @@ Highlights:
 - Client intake form for safe buyer qualification
 - AI-generated bug report triage offer for noisy issue queues
 - AI workflow cost and failure audit offer for unstable or expensive automations
+- AI workflow quick diagnosis offer for USD 49 / RMB 299 entry orders
+- Chinese listing copy for AI workflow quick diagnosis
 - Release zip with docs, examples, assets, CLI, browser app, and extension prototype
 
 Useful links:
@@ -118,6 +122,8 @@ Expected:
 - Client intake form: `docs/CLIENT_INTAKE_FORM.md`
 - Bug report triage offer: `docs/BUG_REPORT_TRIAGE_OFFER.md`
 - AI workflow cost audit offer: `docs/AI_WORKFLOW_COST_AUDIT_OFFER.md`
+- Quick diagnosis offer: `docs/QUICK_DIAGNOSIS_OFFER.md`
+- Chinese quick diagnosis listing: `docs/CHINESE_QUICK_DIAGNOSIS_LISTING.md`
 - Privacy draft: `docs/PRIVACY.md`
 
 ## Publish Steps

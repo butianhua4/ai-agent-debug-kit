@@ -4,6 +4,45 @@ These service packages turn AI Agent Debug Kit into a freelance offer.
 
 Do not publish paid listings, bind payout methods, or accept client work without user confirmation.
 
+## Offer 0: AI Workflow Quick Diagnosis
+
+### English Listing Title
+
+I will diagnose one AI workflow error or agent log
+
+### Chinese Listing Title
+
+AI 工作流 / Agent 报错快速诊断：看日志、找原因、给修复方向
+
+### Price
+
+- Starter: USD 49 / RMB 299
+- Delivery: 24 hours after usable redacted material is provided
+
+### Buyer Sends
+
+- one redacted log, screenshot, trace, or error message
+- expected workflow behavior
+- actual failure
+- tool/model/framework name if known
+
+### Deliverables
+
+- one-page diagnosis
+- top 3 likely causes
+- risk labels
+- next-step recommendation
+- quote path for deeper audit, code fix, or CI gate
+
+### Boundaries
+
+- no live production login
+- no private repo access required
+- no full implementation in this entry package
+- no exact cost promise without token/model data
+
+Full offer draft: `docs/QUICK_DIAGNOSIS_OFFER.md`
+
 ## Offer 1: AI Agent Log Debug Report
 
 ### English Listing Title

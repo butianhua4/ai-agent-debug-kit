@@ -4,6 +4,40 @@ Small, productized offers built around AI Agent Debug Kit.
 
 These packs are designed for fast freelance delivery, public portfolio proof, and future digital-product listings. Do not publish paid listings or collect payment outside approved platforms without user approval.
 
+## Pack 0: AI Workflow Quick Diagnosis
+
+### Positioning
+
+A low-friction first order for diagnosing one AI workflow failure.
+
+### Buyer Problem
+
+The buyer has a failed AI automation, agent run, prompt chain, CI log, or no-code workflow and wants to know whether the issue is worth fixing.
+
+### Input
+
+- One redacted log, screenshot, trace, or error message
+- Expected behavior
+- Actual failure
+- Tool/model/framework name if known
+
+### Output
+
+- One-page diagnosis
+- Top 3 likely causes
+- Risk labels
+- Recommended next step
+- Upgrade path to audit, code fix, CI gate, or custom script
+
+### Suggested Price
+
+- Fiverr custom offer: USD 49
+- Chinese platform: RMB 299
+
+### Delivery Time
+
+24 hours after the buyer sends usable redacted material.
+
 ## Pack 1: Agent Log Health Check
 
 ### Positioning
