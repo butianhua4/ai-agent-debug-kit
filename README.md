@@ -29,6 +29,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr inbox safety: `docs/FIVERR_INBOX_SAFETY.md`
 - Fiverr operating playbook: `docs/FIVERR_OPERATING_PLAYBOOK.md`
 - Fiverr portfolio pack: `docs/FIVERR_PORTFOLIO_PACK.md`
+- Opportunity pipeline: `docs/OPPORTUNITY_PIPELINE.md`
 - Bug report triage offer: `docs/BUG_REPORT_TRIAGE_OFFER.md`
 - AI workflow cost audit offer: `docs/AI_WORKFLOW_COST_AUDIT_OFFER.md`
 - Quick diagnosis offer: `docs/QUICK_DIAGNOSIS_OFFER.md`

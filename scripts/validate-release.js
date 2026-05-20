@@ -35,6 +35,7 @@ assert.ok(manifest.files.includes("docs/CLIENT_INTAKE_FORM.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));
+assert.ok(manifest.files.includes("docs/OPPORTUNITY_PIPELINE.md"));
 assert.ok(manifest.files.includes("docs/PLATFORM_SETUP.md"));
 assert.ok(manifest.files.includes("docs/PRODUCT_PAGE.md"));
 assert.ok(manifest.files.includes("docs/QUICK_DIAGNOSIS_OFFER.md"));
