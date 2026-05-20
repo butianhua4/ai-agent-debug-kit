@@ -113,6 +113,46 @@ I will customize an AI agent log dashboard and CI gate for your workflow
 - no enterprise SSO/auth work in this package
 - no payout or account setup for the buyer
 
+## Offer 4: AI Agent Bug Report Triage
+
+### English Listing Title
+
+I will triage AI generated bug reports and agent logs
+
+### Chinese Listing Title
+
+AI 生成 Bug 报告 / Agent 日志分拣：筛掉噪音，标记真实风险
+
+### Price
+
+- Starter: USD 120 / RMB 799
+- Standard: USD 250 / RMB 1699
+- Premium: USD 500 / RMB 3499
+
+### Buyer Sends
+
+- issue bodies, bug reports, or redacted log snippets
+- product or repository context
+- existing severity or label rules if available
+
+### Deliverables
+
+- triage table
+- reproducibility status
+- evidence quality rating
+- likely false-positive list
+- suggested labels and reply drafts
+- optional CI/log gate recommendation
+
+### Boundaries
+
+- defensive triage only
+- no exploit writing
+- no credential handling
+- no unknown downloads before a real order exists
+
+Full offer draft: `docs/BUG_REPORT_TRIAGE_OFFER.md`
+
 ## Platform Copy
 
 ### Fiverr Short Description

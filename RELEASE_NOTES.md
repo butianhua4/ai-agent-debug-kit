@@ -82,6 +82,7 @@ Latest:
 - Fiverr operating playbook now reflects all three live service offers.
 - Micro product packs for report, fix-scope, CI gate, and automation-script offers.
 - Client intake form for safely scoping buyer requests before accepting work.
+- AI agent bug report triage offer for noisy issue queues and generated report review.
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.

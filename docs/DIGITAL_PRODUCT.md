@@ -26,6 +26,7 @@ The release zip includes:
 - support guide
 - demo script
 - service offer copy
+- AI agent bug report triage offer
 - platform setup checklist
 - client delivery template
 - client intake form
@@ -104,6 +105,7 @@ No backend. No account. No install required for the browser app.
 - `docs/LAUNCH_STATUS.md`
 - `docs/DEMO_SCRIPT.md`
 - `docs/SERVICE_OFFERS.md`
+- `docs/BUG_REPORT_TRIAGE_OFFER.md`
 - `docs/PLATFORM_SETUP.md`
 - `docs/CLIENT_DELIVERY_TEMPLATE.md`
 - `docs/CLIENT_INTAKE_FORM.md`

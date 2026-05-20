@@ -22,6 +22,7 @@ assert.ok(manifest.files.includes("sitemap.xml"));
 assert.ok(manifest.files.includes("extension/popup.html"));
 assert.ok(manifest.files.includes("extension/core.js"));
 assert.ok(manifest.files.includes("assets/product-preview.svg"));
+assert.ok(manifest.files.includes("docs/BUG_REPORT_TRIAGE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/CLI_REFERENCE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_INTAKE_FORM.md"));
