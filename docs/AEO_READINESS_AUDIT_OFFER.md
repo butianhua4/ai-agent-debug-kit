@@ -169,6 +169,8 @@ Suggested fields:
 
 Sample report: `docs/examples/aeo-readiness-sample-report.md`
 
+Outreach and quote pack: `docs/AEO_OUTREACH_AND_QUOTE_PACK.md`
+
 ## Buyer Message
 
 ```text
