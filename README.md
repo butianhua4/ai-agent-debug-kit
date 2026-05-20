@@ -14,6 +14,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr CI risk gate service: https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
 - Emergency AI automation rescue offer: `docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md`
 - n8n / Make / Zapier automation failure rescue: `docs/AUTOMATION_FAILURE_RESCUE_OFFER.md`
+- Automation failure rescue promo pack: `docs/AUTOMATION_FAILURE_RESCUE_PROMO_PACK.md`
+- Automation failure rescue cover: `assets/automation-failure-rescue-cover.svg`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`
 - Example Markdown report: `docs/examples/sample-report.md`
