@@ -23,6 +23,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Upload asset checklist: `docs/UPLOAD_ASSET_CHECKLIST.md`
 - Chinese automation rescue posting pack: `docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md`
 - Domestic outreach scripts: `docs/DOMESTIC_OUTREACH_SCRIPTS.md`
+- Chinese buyer intake form: `docs/CHINESE_BUYER_INTAKE_FORM.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
 - Domestic lead tracker CSV: `docs/examples/domestic-lead-tracker.csv`
 - Mobile selling status: `docs/MOBILE_STATUS.md`
