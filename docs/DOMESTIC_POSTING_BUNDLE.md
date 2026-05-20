@@ -15,6 +15,19 @@
 3. `assets/domestic-299-price-ladder.png`
    - 作用：让买家自选 299 / 999 / 1999+，自然导向更高客单。
 
+Current recommended five-image order:
+
+1. `assets/domestic-299-diagnosis-cover.png`
+   - Stop the scroll with the RMB 299 diagnosis hook.
+2. `assets/domestic-299-diagnosis-proof.png`
+   - Show what the 299 report includes.
+3. `assets/domestic-299-price-ladder.png`
+   - Explain 299 / 999 / 1999+ package routing.
+4. `assets/domestic-999-repair-plan-proof.png`
+   - Make the 999 repair-plan upgrade concrete after diagnosis.
+5. `assets/domestic-299-diagnosis-one-pager.png`
+   - Answer buyer questions and safety boundaries before chat.
+
 ## 闲鱼发布
 
 标题：
@@ -156,4 +169,3 @@ AI 自动化故障里，很多不是模型问题，而是工程流程问题：We
 - 平台要求实名认证、绑定收款、税务、付款、订阅。
 - 买家要求线下付款或外链沟通。
 - 买家发来密码、API Key、Token、Cookie、钱包、KYC、身份证、客户隐私。
-

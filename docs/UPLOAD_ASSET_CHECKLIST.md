@@ -52,6 +52,30 @@ For AI agent workflow logs, tool-call errors, and CI/debug reports.
 | Emergency report template | `docs/examples/emergency-rescue-report-template.md` | Delivery template |
 | Buyer brief | `docs/RESCUE_BUYER_BRIEF.md` | Intake questions |
 
+## Domestic RMB 299 / 999 Automation Diagnosis
+
+For Xianyu, Xiaohongshu, WeChat, private communities, Zhihu, Juejin, or buyer chat attachments.
+
+### Best Upload Order
+
+1. RMB 299 diagnosis cover
+2. RMB 299 report proof card
+3. 299 / 999 / 1999+ price ladder
+4. RMB 999 repair-plan proof card
+5. RMB 299 buyer one-pager
+
+### Files
+
+| Asset | Path | Best Use |
+| --- | --- | --- |
+| 299 cover | `assets/domestic-299-diagnosis-cover.png` | Listing cover and first gallery image |
+| 299 proof card | `assets/domestic-299-diagnosis-proof.png` | Explain the diagnosis report deliverable |
+| Price ladder | `assets/domestic-299-price-ladder.png` | Route buyers into 299 / 999 / 1999+ without discounting |
+| 999 proof card | `assets/domestic-999-repair-plan-proof.png` | Show the upgrade deliverable after diagnosis |
+| 299 one-pager | `assets/domestic-299-diagnosis-one-pager.png` | Buyer clarification, safety boundary, and chat attachment |
+| Upload checklist | `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md` | Exact mobile posting order and platform captions |
+| Posting bundle | `docs/DOMESTIC_POSTING_BUNDLE.md` | Xianyu, Xiaohongshu, WeChat, Zhihu, and Juejin copy |
+
 ## Quick Decision
 
 If the buyer says:
@@ -71,4 +95,3 @@ Stop and ask the user if the platform asks for:
 - wallet connection
 - OAuth / high-permission authorization
 - deleting, pausing, or replacing an existing live gig
-

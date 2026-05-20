@@ -116,3 +116,4 @@ Latest:
 - Chinese 999 repair-plan template added for fast delivery after a 299 diagnosis upsell.
 - Filled Chinese 999 repair-plan sample added to show buyers the exact upgrade deliverable after diagnosis.
 - Upload-ready 999 RMB repair-plan proof card added for domestic platform galleries and buyer chats.
+- Domestic upload checklists now include the 999 proof card in the recommended buyer-facing gallery order.
