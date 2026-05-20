@@ -158,3 +158,7 @@ Thanks. I can audit this if we keep the scope clear and safe. Please send a reda
 - Do not promise a guaranteed cost reduction.
 - Do not open unknown external links before a real platform order exists.
 - Recommend a follow-up custom script or CI risk gate only when the audit clearly supports it.
+
+## Delivery Kit
+
+Use `docs/AI_WORKFLOW_AUDIT_DELIVERY_KIT.md` when a real order arrives. It contains the safe intake checklist, triage steps, delivery report template, buyer delivery message, and follow-up offer list.
