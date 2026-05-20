@@ -1,0 +1,79 @@
+{
+  "report_type": "aeo_readiness_audit",
+  "version": "1.0",
+  "page": {
+    "url": "",
+    "target_buyer": "",
+    "target_action": "",
+    "target_keywords": []
+  },
+  "current_positioning": {
+    "summary": "",
+    "clarity_score": 0,
+    "trust_score": 0,
+    "action_score": 0
+  },
+  "answer_engine_questions": [
+    {
+      "question": "What is this page offering?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    },
+    {
+      "question": "Who is the offer for?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    },
+    {
+      "question": "What problem does it solve?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    },
+    {
+      "question": "What does the buyer receive?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    },
+    {
+      "question": "Why should the buyer trust it?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    },
+    {
+      "question": "What should the buyer do next?",
+      "answerable": false,
+      "evidence": "",
+      "recommendation": ""
+    }
+  ],
+  "missing_signals": [],
+  "recommended_rewrite": {
+    "one_sentence_offer": "",
+    "page_title": "",
+    "meta_description": "",
+    "cta": ""
+  },
+  "faq_draft": [],
+  "structured_data_suggestions": {
+    "name": "",
+    "category": "",
+    "description": "",
+    "audience": "",
+    "offer": "",
+    "proof": "",
+    "url": ""
+  },
+  "next_actions": [],
+  "scope_boundaries": [
+    "Public-page audit only",
+    "No ranking guarantee",
+    "No private login used",
+    "No paid SEO tool used",
+    "No customer data requested"
+  ]
+}

@@ -173,6 +173,8 @@ Outreach and quote pack: `docs/AEO_OUTREACH_AND_QUOTE_PACK.md`
 
 Delivery checklist: `docs/AEO_DELIVERY_CHECKLIST.md`
 
+JSON report template: `docs/examples/aeo-report-template.json`
+
 ## Buyer Message
 
 ```text
