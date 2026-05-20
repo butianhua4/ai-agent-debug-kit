@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">299 RMB AI automation diagnosis cover</title>
+  <desc id="desc">A square Chinese marketplace cover for a safe AI automation failure diagnosis service.</desc>
+  <rect width="1080" height="1080" fill="#f6f8fb"/>
+  <rect x="64" y="64" width="952" height="952" rx="36" fill="#ffffff" stroke="#d7dee8" stroke-width="2"/>
+  <rect x="64" y="64" width="952" height="168" rx="36" fill="#111827"/>
+  <rect x="64" y="196" width="952" height="36" fill="#111827"/>
+
+  <text x="108" y="150" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="58" font-weight="700">AI 自动化突然跑不通？</text>
+  <text x="108" y="198" fill="#c7d2fe" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" font-weight="600">n8n / Make / Zapier / Agent / Webhook / JSON</text>
+
+  <text x="108" y="330" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="72" font-weight="800">299 元</text>
+  <text x="360" y="326" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="44" font-weight="700">先做脱敏诊断</text>
+  <text x="108" y="386" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28">不碰账号，不要密码，只看错误和流程截图</text>
+
+  <g transform="translate(108 452)">
+    <rect width="250" height="190" rx="24" fill="#eef6ff" stroke="#b2ddff" stroke-width="2"/>
+    <circle cx="54" cy="58" r="28" fill="#2563eb"/>
+    <path d="M40 58h28M54 44v28" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <text x="30" y="122" fill="#1e3a8a" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="700">找出卡点</text>
+    <text x="30" y="158" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20">失败步骤 / 报错原因</text>
+  </g>
+
+  <g transform="translate(415 452)">
+    <rect width="250" height="190" rx="24" fill="#f0fdf4" stroke="#abefc6" stroke-width="2"/>
+    <circle cx="54" cy="58" r="28" fill="#16a34a"/>
+    <path d="M40 60l12 12 24-32" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="122" fill="#166534" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="700">修复顺序</text>
+    <text x="30" y="158" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20">先改哪里 / 怎么测</text>
+  </g>
+
+  <g transform="translate(722 452)">
+    <rect width="250" height="190" rx="24" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="54" cy="58" r="28" fill="#ea580c"/>
+    <path d="M40 43h28v34H40zM78 50h26M78 64h34" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="30" y="122" fill="#9a3412" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="700">交付报告</text>
+    <text x="30" y="158" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20">一页故障地图</text>
+  </g>
+
+  <rect x="108" y="704" width="864" height="118" rx="28" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="148" y="752" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="700">适合：AI 工作流、Webhook、JSON 映射、API 报错</text>
+  <text x="148" y="792" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23">先定位问题，再决定是否升级到 999 / 1999+ 救援</text>
+
+  <rect x="108" y="866" width="864" height="74" rx="37" fill="#111827"/>
+  <text x="154" y="913" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" font-weight="700">不收密码 / API Key / Token / Cookie / 钱包 / KYC 信息</text>
+
+  <text x="108" y="972" fill="#6b7280" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">交付：可能原因 + 失败节点 + 修复顺序 + 安全测试清单</text>
+</svg>
