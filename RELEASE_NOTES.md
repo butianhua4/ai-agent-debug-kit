@@ -133,3 +133,4 @@ Latest:
 - Chinese 299 paid order handoff added to bridge confirmed payment into safe intake, diagnosis delivery, quality gates, and upgrade routing.
 - Chinese first-order operator dashboard added to connect publishing, lead scoring, replies, quotes, payment confirmation, delivery, follow-up, and safety checks.
 - Chinese buyer pre-diagnosis asset copy added for image cards, PDF copy, pinned comments, first replies, and buyer material instructions.
+- Domestic 299 pre-diagnosis material card added as an upload-ready buyer-facing visual asset.
