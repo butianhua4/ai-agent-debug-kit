@@ -222,6 +222,12 @@ Do you prefer JavaScript, Node.js, Python, or another language?
 
 ### Gallery Text
 
+Cover image path:
+
+```text
+C:\Users\33065\Documents\Codex\2026-05-18\5000\fiverr-custom-ai-automation-cover.png
+```
+
 Cover headline:
 
 ```text
