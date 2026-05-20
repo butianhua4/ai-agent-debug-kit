@@ -48,6 +48,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese offer card copy: `docs/CHINESE_OFFER_CARD_COPY.md`
 - Domestic posting bundle: `docs/DOMESTIC_POSTING_BUNDLE.md`
 - Chinese 299 domestic listing page: `docs/CHINESE_299_DOMESTIC_LISTING_PAGE.md`
+- Chinese 299 Xiaohongshu and Xianyu posts: `docs/CHINESE_299_XHS_XIANYU_POSTS.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
 - Domestic 299 upload checklist: `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`

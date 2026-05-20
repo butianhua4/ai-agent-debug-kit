@@ -126,3 +126,4 @@ Latest:
 - Chinese package ladder one-pager added to compare 299 / 999 / 1999+ in buyer chats and route unclear leads into the right paid scope.
 - Chinese buyer objection-handling pack added for price, guarantee, login, free-look, same-day, API-key, and pay-after-work objections.
 - Chinese 299 domestic listing page added with title variants, full marketplace copy, buyer requirements, pinned FAQ, tags, image order, and safe first reply.
+- Chinese 299 Xiaohongshu and Xianyu post pack added with three Xiaohongshu posts, Xianyu listing copy, first replies, WeChat group copy, posting order, and safety reminders.
