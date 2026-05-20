@@ -27,6 +27,8 @@ assert.ok(manifest.files.includes("assets/domestic-299-diagnosis-cover.png"));
 assert.ok(manifest.files.includes("assets/domestic-299-diagnosis-cover.svg"));
 assert.ok(manifest.files.includes("assets/domestic-299-diagnosis-proof.png"));
 assert.ok(manifest.files.includes("assets/domestic-299-diagnosis-proof.svg"));
+assert.ok(manifest.files.includes("assets/domestic-299-price-ladder.png"));
+assert.ok(manifest.files.includes("assets/domestic-299-price-ladder.svg"));
 assert.ok(manifest.files.includes("assets/automation-rescue-one-pager.pdf"));
 assert.ok(manifest.files.includes("assets/automation-rescue-demo.gif"));
 assert.ok(manifest.files.includes("assets/product-preview.svg"));

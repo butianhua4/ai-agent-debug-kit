@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">299 999 1999 price ladder</title>
+  <desc id="desc">A Chinese price ladder card for AI automation diagnosis and rescue services.</desc>
+  <rect width="1080" height="1080" fill="#f5f7fa"/>
+  <rect x="64" y="64" width="952" height="952" rx="36" fill="#ffffff" stroke="#d7dee8" stroke-width="2"/>
+  <text x="108" y="142" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="54" font-weight="800">怎么选服务档位？</text>
+  <text x="108" y="194" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26">先定位，再修复；小问题不强推大单</text>
+
+  <g transform="translate(108 270)">
+    <rect width="270" height="430" rx="28" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="36" y="72" fill="#1e3a8a" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="58" font-weight="800">299</text>
+    <text x="158" y="70" fill="#1e3a8a" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="30" font-weight="700">元</text>
+    <text x="36" y="126" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="30" font-weight="800">入门诊断</text>
+    <text x="36" y="184" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">适合单个报错</text>
+    <text x="36" y="228" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">看脱敏材料</text>
+    <text x="36" y="272" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">交付一页报告</text>
+    <text x="36" y="316" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">原因 + 修复顺序</text>
+    <rect x="36" y="358" width="198" height="42" rx="21" fill="#1d4ed8"/>
+    <text x="64" y="386" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="700">先从这里开始</text>
+  </g>
+
+  <g transform="translate(405 238)">
+    <rect width="270" height="494" rx="28" fill="#f0fdf4" stroke="#86efac" stroke-width="3"/>
+    <text x="36" y="72" fill="#166534" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="58" font-weight="800">999</text>
+    <text x="158" y="70" fill="#166534" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="30" font-weight="700">元</text>
+    <text x="36" y="126" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="30" font-weight="800">标准救援报告</text>
+    <text x="36" y="184" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">适合多步骤流程</text>
+    <text x="36" y="228" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">字段/触发器排查</text>
+    <text x="36" y="272" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">before/after 测试</text>
+    <text x="36" y="316" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">完整修复建议</text>
+    <rect x="36" y="368" width="198" height="42" rx="21" fill="#16a34a"/>
+    <text x="64" y="396" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="700">常见成交档</text>
+  </g>
+
+  <g transform="translate(702 270)">
+    <rect width="270" height="430" rx="28" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <text x="36" y="72" fill="#9a3412" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="52" font-weight="800">1999+</text>
+    <text x="36" y="126" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="30" font-weight="800">紧急业务救援</text>
+    <text x="36" y="184" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">影响线索/CRM</text>
+    <text x="36" y="228" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">内容生产/通知</text>
+    <text x="36" y="272" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">需要备用方案</text>
+    <text x="36" y="316" fill="#374151" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">团队交接报告</text>
+    <rect x="36" y="358" width="198" height="42" rx="21" fill="#ea580c"/>
+    <text x="64" y="386" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="700">业务受影响时</text>
+  </g>
+
+  <rect x="108" y="800" width="864" height="82" rx="41" fill="#111827"/>
+  <text x="154" y="852" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="800">不收密码 / API Key / Token / Cookie / 钱包 / KYC 信息</text>
+
+  <text x="108" y="936" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24">如果只是一个报错，先走 299；如果流程影响业务，再升级。</text>
+  <text x="108" y="982" fill="#6b7280" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">所有档位默认先看脱敏材料，不直接操作生产账号。</text>
+</svg>
