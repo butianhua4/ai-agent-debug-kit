@@ -119,3 +119,4 @@ Latest:
 - Domestic upload checklists now include the 999 proof card in the recommended buyer-facing gallery order.
 - Chinese 999 upgrade reply pack added with short buyer replies, proof-card handoff, sample-report handoff, discount response, confirmation prompt, and safety-stop wording.
 - Chinese 299 sample-and-intake reply added to show the sample diagnosis report, request redacted materials, and route buyers into 299 / 999 / 1999+ scope.
+- Chinese 299 30-minute delivery checklist added for fast first-order diagnosis delivery with intake, failure mapping, minimal tests, risk routing, and upgrade handoff.

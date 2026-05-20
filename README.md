@@ -35,6 +35,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese buyer intake form: `docs/CHINESE_BUYER_INTAKE_FORM.md`
 - Chinese buyer conversion messages: `docs/CHINESE_BUYER_CONVERSION_MESSAGES.md`
 - Chinese 299 sample and intake reply: `docs/CHINESE_299_SAMPLE_INTAKE_REPLY.md`
+- Chinese 299 30-minute delivery checklist: `docs/CHINESE_299_30_MIN_DELIVERY_CHECKLIST.md`
 - Chinese 299 buyer reply bundle: `docs/CHINESE_299_BUYER_REPLY_BUNDLE.md`
 - Chinese 299 quote decision matrix: `docs/CHINESE_299_QUOTE_DECISION_MATRIX.md`
 - Chinese 299 to 999 upsell handoff: `docs/CHINESE_299_TO_999_UPSELL_HANDOFF.md`
