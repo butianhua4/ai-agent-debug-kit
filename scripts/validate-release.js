@@ -38,6 +38,7 @@ assert.ok(manifest.files.includes("docs/CLIENT_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_INTAKE_FORM.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_REQUEST_TRIAGE.md"));
 assert.ok(manifest.files.includes("docs/CONTINUOUS_OPERATING_MODE.md"));
+assert.ok(manifest.files.includes("docs/CUSTOM_OFFER_AUTOMATION_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
