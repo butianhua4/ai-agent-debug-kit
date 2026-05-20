@@ -104,3 +104,4 @@ Latest:
 - Chinese offer-card copy added for marketplace covers, first comments, pinned posts, and domestic short posts.
 - Visual asset production checklist added for Fiverr gallery images, domestic covers, PDF one-pagers, and short demo videos/GIFs.
 - Upload-ready domestic 299 RMB diagnosis cover added as PNG with editable SVG source.
+- Upload-ready domestic 299 RMB diagnosis proof card added as PNG with editable SVG source.

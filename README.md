@@ -19,6 +19,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Automation failure rescue cover: `assets/automation-failure-rescue-cover.svg`
 - Domestic 299 diagnosis cover: `assets/domestic-299-diagnosis-cover.png`
 - Domestic 299 diagnosis cover source: `assets/domestic-299-diagnosis-cover.svg`
+- Domestic 299 diagnosis proof card: `assets/domestic-299-diagnosis-proof.png`
+- Domestic 299 diagnosis proof source: `assets/domestic-299-diagnosis-proof.svg`
 - Automation rescue one-page PDF: `assets/automation-rescue-one-pager.pdf`
 - Automation rescue demo GIF: `assets/automation-rescue-demo.gif`
 - Automation rescue video storyboard: `docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md`

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">299 RMB diagnosis proof card</title>
+  <desc id="desc">A square Chinese proof card explaining the deliverables included in the 299 RMB AI automation diagnosis.</desc>
+  <rect width="1080" height="1080" fill="#f5f7fa"/>
+  <rect x="64" y="64" width="952" height="952" rx="36" fill="#ffffff" stroke="#d7dee8" stroke-width="2"/>
+  <text x="108" y="146" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="56" font-weight="800">299 元诊断交付什么？</text>
+  <text x="108" y="196" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26">一页报告，把自动化故障讲清楚</text>
+
+  <g transform="translate(108 256)">
+    <rect width="864" height="500" rx="30" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="44" y="70" fill="#111827" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="32" font-weight="800">交付报告包含</text>
+    <g font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28">
+      <circle cx="58" cy="126" r="14" fill="#2563eb"/><text x="92" y="136" fill="#111827">当前故障现象</text>
+      <circle cx="58" cy="190" r="14" fill="#16a34a"/><text x="92" y="200" fill="#111827">最可能原因</text>
+      <circle cx="58" cy="254" r="14" fill="#ea580c"/><text x="92" y="264" fill="#111827">失败节点地图</text>
+      <circle cx="58" cy="318" r="14" fill="#7c3aed"/><text x="92" y="328" fill="#111827">建议修复顺序</text>
+      <circle cx="58" cy="382" r="14" fill="#0f766e"/><text x="92" y="392" fill="#111827">安全测试清单</text>
+      <circle cx="58" cy="446" r="14" fill="#be123c"/><text x="92" y="456" fill="#111827">是否建议升级救援</text>
+    </g>
+    <rect x="480" y="92" width="314" height="330" rx="24" fill="#ffffff" stroke="#d7dee8" stroke-width="2"/>
+    <rect x="512" y="126" width="250" height="24" rx="12" fill="#111827"/>
+    <rect x="512" y="178" width="214" height="16" rx="8" fill="#cbd5e1"/>
+    <rect x="512" y="220" width="250" height="16" rx="8" fill="#cbd5e1"/>
+    <rect x="512" y="262" width="178" height="16" rx="8" fill="#cbd5e1"/>
+    <rect x="512" y="316" width="250" height="56" rx="12" fill="#ecfdf5" stroke="#86efac" stroke-width="2"/>
+    <text x="536" y="354" fill="#166534" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22" font-weight="700">修复优先级</text>
+  </g>
+
+  <rect x="108" y="808" width="864" height="72" rx="36" fill="#111827"/>
+  <text x="156" y="854" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" font-weight="700">只看脱敏材料：报错、截图、输入输出样例、流程说明</text>
+
+  <text x="108" y="932" fill="#be123c" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" font-weight="800">不包含：</text>
+  <text x="218" y="932" fill="#4b5563" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24">登录账号、收密码、API Key、Cookie、付款/KYC/钱包信息</text>
+  <text x="108" y="982" fill="#6b7280" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="22">先定位，再决定是否需要 999 / 1999+ 完整救援</text>
+</svg>
