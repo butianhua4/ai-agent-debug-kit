@@ -45,6 +45,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Mobile selling status: `docs/MOBILE_STATUS.md`
 - Chinese 299 diagnosis report template: `docs/examples/chinese-299-diagnosis-report-template.md`
 - Chinese 299 diagnosis sample report: `docs/examples/chinese-299-diagnosis-sample-report.md`
+- Chinese 999 repair plan template: `docs/examples/chinese-999-repair-plan-template.md`
 - Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
