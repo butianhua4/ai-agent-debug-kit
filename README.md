@@ -23,6 +23,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic 299 diagnosis proof source: `assets/domestic-299-diagnosis-proof.svg`
 - Domestic diagnosis price ladder: `assets/domestic-299-price-ladder.png`
 - Domestic diagnosis price ladder source: `assets/domestic-299-price-ladder.svg`
+- Domestic 299 diagnosis one-page image: `assets/domestic-299-diagnosis-one-pager.png`
 - Automation rescue one-page PDF: `assets/automation-rescue-one-pager.pdf`
 - Automation rescue demo GIF: `assets/automation-rescue-demo.gif`
 - Automation rescue video storyboard: `docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md`

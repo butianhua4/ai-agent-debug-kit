@@ -162,6 +162,20 @@ def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.I
     return ImageFont.load_default()
 
 
+def _cfont(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    candidates = [
+        "C:/Windows/Fonts/msyhbd.ttc" if bold else "C:/Windows/Fonts/msyh.ttc",
+        "C:/Windows/Fonts/simhei.ttf",
+        "C:/Windows/Fonts/simsun.ttc",
+    ]
+    for candidate in candidates:
+        try:
+            return ImageFont.truetype(candidate, size)
+        except OSError:
+            pass
+    return _font(size, bold)
+
+
 def _rounded(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], fill: str, outline: str = "#d0d5dd") -> None:
     draw.rounded_rectangle(box, radius=18, fill=fill, outline=outline, width=2)
 
@@ -170,6 +184,38 @@ def _centered(draw: ImageDraw.ImageDraw, text: str, y: int, font: ImageFont.Imag
     bbox = draw.textbbox((0, 0), text, font=font)
     x = (1280 - (bbox[2] - bbox[0])) // 2
     draw.text((x, y), text, font=font, fill=fill)
+
+
+def _wrap_text(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont, max_width: int) -> list[str]:
+    lines: list[str] = []
+    current = ""
+    for char in text:
+        candidate = current + char
+        bbox = draw.textbbox((0, 0), candidate, font=font)
+        if bbox[2] - bbox[0] <= max_width or not current:
+            current = candidate
+        else:
+            lines.append(current)
+            current = char
+    if current:
+        lines.append(current)
+    return lines
+
+
+def _draw_wrapped(
+    draw: ImageDraw.ImageDraw,
+    text: str,
+    x: int,
+    y: int,
+    font: ImageFont.ImageFont,
+    fill: str,
+    max_width: int,
+    line_height: int,
+) -> int:
+    for line in _wrap_text(draw, text, font, max_width):
+        draw.text((x, y), line, font=font, fill=fill)
+        y += line_height
+    return y
 
 
 def build_automation_rescue_gif() -> None:
@@ -267,6 +313,89 @@ def build_automation_rescue_gif() -> None:
     )
 
 
+def build_chinese_diagnosis_one_pager_png() -> None:
+    ASSETS.mkdir(exist_ok=True)
+    output = ASSETS / "domestic-299-diagnosis-one-pager.png"
+
+    img = Image.new("RGB", (1080, 2160), "#f5f7fb")
+    draw = ImageDraw.Draw(img)
+
+    title = _cfont(56, bold=True)
+    h2 = _cfont(32, bold=True)
+    body = _cfont(26)
+    body_bold = _cfont(26, bold=True)
+    small = _cfont(22)
+    small_bold = _cfont(22, bold=True)
+
+    draw.rounded_rectangle((54, 54, 1026, 280), radius=34, fill="#111827")
+    draw.text((96, 92), "299 元 AI 自动化故障诊断", font=title, fill="#ffffff")
+    draw.text((100, 174), "n8n / Make / Zapier / Agent / Webhook / JSON", font=small_bold, fill="#c7d2fe")
+    draw.text((100, 218), "不碰账号，不收密钥，只看脱敏错误材料。", font=small_bold, fill="#d1fae5")
+
+    y = 326
+
+    def section(label: str, color: str = "#175cd3") -> None:
+        nonlocal y
+        draw.rounded_rectangle((72, y, 1008, y + 58), radius=18, fill=color)
+        draw.text((104, y + 13), label, font=h2, fill="#ffffff")
+        y += 82
+
+    def bullet(text: str, fill: str = "#344054") -> None:
+        nonlocal y
+        draw.ellipse((94, y + 12, 110, y + 28), fill="#175cd3")
+        y = _draw_wrapped(draw, text, 128, y, body, fill, 820, 36) + 14
+
+    section("适合什么问题")
+    bullet("AI 自动化流程报错、卡住、输出不稳定，或不知道问题出在提示词、节点配置、JSON、Webhook、API、权限还是模型调用。")
+    bullet("适合 n8n、Make、Zapier、Coze、Dify、FastGPT、AI Agent、Node.js、Python、GitHub Actions 等故障定位。")
+
+    section("你需要发什么", "#166534")
+    checklist = [
+        "平台或工具名称",
+        "失败发生在哪一步",
+        "完整错误文本或截图",
+        "期望输出与实际输出",
+        "最近改过的提示词、节点、字段、API 或环境变量",
+        "脱敏后的样例输入和样例输出",
+    ]
+    for item in checklist:
+        draw.rounded_rectangle((92, y, 988, y + 48), radius=16, fill="#ffffff", outline="#d0d5dd", width=2)
+        draw.text((120, y + 10), "✓", font=body_bold, fill="#16a34a")
+        draw.text((164, y + 9), item, font=body, fill="#111827")
+        y += 62
+
+    section("不要发这些", "#b42318")
+    for item in [
+        "密码、验证码、API Key、Token、Cookie",
+        "身份证、银行卡、付款截图、钱包信息",
+        "未脱敏客户数据、私有仓库、生产后台权限",
+        "绕过平台、安全验证、付款规则或风控限制的内容",
+    ]:
+        bullet(item, "#b42318")
+
+    section("299 元交付什么", "#7c3aed")
+    for item in [
+        "一页诊断报告：故障现象、可能原因排序、失败节点定位、优先修复顺序。",
+        "最小测试步骤和风险提醒：权限、数据、Token、成本、重复调用、死循环。",
+        "是否值得升级到 999 / 1999+ 修复服务的建议；升级前先确认范围。",
+    ]:
+        bullet(item)
+
+    draw.rounded_rectangle((72, y + 12, 1008, y + 172), radius=24, fill="#111827")
+    draw.text((112, y + 42), "可直接发给买家的第一句话", font=h2, fill="#ffffff")
+    quote = "你先不用给账号，也不用发密钥。把报错截图、失败节点、期望输出和实际输出发我，我先判断能不能按 299 元做一次诊断。"
+    _draw_wrapped(draw, quote, 112, y + 92, small_bold, "#d1fae5", 850, 32)
+    y += 208
+
+    draw.rounded_rectangle((72, y, 1008, y + 118), radius=22, fill="#fff7ed", outline="#fed7aa", width=2)
+    draw.text((112, y + 22), "边界：299 只做诊断，不直接登录账号，不保证修好所有问题。", font=small_bold, fill="#9a3412")
+    draw.text((112, y + 60), "目标是先定位问题、控制风险，再决定是否继续修复。", font=small, fill="#9a3412")
+
+    draw.text((72, 2102), "Public proof: butianhua4.github.io/ai-agent-debug-kit  ·  Fiverr: aibuildflow", font=small, fill="#667085")
+    img.save(output, "PNG")
+
+
 if __name__ == "__main__":
     build_automation_rescue_pdf()
     build_automation_rescue_gif()
+    build_chinese_diagnosis_one_pager_png()
