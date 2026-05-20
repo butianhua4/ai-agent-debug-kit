@@ -153,6 +153,47 @@ AI 生成 Bug 报告 / Agent 日志分拣：筛掉噪音，标记真实风险
 
 Full offer draft: `docs/BUG_REPORT_TRIAGE_OFFER.md`
 
+## Offer 5: AI Workflow Cost and Failure Audit
+
+### English Listing Title
+
+I will audit your AI workflow cost failures and agent logs
+
+### Chinese Listing Title
+
+AI 工作流成本与失败体检：定位重试、工具调用、输出格式和隐藏成本问题
+
+### Price
+
+- Starter: USD 120 / RMB 799
+- Standard: USD 250 / RMB 1699
+- Premium: USD 500 / RMB 3499
+
+### Buyer Sends
+
+- redacted AI workflow logs or traces
+- expected output
+- model/tool/framework context
+- notes about what failed or looked expensive
+
+### Deliverables
+
+- cost and failure audit report
+- repeated-loop and repeated-message detection
+- tool-call and output-format issue summary
+- risk labels
+- prioritized next-step plan
+- optional CI gate recommendation
+
+### Boundaries
+
+- no live production login
+- no exact cost guarantee without token/model data
+- no guaranteed cost reduction promise
+- no unknown downloads before a real order exists
+
+Full offer draft: `docs/AI_WORKFLOW_COST_AUDIT_OFFER.md`
+
 ## Platform Copy
 
 ### Fiverr Short Description

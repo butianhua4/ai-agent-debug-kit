@@ -43,6 +43,7 @@ AI Agent Debug Kit v0.5.0 packages the project as a local-first AI agent log deb
 - Micro product packs for freelance delivery
 - Client intake form for safely scoping buyer requests
 - AI-generated bug report and agent log triage offer
+- AI workflow cost and failure audit offer
 - GitHub Actions checks and artifact upload
 
 ### Copy/Paste Release Body
@@ -65,6 +66,7 @@ Highlights:
 - Micro product packs for report, fix-scope, CI gate, automation-script, and triage offers
 - Client intake form for safe buyer qualification
 - AI-generated bug report triage offer for noisy issue queues
+- AI workflow cost and failure audit offer for unstable or expensive automations
 - Release zip with docs, examples, assets, CLI, browser app, and extension prototype
 
 Useful links:
@@ -78,6 +80,7 @@ Useful links:
 - Micro product packs: docs/MICRO_PRODUCT_PACKS.md
 - Client intake form: docs/CLIENT_INTAKE_FORM.md
 - Bug report triage offer: docs/BUG_REPORT_TRIAGE_OFFER.md
+- AI workflow cost audit offer: docs/AI_WORKFLOW_COST_AUDIT_OFFER.md
 
 Verification:
 
@@ -114,6 +117,7 @@ Expected:
 - Micro product packs: `docs/MICRO_PRODUCT_PACKS.md`
 - Client intake form: `docs/CLIENT_INTAKE_FORM.md`
 - Bug report triage offer: `docs/BUG_REPORT_TRIAGE_OFFER.md`
+- AI workflow cost audit offer: `docs/AI_WORKFLOW_COST_AUDIT_OFFER.md`
 - Privacy draft: `docs/PRIVACY.md`
 
 ## Publish Steps
