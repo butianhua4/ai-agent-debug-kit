@@ -21,6 +21,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Automation rescue demo GIF: `assets/automation-rescue-demo.gif`
 - Automation rescue video storyboard: `docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md`
 - Upload asset checklist: `docs/UPLOAD_ASSET_CHECKLIST.md`
+- Visual asset production checklist: `docs/VISUAL_ASSET_PRODUCTION_CHECKLIST.md`
 - Chinese automation rescue posting pack: `docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md`
 - Domestic outreach scripts: `docs/DOMESTIC_OUTREACH_SCRIPTS.md`
 - Chinese buyer intake form: `docs/CHINESE_BUYER_INTAKE_FORM.md`

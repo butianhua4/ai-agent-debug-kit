@@ -63,6 +63,7 @@ assert.ok(manifest.files.includes("docs/QUICK_DIAGNOSIS_OFFER.md"));
 assert.ok(manifest.files.includes("docs/RESCUE_BUYER_BRIEF.md"));
 assert.ok(manifest.files.includes("docs/SERVICE_OFFERS.md"));
 assert.ok(manifest.files.includes("docs/UPLOAD_ASSET_CHECKLIST.md"));
+assert.ok(manifest.files.includes("docs/VISUAL_ASSET_PRODUCTION_CHECKLIST.md"));
 assert.ok(manifest.files.includes("docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/examples/agent-risk-gate.yml"));
 assert.ok(manifest.files.includes("docs/examples/aeo-readiness-sample-report.md"));

@@ -102,3 +102,4 @@ Latest:
 - Filled Chinese 299 RMB sample report added as buyer-facing proof for the webhook JSON mapping demo.
 - Chinese buyer conversion messages added to move inquiries from sample report to intake form and quote.
 - Chinese offer-card copy added for marketplace covers, first comments, pinned posts, and domestic short posts.
+- Visual asset production checklist added for Fiverr gallery images, domestic covers, PDF one-pagers, and short demo videos/GIFs.
