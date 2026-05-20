@@ -82,3 +82,4 @@ Latest:
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.
 - Platform setup checklist for Fiverr, Upwork Project Catalog, and Chinese freelance listings.
+- First Fiverr gig status and follow-up gig packs for automation scripts and CI gates.
