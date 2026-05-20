@@ -6,33 +6,37 @@ This checklist is designed to make the offer publishable without rewriting copy,
 
 ## Upload Assets
 
-Use these seven images in this order:
+Use these eight images in this order:
 
 1. `assets/domestic-299-diagnosis-cover.png`
    - Purpose: stop the scroll.
    - Message: "AI automation broke? RMB 299 redacted diagnosis."
 
-2. `assets/domestic-299-diagnosis-proof.png`
+2. `assets/domestic-299-summary-card.png`
+   - Purpose: explain the offer in one screen before the buyer reads long copy.
+   - Message: RMB 299 quick diagnosis, supported problems, buyer materials, deliverable, and exclusions.
+
+3. `assets/domestic-299-diagnosis-proof.png`
    - Purpose: show what the buyer receives.
    - Message: diagnosis report, failed node, root-cause ranking, repair order, safety checklist.
 
-3. `assets/domestic-299-price-ladder.png`
+4. `assets/domestic-299-price-ladder.png`
    - Purpose: let buyers self-select the right tier.
    - Message: 299 diagnosis, 999 scoped repair plan, 1999+ complex rescue.
 
-4. `assets/domestic-999-repair-plan-proof.png`
+5. `assets/domestic-999-repair-plan-proof.png`
    - Purpose: show why the 999 upgrade exists after diagnosis.
    - Message: root cause, exact change list, redacted test payload, pass criteria, rollback plan.
 
-5. `assets/domestic-299-what-to-send.png`
+6. `assets/domestic-299-what-to-send.png`
    - Purpose: tell buyers exactly what to send before they ask vague questions.
    - Message: error screenshots, flow screenshots, redacted logs, target result, reproduction steps.
 
-6. `assets/domestic-299-do-not-send.png`
+7. `assets/domestic-299-do-not-send.png`
    - Purpose: reduce unsafe credential-sharing and platform-risk conversations.
    - Message: do not send passwords, verification codes, API keys, payment/KYC data, ID originals, or full backend access.
 
-7. `assets/domestic-299-diagnosis-one-pager.png`
+8. `assets/domestic-299-diagnosis-one-pager.png`
    - Purpose: answer buyer objections before chat.
    - Message: what to send, what not to send, what 299 includes, and what is excluded.
 
@@ -137,7 +141,7 @@ AI 自动化突然跑不通？先别重做，先做一次 299 元故障诊断
 
 ## Mobile Posting Steps
 
-1. Upload the seven images in the listed order.
+1. Upload the eight images in the listed order.
 2. Paste the platform-specific title and body.
 3. Add the first reply or pinned comment immediately.
 4. If a buyer replies, ask for the buyer intake prompt.

@@ -137,3 +137,4 @@ Latest:
 - Domestic 299 sensitive-data safety card added to reduce risky buyer intake and keep diagnosis platform-safe.
 - Domestic posting bundle and upload checklist updated to include the two new pre-diagnosis cards in the recommended seven-image order.
 - Domestic 299 summary card added to explain price, fit, buyer materials, deliverable, and exclusions in one screen.
+- Domestic posting bundle and upload checklist updated to include the summary card in the recommended eight-image order.
