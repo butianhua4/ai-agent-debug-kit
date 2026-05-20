@@ -32,9 +32,15 @@ Primary delivery:
 - Root-cause summary, risk flags, and scoped fix guidance.
 - No passwords, private keys, production secrets, payment data, or private customer data.
 
-## Next Gig 2: Custom AI Automation Script
+## Live Gig 2: Custom AI Automation Script
 
-Use this when creating the second Fiverr listing.
+Status: Active
+
+Public URL:
+
+```text
+https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow
+```
 
 ### Overview
 
