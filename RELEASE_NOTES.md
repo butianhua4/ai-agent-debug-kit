@@ -117,3 +117,4 @@ Latest:
 - Filled Chinese 999 repair-plan sample added to show buyers the exact upgrade deliverable after diagnosis.
 - Upload-ready 999 RMB repair-plan proof card added for domestic platform galleries and buyer chats.
 - Domestic upload checklists now include the 999 proof card in the recommended buyer-facing gallery order.
+- Chinese 999 upgrade reply pack added with short buyer replies, proof-card handoff, sample-report handoff, discount response, confirmation prompt, and safety-stop wording.
