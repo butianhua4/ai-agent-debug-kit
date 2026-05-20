@@ -111,3 +111,4 @@ Latest:
 - Upload-ready domestic 299 diagnosis one-page image added for buyer clarification and marketplace attachments.
 - Domestic 299 upload checklist added with four-image order, platform captions, first replies, intake prompt, upgrade reply, and refusal boundary.
 - Chinese 299 buyer reply bundle added to route domestic inquiries into safe redacted intake and quote decisions.
+- Chinese 299 / 999 / 1999+ quote decision matrix added for faster safe pricing and re-scope decisions.
