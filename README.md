@@ -20,6 +20,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Automation rescue one-page PDF: `assets/automation-rescue-one-pager.pdf`
 - Automation rescue demo GIF: `assets/automation-rescue-demo.gif`
 - Automation rescue video storyboard: `docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md`
+- Upload asset checklist: `docs/UPLOAD_ASSET_CHECKLIST.md`
 - Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
