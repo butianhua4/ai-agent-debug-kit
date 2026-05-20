@@ -106,3 +106,4 @@ Latest:
 - Upload-ready domestic 299 RMB diagnosis cover added as PNG with editable SVG source.
 - Upload-ready domestic 299 RMB diagnosis proof card added as PNG with editable SVG source.
 - Upload-ready domestic 299 / 999 / 1999+ price ladder card added as PNG with editable SVG source.
+- Domestic three-image posting bundle added with platform captions, first replies, and safety checks.

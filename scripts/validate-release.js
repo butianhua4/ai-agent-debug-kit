@@ -54,6 +54,7 @@ assert.ok(manifest.files.includes("docs/CUSTOM_OFFER_AUTOMATION_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
 assert.ok(manifest.files.includes("docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md"));
 assert.ok(manifest.files.includes("docs/DOMESTIC_OUTREACH_SCRIPTS.md"));
+assert.ok(manifest.files.includes("docs/DOMESTIC_POSTING_BUNDLE.md"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
