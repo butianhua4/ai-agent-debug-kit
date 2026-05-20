@@ -136,3 +136,4 @@ Latest:
 - Domestic 299 pre-diagnosis material card added as an upload-ready buyer-facing visual asset.
 - Domestic 299 sensitive-data safety card added to reduce risky buyer intake and keep diagnosis platform-safe.
 - Domestic posting bundle and upload checklist updated to include the two new pre-diagnosis cards in the recommended seven-image order.
+- Domestic 299 summary card added to explain price, fit, buyer materials, deliverable, and exclusions in one screen.

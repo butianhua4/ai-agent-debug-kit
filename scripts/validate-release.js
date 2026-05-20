@@ -82,6 +82,8 @@ assert.ok(manifest.files.includes("assets/domestic-299-what-to-send.svg"));
 assert.ok(manifest.files.includes("assets/domestic-299-what-to-send.png"));
 assert.ok(manifest.files.includes("assets/domestic-299-do-not-send.svg"));
 assert.ok(manifest.files.includes("assets/domestic-299-do-not-send.png"));
+assert.ok(manifest.files.includes("assets/domestic-299-summary-card.svg"));
+assert.ok(manifest.files.includes("assets/domestic-299-summary-card.png"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));

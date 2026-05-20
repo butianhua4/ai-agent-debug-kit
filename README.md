@@ -57,6 +57,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese buyer pre-diagnosis asset copy: `docs/CHINESE_BUYER_PRE_DIAGNOSIS_ASSET_COPY.md`
 - Domestic 299 pre-diagnosis material card: `assets/domestic-299-what-to-send.png`
 - Domestic 299 sensitive-data safety card: `assets/domestic-299-do-not-send.png`
+- Domestic 299 summary card: `assets/domestic-299-summary-card.png`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
 - Domestic 299 upload checklist: `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
