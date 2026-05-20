@@ -171,6 +171,8 @@ Sample report: `docs/examples/aeo-readiness-sample-report.md`
 
 Outreach and quote pack: `docs/AEO_OUTREACH_AND_QUOTE_PACK.md`
 
+Delivery checklist: `docs/AEO_DELIVERY_CHECKLIST.md`
+
 ## Buyer Message
 
 ```text

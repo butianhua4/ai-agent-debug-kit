@@ -33,6 +33,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - AEO readiness audit offer: `docs/AEO_READINESS_AUDIT_OFFER.md`
 - Chinese AEO readiness listing: `docs/CHINESE_AEO_READINESS_LISTING.md`
 - AEO outreach and quote pack: `docs/AEO_OUTREACH_AND_QUOTE_PACK.md`
+- AEO delivery checklist: `docs/AEO_DELIVERY_CHECKLIST.md`
 - Chinese quick diagnosis listing: `docs/CHINESE_QUICK_DIAGNOSIS_LISTING.md`
 - Platform setup: `docs/PLATFORM_SETUP.md`
 - Client delivery template: `docs/CLIENT_DELIVERY_TEMPLATE.md`
