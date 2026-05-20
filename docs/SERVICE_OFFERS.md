@@ -135,6 +135,10 @@ I help AI builders debug failed agent runs. Send redacted JSONL, JSON, or plain-
 4. Can you share a redacted minimal log sample?
 5. Do you need only a report, or do you also need a code fix?
 
+Use the full intake form in `docs/CLIENT_INTAKE_FORM.md` before accepting custom work.
+
+Use `docs/MICRO_PRODUCT_PACKS.md` when choosing between a report, fix scope, CI gate, or lightweight automation script.
+
 ## Rejection Rules
 
 Reject or rescope requests that require:

@@ -80,6 +80,8 @@ Latest:
 - Public support guide for safe log sharing and issue reports.
 - Mobile status page updated with live Fiverr links and order-safety checks.
 - Fiverr operating playbook now reflects all three live service offers.
+- Micro product packs for report, fix-scope, CI gate, and automation-script offers.
+- Client intake form for safely scoping buyer requests before accepting work.
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.

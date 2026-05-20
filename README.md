@@ -28,6 +28,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr portfolio pack: `docs/FIVERR_PORTFOLIO_PACK.md`
 - Platform setup: `docs/PLATFORM_SETUP.md`
 - Client delivery template: `docs/CLIENT_DELIVERY_TEMPLATE.md`
+- Client intake form: `docs/CLIENT_INTAKE_FORM.md`
+- Micro product packs: `docs/MICRO_PRODUCT_PACKS.md`
 - GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`
 - Release readiness: `docs/RELEASE_READINESS.md`
 - Digital product pack: `docs/DIGITAL_PRODUCT.md`

@@ -28,6 +28,8 @@ The release zip includes:
 - service offer copy
 - platform setup checklist
 - client delivery template
+- client intake form
+- micro product pack matrix
 - CI workflow example
 - changelog and roadmap
 - buyer guide
@@ -104,6 +106,8 @@ No backend. No account. No install required for the browser app.
 - `docs/SERVICE_OFFERS.md`
 - `docs/PLATFORM_SETUP.md`
 - `docs/CLIENT_DELIVERY_TEMPLATE.md`
+- `docs/CLIENT_INTAKE_FORM.md`
+- `docs/MICRO_PRODUCT_PACKS.md`
 - `docs/PRIVACY.md`
 - `docs/CI_USAGE.md`
 - `SUPPORT.md`
