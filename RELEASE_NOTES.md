@@ -132,3 +132,4 @@ Latest:
 - Chinese domestic chat reply router added with exact buyer replies for 299 diagnosis, 999 repair-plan, 1999+ re-scope, objections, intake, and decline cases.
 - Chinese 299 paid order handoff added to bridge confirmed payment into safe intake, diagnosis delivery, quality gates, and upgrade routing.
 - Chinese first-order operator dashboard added to connect publishing, lead scoring, replies, quotes, payment confirmation, delivery, follow-up, and safety checks.
+- Chinese buyer pre-diagnosis asset copy added for image cards, PDF copy, pinned comments, first replies, and buyer material instructions.

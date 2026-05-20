@@ -54,6 +54,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese domestic chat reply router: `docs/CHINESE_DOMESTIC_CHAT_REPLY_ROUTER.md`
 - Chinese 299 paid order handoff: `docs/CHINESE_299_PAID_ORDER_HANDOFF.md`
 - Chinese first order operator dashboard: `docs/CHINESE_FIRST_ORDER_DASHBOARD.md`
+- Chinese buyer pre-diagnosis asset copy: `docs/CHINESE_BUYER_PRE_DIAGNOSIS_ASSET_COPY.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
 - Domestic 299 upload checklist: `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
