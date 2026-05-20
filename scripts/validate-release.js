@@ -53,6 +53,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_999_UPGRADE_REPLY_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_999_CUSTOM_OFFER_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_1999_RESCUE_RESCOPE_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_PACKAGE_LADDER_ONE_PAGER.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_BUYER_OBJECTION_HANDLING_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_OFFER_CARD_COPY.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md"));

@@ -124,3 +124,4 @@ Latest:
 - Chinese 999 custom offer pack added for post-diagnosis repair-plan upsells with payment wording, scope confirmation, direct-operation boundary, requirements, and delivery message.
 - Chinese 1999+ rescue re-scope pack added for multi-workflow, production-risk, cost-spike, retry-loop, and complex automation rescue opportunities.
 - Chinese package ladder one-pager added to compare 299 / 999 / 1999+ in buyer chats and route unclear leads into the right paid scope.
+- Chinese buyer objection-handling pack added for price, guarantee, login, free-look, same-day, API-key, and pay-after-work objections.

@@ -44,6 +44,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese 999 custom offer pack: `docs/CHINESE_999_CUSTOM_OFFER_PACK.md`
 - Chinese 1999+ rescue re-scope pack: `docs/CHINESE_1999_RESCUE_RESCOPE_PACK.md`
 - Chinese package ladder one-pager: `docs/CHINESE_PACKAGE_LADDER_ONE_PAGER.md`
+- Chinese buyer objection handling pack: `docs/CHINESE_BUYER_OBJECTION_HANDLING_PACK.md`
 - Chinese offer card copy: `docs/CHINESE_OFFER_CARD_COPY.md`
 - Domestic posting bundle: `docs/DOMESTIC_POSTING_BUNDLE.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
