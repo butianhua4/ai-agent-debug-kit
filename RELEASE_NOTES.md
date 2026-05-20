@@ -83,3 +83,4 @@ Latest:
 - Client delivery template for paid debugging reports.
 - Platform setup checklist for Fiverr, Upwork Project Catalog, and Chinese freelance listings.
 - First Fiverr gig status and follow-up gig packs for automation scripts and CI gates.
+- Fiverr inbox safety rules and response templates for suspicious buyer messages.
