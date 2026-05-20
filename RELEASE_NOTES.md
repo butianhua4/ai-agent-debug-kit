@@ -129,3 +129,4 @@ Latest:
 - Chinese 299 Xiaohongshu and Xianyu post pack added with three Xiaohongshu posts, Xianyu listing copy, first replies, WeChat group copy, posting order, and safety reminders.
 - Chinese domestic posting schedule added with a 7-day channel rotation, daily 10-minute operating loop, reply rules, stop conditions, and weekly decision rules.
 - Chinese domestic lead scorecard added to route chats into 299 diagnosis, 999 repair-plan, 1999+ rescue, or decline paths.
+- Chinese domestic chat reply router added with exact buyer replies for 299 diagnosis, 999 repair-plan, 1999+ re-scope, objections, intake, and decline cases.
