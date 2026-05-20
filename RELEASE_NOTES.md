@@ -109,3 +109,4 @@ Latest:
 - Domestic three-image posting bundle added with platform captions, first replies, and safety checks.
 - Chinese 299 diagnosis one-pager added for buyer education, intake boundaries, and direct domestic posting.
 - Upload-ready domestic 299 diagnosis one-page image added for buyer clarification and marketplace attachments.
+- Domestic 299 upload checklist added with four-image order, platform captions, first replies, intake prompt, upgrade reply, and refusal boundary.
