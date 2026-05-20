@@ -20,6 +20,12 @@ Title:
 fix agent workflow errors and debug automation logs
 ```
 
+Recommended SEO title if the live gig continues to show zero impressions:
+
+```text
+debug AI agent workflow logs and automation failures
+```
+
 Public positioning:
 
 ```text
