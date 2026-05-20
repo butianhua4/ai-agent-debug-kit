@@ -122,3 +122,4 @@ Latest:
 - Chinese 299 30-minute delivery checklist added for fast first-order diagnosis delivery with intake, failure mapping, minimal tests, risk routing, and upgrade handoff.
 - Chinese 299 custom offer pack added for Fiverr custom offers and domestic chat payment messages with scope, requirements, boundaries, pricing, and delivery fields.
 - Chinese 999 custom offer pack added for post-diagnosis repair-plan upsells with payment wording, scope confirmation, direct-operation boundary, requirements, and delivery message.
+- Chinese 1999+ rescue re-scope pack added for multi-workflow, production-risk, cost-spike, retry-loop, and complex automation rescue opportunities.
