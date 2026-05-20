@@ -86,6 +86,7 @@ assert.ok(manifest.files.includes("docs/examples/automation-failure-rescue-repor
 assert.ok(manifest.files.includes("docs/examples/chinese-299-diagnosis-sample-report.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-299-diagnosis-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-template.md"));
+assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-sample.md"));
 assert.ok(manifest.files.includes("docs/examples/domestic-lead-tracker.csv"));
 assert.ok(manifest.files.includes("docs/examples/emergency-rescue-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/webhook-json-mapping-demo-log.jsonl"));
