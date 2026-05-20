@@ -395,7 +395,59 @@ def build_chinese_diagnosis_one_pager_png() -> None:
     img.save(output, "PNG")
 
 
+def build_chinese_999_repair_plan_proof_png() -> None:
+    ASSETS.mkdir(exist_ok=True)
+    output = ASSETS / "domestic-999-repair-plan-proof.png"
+
+    img = Image.new("RGB", (1280, 1280), "#f7f8fb")
+    draw = ImageDraw.Draw(img)
+
+    title = _cfont(62, bold=True)
+    subtitle = _cfont(30, bold=True)
+    h2 = _cfont(34, bold=True)
+    body = _cfont(27)
+    body_bold = _cfont(27, bold=True)
+    small_bold = _cfont(23, bold=True)
+    mono = _font(23)
+
+    draw.rounded_rectangle((54, 54, 1226, 252), radius=34, fill="#111827")
+    draw.text((92, 86), "999 元小范围修复方案", font=title, fill="#ffffff")
+    draw.text((96, 172), "从 299 诊断升级：把原因变成可执行修复步骤", font=subtitle, fill="#d1fae5")
+
+    draw.rounded_rectangle((74, 292, 1206, 486), radius=28, fill="#ffffff", outline="#d0d5dd", width=2)
+    draw.text((110, 326), "适合什么情况？", font=h2, fill="#175cd3")
+    y = 378
+    for text in ["问题已定位在 1-2 个节点", "需要明确改哪里、怎么测、怎么回滚", "不需要代登录账号，不需要生产后台权限"]:
+        draw.ellipse((112, y + 10, 130, y + 28), fill="#16a34a")
+        draw.text((150, y), text, font=body, fill="#344054")
+        y += 38
+
+    cards = [
+        ((74, 530, 395, 780), "#eff8ff", "01", "根因", "旧字段导致邮箱为空"),
+        ((480, 530, 801, 780), "#ecfdf3", "02", "修改", "给出旧值 / 新值 / 节点位置"),
+        ((885, 530, 1206, 780), "#fff7ed", "03", "测试", "最小测试、通过标准、回滚"),
+    ]
+    for box, fill, step, heading, text in cards:
+        draw.rounded_rectangle(box, radius=28, fill=fill, outline="#d0d5dd", width=2)
+        draw.text((box[0] + 28, box[1] + 28), step, font=title, fill="#175cd3")
+        draw.text((box[0] + 34, box[1] + 104), heading, font=h2, fill="#111827")
+        _draw_wrapped(draw, text, box[0] + 34, box[1] + 158, body_bold, "#344054", 250, 36)
+
+    draw.rounded_rectangle((74, 820, 1206, 1018), radius=28, fill="#111827")
+    draw.text((110, 852), "样例修复片段", font=h2, fill="#ffffff")
+    draw.text((112, 914), "Before: email = json.email", font=mono, fill="#fecaca")
+    draw.text((112, 958), "After:  email = json.lead.email", font=mono, fill="#bbf7d0")
+
+    draw.rounded_rectangle((74, 1048, 1206, 1182), radius=24, fill="#ffffff", outline="#d0d5dd", width=2)
+    draw.text((110, 1076), "交付内容", font=h2, fill="#7c3aed")
+    draw.text((112, 1124), "根因排序 + 修改清单 + 脱敏测试 payload + 通过标准 + 回滚方案", font=body_bold, fill="#344054")
+
+    draw.text((78, 1222), "公开样例，不是私人客户案例。只接收脱敏截图/日志，不收密码、Token、Cookie。", font=small_bold, fill="#667085")
+    img.save(output, "PNG")
+
+
 if __name__ == "__main__":
     build_automation_rescue_pdf()
     build_automation_rescue_gif()
     build_chinese_diagnosis_one_pager_png()
+    build_chinese_999_repair_plan_proof_png()
