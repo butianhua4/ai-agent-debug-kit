@@ -88,7 +88,20 @@ button {
   font-weight: 700;
 }
 
-button:last-child {
+.service-link {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  border: 1px solid var(--accent-strong);
+  border-radius: 6px;
+  padding: 0 14px;
+  background: var(--accent-strong);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#exportJson {
   background: transparent;
   color: var(--accent-strong);
 }
