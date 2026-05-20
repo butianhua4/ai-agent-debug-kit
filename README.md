@@ -15,6 +15,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - CI usage: `docs/CI_USAGE.md`
 - Example Markdown report: `docs/examples/sample-report.md`
 - Example JSON report: `docs/examples/sample-report.json`
+- Example AEO readiness report: `docs/examples/aeo-readiness-sample-report.md`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
 - Product page copy: `docs/PRODUCT_PAGE.md`
 - Launch status: `docs/LAUNCH_STATUS.md`

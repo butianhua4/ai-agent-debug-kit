@@ -167,6 +167,8 @@ Suggested fields:
 3.
 ```
 
+Sample report: `docs/examples/aeo-readiness-sample-report.md`
+
 ## Buyer Message
 
 ```text
