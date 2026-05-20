@@ -28,6 +28,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr gig packs: `docs/FIVERR_GIG_PACKS.md`
 - Fiverr inbox safety: `docs/FIVERR_INBOX_SAFETY.md`
 - Fiverr operating playbook: `docs/FIVERR_OPERATING_PLAYBOOK.md`
+- Fiverr active sourcing: `docs/FIVERR_ACTIVE_SOURCING.md`
 - Fiverr portfolio pack: `docs/FIVERR_PORTFOLIO_PACK.md`
 - Opportunity pipeline: `docs/OPPORTUNITY_PIPELINE.md`
 - Continuous operating mode: `docs/CONTINUOUS_OPERATING_MODE.md`

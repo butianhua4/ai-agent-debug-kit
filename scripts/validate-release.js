@@ -34,6 +34,7 @@ assert.ok(manifest.files.includes("docs/CLIENT_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_INTAKE_FORM.md"));
 assert.ok(manifest.files.includes("docs/CONTINUOUS_OPERATING_MODE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
+assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));
 assert.ok(manifest.files.includes("docs/OPPORTUNITY_PIPELINE.md"));

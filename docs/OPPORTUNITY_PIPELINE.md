@@ -17,7 +17,7 @@ Full operating mode: `docs/CONTINUOUS_OPERATING_MODE.md`
 
 ## Demand Sources
 
-- Fiverr inbox and order pages
+- Fiverr homepage, inbox, order pages, dashboard briefs, and manage gigs
 - public GitHub issues
 - public bounty boards
 - public product-launch conversations
@@ -67,6 +67,8 @@ A message is not a real order.
 Treat work as a real order only when the platform order page shows an order, contract, or paid custom offer.
 
 If a buyer says they paid but the order is not visible, use the platform-safe reply and do not open external links.
+
+Fiverr active-sourcing notes: `docs/FIVERR_ACTIVE_SOURCING.md`
 
 ## Safe Buyer Reply
 
