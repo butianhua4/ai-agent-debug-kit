@@ -1,0 +1,2 @@
+Date,Platform,Lead Alias,Problem Type,Failed Platform,Error Provided,Sensitive Data Risk,Fit Score,Suggested Package,Next Reply,Status
+2026-05-21,Example,demo-lead-001,webhook JSON mapping,n8n,yes,low,8,999 rescue report,ask for failed step and redacted screenshot,draft

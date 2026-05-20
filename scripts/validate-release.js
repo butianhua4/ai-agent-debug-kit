@@ -43,6 +43,7 @@ assert.ok(manifest.files.includes("docs/CLIENT_REQUEST_TRIAGE.md"));
 assert.ok(manifest.files.includes("docs/CONTINUOUS_OPERATING_MODE.md"));
 assert.ok(manifest.files.includes("docs/CUSTOM_OFFER_AUTOMATION_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
+assert.ok(manifest.files.includes("docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
@@ -63,6 +64,7 @@ assert.ok(manifest.files.includes("docs/examples/aeo-readiness-sample-report.md"
 assert.ok(manifest.files.includes("docs/examples/aeo-report-template.json"));
 assert.ok(manifest.files.includes("docs/examples/aeo-readiness-sample-report.json"));
 assert.ok(manifest.files.includes("docs/examples/automation-failure-rescue-report-template.md"));
+assert.ok(manifest.files.includes("docs/examples/domestic-lead-tracker.csv"));
 assert.ok(manifest.files.includes("docs/examples/emergency-rescue-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/webhook-json-mapping-demo-log.jsonl"));
 assert.ok(manifest.files.includes("docs/examples/sample-report.md"));
