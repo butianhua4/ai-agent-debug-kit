@@ -5,6 +5,7 @@ Public launch status for AI Agent Debug Kit v0.5.0.
 ## Completed
 
 - [x] Browser demo on GitHub Pages
+- [x] Public Fiverr service: https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs
 - [x] CLI Markdown and JSON reports
 - [x] Web Markdown export and copy
 - [x] Web JSON export and copy
