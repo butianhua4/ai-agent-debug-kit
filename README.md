@@ -23,6 +23,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Emergency rescue report template: `docs/examples/emergency-rescue-report-template.md`
 - Portfolio case: AI agent log rescue: `docs/PORTFOLIO_CASE_AGENT_LOG_RESCUE.md`
 - Portfolio case promo pack: `docs/PORTFOLIO_CASE_PROMO_PACK.md`
+- Portfolio cover: `assets/agent-log-rescue-cover.svg`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
 - Product page copy: `docs/PRODUCT_PAGE.md`
 - Launch status: `docs/LAUNCH_STATUS.md`

@@ -33,6 +33,12 @@ Tool-call failures | JSON errors | CI breakages
 Diagnosis + fix plan from redacted logs
 ```
 
+Cover asset:
+
+```text
+assets/agent-log-rescue-cover.svg
+```
+
 ## Short Platform Post
 
 ```text
@@ -102,4 +108,3 @@ AI Automation, AI Agent, Node.js, GitHub Actions, CI, Debugging, Workflow Automa
 ```text
 If your AI automation or agent workflow is failing, send a redacted log, screenshot, public repo link, or pasted workflow snippet. I can return a fast diagnosis or scoped fix plan.
 ```
-

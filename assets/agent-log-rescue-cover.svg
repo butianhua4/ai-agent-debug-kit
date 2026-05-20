@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Log Rescue cover</title>
+  <desc id="desc">Portfolio cover for AI automation workflow debugging and rescue services.</desc>
+  <rect width="1280" height="720" fill="#f7f8f5"/>
+  <rect x="58" y="58" width="1164" height="604" rx="22" fill="#ffffff" stroke="#d9ded6" stroke-width="2"/>
+  <rect x="90" y="92" width="430" height="536" rx="18" fill="#17201b"/>
+  <rect x="116" y="124" width="178" height="18" rx="9" fill="#48d597"/>
+  <rect x="116" y="170" width="340" height="16" rx="8" fill="#657067"/>
+  <rect x="116" y="208" width="280" height="16" rx="8" fill="#657067"/>
+  <rect x="116" y="246" width="320" height="16" rx="8" fill="#b42318"/>
+  <rect x="116" y="284" width="238" height="16" rx="8" fill="#657067"/>
+  <rect x="116" y="322" width="350" height="16" rx="8" fill="#a15c00"/>
+  <rect x="116" y="360" width="300" height="16" rx="8" fill="#657067"/>
+  <rect x="116" y="398" width="360" height="16" rx="8" fill="#b42318"/>
+  <rect x="116" y="452" width="160" height="42" rx="8" fill="#1d6f5f"/>
+  <rect x="292" y="452" width="160" height="42" rx="8" fill="#115246"/>
+  <path d="M560 160h260" stroke="#1d6f5f" stroke-width="12" stroke-linecap="round"/>
+  <text x="560" y="222" fill="#17201b" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">AI Agent</text>
+  <text x="560" y="286" fill="#17201b" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">Log Rescue</text>
+  <text x="562" y="340" fill="#657067" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Tool-call failures | JSON errors | CI breakages</text>
+  <g transform="translate(560 394)">
+    <rect width="184" height="82" rx="14" fill="#fbfcfa" stroke="#d9ded6"/>
+    <text x="22" y="34" fill="#657067" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Diagnosis</text>
+    <text x="22" y="65" fill="#17201b" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">$99</text>
+  </g>
+  <g transform="translate(766 394)">
+    <rect width="184" height="82" rx="14" fill="#fbfcfa" stroke="#d9ded6"/>
+    <text x="22" y="34" fill="#657067" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Fix Plan</text>
+    <text x="22" y="65" fill="#17201b" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">$299</text>
+  </g>
+  <g transform="translate(972 394)">
+    <rect width="184" height="82" rx="14" fill="#fbfcfa" stroke="#d9ded6"/>
+    <text x="22" y="34" fill="#657067" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Rescue</text>
+    <text x="22" y="65" fill="#17201b" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">$599</text>
+  </g>
+  <rect x="560" y="520" width="430" height="58" rx="12" fill="#1d6f5f"/>
+  <text x="588" y="558" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Diagnosis + fix plan from redacted logs</text>
+  <circle cx="1088" cy="160" r="74" fill="#eaf4ef" stroke="#1d6f5f" stroke-width="6"/>
+  <path d="M1056 158l24 24 46-52" fill="none" stroke="#177245" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

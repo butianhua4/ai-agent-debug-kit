@@ -21,6 +21,7 @@ assert.ok(manifest.files.includes("robots.txt"));
 assert.ok(manifest.files.includes("sitemap.xml"));
 assert.ok(manifest.files.includes("extension/popup.html"));
 assert.ok(manifest.files.includes("extension/core.js"));
+assert.ok(manifest.files.includes("assets/agent-log-rescue-cover.svg"));
 assert.ok(manifest.files.includes("assets/product-preview.svg"));
 assert.ok(manifest.files.includes("docs/AI_WORKFLOW_COST_AUDIT_OFFER.md"));
 assert.ok(manifest.files.includes("docs/BUG_REPORT_TRIAGE_OFFER.md"));
