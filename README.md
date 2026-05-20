@@ -13,6 +13,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr automation service: https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow
 - Fiverr CI risk gate service: https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
 - Emergency AI automation rescue offer: `docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md`
+- n8n / Make / Zapier automation failure rescue: `docs/AUTOMATION_FAILURE_RESCUE_OFFER.md`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`
 - Example Markdown report: `docs/examples/sample-report.md`
@@ -21,6 +22,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - AEO JSON report template: `docs/examples/aeo-report-template.json`
 - Example AEO JSON report: `docs/examples/aeo-readiness-sample-report.json`
 - Emergency rescue report template: `docs/examples/emergency-rescue-report-template.md`
+- Automation failure rescue report template: `docs/examples/automation-failure-rescue-report-template.md`
 - Portfolio case: AI agent log rescue: `docs/PORTFOLIO_CASE_AGENT_LOG_RESCUE.md`
 - Portfolio case promo pack: `docs/PORTFOLIO_CASE_PROMO_PACK.md`
 - Portfolio cover: `assets/agent-log-rescue-cover.svg`
