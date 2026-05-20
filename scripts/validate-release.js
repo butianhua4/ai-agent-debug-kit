@@ -45,6 +45,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_BUYER_INTAKE_FORM.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_BUYER_CONVERSION_MESSAGES.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_SAMPLE_INTAKE_REPLY.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_30_MIN_DELIVERY_CHECKLIST.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_299_CUSTOM_OFFER_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_BUYER_REPLY_BUNDLE.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_QUOTE_DECISION_MATRIX.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_TO_999_UPSELL_HANDOFF.md"));
