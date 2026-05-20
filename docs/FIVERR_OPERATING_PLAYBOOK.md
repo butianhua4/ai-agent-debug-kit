@@ -5,7 +5,9 @@ Operating rules for the `aibuildflow` Fiverr account and AI Agent Debug Kit serv
 ## Current Public Assets
 
 - Fiverr profile: `https://www.fiverr.com/aibuildflow`
-- Live gig: `https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs`
+- Live debug gig: `https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs`
+- Live automation script gig: `https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow`
+- Live CI risk gate gig: `https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow`
 - Public demo: `https://butianhua4.github.io/ai-agent-debug-kit/`
 - Public repository: `https://github.com/butianhua4/ai-agent-debug-kit`
 

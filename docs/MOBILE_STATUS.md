@@ -8,6 +8,10 @@ Use this page when checking progress from a phone.
 - Demo: https://butianhua4.github.io/ai-agent-debug-kit/
 - Actions: https://github.com/butianhua4/ai-agent-debug-kit/actions
 - Commits: https://github.com/butianhua4/ai-agent-debug-kit/commits/main
+- Fiverr profile: https://www.fiverr.com/aibuildflow
+- Debug gig: https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs
+- Automation gig: https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow
+- CI risk gate gig: https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
 
 ## Current Product State
 
@@ -27,6 +31,9 @@ Built:
 - Store listing draft
 - Privacy draft
 - Digital product packaging draft
+- Fiverr profile
+- Three live Fiverr gigs
+- Fiverr portfolio project
 
 Recent upgrades:
 
@@ -42,10 +49,15 @@ Recent upgrades:
 - Latest Actions run should be green.
 - Old red Actions runs are historical; check the newest run.
 - Latest commit should continue moving forward as nodes finish.
+- Fiverr Orders should be checked before trusting any buyer message.
+- External links in Fiverr Inbox are not proof of an order.
 
 ## User Action Needed
 
 None unless explicitly requested.
 
-Do not bind payment, create paid listings, grant high-permission OAuth, or touch private repositories from mobile unless the operator asks clearly.
+Current standing items:
 
+- No payout binding needed until Fiverr requires it for withdrawal.
+- No real Fiverr order is visible yet.
+- Do not bind payment, create paid listings, grant high-permission OAuth, or touch private repositories from mobile unless the operator asks clearly.

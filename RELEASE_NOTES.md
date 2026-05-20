@@ -78,6 +78,8 @@ Latest:
 - GitHub Actions release package artifact for version tags and manual runs.
 - GitHub issue template for log-format support requests.
 - Public support guide for safe log sharing and issue reports.
+- Mobile status page updated with live Fiverr links and order-safety checks.
+- Fiverr operating playbook now reflects all three live service offers.
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.
