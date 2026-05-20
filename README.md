@@ -28,6 +28,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic lead tracker CSV: `docs/examples/domestic-lead-tracker.csv`
 - Mobile selling status: `docs/MOBILE_STATUS.md`
 - Chinese 299 diagnosis report template: `docs/examples/chinese-299-diagnosis-report-template.md`
+- Chinese 299 diagnosis sample report: `docs/examples/chinese-299-diagnosis-sample-report.md`
 - Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
