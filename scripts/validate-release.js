@@ -42,6 +42,7 @@ assert.ok(manifest.files.includes("docs/SERVICE_OFFERS.md"));
 assert.ok(manifest.files.includes("docs/examples/agent-risk-gate.yml"));
 assert.ok(manifest.files.includes("docs/examples/aeo-readiness-sample-report.md"));
 assert.ok(manifest.files.includes("docs/examples/aeo-report-template.json"));
+assert.ok(manifest.files.includes("docs/examples/aeo-readiness-sample-report.json"));
 assert.ok(manifest.files.includes("docs/examples/sample-report.md"));
 assert.ok(manifest.files.includes("docs/examples/sample-report.json"));
 

@@ -1,0 +1,113 @@
+{
+  "report_type": "aeo_readiness_audit",
+  "version": "1.0",
+  "page": {
+    "url": "https://butianhua4.github.io/ai-agent-debug-kit/",
+    "target_buyer": "AI automation builders, developers, and small teams debugging agent workflows",
+    "target_action": "Try the demo, review the GitHub project, or order a diagnostic service",
+    "target_keywords": [
+      "AI agent debugging",
+      "agent log report",
+      "workflow failure audit",
+      "CI risk gate"
+    ]
+  },
+  "current_positioning": {
+    "summary": "The page presents AI Agent Debug Kit as a local browser tool for inspecting AI agent logs and exporting readable reports. It has strong technical proof, but the buyer-facing positioning can be clearer for AI answer engines.",
+    "clarity_score": 7,
+    "trust_score": 8,
+    "action_score": 6
+  },
+  "answer_engine_questions": [
+    {
+      "question": "What is this page offering?",
+      "answerable": true,
+      "evidence": "The README and demo describe a browser tool for inspecting AI agent run logs.",
+      "recommendation": "Move the one-sentence offer closer to the top of the public demo."
+    },
+    {
+      "question": "Who is the offer for?",
+      "answerable": false,
+      "evidence": "The audience is implied by developer tooling, but not stated as a direct buyer profile.",
+      "recommendation": "Add a line naming developers, AI automation builders, and teams running agent workflows."
+    },
+    {
+      "question": "What problem does it solve?",
+      "answerable": true,
+      "evidence": "The project describes hidden failures in long agent transcripts and log inspection needs.",
+      "recommendation": "Use buyer language such as failed tool calls, repeated loops, malformed JSON, and hidden token cost."
+    },
+    {
+      "question": "What does the buyer receive?",
+      "answerable": true,
+      "evidence": "The page links Markdown reports, JSON reports, CLI output, and CI examples.",
+      "recommendation": "Group deliverables into report, audit, CI gate, and custom automation categories."
+    },
+    {
+      "question": "Why should the buyer trust it?",
+      "answerable": true,
+      "evidence": "Public GitHub repository, CI badge, sample reports, and local-only privacy statement are visible.",
+      "recommendation": "Add a compact proof strip: public repo, local-only, sample report, CI checked."
+    },
+    {
+      "question": "What should the buyer do next?",
+      "answerable": false,
+      "evidence": "There are links, but the buyer path is split between demo, docs, and Fiverr services.",
+      "recommendation": "Add a single CTA path for try demo, request diagnosis, and view sample report."
+    }
+  ],
+  "missing_signals": [
+    "Explicit target-buyer sentence near the top",
+    "Short FAQ block written in question-answer form",
+    "Service package mapping from buyer problem to offer",
+    "Single next-action section",
+    "Structured audience and offer fields"
+  ],
+  "recommended_rewrite": {
+    "one_sentence_offer": "AI Agent Debug Kit helps developers turn messy AI agent logs into readable failure reports, cost signals, tool-call summaries, and CI risk gates.",
+    "page_title": "AI Agent Debug Kit - Debug agent logs, workflow failures, and CI risk flags",
+    "meta_description": "Inspect AI agent logs in the browser, detect retry loops and tool-call errors, estimate token cost, export Markdown or JSON reports, and add a CI gate for risky runs.",
+    "cta": "Try the demo, view a sample report, or request a quick diagnosis."
+  },
+  "faq_draft": [
+    {
+      "question": "Does AI Agent Debug Kit upload my logs?",
+      "answer": "No. The web app is static and runs in the browser. Logs stay local unless you export and share a report."
+    },
+    {
+      "question": "What log formats are supported?",
+      "answer": "JSONL, JSON, and plain-text logs are supported, with best results from structured JSONL."
+    },
+    {
+      "question": "Can it be used in CI?",
+      "answer": "Yes. The CLI can fail builds based on error, warning, or selected risk thresholds."
+    },
+    {
+      "question": "Can I order a human diagnosis?",
+      "answer": "Yes. A quick diagnosis service can review one redacted log, screenshot, or trace and return a one-page report."
+    }
+  ],
+  "structured_data_suggestions": {
+    "name": "AI Agent Debug Kit",
+    "category": "Developer tool / AI workflow debugging",
+    "description": "A local browser and CLI tool for turning AI agent logs into readable reports, risk flags, and CI gates.",
+    "audience": "AI developers, automation builders, freelancers, and small teams running agent workflows",
+    "offer": "Quick diagnosis, workflow audit, CI risk gate, custom automation script",
+    "proof": "Public GitHub repository, CI badge, sample reports, static local-first demo",
+    "url": "https://butianhua4.github.io/ai-agent-debug-kit/"
+  },
+  "next_actions": [
+    "Add a compact FAQ block to the public demo or README",
+    "Add a buyer-facing service package section",
+    "Add one clear CTA path for demo, sample report, and quick diagnosis",
+    "Expose structured audience and offer fields in page metadata",
+    "Use the sample AEO report as portfolio proof"
+  ],
+  "scope_boundaries": [
+    "Public-page audit only",
+    "No ranking guarantee",
+    "No private login used",
+    "No paid SEO tool used",
+    "No customer data requested"
+  ]
+}
