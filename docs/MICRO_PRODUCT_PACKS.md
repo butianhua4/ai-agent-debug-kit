@@ -38,6 +38,44 @@ The buyer has a failed AI automation, agent run, prompt chain, CI log, or no-cod
 
 24 hours after the buyer sends usable redacted material.
 
+## Pack 0A: AEO / AI Search Readiness Audit
+
+### Positioning
+
+A low-risk audit for public websites and service pages that need to be understood by AI search and answer engines.
+
+### Buyer Problem
+
+The buyer has a landing page, SaaS site, GitHub Pages demo, or Fiverr/service listing, but AI search engines may not clearly understand what it does, who it is for, or why it is trustworthy.
+
+### Input
+
+- One public URL
+- Target buyer
+- Desired visitor action
+- Keywords or competitors if known
+
+### Output
+
+- One-page AEO readiness report
+- Missing answer-engine signals
+- Top 5 rewrite recommendations
+- FAQ draft
+- Structured-data field suggestions
+- Next-step checklist
+
+### Suggested Price
+
+- Fiverr custom offer: USD 49
+- Chinese platform: RMB 299
+- Upgrade path: USD 149-399 / RMB 999-2699 for rewrite and implementation
+
+### Delivery Time
+
+24 hours for the starter audit.
+
+Full offer draft: `docs/AEO_READINESS_AUDIT_OFFER.md`
+
 ## Pack 1: Agent Log Health Check
 
 ### Positioning

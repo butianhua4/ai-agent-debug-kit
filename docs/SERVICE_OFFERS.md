@@ -43,6 +43,48 @@ AI 工作流 / Agent 报错快速诊断：看日志、找原因、给修复方�
 
 Full offer draft: `docs/QUICK_DIAGNOSIS_OFFER.md`
 
+## Offer 0A: AEO / AI Search Readiness Audit
+
+### English Listing Title
+
+I will audit your website for AI search and answer engine readiness
+
+### Chinese Listing Title
+
+AI 搜索 / AEO 可见性体检：检查你的网站是否容易被 ChatGPT、Gemini 和 AI 搜索理解
+
+### Price
+
+- Starter: USD 49 / RMB 299
+- Standard: USD 149 / RMB 999
+- Premium: USD 399 / RMB 2699
+
+### Buyer Sends
+
+- one public website URL, landing page URL, GitHub Pages URL, or Fiverr/service listing URL
+- target buyer or audience
+- target keywords or service category if known
+- main conversion goal
+
+### Deliverables
+
+- AEO readiness report
+- missing answer-engine signal list
+- top rewrite recommendations
+- FAQ draft
+- structured-data field suggestions
+- next-step checklist
+
+### Boundaries
+
+- public pages only
+- no private repo access
+- no production login
+- no paid SEO tool login
+- no ranking guarantee
+
+Full offer draft: `docs/AEO_READINESS_AUDIT_OFFER.md`
+
 ## Offer 1: AI Agent Log Debug Report
 
 ### English Listing Title
