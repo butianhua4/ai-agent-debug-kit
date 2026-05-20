@@ -32,6 +32,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_AEO_READINESS_LISTING.md"));
 assert.ok(manifest.files.includes("docs/CLI_REFERENCE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/CLIENT_INTAKE_FORM.md"));
+assert.ok(manifest.files.includes("docs/CONTINUOUS_OPERATING_MODE.md"));
 assert.ok(manifest.files.includes("docs/DEMO_SCRIPT.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));

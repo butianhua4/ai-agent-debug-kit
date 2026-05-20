@@ -11,6 +11,10 @@ This pipeline keeps AI Agent Debug Kit aligned with real buyer demand without re
 5. Verify the new artifact with tests or a repeatable command.
 6. Publish only the public, non-sensitive improvement.
 
+This is a rolling loop, not a scheduled waiting room. If there is no order, move immediately to opportunity sourcing or public product development.
+
+Full operating mode: `docs/CONTINUOUS_OPERATING_MODE.md`
+
 ## Demand Sources
 
 - Fiverr inbox and order pages
