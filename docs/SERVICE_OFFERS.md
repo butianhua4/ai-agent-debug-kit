@@ -85,6 +85,8 @@ AI 搜索 / AEO 可见性体检：检查你的网站是否容易被 ChatGPT、Ge
 
 Full offer draft: `docs/AEO_READINESS_AUDIT_OFFER.md`
 
+Chinese listing copy: `docs/CHINESE_AEO_READINESS_LISTING.md`
+
 ## Offer 1: AI Agent Log Debug Report
 
 ### English Listing Title
