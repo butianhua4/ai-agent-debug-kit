@@ -246,9 +246,15 @@ Cover subheadline:
 Small workflow helpers, Node.js scripts, and agent utilities.
 ```
 
-## Next Gig 3: AI Workflow CI Gate
+## Live Gig 3: AI Workflow CI Gate
 
-Use this if Fiverr allows another AI development listing.
+Status: Active
+
+Public URL:
+
+```text
+https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
+```
 
 Gig title field after "I will":
 
@@ -276,6 +282,12 @@ AI Agent
 GitHub Actions
 Automation
 debugging
+```
+
+Requirements:
+
+```text
+Please describe your CI workflow goal, log format, failure thresholds, and repository or CI platform. Upload a redacted sample log if possible. Do not share passwords, API keys, tokens, payment data, private customer data, or production secrets.
 ```
 
 ## Buyer Reply Templates

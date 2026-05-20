@@ -18,14 +18,14 @@ Public launch status for AI Agent Debug Kit v0.5.0.
 - [x] SEO metadata, `robots.txt`, `sitemap.xml`, and JSON-LD
 - [x] First Fiverr gig is active for AI agent workflow debugging
 - [x] Second Fiverr gig is active for custom AI automation scripts
-- [x] Fiverr follow-up gig pack prepared for CI gates
+- [x] Third Fiverr gig is active for AI agent CI risk gates
+- [x] Fiverr inbox safety triage completed for blocked suspicious leads
 
 ## Next Public Steps
 
 - [ ] Publish GitHub Release `v0.5.0` and upload `dist/ai-agent-debug-kit.zip`
 - [ ] Add final screenshots or a short demo GIF
 - [ ] Add repository topics from `GITHUB_TOPICS.md`
-- [ ] Publish third Fiverr gig from `docs/FIVERR_GIG_PACKS.md`
 - [ ] Prepare paid listing from `docs/PRODUCT_PAGE.md`
 - [ ] Continue bounty screening for low-competition JS/TS/Python issues
 

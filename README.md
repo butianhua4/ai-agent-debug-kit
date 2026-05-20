@@ -11,6 +11,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Demo: https://butianhua4.github.io/ai-agent-debug-kit/
 - Fiverr debug service: https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs
 - Fiverr automation service: https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow
+- Fiverr CI risk gate service: https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
 - CI usage: `docs/CI_USAGE.md`
 - Example Markdown report: `docs/examples/sample-report.md`
 - Example JSON report: `docs/examples/sample-report.json`

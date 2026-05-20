@@ -87,3 +87,4 @@ Latest:
 - Fiverr portfolio pack for the public AI Agent Debug Kit demo.
 - Fiverr operating playbook for message triage, package routing, and delivery boundaries.
 - Second Fiverr gig published for custom AI automation scripts.
+- Third Fiverr gig published for AI agent CI risk gates.
