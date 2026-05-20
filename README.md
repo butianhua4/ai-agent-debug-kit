@@ -24,6 +24,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese automation rescue posting pack: `docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
 - Domestic lead tracker CSV: `docs/examples/domestic-lead-tracker.csv`
+- Mobile selling status: `docs/MOBILE_STATUS.md`
 - Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
@@ -67,7 +68,6 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`
 - Release readiness: `docs/RELEASE_READINESS.md`
 - Digital product pack: `docs/DIGITAL_PRODUCT.md`
-- Mobile progress page: `docs/MOBILE_STATUS.md`
 
 It accepts JSONL, JSON, or plain-text logs and produces:
 

@@ -95,3 +95,4 @@ Latest:
 - Fiverr operating playbook for message triage, package routing, and delivery boundaries.
 - Second Fiverr gig published for custom AI automation scripts.
 - Third Fiverr gig published for AI agent CI risk gates.
+- Mobile status page now acts as a selling board with current revenue state, offer routing, proof assets, and owner-only boundaries.
