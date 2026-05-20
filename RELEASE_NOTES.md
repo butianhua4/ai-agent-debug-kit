@@ -98,3 +98,4 @@ Latest:
 - Mobile status page now acts as a selling board with current revenue state, offer routing, proof assets, and owner-only boundaries.
 - Domestic outreach scripts added for WeChat, Xianyu, Xiaohongshu, Zhihu, Juejin, and private-community lead generation.
 - Chinese buyer intake form added to turn automation rescue inquiries into scoped quotes without collecting secrets.
+- Chinese 299 RMB diagnosis report template added for fast first-order delivery.
