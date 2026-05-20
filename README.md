@@ -141,6 +141,12 @@ Full preflight:
 npm run preflight
 ```
 
+Render an AEO JSON report template to Markdown:
+
+```bash
+npm run render:aeo
+```
+
 GitHub Actions also uploads `ai-agent-debug-kit.zip` as a workflow artifact on each push to `main`.
 
 Release draft: `docs/GITHUB_RELEASE_DRAFT.md`.

@@ -7,6 +7,7 @@
     "check": "node --check core.js && node --check script.js && node --check cli.js && node --check extension/popup.js && node tests/smoke.test.js && node scripts/validate-extension.js",
     "build:release": "node scripts/build-release.js",
     "preflight": "npm run check && npm run build:release && node scripts/validate-release.js",
+    "render:aeo": "node scripts/render-aeo-report.js docs/examples/aeo-report-template.json",
     "report": "node cli.js sample-agent-log.jsonl"
   },
   "bin": {
