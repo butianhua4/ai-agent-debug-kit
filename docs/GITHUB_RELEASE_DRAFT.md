@@ -40,6 +40,9 @@ AI Agent Debug Kit v0.5.0 packages the project as a local-first AI agent log deb
 - Release package manifest and validation
 - Public Markdown and JSON sample reports
 - Copyable GitHub Actions workflows for error/warning gates and risk gates
+- Micro product packs for freelance delivery
+- Client intake form for safely scoping buyer requests
+- AI-generated bug report and agent log triage offer
 - GitHub Actions checks and artifact upload
 
 ### Copy/Paste Release Body
@@ -59,6 +62,9 @@ Highlights:
 - CLI Markdown and JSON reports
 - CI gates with `--max-errors`, `--max-warnings`, and `--fail-on-risk`
 - Copyable GitHub Actions examples for agent log quality gates
+- Micro product packs for report, fix-scope, CI gate, automation-script, and triage offers
+- Client intake form for safe buyer qualification
+- AI-generated bug report triage offer for noisy issue queues
 - Release zip with docs, examples, assets, CLI, browser app, and extension prototype
 
 Useful links:
@@ -69,6 +75,9 @@ Useful links:
 - Sample Markdown report: docs/examples/sample-report.md
 - Sample JSON report: docs/examples/sample-report.json
 - Buyer guide: BUYER_GUIDE.md
+- Micro product packs: docs/MICRO_PRODUCT_PACKS.md
+- Client intake form: docs/CLIENT_INTAKE_FORM.md
+- Bug report triage offer: docs/BUG_REPORT_TRIAGE_OFFER.md
 
 Verification:
 
@@ -102,6 +111,9 @@ Expected:
 - Sample JSON report: `docs/examples/sample-report.json`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
 - Buyer guide: `BUYER_GUIDE.md`
+- Micro product packs: `docs/MICRO_PRODUCT_PACKS.md`
+- Client intake form: `docs/CLIENT_INTAKE_FORM.md`
+- Bug report triage offer: `docs/BUG_REPORT_TRIAGE_OFFER.md`
 - Privacy draft: `docs/PRIVACY.md`
 
 ## Publish Steps

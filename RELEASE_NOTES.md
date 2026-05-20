@@ -83,6 +83,7 @@ Latest:
 - Micro product packs for report, fix-scope, CI gate, and automation-script offers.
 - Client intake form for safely scoping buyer requests before accepting work.
 - AI agent bug report triage offer for noisy issue queues and generated report review.
+- GitHub release draft updated to position the zip as a tool and service-product package.
 - Demo script for screenshots, GIFs, and launch videos.
 - Service offer copy for Fiverr, Upwork, and Chinese freelance platforms.
 - Client delivery template for paid debugging reports.
