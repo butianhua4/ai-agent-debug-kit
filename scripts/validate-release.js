@@ -76,6 +76,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_POSTING_SCHEDULE.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_LEAD_SCORECARD.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_CHAT_REPLY_ROUTER.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_PAID_ORDER_HANDOFF.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_FIRST_ORDER_DASHBOARD.md"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
