@@ -24,6 +24,7 @@ assert.ok(manifest.files.includes("extension/core.js"));
 assert.ok(manifest.files.includes("assets/agent-log-rescue-cover.svg"));
 assert.ok(manifest.files.includes("assets/automation-failure-rescue-cover.svg"));
 assert.ok(manifest.files.includes("assets/automation-rescue-one-pager.pdf"));
+assert.ok(manifest.files.includes("assets/automation-rescue-demo.gif"));
 assert.ok(manifest.files.includes("assets/product-preview.svg"));
 assert.ok(manifest.files.includes("docs/AI_WORKFLOW_COST_AUDIT_OFFER.md"));
 assert.ok(manifest.files.includes("docs/BUG_REPORT_TRIAGE_OFFER.md"));

@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from PIL import Image, ImageDraw, ImageFont
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
@@ -148,5 +149,124 @@ def build_automation_rescue_pdf() -> None:
     doc.build(story)
 
 
+def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    candidates = [
+        "C:/Windows/Fonts/arialbd.ttf" if bold else "C:/Windows/Fonts/arial.ttf",
+        "C:/Windows/Fonts/segoeuib.ttf" if bold else "C:/Windows/Fonts/segoeui.ttf",
+    ]
+    for candidate in candidates:
+        try:
+            return ImageFont.truetype(candidate, size)
+        except OSError:
+            pass
+    return ImageFont.load_default()
+
+
+def _rounded(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], fill: str, outline: str = "#d0d5dd") -> None:
+    draw.rounded_rectangle(box, radius=18, fill=fill, outline=outline, width=2)
+
+
+def _centered(draw: ImageDraw.ImageDraw, text: str, y: int, font: ImageFont.ImageFont, fill: str = "#122033") -> None:
+    bbox = draw.textbbox((0, 0), text, font=font)
+    x = (1280 - (bbox[2] - bbox[0])) // 2
+    draw.text((x, y), text, font=font, fill=fill)
+
+
+def build_automation_rescue_gif() -> None:
+    ASSETS.mkdir(exist_ok=True)
+    output = ASSETS / "automation-rescue-demo.gif"
+
+    title = _font(52, bold=True)
+    subtitle = _font(28)
+    label = _font(24, bold=True)
+    body = _font(24)
+    mono = _font(23)
+    small = _font(20)
+
+    frames: list[Image.Image] = []
+    scenes = [
+        (
+            "Your workflow still triggers...",
+            "But the CRM step fails after a webhook payload change.",
+            "Webhook",
+            "JSON mapping",
+            "CRM failed",
+            "#fef3f2",
+        ),
+        (
+            "Find the broken field path",
+            'Before: email = {{$json["email"]}}',
+            "Old field",
+            "Missing email",
+            "High retry risk",
+            "#fff7ed",
+        ),
+        (
+            "Correct the mapping safely",
+            'After: email = {{$json["lead"]["email"]}}',
+            "New field",
+            "CRM test passes",
+            "Retries disabled",
+            "#ecfdf3",
+        ),
+        (
+            "Delivery: a clear repair report",
+            "Root cause, risk level, fix sequence, and test checklist.",
+            "Report",
+            "Safe test plan",
+            "Buyer handoff",
+            "#eff8ff",
+        ),
+        (
+            "Automation Failure Rescue",
+            "n8n / Make / Zapier / Webhook / API / JSON mapping",
+            "From $49",
+            "No passwords",
+            "Redacted data only",
+            "#f8fafc",
+        ),
+    ]
+
+    for heading, sub, left, middle, right, bg in scenes:
+        img = Image.new("RGB", (1280, 720), bg)
+        draw = ImageDraw.Draw(img)
+        draw.rectangle((0, 0, 1280, 92), fill="#122033")
+        draw.text((54, 27), "AI Automation Rescue", font=subtitle, fill="#ffffff")
+        _centered(draw, heading, 132, title)
+        _centered(draw, sub, 204, subtitle, "#475467")
+
+        boxes = [(105, 310, 365, 500), (510, 310, 770, 500), (915, 310, 1175, 500)]
+        names = [left, middle, right]
+        fills = ["#ffffff", "#ffffff", "#ffffff"]
+        for idx, (box, name, fill) in enumerate(zip(boxes, names, fills)):
+            _rounded(draw, box, fill)
+            draw.text((box[0] + 30, box[1] + 44), name, font=label, fill="#122033")
+            if idx < 2:
+                draw.line((box[2] + 24, 405, box[2] + 118, 405), fill="#175cd3", width=8)
+                draw.polygon(
+                    [(box[2] + 118, 405), (box[2] + 96, 391), (box[2] + 96, 419)],
+                    fill="#175cd3",
+                )
+
+        if "Before:" in sub or "After:" in sub:
+            draw.rounded_rectangle((275, 548, 1005, 610), radius=16, fill="#122033")
+            draw.text((305, 565), sub, font=mono, fill="#ffffff")
+        else:
+            draw.text((105, 572), "Fixed-scope diagnosis. Clear report. Safe next test.", font=body, fill="#344054")
+
+        draw.text((54, 664), "Public proof: butianhua4.github.io/ai-agent-debug-kit", font=small, fill="#667085")
+        frames.extend([img] * 12)
+
+    frames[0].save(
+        output,
+        save_all=True,
+        append_images=frames[1:],
+        duration=120,
+        loop=0,
+        optimize=True,
+    )
+
+
 if __name__ == "__main__":
     build_automation_rescue_pdf()
+    build_automation_rescue_gif()
