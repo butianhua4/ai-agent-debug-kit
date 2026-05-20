@@ -15,7 +15,7 @@
 3. `assets/domestic-299-price-ladder.png`
    - 作用：让买家自选 299 / 999 / 1999+，自然导向更高客单。
 
-Current recommended five-image order:
+Current recommended seven-image order:
 
 1. `assets/domestic-299-diagnosis-cover.png`
    - Stop the scroll with the RMB 299 diagnosis hook.
@@ -25,7 +25,11 @@ Current recommended five-image order:
    - Explain 299 / 999 / 1999+ package routing.
 4. `assets/domestic-999-repair-plan-proof.png`
    - Make the 999 repair-plan upgrade concrete after diagnosis.
-5. `assets/domestic-299-diagnosis-one-pager.png`
+5. `assets/domestic-299-what-to-send.png`
+   - Tell buyers exactly what screenshots, redacted logs, expected results, and reproduction steps to send.
+6. `assets/domestic-299-do-not-send.png`
+   - Protect both sides by warning buyers not to send passwords, verification codes, tokens, keys, payment/KYC data, or full backend access.
+7. `assets/domestic-299-diagnosis-one-pager.png`
    - Answer buyer questions and safety boundaries before chat.
 
 ## 闲鱼发布
