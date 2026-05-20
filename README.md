@@ -33,6 +33,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic outreach scripts: `docs/DOMESTIC_OUTREACH_SCRIPTS.md`
 - Chinese buyer intake form: `docs/CHINESE_BUYER_INTAKE_FORM.md`
 - Chinese buyer conversion messages: `docs/CHINESE_BUYER_CONVERSION_MESSAGES.md`
+- Chinese 299 buyer reply bundle: `docs/CHINESE_299_BUYER_REPLY_BUNDLE.md`
 - Chinese offer card copy: `docs/CHINESE_OFFER_CARD_COPY.md`
 - Domestic posting bundle: `docs/DOMESTIC_POSTING_BUNDLE.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
