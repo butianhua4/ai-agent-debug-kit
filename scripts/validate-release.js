@@ -73,6 +73,7 @@ assert.ok(manifest.files.includes("docs/DOMESTIC_POSTING_BUNDLE.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_DOMESTIC_LISTING_PAGE.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_XHS_XIANYU_POSTS.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_POSTING_SCHEDULE.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_LEAD_SCORECARD.md"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
