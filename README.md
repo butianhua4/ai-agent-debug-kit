@@ -16,6 +16,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - n8n / Make / Zapier automation failure rescue: `docs/AUTOMATION_FAILURE_RESCUE_OFFER.md`
 - Automation failure rescue promo pack: `docs/AUTOMATION_FAILURE_RESCUE_PROMO_PACK.md`
 - Automation failure rescue cover: `assets/automation-failure-rescue-cover.svg`
+- Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
+- Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`
 - Example Markdown report: `docs/examples/sample-report.md`

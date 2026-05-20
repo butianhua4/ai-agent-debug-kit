@@ -1,0 +1,5 @@
+{"timestamp":"2026-05-21T09:00:01.000Z","level":"info","service":"lead-webhook","message":"Received lead.created webhook","payload":{"event":"lead.created","lead":{"name":"Alex Demo","email":"alex@example.com","company":{"name":"Demo Co"}},"metadata":{"source":"landing-page"}}}
+{"timestamp":"2026-05-21T09:00:02.200Z","level":"warning","service":"mapping-step","message":"Mapped email field is empty","mapping":"{{$json[\"email\"]}}","expected_path":"lead.email"}
+{"timestamp":"2026-05-21T09:00:03.400Z","level":"error","service":"crm-step","message":"CRM request failed: missing required field email","retry_count":3,"duplicate_notification_risk":"high"}
+{"timestamp":"2026-05-21T09:04:12.000Z","level":"info","service":"mapping-step","message":"Corrected mapping tested","mapping":"{{$json[\"lead\"][\"email\"]}}","result":"email resolved"}
+{"timestamp":"2026-05-21T09:05:44.000Z","level":"info","service":"crm-step","message":"CRM request accepted in test mode","retry_count":0,"duplicate_notification_risk":"low"}
