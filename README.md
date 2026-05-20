@@ -20,6 +20,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Example AEO readiness report: `docs/examples/aeo-readiness-sample-report.md`
 - AEO JSON report template: `docs/examples/aeo-report-template.json`
 - Example AEO JSON report: `docs/examples/aeo-readiness-sample-report.json`
+- Emergency rescue report template: `docs/examples/emergency-rescue-report-template.md`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
 - Product page copy: `docs/PRODUCT_PAGE.md`
 - Launch status: `docs/LAUNCH_STATUS.md`
