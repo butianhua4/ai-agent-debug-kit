@@ -25,6 +25,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic outreach scripts: `docs/DOMESTIC_OUTREACH_SCRIPTS.md`
 - Chinese buyer intake form: `docs/CHINESE_BUYER_INTAKE_FORM.md`
 - Chinese buyer conversion messages: `docs/CHINESE_BUYER_CONVERSION_MESSAGES.md`
+- Chinese offer card copy: `docs/CHINESE_OFFER_CARD_COPY.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
 - Domestic lead tracker CSV: `docs/examples/domestic-lead-tracker.csv`
 - Mobile selling status: `docs/MOBILE_STATUS.md`

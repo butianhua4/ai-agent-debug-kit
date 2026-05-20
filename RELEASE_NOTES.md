@@ -101,3 +101,4 @@ Latest:
 - Chinese 299 RMB diagnosis report template added for fast first-order delivery.
 - Filled Chinese 299 RMB sample report added as buyer-facing proof for the webhook JSON mapping demo.
 - Chinese buyer conversion messages added to move inquiries from sample report to intake form and quote.
+- Chinese offer-card copy added for marketplace covers, first comments, pinned posts, and domestic short posts.
