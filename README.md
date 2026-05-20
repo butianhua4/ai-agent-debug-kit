@@ -22,6 +22,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Automation rescue video storyboard: `docs/VIDEO_STORYBOARD_AUTOMATION_RESCUE.md`
 - Upload asset checklist: `docs/UPLOAD_ASSET_CHECKLIST.md`
 - Chinese automation rescue posting pack: `docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md`
+- Domestic outreach scripts: `docs/DOMESTIC_OUTREACH_SCRIPTS.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
 - Domestic lead tracker CSV: `docs/examples/domestic-lead-tracker.csv`
 - Mobile selling status: `docs/MOBILE_STATUS.md`
