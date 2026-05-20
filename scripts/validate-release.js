@@ -42,6 +42,7 @@ assert.ok(manifest.files.includes("docs/AUTOMATION_FAILURE_RESCUE_PROMO_PACK.md"
 assert.ok(manifest.files.includes("docs/CHINESE_BUYER_INTAKE_FORM.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_BUYER_CONVERSION_MESSAGES.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_OFFER_CARD_COPY.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_AUTOMATION_RESCUE_POSTING_PACK.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_QUICK_DIAGNOSIS_LISTING.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_AEO_READINESS_LISTING.md"));
