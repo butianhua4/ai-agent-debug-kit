@@ -77,6 +77,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_LEAD_SCORECARD.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_DOMESTIC_CHAT_REPLY_ROUTER.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_PAID_ORDER_HANDOFF.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_PAID_ORDER_LAUNCH_CHECKLIST.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_299_PAID_ORDER_TRACKER.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_FIRST_ORDER_DASHBOARD.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_BUYER_PRE_DIAGNOSIS_ASSET_COPY.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md"));
@@ -115,6 +116,7 @@ assert.ok(manifest.files.includes("docs/examples/chinese-299-diagnosis-sample-re
 assert.ok(manifest.files.includes("docs/examples/chinese-299-diagnosis-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-template.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-sample.md"));
+assert.ok(manifest.files.includes("docs/examples/chinese-299-paid-order-tracker.csv"));
 assert.ok(manifest.files.includes("docs/examples/domestic-lead-tracker.csv"));
 assert.ok(manifest.files.includes("docs/examples/emergency-rescue-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/webhook-json-mapping-demo-log.jsonl"));

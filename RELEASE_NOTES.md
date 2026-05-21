@@ -119,6 +119,7 @@ Latest:
 - Domestic upload checklists now include the 999 proof card in the recommended buyer-facing gallery order.
 - Chinese 999 upgrade reply pack added with short buyer replies, proof-card handoff, sample-report handoff, discount response, confirmation prompt, and safety-stop wording.
 - Chinese 299 paid-order launch checklist added for confirming safe order state, locking scope, checking intake, building diagnosis, QA, delivery, and follow-up routing.
+- Chinese 299 paid-order tracker added as a safe CSV template for status, deadline, material completeness, risk flags, report path, upgrade route, and follow-up without storing secrets.
 - Chinese 299 sample-and-intake reply added to show the sample diagnosis report, request redacted materials, and route buyers into 299 / 999 / 1999+ scope.
 - Chinese 299 30-minute delivery checklist added for fast first-order diagnosis delivery with intake, failure mapping, minimal tests, risk routing, and upgrade handoff.
 - Chinese 299 custom offer pack added for Fiverr custom offers and domestic chat payment messages with scope, requirements, boundaries, pricing, and delivery fields.

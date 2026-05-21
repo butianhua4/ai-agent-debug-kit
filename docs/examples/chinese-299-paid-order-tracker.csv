@@ -1,0 +1,4 @@
+order_id,buyer_alias,platform,package,status,start_time,deadline,material_status,risk_flags,diagnosis_report_path,upgrade_route,next_follow_up,owner_confirmation_needed,notes
+ORDER-001,buyer-a,Fiverr,299 diagnosis,paid_active,2026-05-21 09:00,2026-05-21 09:30,complete,none,docs/orders/ORDER-001-diagnosis.md,999 repair plan,2026-05-21 15:00,no,"Use platform-internal order link only. Do not store secrets, passwords, tokens, cookies, payout, KYC, tax, payment, wallet, or private customer data."
+ORDER-002,buyer-b,Xianyu,299 diagnosis,waiting_payment_confirmation,2026-05-21 10:00,2026-05-21 10:30,missing error text,payment_not_confirmed,,none,,yes,"Do not start until owner confirms payment or platform order state is paid/active."
+ORDER-003,buyer-c,Fiverr,299 diagnosis,blocked,2026-05-21 11:00,2026-05-21 11:30,unsafe,secrets_sent,,none,,yes,"Ask buyer to resend redacted screenshots/logs. Do not store the original sensitive material."
