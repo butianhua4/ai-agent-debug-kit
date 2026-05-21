@@ -4,6 +4,30 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority -3: Fresh Freelancer broken n8n business workflow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/fix-broken-business-workflow
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #14
+- suggested offer: `$1,500 Same-Day Workflow Rescue`; use platform hourly starter only if buyer requires hourly.
+- why first: strongest immediate pain signal: entire business workflow unusable, triggers fail, manual runs error, data processing stalls, quick turnaround requested, long-term work signal.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: n8n login, API credentials, tokens, passwords, payment access, private customer data, or cloud account access.
+- first ask after reply: sanitized workflow export, redacted failed execution, fake payload, expected output, and the critical path to restore first.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -2.5: Fresh Freelancer n8n AI reporting workflow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/reporting-workflow-setup
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #15
+- suggested offer: `$499 diagnostic` or budget-fit MVP if limited to one dataset, one prompt, one chart, one export path.
+- why high: open with deadline soon, clear deliverables, direct n8n + OpenAI + spreadsheet/report automation fit.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: Google/OpenAI credentials, Drive access, API keys, tokens, payment access, or real sensitive spreadsheet data.
+- first ask after reply: fake/sample dataset, desired workbook tabs/chart, example prompt, and placeholder delivery path.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority -2: Fresh Freelancer n8n workflow debugging and optimization
 
 - channel: Freelancer

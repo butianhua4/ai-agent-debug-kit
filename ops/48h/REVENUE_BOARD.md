@@ -66,6 +66,8 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/n8n/automation-engineer | open job post | 499-1500 target | proposal_ready | User can send n8n AI workflow reliability proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.25 | Ongoing staffing scope must be narrowed to one workflow first |
 | Freelancer | https://www.freelancer.com/projects/api/develop-webhook-trigger-integration | open job post | 250-499 target | proposal_ready | User can send N8N webhook trigger proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.22 | Real API keys/tokens stay client-side |
 | Opire/frontend | https://github.com/Opire/frontend/issues/39 | public proof patch | 0 | pr_draft_ready | User can manually fork/apply patch/open PR if community exposure is desired | user | ops/48h/OPIRE_PR_DRAFT.md | 0.10 | No confirmed bounty; backend may need matching global sort support |
+| Freelancer | https://www.freelancer.com/projects/n8n/fix-broken-business-workflow | open job post | 1500 target | proposal_ready | User can send urgent broken-n8n rescue proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.36 | Needs sanitized export/errors only; no credentials |
+| Freelancer | https://www.freelancer.com/projects/n8n/reporting-workflow-setup | open job post | 499 target | proposal_ready | User can send scoped AI reporting workflow proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.18 | Lower budget; Google/OpenAI credentials remain client-side |
 
 ## Current confirmed revenue
 

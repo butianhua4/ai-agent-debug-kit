@@ -318,6 +318,78 @@ Suggested scope: $499 for a complete diagnostic/implementation plan and test che
 Next question to ask: Is this a custom n8n node package or an n8n workflow using Webhook/HTTP Request nodes?
 User action required: User must send through Freelancer manually if account/rules permit. Keep real API keys client-side.
 
+## [LEAD #14]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/fix-broken-business-workflow
+Pain: Buyer's core n8n business automation is unusable: triggers do not fire, manual runs throw execution errors, data never enters correctly, processing nodes crash, output never completes, and they need a diagnosis report plus repaired workflow JSON and handoff docs.
+Suggested package: Same-Day Workflow Rescue.
+Suggested price: $1,500 fixed rescue if platform scope allows; otherwise platform hourly starter at the client's listed hourly range with a diagnostic milestone first.
+Risk: The buyer mentions API credentials and a live n8n instance. Do not request logins/API keys/tokens in chat. Start with sanitized export, redacted errors, screenshots, and fake payloads.
+
+Message draft:
+
+Hi, I can help rescue the broken n8n workflow and turn it back into a stable, documented automation.
+
+This is a strong fit for my workflow rescue process: triggers not firing, failed manual executions, bad data intake, crashing processing nodes, broken outputs, Code/Function node issues, webhook/API failures, and missing error handling.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need your n8n password, API keys, tokens, or private credentials to start. Please share:
+- sanitized workflow export JSON,
+- redacted failed execution logs,
+- screenshots of failing nodes,
+- one fake/sample input payload,
+- expected output from a successful run,
+- which path is business-critical today.
+
+My delivery would include:
+- diagnosis report with root causes,
+- repaired/import-ready n8n workflow JSON or exact change list,
+- safer trigger/data-processing/output path,
+- retry/error branch recommendations,
+- handoff notes for any env vars or credentials that you configure on your side.
+
+Suggested scope: $1,500 Same-Day Workflow Rescue for the critical workflow path. If you prefer hourly, I can begin with a focused diagnostic milestone through the platform.
+
+Next question to ask: Which trigger should start the workflow, and can you share one redacted failed execution plus a fake input payload?
+User action required: User must send through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #15]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/reporting-workflow-setup
+Pain: Buyer needs an end-to-end n8n AI reporting workflow that ingests CSV/Excel and Google Sheets data, cleans/validates it, uses AI to create narrative insights, generates an Excel workbook with charts, and stores/sends the output.
+Suggested package: Quick Diagnostic / scoped MVP.
+Suggested price: $499 diagnostic or budget-fit scoped MVP if limited to one dataset, one prompt, one chart, and one export path.
+Risk: Google Sheets/Drive credentials and OpenAI keys are credential-sensitive. Work from sample files, fake sheet data, placeholder env vars, and client-side credential setup.
+
+Message draft:
+
+Hi, I can help build a clean n8n reporting workflow that ingests spreadsheet data, validates it, uses AI to generate the report narrative, and produces a structured Excel output with charts.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need Google credentials, OpenAI keys, passwords, tokens, or payment access in chat. To scope this safely, please share:
+- a fake/sample CSV or Excel file,
+- a fake Google Sheet structure or column list,
+- one example prompt/question,
+- the desired workbook tabs and chart type,
+- where the final file should be stored or delivered, using placeholders.
+
+My suggested MVP:
+- one intake path,
+- one cleaning/validation step,
+- one AI narrative step,
+- one Excel workbook output,
+- one chart,
+- handoff notes so you can swap credentials and data ranges safely.
+
+Suggested scope: $499 diagnostic/build plan, or a budget-fit MVP if we keep the first version tightly scoped.
+
+Next question to ask: Can you share a fake/sample dataset and one example report prompt?
+User action required: User must send through Freelancer manually if account/rules permit. Keep Google/OpenAI credentials client-side.
+
 ## [LEAD #9]
 
 Source: Freelancer
