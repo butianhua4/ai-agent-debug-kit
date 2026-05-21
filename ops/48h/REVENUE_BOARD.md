@@ -71,6 +71,9 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/api-integration/gohighlevel-automation-flow | open job post | 499 target | proposal_ready | User can send N8N-GoHighLevel diagnostic proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | GHL/SMS/email tokens remain client-side |
 | Freelancer | https://www.freelancer.com/projects/n8n/zoho-crm-integration-automation | open job post | 499 target | proposal_ready | User can send n8n-Zoho CRM sync proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.27 | Zoho credentials and private CRM records remain client-side |
 | FinMind | https://github.com/rohitdash08/FinMind/issues/77 | public bounty patch | 50 | patch_prepared | Open PR only if low-payout proof/claim is worth it | user + Codex | ops/48h/patches/finmind-webhook-event-system-bounty-77.patch | 0.08 | Low payout; local pytest blocked by existing Redis dependency |
+| n8n GitHub | https://github.com/n8n-io/n8n/issues/10621 | public reply draft | 499 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.06 | No visible budget; avoid spam |
+| n8n GitHub | https://github.com/n8n-io/n8n/issues/14267 | public reply draft | 499-1500 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.07 | No visible budget; avoid spam |
+| n8n GitHub | https://github.com/n8n-io/n8n/issues/18268 | public reply draft | 499 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.05 | No visible budget; avoid spam |
 
 ## Current confirmed revenue
 
