@@ -746,3 +746,35 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: upstream GitHub issue is already closed as completed, so submitting a duplicate fix would likely be stale/no payout.
+
+## Screening 2026-05-22: Algora/Archestra MCP Apps bounties
+
+- bounty URL: https://algora.io/bounties and related GitHub issues.
+- reward amount: `$900` for historical #1301, `$400` for #3855, `$100` for #3859 as visible on labels/snippets.
+- repo: archestra-ai/archestra.
+- issues checked:
+  - https://github.com/archestra-ai/archestra/issues/1301
+  - https://github.com/archestra-ai/archestra/issues/3855
+  - https://github.com/archestra-ai/archestra/issues/3859
+- why selected: TypeScript/agent/MCP automation fit, close to our agent-skill positioning, with visible bounty labels.
+- what was done: fetched issue metadata and labels before cloning.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: #1301 is closed and rewarded; #3855 and #3859 are open but explicitly labeled `Reserved for SE interview`, so they are not safe public bounty targets.
+
+## Screening 2026-05-22: Activepieces MCP piece bounties
+
+- bounty URL: https://github.com/activepieces/activepieces/labels/%F0%9F%92%8E%20Bounty.
+- reward amount: active public list shows medium-value Activepieces bounties, but exact current award amounts were not safely actionable from the checked issues.
+- repo: activepieces/activepieces.
+- issues checked:
+  - https://github.com/activepieces/activepieces/issues/8072
+  - https://github.com/activepieces/activepieces/issues/8135
+  - https://github.com/activepieces/activepieces/issues/13083
+- why selected: TypeScript automation platform, MCP/piece ecosystem, directly aligned with n8n/agent workflow positioning.
+- what was done: searched open bounty-labeled issues and fetched visible issue context.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: Gmail and Canva bounties explicitly state an existing PR has been finalized and ask contributors not to submit more PRs while app review is pending. BuyWhere is a catalog/listing request, not a bounty request.
