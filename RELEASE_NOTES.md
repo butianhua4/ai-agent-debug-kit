@@ -122,6 +122,7 @@ Latest:
 - Chinese 299 paid-order tracker added as a safe CSV template for status, deadline, material completeness, risk flags, report path, upgrade route, and follow-up without storing secrets.
 - Chinese first-order operator dashboard now connects the paid-order launch checklist and safe tracker into the 299 RMB diagnosis workflow.
 - Chinese first paid-order phone runbook added so the first 299 RMB order can be triaged, launched, delivered, and routed from mobile without crossing owner-only safety boundaries.
+- Chinese first-order handoff prompts added so mobile order screenshots, suspicious messages, missing-material cases, and upgrade decisions can be passed to Codex without exposing secrets or requiring desktop operation.
 - Fiverr external-link reply pack added for high-risk inbox messages that claim an order exists but ask the seller to open a non-Fiverr project or payment link.
 - Chinese 299 sample-and-intake reply added to show the sample diagnosis report, request redacted materials, and route buyers into 299 / 999 / 1999+ scope.
 - Chinese 299 30-minute delivery checklist added for fast first-order diagnosis delivery with intake, failure mapping, minimal tests, risk routing, and upgrade handoff.

@@ -58,6 +58,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese 299 paid order tracker CSV: `docs/examples/chinese-299-paid-order-tracker.csv`
 - Chinese first order operator dashboard: `docs/CHINESE_FIRST_ORDER_DASHBOARD.md`
 - Chinese first paid order phone runbook: `docs/CHINESE_FIRST_PAID_ORDER_RUNBOOK.md`
+- Chinese first order handoff prompts: `docs/CHINESE_FIRST_ORDER_HANDOFF_PROMPTS.md`
 - Chinese buyer pre-diagnosis asset copy: `docs/CHINESE_BUYER_PRE_DIAGNOSIS_ASSET_COPY.md`
 - Domestic 299 pre-diagnosis material card: `assets/domestic-299-what-to-send.png`
 - Domestic 299 sensitive-data safety card: `assets/domestic-299-do-not-send.png`
