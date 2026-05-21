@@ -32,6 +32,8 @@ To scope this safely, please paste these details here in Fiverr chat:
 Please do not send passwords, API keys, OAuth tokens, cookies, private customer data, payment information, or identity documents.
 ```
 
+For a shorter copy-paste requirements form, use `docs/CI_RISK_GATE_BUYER_INTAKE_MINI_FORM.md`.
+
 ## If Buyer Has No Log Yet
 
 ```text

@@ -8,6 +8,7 @@ Goal: avoid shipping a broken gate, leaking sensitive data, or promising securit
 
 Required:
 
+- [ ] Buyer answered the safe intake fields from `docs/CI_RISK_GATE_BUYER_INTAKE_MINI_FORM.md` or provided equivalent details in Fiverr chat.
 - [ ] CI provider is named.
 - [ ] Desired mode is clear: warning-only or fail build.
 - [ ] Log format is named: JSON, JSONL, Markdown, plain text, or mixed.

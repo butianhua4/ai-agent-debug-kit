@@ -4,6 +4,8 @@ Use this calculator after a buyer provides safe, redacted CI/log details for the
 
 Goal: choose a package in under 60 seconds without underpricing complex work or promising access-heavy delivery.
 
+If the buyer has not provided enough detail yet, send `docs/CI_RISK_GATE_BUYER_INTAKE_MINI_FORM.md` first and score the reply here after they answer.
+
 ## Inputs To Score
 
 Only use details pasted inside Fiverr chat:
