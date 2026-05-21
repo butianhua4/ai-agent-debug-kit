@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- CI risk gate buyer reply pack for turning Fiverr inquiries into scoped orders.
 - CI risk gate one-page PDF and source document for the Fiverr CI workflow gig.
 - Run B file import for comparison mode.
 - Expanded Run A/B metrics in exported Markdown reports.
