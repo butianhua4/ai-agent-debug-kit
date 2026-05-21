@@ -4,6 +4,62 @@ Purpose: short user-sendable drafts for the highest-fit overseas automation oppo
 
 Confirmed revenue remains `$0` until a paid order, paid invoice, or awarded bounty is visible.
 
+## Bid 0AA: Quick Fix of n8n AI Agent Webhook
+
+- Source: Freelancer
+- URL: https://www.freelancer.com/projects/n8n/quick-fix-agent-webhook
+- Suggested package: Quick Diagnostic or compact urgent fix.
+- Suggested price: `$499` diagnostic if unclear; compact fixed urgent fix if buyer budget is smaller.
+- Risk: likely involves Supabase/OpenAI credentials. Start only from redacted execution logs and screenshots.
+
+Message draft:
+
+Hi, I can help debug the n8n AI Agent webhook failure and isolate where the run breaks between the webhook trigger, Supabase/session memory, and OpenAI/Assistants handling.
+
+I do not need passwords, Supabase keys, OpenAI keys, tokens, or private credentials to start. Please share redacted n8n execution logs, screenshots of the failing nodes, the webhook response/error, and a fake payload that matches the real request shape.
+
+My first pass would trace the webhook input, inspect memory/session references, verify the AI node input/output assumptions, and return a concise fix plan or patch path.
+
+First question: does the failure happen before the AI Agent node runs, inside the OpenAI call, or when writing/reading memory from Supabase?
+
+## Bid 0AB: Fix n8n WhatsApp Retrieval
+
+- Source: Freelancer
+- URL: https://www.vn.freelancer.com/projects/n8n/fix-whatsapp-retrieval
+- Suggested package: Quick Diagnostic leading to Same-Day Workflow Rescue.
+- Suggested price: `$499` diagnostic; `$1,500` for repair/validation/handoff if scope is confirmed.
+- Risk: WhatsApp/Supabase/OpenAI secrets must stay client-side. Start from sanitized exports and fake data only.
+
+Message draft:
+
+Hi, I can help fix the WhatsApp AI retrieval flow across n8n, Supabase vector memory, OpenAI embeddings, and the webhook response path.
+
+I do not need WhatsApp credentials, Supabase keys, OpenAI keys, tokens, passwords, or account access to start. Please share a sanitized workflow export, redacted failed execution logs, screenshots of the retrieval/vector nodes, and an example user message with fake values.
+
+My diagnostic path would check embedding creation, vector query filters, memory/session IDs, empty retrieval results, AI prompt assembly, and the final WhatsApp response mapping.
+
+Suggested first step: $499 for root-cause diagnosis and repair plan. If you want me to fix and validate the workflow end to end, I would quote a focused $1,500 rescue after reviewing the sanitized material.
+
+First question: is the bot failing because retrieval returns nothing, because the AI answer is wrong, or because WhatsApp delivery fails?
+
+## Bid 0AC: n8n Workflow Automation & Alerts
+
+- Source: Freelancer
+- URL: https://www.freelancer.com.au/projects/n8n/workflow-automation-alerts
+- Suggested package: Quick Diagnostic or alerting workflow build.
+- Suggested price: `$499` diagnostic; `$1,500` if they need production-grade monitoring, retries, and runbook.
+- Risk: alerts can expose event data. Ask for fake payloads and redacted API screenshots only.
+
+Message draft:
+
+Hi, I can help design the n8n automation and alerting workflow with clear event triggers, JSON validation, notification routing, and failure handling.
+
+I do not need passwords, API keys, tokens, payment access, or private credentials to start. Please share the event schema with fake values, the apps involved, desired alert destinations, and examples of what should count as critical.
+
+My build plan would include trigger mapping, payload validation, branching by event type/severity, alert formatting, retry/error handling, and a short runbook so the workflow can be maintained later.
+
+First question: what are the exact critical events that should trigger an alert, and where should those alerts go?
+
 ## Bid 0A: n8n Webhook-MySQL Automation
 
 - Source: Freelancer
