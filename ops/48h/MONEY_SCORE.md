@@ -47,7 +47,8 @@ Score rules:
 | 2026-05-22T03:00:00+08:00 | Pushed Claude Builders Next.js SQLite CLAUDE.md bounty branch | 40 | Public $75 bounty branch pushed and locally validated; PR blocked by browser policy and GitHub app 403 |
 | 2026-05-22T02:10:00+08:00 | Submitted Claude Builders changelog bounty PR | 40 | Public $50 bounty PR opened as #1905 from the prepared branch; not merged, not awarded, not revenue |
 | 2026-05-22T02:13:00+08:00 | Submitted Claude Builders Next.js SQLite CLAUDE.md bounty PR | 40 | Public $75 bounty PR opened as #1906 from the prepared branch; not merged, not awarded, not revenue |
+| 2026-05-22T03:23:00+08:00 | Submitted Firecrawl JS SDK automation PR | 60 | Public API automation SDK PR #3580 opened and locally tested; no bounty, no merge, not revenue |
 
 ## Total
 
-1140
+1200

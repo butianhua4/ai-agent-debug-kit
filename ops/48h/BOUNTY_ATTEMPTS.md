@@ -300,11 +300,11 @@ No runtime tests were run because this is a documentation-only change.
 - repo: firecrawl/firecrawl.
 - issue: https://github.com/firecrawl/firecrawl/issues/3437.
 - why selected: public TypeScript SDK bug with clear reproduction, small blast radius, and direct alignment with API automation/debug proof work. The issue says the Node SDK v2 `search()` options do not expose or forward documented `/v2/search` fields `country` and `enterprise`.
-- what was done: cloned the public repo, added `country?: string` and `enterprise?: Array<"default" | "anon" | "zdr">` to the JS SDK v2 `SearchRequest`, forwarded both fields in the v2 search payload builder, and added a unit test asserting `client.search()` sends those fields to `/v2/search`.
+- what was done: cloned the public repo, added `country?: string` and `enterprise?: Array<"default" | "anon" | "zdr">` to the JS SDK v2 `SearchRequest`, forwarded both fields in the v2 search payload builder, added a unit test asserting `client.search()` sends those fields to `/v2/search`, created the public fork, pushed branch `fix-js-sdk-search-fields`, and opened upstream PR #3580.
 - test result:
   - `git diff --check`: passed.
-  - `npm.cmd run test:unit -- search.unit.test.ts`: blocked on Windows because the package script uses POSIX-style `NODE_OPTIONS=...` assignment and dependencies were not installed in the cloned repo.
-- PR URL or patch path: `ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch`.
+  - `$env:NODE_OPTIONS='--experimental-vm-modules'; npx.cmd jest --verbose src/__tests__/unit/v2/search.unit.test.ts` from `apps/js-sdk/firecrawl`: passed, 1 test suite / 1 test.
+- PR URL or patch path: https://github.com/firecrawl/firecrawl/pull/3580 plus `ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch`.
 - payout status: no bounty, no award, no confirmed revenue.
 - PR draft title: Forward documented v2 search country and enterprise fields in JS SDK.
 - PR draft body:
@@ -327,7 +327,7 @@ Fixes #3437. The public `/v2/search` API documents `country` and `enterprise`, b
 I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but the package script uses POSIX-style `NODE_OPTIONS=...` assignment and this fresh clone does not have dependencies installed, so Jest did not run in this environment.
 ```
 
-- user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has pull-only access to `firecrawl/firecrawl`.
+- user action required: no PR-creation action remains. This is public proof work only unless maintainers choose to sponsor or hire later.
 
 ## Attempt 2026-05-22: Claude Builders destructive Bash hook bounty patch
 
