@@ -379,6 +379,22 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - payout status: no award, no merge, no confirmed revenue.
 - user action required: monitor PR/Opire notifications; any payout, KYC, tax, wallet, or payment profile step is user-only.
 
+## Attempt 2026-05-22: Claude Builders structured changelog generator
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1.
+- reward amount: $50 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1.
+- why selected: public Claude Code skill/script bounty with low implementation risk and clear local validation path.
+- what was done: created branch `butianhua4:add-generate-changelog-skill` in the public fork and implemented `issue-1-generate-changelog` with a portable Python script, README, and sample output.
+- test result:
+  - generated changelog output from `butianhua4/ai-agent-debug-kit`: passed.
+  - `git diff --check`: passed.
+- PR URL or patch path: branch pushed to https://github.com/butianhua4/claude-builders-bounty/tree/add-generate-changelog-skill.
+- payout status: no PR, no award, no merge, no confirmed revenue.
+- blocker: GitHub browser action was blocked by browser security policy, and GitHub app PR creation returned `403 Resource not accessible by integration`.
+- user action required: if still available, manually comment `/opire try` on issue #1 and open a PR from `butianhua4:add-generate-changelog-skill` into `claude-builders-bounty:main`.
+
 ## Attempt 2026-05-22: Claude Builders PR review agent bounty patch
 
 - bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.

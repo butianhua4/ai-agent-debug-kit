@@ -51,6 +51,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | GitHub Firecrawl | https://github.com/firecrawl/firecrawl/issues/3437 | public SDK patch | 0 | patch_prepared | User can manually open upstream PR from prepared patch | user | ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch | 0.16 | No bounty; current connector has no write access to upstream |
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 | public bounty PR | 100 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1904 | 0.16 | No award/merge yet; payout/KYC/payment remains user-only |
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 | public bounty PR | 150 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903 | 0.18 | No award/merge yet; payout/KYC/payment remains user-only |
+| Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 | public bounty branch | 50 | branch_pushed | User can manually claim and open PR from pushed fork branch | user | https://github.com/butianhua4/claude-builders-bounty/tree/add-generate-changelog-skill | 0.10 | Browser GitHub action blocked; app PR creation 403 |
 
 ## Current confirmed revenue
 

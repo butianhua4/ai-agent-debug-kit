@@ -52,3 +52,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
 - Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
+
+## 2026-05-22T02:45:00+08:00 - Manual PR required: Claude Builders changelog generator
+
+- Action required: if issue #1 is still available, comment `/opire try` on https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 and open a PR from `butianhua4:add-generate-changelog-skill` into `claude-builders-bounty:main`.
+- Suggested PR title: `Add structured changelog generator`
+- Suggested PR body: `summary: adds a portable Python changelog generator that reads git commits since the latest tag and writes a categorized CHANGELOG.md. validation: generated changelog output from butianhua4/ai-agent-debug-kit and ran git diff check. closes #1`
+- Why user action is required: GitHub browser actions are currently blocked by browser security policy, and the GitHub app returned `403 Resource not accessible by integration` for PR creation.
+- Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
