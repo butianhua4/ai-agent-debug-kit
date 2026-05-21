@@ -49,7 +49,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Fiverr gig refresh | sales/fiverr-gig-refresh-urgent-rescue.md | sales asset | 499-5000 | ready | User can update the Fiverr gig manually with the urgent rescue positioning | user | sales/fiverr-gig-refresh-urgent-rescue.md | 0.22 | Requires logged-in Fiverr account; Codex cannot auto-edit gig without browser/API access |
 | Activepieces MCP | https://github.com/activepieces/activepieces/issues/13083 | market signal | 499-5000 | strike_pack_ready | Use as MCP/piece integration service angle, not as confirmed bounty revenue | user + Codex | ops/48h/ACTIVEPIECES_MCP_STRIKE.md | 0.14 | No visible bounty; manual community/platform posting required |
 | GitHub Firecrawl | https://github.com/firecrawl/firecrawl/issues/3437 | public SDK patch | 0 | patch_prepared | User can manually open upstream PR from prepared patch | user | ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch | 0.16 | No bounty; current connector has no write access to upstream |
-| Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 | public bounty patch | 100 | patch_prepared | User can claim with `/opire try` and open PR manually if still available | user | ops/48h/patches/claude-builders-block-destructive-bash-hook.patch | 0.12 | 623 comments/crowded; requires user-controlled GitHub/Opire action |
+| Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 | public bounty PR | 100 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1904 | 0.16 | No award/merge yet; payout/KYC/payment remains user-only |
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 | public bounty PR | 150 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903 | 0.18 | No award/merge yet; payout/KYC/payment remains user-only |
 
 ## Current confirmed revenue
@@ -58,4 +58,4 @@ $0 confirmed.
 
 ## Current qualified pipeline
 
-No confirmed customer pipeline yet. The active monetizable assets are public proof/sales assets, proposal drafts, one prepared public docs patch, and one submitted public bounty PR.
+No confirmed customer pipeline yet. The active monetizable assets are public proof/sales assets, proposal drafts, one prepared public docs patch, and two submitted public bounty PRs.

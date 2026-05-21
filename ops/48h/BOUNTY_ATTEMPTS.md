@@ -341,8 +341,9 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
   - destructive sample `rm -rf dist`: passed, returned `permissionDecision: deny` and wrote a blocked log line when using a sandbox-safe `CLAUDE_HOOKS_BLOCKED_LOG` override.
   - normal command `npm test`: passed, exited 0 with no output.
   - `git diff --check`: passed.
-- PR URL or patch path: `ops/48h/patches/claude-builders-block-destructive-bash-hook.patch`.
-- payout status: no award, no merge, no confirmed revenue.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1904 plus `ops/48h/patches/claude-builders-block-destructive-bash-hook.patch`.
+- payout status: PR submitted, no award, no merge, no confirmed revenue.
+- claim status: `/opire try` comment was posted from the user-controlled GitHub session before PR submission.
 - PR draft title: Add destructive Bash command PreToolUse hook.
 - PR draft body:
 
@@ -361,7 +362,22 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - `git diff --check`
 ```
 
-- user action required: bounty claiming requires a compliant `/opire try` comment and upstream PR from a user-controlled GitHub account. Codex did not claim the bounty or submit the PR.
+- user action required: no PR-creation action remains. If the bounty is accepted, any Opire payout/KYC/payment setup remains user-only.
+
+## Submission 2026-05-22: Claude Builders destructive Bash hook PR
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3.
+- reward amount: $100 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3.
+- what was done: posted `/opire try`, reused the public fork, applied the prepared patch on branch `add-destructive-bash-hook`, validated destructive and normal command behavior, pushed the branch, and opened upstream PR #1904.
+- test result:
+  - destructive sample `rm -rf dist`: passed, returned `permissionDecision: deny` and wrote a blocked log line with a sandbox-safe log override.
+  - normal command `npm test`: passed, exited 0 with no output.
+  - `git diff --check`: passed.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1904.
+- payout status: no award, no merge, no confirmed revenue.
+- user action required: monitor PR/Opire notifications; any payout, KYC, tax, wallet, or payment profile step is user-only.
 
 ## Attempt 2026-05-22: Claude Builders PR review agent bounty patch
 

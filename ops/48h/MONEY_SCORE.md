@@ -41,7 +41,8 @@ Score rules:
 | 2026-05-22T01:10:00+08:00 | Prepared Claude Builders destructive Bash hook bounty patch | 40 | Public $100 bounty patch prepared and locally tested; not claimed/submitted, not revenue |
 | 2026-05-22T01:45:00+08:00 | Prepared Claude Builders PR review agent bounty patch | 40 | Public $150 bounty patch prepared and validated on two real PRs; not claimed/submitted, not revenue |
 | 2026-05-22T02:00:00+08:00 | Submitted Claude Builders PR review agent bounty PR | 80 | Public $150 bounty PR opened as #1903 after `/opire try`; not merged, not awarded, not revenue |
+| 2026-05-22T02:20:00+08:00 | Submitted Claude Builders destructive Bash hook bounty PR | 80 | Public $100 bounty PR opened as #1904 after `/opire try`; not merged, not awarded, not revenue |
 
 ## Total
 
-900
+980
