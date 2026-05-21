@@ -120,6 +120,35 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #9]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/Workflow-Automation-Alerts.html
+Pain: Buyer needs n8n to connect App1, App2, and App3 so critical events from App1 trigger reliable in-app notifications in App2/App3, with REST/GraphQL APIs, webhook triggers, JSON transforms, retries, fail-safe branches, and handoff documentation.
+Suggested package: Same-Day Workflow Rescue after a quick paid diagnostic, because the job is explicitly about reliability and error handling.
+Suggested price: $499 Quick Diagnostic to map payloads, failure modes, and workflow design; $1,500 same-day build/rescue if they want implementation plus validation and documentation.
+Risk: They may expect direct access to app credentials or API keys. Start with fake payloads, public/private docs snippets copied into the platform, redacted screenshots, and placeholder headers only.
+
+Message draft:
+
+Hi, I can help design and build this n8n alerting workflow with a reliability-first approach: webhook/API triggers from App1, JSON transformation, notification payloads to App2/App3, retries, conditional fail-safe paths, and clear handoff docs.
+
+I do not need passwords, API keys, tokens, payment access, or private credentials to start. A safe first step is to work from fake sample events, redacted API docs/screenshots, expected notification examples, and placeholder auth headers.
+
+My implementation plan would be:
+- define the exact event types and notification schema,
+- map App1 payloads into App2/App3 notification formats,
+- build n8n trigger and API nodes with validation guards,
+- add retry/error branches so failed notifications do not disappear silently,
+- provide step-by-step documentation for credentials, node settings, and future edits.
+
+Suggested scope: $499 for a quick diagnostic/design pass if the payloads and APIs are not fully clear yet. If you want the build plus validation and handoff docs, I would quote $1,500 for a focused same-day workflow rescue/build.
+
+Can you share one fake sample event from App1, the target notification format for App2/App3, and whether the APIs are REST or GraphQL?
+
+Next question to ask: Are App1/App2/App3 documented APIs, or do we need to infer behavior from existing requests/screenshots?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #8]
 
 Source: Freelancer
