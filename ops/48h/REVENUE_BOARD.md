@@ -44,6 +44,8 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | GitHub Actions template | https://github.com/actions/typescript-action/issues/854 | public docs patch | 0 | patch_prepared | User can manually open upstream PR if useful for public CI/release proof | user | ops/48h/patches/actions-typescript-action-release-version-check-readme.patch | 0.10 | No bounty; current connector has no write access to upstream |
 | FinMind | https://github.com/rohitdash08/FinMind/issues/75 | bounty issue | 500 | rejected-risk | No action unless maintainer clarifies credential-free mock scope and payout path | Codex | ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md | 0.02 | Partner-portal integration ambiguity, many competing attempts, payment-address chatter |
 | FinMind | https://github.com/rohitdash08/FinMind/issues/77 | bounty issue | 50 | rejected-low | Fallback only if proof patch is needed and higher-value paths stall | Codex | ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md | 0.04 | Low payout and crowded issue comments |
+| Account access | ops/48h/AUTO_EXECUTION_STATUS.md | execution status | 0 | blockers_recorded | Continue automatic public-repo and patch work; user must provide compliant platform account/API for automatic submissions | user + Codex | ops/48h/AUTO_EXECUTION_STATUS.md | 0.00 | No usable Freelancer/Upwork/Algora/community posting API available |
+| Delivery SOP | ops/48h/AUTO_DELIVERY_SOP.md | delivery asset | 499-5000 | ready | Use immediately when a qualified buyer sends sanitized logs/screenshots | Codex | ops/48h/AUTO_DELIVERY_SOP.md | 0.18 | Needs real buyer evidence to activate |
 
 ## Current confirmed revenue
 

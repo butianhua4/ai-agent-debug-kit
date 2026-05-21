@@ -33,7 +33,8 @@ Score rules:
 | 2026-05-22T00:30:00+08:00 | Prepared OpenClaw skill trigger-quality docs patch | 40 | Public proof patch aligned with OpenClaw skill ecosystem and agent-skill-packs positioning; not revenue |
 | 2026-05-22T00:55:00+08:00 | Prepared short Freelancer quick-bid pack | 50 | Converts the strongest n8n/Zapier leads into user-sendable short proposals with safe intake boundaries |
 | 2026-05-22T01:10:00+08:00 | Prepared actions/typescript-action release-version docs patch | 40 | Public CI/release automation proof patch; not a bounty and not revenue |
+| 2026-05-22T08:15:00+08:00 | Recorded account/API blockers and added auto delivery SOP | 50 | Clarifies what can be automated now and prepares a same-day delivery path for real sanitized buyer logs |
 
 ## Total
 
-550
+600

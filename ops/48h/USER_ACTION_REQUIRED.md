@@ -4,7 +4,8 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 
 ## Current blockers
 
-- None requiring immediate action for the ops board itself.
+- Platform accounts/APIs are required before Codex can submit bids, accept jobs, or post community replies automatically. Current automatic work can continue on public repos, public issue research, patches, validation, and proposal/post drafts.
+- Freelancer/Upwork/Algora/Reddit/n8n community posting is account-gated unless the user provides a compliant authenticated workflow. Codex must not invent account access or claim messages were sent.
 
 ## Standing blockers
 
