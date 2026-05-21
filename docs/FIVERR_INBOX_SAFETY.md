@@ -29,6 +29,18 @@ Treat these as likely spam or phishing:
 Hi, please keep all details, files, and payments inside Fiverr. If you need this service, please place an order or send the requirements here in this chat. I cannot open external links for safety reasons.
 ```
 
+## Claimed Order With External Link
+
+If the buyer says they chose the service, completed an order, or provided details elsewhere, but the message includes an external URL, do not open the URL. Check Fiverr Orders first.
+
+Use:
+
+```text
+Hi, thanks for reaching out. For safety, I can only review order details and requirements inside Fiverr. Please place the order or share the project requirements directly here in Fiverr chat, without external links, passwords, tokens, cookies, or private data.
+```
+
+More variants are in `docs/FIVERR_EXTERNAL_LINK_REPLY_PACK.md`.
+
 ## If The Buyer Sends Requirements In Chat
 
 ```text

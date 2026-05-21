@@ -98,6 +98,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Service offers: `docs/SERVICE_OFFERS.md`
 - Fiverr gig packs: `docs/FIVERR_GIG_PACKS.md`
 - Fiverr inbox safety: `docs/FIVERR_INBOX_SAFETY.md`
+- Fiverr external-link reply pack: `docs/FIVERR_EXTERNAL_LINK_REPLY_PACK.md`
 - Fiverr operating playbook: `docs/FIVERR_OPERATING_PLAYBOOK.md`
 - Fiverr active sourcing: `docs/FIVERR_ACTIVE_SOURCING.md`
 - Fiverr portfolio pack: `docs/FIVERR_PORTFOLIO_PACK.md`
