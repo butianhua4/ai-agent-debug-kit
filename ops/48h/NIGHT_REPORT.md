@@ -1,5 +1,42 @@
 # Overseas Night Shift Report
 
+## 2026-05-22 06:16 +08:00 checkpoint
+
+1. Confirmed revenue:
+   - `$0`.
+2. Paid / awarded / ordered evidence:
+   - None visible. Firecrawl PR #3580 and Claude Builders PRs #1903, #1904, #1905, #1906 are still open and not merged/awarded.
+3. High-value pipeline:
+   - Fresh broken n8n business workflow rescue lead: `https://www.freelancer.com/projects/n8n/fix-broken-business-workflow`.
+   - Fresh n8n automation workflow debugging lead: `https://www.freelancer.com/projects/data-processing/automation-workflow-debugging`.
+   - OpenClaw business/VPS/Windows leads in `ops/48h/SEND_QUEUE.md`.
+4. Bounty attempts:
+   - Four Claude Builders bounty PRs submitted, total possible value `$375`, no award yet.
+   - Opire/frontend #39 patch and PR draft prepared, no visible confirmed reward.
+5. PRs created or prepared:
+   - Created/submitted: Firecrawl #3580, Claude Builders #1903/#1904/#1905/#1906.
+   - Prepared: `ops/48h/OPIRE_PR_DRAFT.md` and `ops/48h/patches/opire-frontend-reward-sort-filter.patch`.
+6. Tests run:
+   - `npm run preflight` passed after each sales/patch artifact update.
+7. Fiverr inbox/orders:
+   - No confirmed paid order recorded in this checkpoint.
+8. Leads found:
+   - Multiple Freelancer n8n/OpenClaw/OpenAI automation jobs recorded in `ops/48h/LEAD_CANDIDATES.csv`.
+9. Assets shipped:
+   - Proposal packs, send queues, Opire patch draft, and revenue board updates pushed through commit `e691f06`.
+10. Blockers requiring user:
+   - Any Freelancer/Fiverr/community proposal must be sent manually by user inside platform rules.
+   - Opire payout/KYC/payment setup, if needed later, is user-only.
+11. Next 3 highest-value actions:
+   - Send the broken n8n business workflow proposal first.
+   - Send the fresh n8n workflow debugging proposal second.
+   - Monitor Claude Builders PRs for comments/merge/award and respond fast.
+12. MONEY_SCORE:
+   - Public sales/proposal package: `+50`.
+   - Public patch prepared: `+40`.
+   - Test passed: `+20`.
+   - Confirmed revenue: `0`.
+
 [OVERSEAS NIGHT SHIFT REPORT]
 
 1. Confirmed revenue:
