@@ -8,6 +8,8 @@ If the buyer needs proof before sharing requirements, use `docs/CI_RISK_GATE_CHA
 
 If the buyer hesitates about access, guarantees, samples, price, or delivery timing, use `docs/CI_RISK_GATE_BUYER_FAQ_AND_OBJECTIONS.md` before writing a custom offer.
 
+For the full inquiry-to-offer flow, use `docs/CI_RISK_GATE_CUSTOM_OFFER_RUNBOOK.md`.
+
 ## Fast Fit Check
 
 Good fit:

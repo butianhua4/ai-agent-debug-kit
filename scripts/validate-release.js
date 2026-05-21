@@ -106,6 +106,7 @@ assert.ok(manifest.files.includes("docs/CI_RISK_GATE_BUYER_REPLY_PACK.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_CHAT_HANDOFF.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_BUYER_INTAKE_MINI_FORM.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_BUYER_FAQ_AND_OBJECTIONS.md"));
+assert.ok(manifest.files.includes("docs/CI_RISK_GATE_CUSTOM_OFFER_RUNBOOK.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_CUSTOM_OFFER_CALCULATOR.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_DELIVERY_QA_CHECKLIST.md"));
