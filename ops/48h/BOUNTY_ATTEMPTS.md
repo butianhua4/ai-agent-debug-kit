@@ -461,3 +461,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903.
 - payout status: no award, no merge, no confirmed revenue.
 - user action required: monitor PR/Opire notifications; any payout, KYC, tax, wallet, or payment profile step is user-only.
+
+## Screening 2026-05-22: Storybook controls select bounty
+
+- bounty URL: https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG.
+- reward amount: $110 visible on Opire; related IssueHunt page shows $50 funded.
+- repo: storybookjs/storybook.
+- issue: https://github.com/storybookjs/storybook/issues/12641.
+- why selected: visible TypeScript bounty with direct UI/control inference scope.
+- what was done: screened public Opire, IssueHunt, and GitHub-indexed references.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: public references show the issue has an existing submitted PR (#33200), the IssueHunt issue is closed/referenced by that PR, and Opire says the bounty is already claimed by another solver. Too much collision risk for an overnight auto patch.
