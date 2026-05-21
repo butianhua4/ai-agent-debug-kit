@@ -539,3 +539,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: the repository was not publicly cloneable from the available GitHub reference during earlier screening, and Opire lists it as already claimed by two solvers. Without public repo access this cannot be completed safely.
+
+## Screening 2026-05-22: Restfuncs busboy supply-chain review bounty
+
+- bounty URL: https://app.opire.dev/issues/01HWAKVG8489QKN1NEGQA2RJC4.
+- reward amount: $50 visible on Opire.
+- repo: bogeeee/restfuncs.
+- issue: https://github.com/bogeeee/restfuncs/issues/6.
+- why selected: TypeScript/security review bounty that could become a useful public audit proof if open.
+- what was done: checked upstream GitHub issue state before cloning or reviewing dependency code.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream issue #6 is closed as not planned. It also asks for supply-chain/security review of a third-party parser, which is higher-risk and lower-certainty than a normal bug patch.
+
+## Screening 2026-05-22: PHPUnit empty coverage file list bounty
+
+- bounty URL: https://app.opire.dev/issues/01HWX4P9F1935V3ZXN4TY7VDEQ.
+- reward amount: $50 visible on Opire.
+- repo: sebastianbergmann/phpunit.
+- issue: https://github.com/sebastianbergmann/phpunit/issues/4440.
+- why selected: narrow error-message improvement with visible reward.
+- what was done: checked upstream issue and recent release references.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: public release notes show #4440 was already changed/fixed in PHPUnit 12.5.15 and 13.0.6. Opire still lists it, so this is likely stale and already claimed.
