@@ -131,7 +131,13 @@ C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\docs\examples\agent-risk-gate.yml
 ```
 
-4. CI usage doc:
+4. One-page PDF:
+
+```text
+C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk-gate-one-pager.pdf
+```
+
+5. CI usage doc:
 
 ```text
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\docs\CI_USAGE.md

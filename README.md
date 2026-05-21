@@ -65,6 +65,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic 299 summary card: `assets/domestic-299-summary-card.png`
 - CI risk gate cover: `assets/ci-risk-gate-cover.png`
 - CI risk gate cover source: `assets/ci-risk-gate-cover.svg`
+- CI risk gate one-page PDF: `assets/ci-risk-gate-one-pager.pdf`
 - Chinese 299 eight-image posting caption: `docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md`
 - Chinese 299 mobile posting checklist: `docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md`
 - Chinese 299 24-hour follow-up cadence: `docs/CHINESE_299_24H_FOLLOW_UP_CADENCE.md`
@@ -82,6 +83,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`
+- CI risk gate one-pager: `docs/CI_RISK_GATE_ONE_PAGER.md`
 - Example Markdown report: `docs/examples/sample-report.md`
 - Example JSON report: `docs/examples/sample-report.json`
 - Example AEO readiness report: `docs/examples/aeo-readiness-sample-report.md`
