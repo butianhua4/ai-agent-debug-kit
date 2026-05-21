@@ -103,3 +103,54 @@ This file records public bounty work only. A bounty is not revenue until it is e
 - test result: not attempted.
 - PR URL or patch path: none.
 - payout status: no bounty visible, not revenue.
+
+## Attempt 2026-05-21: Opire scan
+
+- bounty URL: https://opire.dev/home and https://app.opire.dev/home
+- reward amount: mixed public rewards from $30 to $2,780+.
+- repo: multiple public repositories.
+- issue: multiple.
+- why selected: Opire is a public reward platform and can expose non-private GitHub issues without platform outreach.
+- what was done: opened public reward pages and screened TypeScript/JavaScript-fit candidates.
+- test result: no code test run; screening only.
+- PR URL or patch path: none.
+- payout status: not awarded, not paid.
+
+### Rejected-low: TypeORM migration generation reward
+
+- bounty URL: https://app.opire.dev/issues/01HWJNZ5HQMVG2TCW6XHQQJ3QT
+- reward amount: $190.
+- repo: typeorm/typeorm.
+- issue: https://github.com/typeorm/typeorm/issues/3357
+- why selected: TypeScript, database migration bug, public reward.
+- what was done: opened public Opire page and checked reward/status.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: not awarded, not paid.
+- rejection reason: low payout relative to complexity and 22 solvers/claims visible.
+
+### Rejected-low: Storybook controls reward
+
+- bounty URL: https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG
+- reward amount: $110.
+- repo: storybookjs/storybook.
+- issue: https://github.com/storybookjs/storybook/issues/12641
+- why selected: TypeScript frontend bug with available rewards.
+- what was done: opened public Opire page and checked reward/status.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: not awarded, not paid.
+- rejection reason: low payout and already claimed by a solver.
+
+### Rejected-risk: Kokoro German language funding
+
+- bounty URL: https://app.opire.dev/issues/01KCKZCP14P37WZQZQA9W6BGJJ
+- reward amount: $1,620.
+- repo: hexgrad/kokoro.
+- issue: https://github.com/hexgrad/kokoro/issues/290
+- why selected: high public reward and JavaScript label on Opire.
+- what was done: opened GitHub issue and Opire search context.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: not awarded, not paid.
+- rejection reason: reads like funding/donation for maintainer language-model work, not a clear external patch issue.
