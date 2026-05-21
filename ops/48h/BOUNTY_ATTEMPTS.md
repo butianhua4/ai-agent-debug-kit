@@ -604,3 +604,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: `ops/48h/patches/opire-frontend-reward-sort-filter.patch`.
 - payout status: no award, no confirmed revenue.
 - next action: if user wants community exposure, manually fork/PR the patch to `Opire/frontend`; otherwise keep as proof of public-repo patch capability.
+
+## Screening 2026-05-22: Firecrawl n8n Tool Node bounty
+
+- bounty URL: https://github.com/firecrawl/firecrawl/issues/2340.
+- reward amount: $100 visible on the issue labels.
+- repo: firecrawl/firecrawl and linked repo https://github.com/firecrawl/n8n-nodes-firecrawl.
+- issue: Add Firecrawl Tool Node Support for n8n (AI Agent Integration).
+- why selected: direct n8n + AI agent integration fit, visible bounty label, and aligned with the emergency automation positioning.
+- what was done: checked upstream issue state before cloning/building.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: the issue is closed as `not_planned`, so opening a bounty PR now would likely be stale/no payout and could be noisy. Search for open alternatives continues.
+
+## Screening 2026-05-22: Firecrawl open bounty search
+
+- bounty URL: https://github.com/firecrawl/firecrawl/issues?q=is%3Aissue%20is%3Aopen%20bounty.
+- reward amount: none found in scoped search.
+- repo: firecrawl/firecrawl.
+- issue: open bounty search for n8n/integration/self-host/TypeScript candidates.
+- why selected: existing Firecrawl PR already provides proof and the repo has bounty labels.
+- what was done: searched open issues in `firecrawl/firecrawl` for bounty+n8n/integration and bounty+self-host/SDK/TypeScript.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: no open matching bounty issues returned by the GitHub connector search.
