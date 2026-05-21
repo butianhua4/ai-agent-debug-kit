@@ -267,3 +267,15 @@ No runtime tests were run because this is a documentation-only change.
 ```
 
 - user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has pull-only access to `actions/typescript-action`.
+
+## Refresh 2026-05-22: high-value bounty screening
+
+- bounty URL: multiple public search results.
+- reward amount: `$50` to `$1000` visible across screened FinMind candidates; stale `$500` tscircuit snippets were rejected because the issues are closed.
+- repo: rohitdash08/FinMind, tscircuit/tscircuit, actions/typescript-action.
+- issue: see `ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md`.
+- why selected: refresh high-value JS/TS/docs/CI/automation opportunities after the previous patch node.
+- what was done: screened public issue state, bounty notes, acceptance criteria, comments, payout boundaries, and competition signals.
+- test result: no code test run for rejected candidates; `actions/typescript-action#854` patch validation is recorded above.
+- PR URL or patch path: `ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md`.
+- payout status: no award, no merge, no confirmed revenue.
