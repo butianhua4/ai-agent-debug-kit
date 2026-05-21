@@ -86,20 +86,19 @@ I set up a lightweight CI gate that flags risky AI agent logs before they ship o
 
 Recommended gallery order:
 
-1. `assets/product-preview.svg`
+1. `assets/ci-risk-gate-cover.png`
 2. `docs/examples/agent-risk-gate.yml`
 3. `docs/CI_USAGE.md`
 4. `docs/CLI_REFERENCE.md`
 
 Current gap:
 
-- There is no dedicated CI risk gate cover PNG yet.
-- Use the public demo/product preview until a dedicated CI gate visual is created.
+- The dedicated CI risk gate cover is now available as PNG and SVG source.
 
 Recommended next asset:
 
-- Create `assets/ci-risk-gate-cover.png` or an SVG/PNG pair later.
-- Include a screenshot-style panel showing: log input -> risk flags -> CI pass/fail.
+- Upload `assets/ci-risk-gate-cover.png` first.
+- Use `assets/ci-risk-gate-cover.svg` as the editable source.
 
 ## Gig 4 / Draft: AI Workflow Cost And Failure Audit
 

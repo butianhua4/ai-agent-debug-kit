@@ -63,6 +63,8 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic 299 pre-diagnosis material card: `assets/domestic-299-what-to-send.png`
 - Domestic 299 sensitive-data safety card: `assets/domestic-299-do-not-send.png`
 - Domestic 299 summary card: `assets/domestic-299-summary-card.png`
+- CI risk gate cover: `assets/ci-risk-gate-cover.png`
+- CI risk gate cover source: `assets/ci-risk-gate-cover.svg`
 - Chinese 299 eight-image posting caption: `docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md`
 - Chinese 299 mobile posting checklist: `docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md`
 - Chinese 299 24-hour follow-up cadence: `docs/CHINESE_299_24H_FOLLOW_UP_CADENCE.md`
