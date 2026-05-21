@@ -1,5 +1,36 @@
 # Overseas Night Shift Report
 
+## 2026-05-22 07:30 +08:00 checkpoint
+
+1. Confirmed revenue:
+   - `$0`. No platform-paid order, paid invoice, bounty award, or merged bounty PR is confirmed yet.
+2. Paid / awarded / ordered evidence:
+   - None. TypeORM PR #12532 is open and submitted, but not merged/awarded.
+3. High-value pipeline:
+   - Public bounty pipeline now includes TypeORM #3357 / Opire `$120` with a submitted PR.
+   - Existing proposal-ready automation leads remain user-send only on Freelancer/community platforms.
+4. Bounty attempts:
+   - TypeORM Postgres varchar length bounty patch was pushed to `butianhua4/typeorm` and submitted upstream as `https://github.com/typeorm/typeorm/pull/12532`.
+5. PRs created or prepared:
+   - Created/submitted in this checkpoint: TypeORM #12532.
+   - Existing submitted PRs: Firecrawl #3580 and Claude Builders #1903/#1904/#1905/#1906.
+6. Tests run:
+   - TypeORM: `corepack pnpm install --frozen-lockfile` passed; `corepack pnpm run compile` passed; targeted DB test remains blocked by missing `ormconfig.json` / Postgres test DB.
+7. Fiverr inbox/orders:
+   - Not checked in this node because this was a public bounty submission node. No confirmed Fiverr revenue recorded.
+8. Leads found:
+   - No new lead found in this node.
+9. Assets shipped:
+   - Public TypeORM bounty PR submitted and ops records updated.
+10. Blockers requiring user:
+   - Any Opire payout, KYC, wallet, tax, or withdrawal setup remains user-only if the PR is eventually awarded.
+11. Next 3 highest-value actions:
+   - Monitor TypeORM PR #12532 for CI/review feedback.
+   - Search for one more public JS/TS/docs bounty that can be patched without secrets.
+   - Keep proposal-ready n8n/Freelancer drafts ready for user manual sending if the user opens those accounts.
+12. MONEY_SCORE:
+   - +80 public under-$1000 bounty PR submitted.
+
 ## 2026-05-22 06:16 +08:00 checkpoint
 
 1. Confirmed revenue:

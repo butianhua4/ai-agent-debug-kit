@@ -74,3 +74,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Why user action may be required: this repo has no existing fork/PR workflow set up in the current browser session, and the payout is only `$50`, so submitting should be weighed against higher-value leads.
 - Verification note: formatting and lint passed; local pytest is blocked by the repo's existing Redis dependency at auth login.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
+
+## 2026-05-22T07:30:00+08:00 - Submitted bounty PR: TypeORM Postgres varchar length
+
+- Action completed: Codex created the public fork `https://github.com/butianhua4/typeorm`, pushed branch `opire-3357-postgres-varchar-length`, and opened upstream PR https://github.com/typeorm/typeorm/pull/12532 for issue https://github.com/typeorm/typeorm/issues/3357.
+- Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
+- Verification note: `corepack pnpm install --frozen-lockfile` passed and `corepack pnpm run compile` passed. Targeted DB test is blocked locally by missing `ormconfig.json` / Postgres test DB.
+- Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
+- Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
