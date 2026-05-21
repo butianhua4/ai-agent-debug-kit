@@ -122,6 +122,95 @@ User action required: User must post this manually only if subreddit rules allow
 
 ## [LEAD #8]
 
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/webhook-mysql-automation
+Pain: Buyer has an inbound webhook already sending user data and needs a clean n8n workflow to parse, transform, validate, dedupe, and save rows into MySQL with documentation.
+Suggested package: Compact implementation inside the Emergency Rescue framing.
+Suggested price: The public budget is $30-250, so offer a fixed $250 MVP if bidding is required; use the $499 diagnostic only if they want deeper failure-proofing and documentation.
+Risk: MySQL schema and live data can contain sensitive information. Start from fake payloads, fake schema, and a local/sample database mapping. Do not request database passwords or production credentials.
+
+Message draft:
+
+Hi, I can build this n8n Webhook -> validation/transform -> MySQL workflow with clear mapping, dedupe checks, and handoff notes.
+
+I do not need your production database password, API keys, tokens, or private credentials to start. Please share a sample webhook payload with fake values, the MySQL table/column schema using fake field names if needed, and the expected dedupe key.
+
+My build plan:
+- define the Webhook trigger and payload parsing,
+- map incoming fields to MySQL columns,
+- add required-field validation and duplicate protection,
+- add failure branches for bad payloads or DB write errors,
+- test with sample calls,
+- document how to update field mappings and redeploy later.
+
+For your listed scope I can quote a compact fixed MVP inside your budget if you want the fastest delivery. If you want stronger rescue-grade validation, replay testing, and failure documentation, I can also do a $499 diagnostic/hardening pass first.
+
+Can you share one sample payload and the target MySQL columns with fake values?
+
+Next question to ask: What field should be used as the unique dedupe key?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #9]
+
+Source: Freelancer
+URL: https://www.freelancer.in/projects/n8n/Meta-Webhook-Automation.html
+Pain: Buyer wants n8n connected to Meta Graph API webhooks for Messenger/Instagram, ChatGPT enrichment, routing, scheduling, and ongoing troubleshooting.
+Suggested package: $499 Quick Diagnostic for architecture and safe webhook validation; only quote $1,500+ after confirming real scope and retainer potential.
+Suggested price: $499 diagnostic/architecture sprint; initial platform budget is low, so qualify before promising long-term maintenance.
+Risk: Meta webhooks and token refresh can involve app permissions, OAuth, and secrets. Do not request tokens, passwords, or admin access. Ask for screenshots, redacted event samples, and app status only.
+
+Message draft:
+
+Hi, I can help design and stabilize the n8n + Meta webhook flow for Messenger/Instagram and ChatGPT routing.
+
+For safety, I do not need passwords, access tokens, API keys, app secrets, payment access, or admin credentials to begin. A good first step can be done from redacted screenshots, sample webhook events, and your intended message/comment routing rules.
+
+My diagnostic/build plan:
+- map the Messenger/Instagram webhook events and subscription requirements,
+- define n8n trigger, verification, routing, and enrichment nodes,
+- design ChatGPT tagging/reply logic with guardrails,
+- add error handling for expired permissions, missing fields, duplicate events, and failed posts,
+- document how to expand the flow and rotate credentials safely on your side.
+
+Because Meta token/app setup can become the real blocker, I would start with a small diagnostic/architecture sprint, then only move to implementation once the permissions and webhook events are confirmed.
+
+Can you share redacted webhook event examples and whether the Meta app is already approved for the required permissions?
+
+Next question to ask: Is the Meta app already receiving webhook test events successfully?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #10]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
+Pain: Buyer needs a POST webhook trigger for n8n that sends JSON and uses API key authentication.
+Suggested package: Compact fixed build or $499 Quick Diagnostic if they need production hardening.
+Suggested price: Public budget is $30-250, so quote a compact fixed MVP if bidding; $499 for hardened version with validation, docs, and test matrix.
+Risk: API key auth can tempt credential sharing. Use placeholder environment variables and sample payloads; client should connect real keys after delivery.
+
+Message draft:
+
+Hi, I can build the n8n webhook trigger path with JSON POST handling, API-key authentication pattern, validation, and a short setup guide.
+
+I do not need your real API key, tokens, passwords, or private credentials. I can deliver the workflow using placeholder environment variables and a sample payload, then document exactly where you add the real value on your side.
+
+Implementation plan:
+- define the POST webhook contract and expected JSON schema,
+- add API-key header validation using an environment variable placeholder,
+- normalize and validate the incoming JSON,
+- return clear success/error responses,
+- add test examples with curl/Postman-style requests,
+- provide import/redeploy notes.
+
+For the compact scope, I can keep this as a small fixed build. If you want production hardening with retries, logging, and failure branches, I would quote it as a $499 diagnostic/build pass.
+
+Can you share the expected JSON fields and the response format you want the webhook to return?
+
+Next question to ask: What header name should carry the API key, and what should the success response look like?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #8]
+
 Source: GitHub Activepieces
 URL: https://github.com/activepieces/activepieces/issues/13083
 Pain: Existing MCP server wants broader catalog/automation ecosystem exposure. This is not a bounty, but it signals demand for MCP servers and automation pieces that are easier to package, document, validate, and submit.
