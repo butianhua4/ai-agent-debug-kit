@@ -82,6 +82,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese 999 repair plan sample: `docs/examples/chinese-999-repair-plan-sample.md`
 - Portfolio case: automation failure rescue: `docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md`
 - Portfolio case: AI agent CI risk gate: `docs/PORTFOLIO_CASE_CI_RISK_GATE.md`
+- CI risk gate proof caption pack: `docs/CI_RISK_GATE_PROOF_CAPTION_PACK.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`

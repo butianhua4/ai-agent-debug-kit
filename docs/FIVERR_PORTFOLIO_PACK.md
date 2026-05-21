@@ -98,6 +98,7 @@ Supporting proof:
 docs/PORTFOLIO_CASE_CI_RISK_GATE.md
 docs/CI_RISK_GATE_ONE_PAGER.md
 docs/examples/ci-risk-gate-sample-pair.md
+docs/CI_RISK_GATE_PROOF_CAPTION_PACK.md
 ```
 
 Short Version:
