@@ -24,6 +24,7 @@ Goal: maximize actions Codex can complete without waiting, while separating true
 - No usable Algora developer account is available for claiming/attempting bounties automatically.
 - No usable Reddit/n8n community account workflow is available for posting automatically.
 - Fiverr can only be handled as inbound drafts unless a safe logged-in browser flow is available and the action does not involve payment, KYC, tax, external links, or high-permission authorization.
+- Current tool search did not expose an in-app browser automation tool in this run; therefore Codex cannot truthfully inspect or click Fiverr/Freelancer pages from this environment right now.
 
 ## Current automatic work queue
 
@@ -32,6 +33,10 @@ Goal: maximize actions Codex can complete without waiting, while separating true
 3. Convert strongest leads into short proposal packs.
 4. Prepare platform-specific posts for manual/account-gated sending.
 5. When a real customer message/log arrives, stop current work and generate triage, risk assessment, quote draft, and delivery plan.
+
+## Account automation requirement
+
+To actually auto-submit bids, accept jobs, or send platform messages, Codex needs a platform-compliant authenticated workflow such as an approved API, an available browser automation tool attached to the logged-in session, and explicit permission for the exact action. Without that, Codex will keep building and validating assets but will not claim that a bid/order was sent.
 
 ## Revenue truth
 

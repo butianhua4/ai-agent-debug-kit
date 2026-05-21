@@ -6,6 +6,7 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 
 - Platform accounts/APIs are required before Codex can submit bids, accept jobs, or post community replies automatically. Current automatic work can continue on public repos, public issue research, patches, validation, and proposal/post drafts.
 - Freelancer/Upwork/Algora/Reddit/n8n community posting is account-gated unless the user provides a compliant authenticated workflow. Codex must not invent account access or claim messages were sent.
+- This run did not expose an in-app browser automation tool after tool search, so Fiverr/Freelancer page clicking is currently blocked from Codex. Public repo work and public-web research can continue automatically.
 
 ## Standing blockers
 
