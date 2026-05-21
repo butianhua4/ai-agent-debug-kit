@@ -694,3 +694,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - test result: `npm test -- --grep "#1733"` failed before tests because TypeORM enforces pnpm through `devEngines`; `corepack pnpm --version` failed in sandbox while creating the Corepack cache directory. Full DB test not run.
 - PR URL or patch path: `ops/48h/patches/typeorm-postgres-varchar-length-bounty-3357.patch`; PR draft at `ops/48h/TYPEORM_BOUNTY_3357_PR_DRAFT.md`.
 - payout status: not submitted, not awarded, no confirmed revenue.
+
+## Screening 2026-05-22: Trovu PWA external browser bounty
+
+- bounty URL: https://app.opire.dev/issues/01HTN11YX5NYSS7GGB3SHNCJSS.
+- reward amount: $70 visible on Opire.
+- repo: trovu/trovu.
+- issue: https://github.com/trovu/trovu/issues/329.
+- why selected: TypeScript/JavaScript/HTML bounty with a narrow PWA behavior request.
+- what was done: checked issue body before cloning/patching.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: maintainer explicitly requires verification on an actual Android PWA device and says common `window.open()` / `_blank` variants will not be considered. This workspace cannot honestly satisfy that proof condition unattended.
+
+## Screening 2026-05-22: Kokoro German language funding
+
+- bounty URL: Opire home lists `hexgrad/kokoro` German language funding.
+- reward amount: $1,620 visible on Opire.
+- repo: hexgrad/kokoro.
+- issue: exact reward issue not identified from public search; repo issue list shows many language-support requests.
+- why selected: very high reward and JavaScript repository.
+- what was done: searched the public GitHub issue context and existing language-support PR/activity.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: appears to be TTS language/model/G2P/voice-support work rather than a short JS automation patch. It needs language data/audio validation and is not safe to claim as a quick unattended bounty without a narrower scoped issue.
