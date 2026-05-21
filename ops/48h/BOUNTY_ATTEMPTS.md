@@ -691,7 +691,7 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - issue: https://github.com/typeorm/typeorm/issues/3357.
 - why selected: public TypeScript bounty, clear data-loss bug, direct code path in `PostgresQueryRunner.changeColumn`, and no credential/private-data requirement.
 - what was done: cloned the public repo to `C:\Users\33065\Documents\Codex\2026-05-18\5000\typeorm-bounty-3357`, prepared a minimal patch so Postgres varchar length-only changes use `ALTER COLUMN ... TYPE ...` instead of drop/add, and extended the existing #1733 varchar length test to verify row data survives synchronization.
-- test result: `npm test -- --grep "#1733"` failed before tests because TypeORM enforces pnpm through `devEngines`; `corepack pnpm --version` failed in sandbox while creating the Corepack cache directory. Full DB test not run.
+- test result: `corepack pnpm install --frozen-lockfile` passed; `corepack pnpm run compile` passed. `corepack pnpm run test:fast -- --grep "#1733"` could not reach the targeted test because the TypeORM test harness requires an `ormconfig.json` database configuration and no local Postgres test DB is configured.
 - PR URL or patch path: `ops/48h/patches/typeorm-postgres-varchar-length-bounty-3357.patch`; PR draft at `ops/48h/TYPEORM_BOUNTY_3357_PR_DRAFT.md`.
 - payout status: not submitted, not awarded, no confirmed revenue.
 

@@ -22,7 +22,9 @@ This patch keeps destructive recreation for real type/array/generated-column cha
 Validation:
 
 - Patch prepared locally against `typeorm/typeorm` main.
-- `npm test -- --grep "#1733"` could not run in this workspace because TypeORM now enforces pnpm through `devEngines`, and pnpm is not installed. `corepack pnpm --version` also failed in the sandbox while trying to create `C:\Users\33065\AppData\Local\node\corepack\v1`.
+- `corepack pnpm install --frozen-lockfile` passed after enabling Corepack's pnpm cache.
+- `corepack pnpm run compile` passed.
+- `corepack pnpm run test:fast -- --grep "#1733"` could not reach the targeted test because the TypeORM test harness requires an `ormconfig.json` database configuration in the repo root. No Postgres test database was configured in this workspace.
 - No secrets, credentials, payment, KYC, or private access were used.
 
 ## Patch path
@@ -33,4 +35,4 @@ Validation:
 
 - This is deliberately scoped to Postgres because issue #3357 and the reproduced code path are Postgres-specific.
 - Narrowing a varchar length can still fail if existing data exceeds the new limit, but it will fail safely instead of silently dropping/recreating the column.
-- Full upstream validation needs the repo's pnpm toolchain and a Postgres test database.
+- Full upstream validation needs a TypeORM `ormconfig.json` and a Postgres test database.

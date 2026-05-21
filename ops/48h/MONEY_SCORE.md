@@ -55,7 +55,8 @@ Score rules:
 | 2026-05-22T07:03:00+08:00 | Promoted urgent n8n consultation lead to send queue | 50 | Moves the fresh diagnostic lead into the top manual-send position with safe intake boundaries; not sent and not revenue |
 | 2026-05-22T07:08:00+08:00 | Prepared TypeORM Postgres varchar length bounty patch | 40 | Public $120 Opire bounty patch prepared with PR draft; tests blocked by pnpm/Corepack/Postgres environment; not submitted and not revenue |
 | 2026-05-22T07:13:00+08:00 | Screened Trovu and Kokoro Opire bounties | 20 | Rejected two high-noise/high-validation-risk targets and preserved focus on feasible public patches; not revenue |
+| 2026-05-22T07:18:00+08:00 | Improved TypeORM bounty validation | 20 | Installed pnpm dependencies and confirmed compile passes; DB test still blocked by missing ormconfig/Postgres; not submitted and not revenue |
 
 ## Total
 
-1500
+1520
