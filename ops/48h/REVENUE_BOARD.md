@@ -49,6 +49,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Fiverr gig refresh | sales/fiverr-gig-refresh-urgent-rescue.md | sales asset | 499-5000 | ready | User can update the Fiverr gig manually with the urgent rescue positioning | user | sales/fiverr-gig-refresh-urgent-rescue.md | 0.22 | Requires logged-in Fiverr account; Codex cannot auto-edit gig without browser/API access |
 | Activepieces MCP | https://github.com/activepieces/activepieces/issues/13083 | market signal | 499-5000 | strike_pack_ready | Use as MCP/piece integration service angle, not as confirmed bounty revenue | user + Codex | ops/48h/ACTIVEPIECES_MCP_STRIKE.md | 0.14 | No visible bounty; manual community/platform posting required |
 | GitHub Firecrawl | https://github.com/firecrawl/firecrawl/issues/3437 | public SDK patch | 0 | patch_prepared | User can manually open upstream PR from prepared patch | user | ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch | 0.16 | No bounty; current connector has no write access to upstream |
+| Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 | public bounty patch | 100 | patch_prepared | User can claim with `/opire try` and open PR manually if still available | user | ops/48h/patches/claude-builders-block-destructive-bash-hook.patch | 0.12 | 623 comments/crowded; requires user-controlled GitHub/Opire action |
 
 ## Current confirmed revenue
 

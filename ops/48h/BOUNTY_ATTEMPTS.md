@@ -328,3 +328,37 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 ```
 
 - user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has pull-only access to `firecrawl/firecrawl`.
+
+## Attempt 2026-05-22: Claude Builders destructive Bash hook bounty patch
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3.
+- reward amount: $100 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3.
+- why selected: public AI tooling bounty, directly aligned with agent safety and Codex/Claude Code delivery. It is small enough for a fast patch, does not require secrets, and has clear acceptance criteria.
+- what was done: cloned the public repo and prepared a Python `PreToolUse` hook that blocks `rm -rf`, `DROP TABLE`, `git push --force`, `TRUNCATE`, and `DELETE FROM` without `WHERE`; logs blocked commands to `~/.claude/hooks/blocked.log`; returns Claude Code `permissionDecision: deny`; and includes README installation plus a sample PreToolUse payload.
+- test result:
+  - destructive sample `rm -rf dist`: passed, returned `permissionDecision: deny` and wrote a blocked log line when using a sandbox-safe `CLAUDE_HOOKS_BLOCKED_LOG` override.
+  - normal command `npm test`: passed, exited 0 with no output.
+  - `git diff --check`: passed.
+- PR URL or patch path: `ops/48h/patches/claude-builders-block-destructive-bash-hook.patch`.
+- payout status: no award, no merge, no confirmed revenue.
+- PR draft title: Add destructive Bash command PreToolUse hook.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds a Python Claude Code `PreToolUse` hook that blocks destructive Bash commands.
+- Blocks `rm -rf`, `DROP TABLE`, `git push --force`, `TRUNCATE`, and `DELETE FROM` without `WHERE`.
+- Logs blocked attempts with timestamp, attempted command, and project path.
+- Adds a README with install instructions and sample payload.
+
+## Validation
+
+- Tested destructive sample `rm -rf dist`: returned `permissionDecision: deny` and wrote a blocked log line.
+- Tested normal command `npm test`: exited 0 with no output.
+- `git diff --check`
+```
+
+- user action required: bounty claiming requires a compliant `/opire try` comment and upstream PR from a user-controlled GitHub account. Codex did not claim the bounty or submit the PR.

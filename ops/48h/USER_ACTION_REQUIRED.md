@@ -36,3 +36,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Suggested PR title: `Forward documented v2 search country and enterprise fields in JS SDK`
 - Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
 - Safety boundary: no credentials, tokens, payment, KYC, OAuth, or private repository access required.
+
+## 2026-05-22T01:10:00+08:00 - Optional bounty claim: Claude Builders destructive Bash hook
+
+- Action: If desired and still available, comment `/opire try` on `claude-builders-bounty/claude-builders-bounty#3`, apply `ops/48h/patches/claude-builders-block-destructive-bash-hook.patch`, and open a PR.
+- Suggested PR title: `Add destructive Bash command PreToolUse hook`
+- Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
+- Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.

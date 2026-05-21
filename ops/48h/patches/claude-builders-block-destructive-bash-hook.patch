@@ -1,0 +1,199 @@
+diff --git a/issue-3-block-destructive-bash/README.md b/issue-3-block-destructive-bash/README.md
+new file mode 100644
+index 0000000..325236d
+--- /dev/null
++++ b/issue-3-block-destructive-bash/README.md
+@@ -0,0 +1,67 @@
++# Block destructive Bash commands in Claude Code
++
++This is a Claude Code `PreToolUse` hook for issue #3. It blocks destructive Bash commands before execution and writes every blocked attempt to `~/.claude/hooks/blocked.log`.
++
++## What it blocks
++
++- `rm -rf` and `rm -fr`
++- `DROP TABLE`
++- `TRUNCATE`
++- `git push --force`
++- `DELETE FROM` without a `WHERE` clause
++
++Normal Bash commands are allowed without output.
++
++## Install in 2 commands
++
++```bash
++mkdir -p ~/.claude/hooks && cp issue-3-block-destructive-bash/block_destructive_bash.py ~/.claude/hooks/block_destructive_bash.py && chmod +x ~/.claude/hooks/block_destructive_bash.py
++```
++
++```bash
++python3 ~/.claude/hooks/block_destructive_bash.py < sample-pretooluse.json
++```
++
++Add the hook to your Claude Code settings:
++
++```json
++{
++  "hooks": {
++    "PreToolUse": [
++      {
++        "matcher": "Bash",
++        "hooks": [
++          {
++            "type": "command",
++            "command": "python3 ~/.claude/hooks/block_destructive_bash.py"
++          }
++        ]
++      }
++    ]
++  }
++}
++```
++
++## Example blocked output
++
++```json
++{
++  "hookSpecificOutput": {
++    "hookEventName": "PreToolUse",
++    "permissionDecision": "deny",
++    "permissionDecisionReason": "Blocked destructive Bash command: recursive force delete with rm. Rewrite the command to be narrower, reversible, or explicitly reviewed by a human."
++  }
++}
++```
++
++## Log format
++
++Each blocked command appends one line:
++
++```text
++timestamp	reason=<reason>	project=<cwd>	command=<attempted command>
++```
++
++The log path is `~/.claude/hooks/blocked.log`.
++
++For tests, you can override the log path with `CLAUDE_HOOKS_BLOCKED_LOG`.
+diff --git a/issue-3-block-destructive-bash/block_destructive_bash.py b/issue-3-block-destructive-bash/block_destructive_bash.py
+new file mode 100644
+index 0000000..fc72579
+--- /dev/null
++++ b/issue-3-block-destructive-bash/block_destructive_bash.py
+@@ -0,0 +1,103 @@
++#!/usr/bin/env python3
++"""Claude Code PreToolUse hook that blocks destructive Bash commands."""
++
++from __future__ import annotations
++
++import datetime as dt
++import json
++import os
++import re
++import sys
++from pathlib import Path
++
++
++PATTERNS: list[tuple[str, re.Pattern[str]]] = [
++    (
++        "recursive force delete with rm",
++        re.compile(r"\brm\s+(?:-[A-Za-z]*r[A-Za-z]*f[A-Za-z]*|-[A-Za-z]*f[A-Za-z]*r[A-Za-z]*)\b"),
++    ),
++    ("DROP TABLE statement", re.compile(r"\bDROP\s+TABLE\b", re.IGNORECASE)),
++    ("TRUNCATE statement", re.compile(r"\bTRUNCATE\b", re.IGNORECASE)),
++    ("forced git push", re.compile(r"\bgit\s+push\b[^\n;&|]*\s--force(?:\b|=)", re.IGNORECASE)),
++]
++
++DELETE_FROM = re.compile(r"\bDELETE\s+FROM\b", re.IGNORECASE)
++WHERE = re.compile(r"\bWHERE\b", re.IGNORECASE)
++
++
++def load_event() -> dict:
++    try:
++        return json.load(sys.stdin)
++    except json.JSONDecodeError as exc:
++        deny(f"Invalid hook JSON input: {exc}")
++        raise SystemExit(0)
++
++
++def find_block_reason(command: str) -> str | None:
++    for reason, pattern in PATTERNS:
++        if pattern.search(command):
++            return reason
++
++    delete_match = DELETE_FROM.search(command)
++    if delete_match and not WHERE.search(command[delete_match.end() :]):
++        return "DELETE FROM statement without a WHERE clause"
++
++    return None
++
++
++def log_blocked(command: str, project_path: str, reason: str) -> None:
++    log_path = Path(
++        os.environ.get(
++            "CLAUDE_HOOKS_BLOCKED_LOG",
++            str(Path.home() / ".claude" / "hooks" / "blocked.log"),
++        ),
++    )
++    log_path.parent.mkdir(parents=True, exist_ok=True)
++    timestamp = dt.datetime.now(dt.timezone.utc).isoformat()
++    safe_command = command.replace("\n", "\\n")
++    safe_project = project_path.replace("\n", "\\n")
++    with log_path.open("a", encoding="utf-8") as handle:
++        handle.write(
++            f"{timestamp}\treason={reason}\tproject={safe_project}\tcommand={safe_command}\n",
++        )
++
++
++def deny(reason: str) -> None:
++    print(
++        json.dumps(
++            {
++                "hookSpecificOutput": {
++                    "hookEventName": "PreToolUse",
++                    "permissionDecision": "deny",
++                    "permissionDecisionReason": (
++                        "Blocked destructive Bash command: "
++                        f"{reason}. Rewrite the command to be narrower, reversible, "
++                        "or explicitly reviewed by a human."
++                    ),
++                },
++            },
++        ),
++    )
++
++
++def main() -> int:
++    event = load_event()
++    if event.get("hook_event_name") != "PreToolUse":
++        return 0
++    if event.get("tool_name") != "Bash":
++        return 0
++
++    tool_input = event.get("tool_input") or {}
++    command = str(tool_input.get("command") or "")
++    reason = find_block_reason(command)
++    if not reason:
++        return 0
++
++    project_path = str(event.get("cwd") or os.getcwd())
++    log_blocked(command, project_path, reason)
++    deny(reason)
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/issue-3-block-destructive-bash/sample-pretooluse.json b/issue-3-block-destructive-bash/sample-pretooluse.json
+new file mode 100644
+index 0000000..6958424
+--- /dev/null
++++ b/issue-3-block-destructive-bash/sample-pretooluse.json
+@@ -0,0 +1,11 @@
++{
++  "session_id": "example",
++  "transcript_path": "/tmp/example.jsonl",
++  "cwd": "/tmp/project",
++  "permission_mode": "default",
++  "hook_event_name": "PreToolUse",
++  "tool_name": "Bash",
++  "tool_input": {
++    "command": "rm -rf dist"
++  }
++}
