@@ -98,6 +98,7 @@ assert.ok(manifest.files.includes("assets/ci-risk-gate-sample-proof.png"));
 assert.ok(manifest.files.includes("assets/ci-risk-gate-one-pager.pdf"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FAST_BOUNTY_SCREEN_2026-05-21.md"));
+assert.ok(manifest.files.includes("docs/FAST_ORDER_OPPORTUNITY_BOARD_2026-05-21.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_EXTERNAL_LINK_REPLY_PACK.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_GALLERY_ASSET_AUDIT.md"));

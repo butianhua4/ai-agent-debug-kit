@@ -84,6 +84,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Portfolio case: AI agent CI risk gate: `docs/PORTFOLIO_CASE_CI_RISK_GATE.md`
 - CI risk gate proof caption pack: `docs/CI_RISK_GATE_PROOF_CAPTION_PACK.md`
 - Fast public bounty screen: `docs/FAST_BOUNTY_SCREEN_2026-05-21.md`
+- Fast order opportunity board: `docs/FAST_ORDER_OPPORTUNITY_BOARD_2026-05-21.md`
 - Example automation failure log: `docs/examples/webhook-json-mapping-demo-log.jsonl`
 - Rescue buyer brief: `docs/RESCUE_BUYER_BRIEF.md`
 - CI usage: `docs/CI_USAGE.md`
