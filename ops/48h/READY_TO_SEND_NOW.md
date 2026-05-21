@@ -10,10 +10,12 @@ Offer page: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
 
 1. Freelancer n8n Webhook -> MySQL Automation.
 2. Freelancer n8n + Meta Webhook Automation.
-3. Freelancer n8n JSON webhook trigger integration.
-4. Reddit r/n8n inherited workflow cleanup thread.
-5. Freelancer workflow repair / optimization project.
-6. Freelancer AI voice / Twilio to n8n urgent fix if the exact project is still visible in the logged-in account.
+3. Freelancer n8n Developer for AI/LLM Data Workflows.
+4. Freelancer n8n JSON webhook trigger integration.
+5. Freelancer AI social post automation.
+6. Reddit r/n8n inherited workflow cleanup thread.
+7. Freelancer workflow repair / optimization project.
+8. Freelancer AI voice / Twilio to n8n urgent fix if the exact project is still visible in the logged-in account.
 
 ## Draft 0A: Freelancer n8n Webhook -> MySQL Automation
 
@@ -62,6 +64,31 @@ Is the Meta app already receiving webhook test events successfully?
 
 Suggested status after sending: `proposal_sent`.
 
+## Draft 0B2: Freelancer n8n Developer for AI/LLM Data Workflows
+
+Source: https://www.freelancer.com/projects/n8n/developer-for-llm-data-workflows
+
+```text
+Hi, I can help build and maintain n8n workflows for LLM data collection, processing, and reporting.
+
+My strongest fit is turning unreliable AI/API workflows into documented, testable flows with clear input/output contracts, error branches, retries, and handoff notes.
+
+For safety, I do not need passwords, API keys, tokens, or private credentials to begin. Please share one representative workflow goal, sanitized sample input/output data, and the APIs or data sources involved.
+
+Suggested first step:
+- map one workflow end to end
+- define the payload schema and data quality checks
+- identify what belongs in n8n vs small custom scripts
+- add failure handling/logging
+- deliver an importable workflow JSON plus runbook
+
+I would start with a $499 discovery/diagnostic if the scope is still broad, or a $1,500 first workflow sprint if you already know the first production workflow.
+
+What is the first workflow you want automated: data collection, enrichment, analysis, or reporting?
+```
+
+Suggested status after sending: `proposal_sent`.
+
 ## Draft 0C: Freelancer n8n JSON Webhook Trigger
 
 Source: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
@@ -80,6 +107,33 @@ Implementation plan:
 - provide import/redeploy notes
 
 What header name should carry the API key, and what should the success response look like?
+```
+
+Suggested status after sending: `proposal_sent`.
+
+## Draft 0D: Freelancer AI Social Post Automation
+
+Source: https://www.freelancer.com/projects/chatgpt/Driven-Social-Post-Automation.html
+
+```text
+Hi, I can help design and build the n8n workflow for AI-assisted social content generation, formatting, publishing, and audit logging.
+
+For safety and platform compliance, I do not need passwords, API keys, tokens, or account access to begin. We can start from placeholder credentials, sample prompts, and a fake publishing payload. You can connect real platform credentials on your side after import.
+
+Recommended MVP:
+- daily trigger
+- ChatGPT copy/hashtag/script generation from your template
+- optional image-generation branch
+- platform-specific formatter
+- Google Sheet/Airtable audit log
+- error branch for failed generation or publishing
+- documentation for credential setup and manual review mode
+
+Before quoting the full build, I would confirm which platforms already have API access approved and whether posts should publish automatically or wait for review.
+
+Suggested start: $499 architecture diagnostic, or $1,500 for a scoped MVP if the platform/API access is already ready.
+
+Which platform should the MVP publish to first: Facebook, Instagram, or YouTube?
 ```
 
 Suggested status after sending: `proposal_sent`.

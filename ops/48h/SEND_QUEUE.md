@@ -28,6 +28,30 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: expected JSON fields, API-key header name, success/error response format.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 0C: Freelancer n8n developer for AI/LLM data workflows
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/developer-for-llm-data-workflows
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #11
+- suggested offer: `$499` paid discovery/diagnostic, then `$1,500` first production workflow sprint if requirements are clear.
+- why third: ongoing/high-fit n8n + LLM workflow role with real budget range and potential repeat work.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: API keys, scraping credentials, internal system tokens, private datasets, payment access.
+- first ask after reply: one representative workflow goal, sanitized sample input/output, APIs/data sources involved.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 0D: Freelancer AI social post automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/chatgpt/Driven-Social-Post-Automation.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #13
+- suggested offer: `$499` architecture diagnostic or `$1,500` scoped MVP for one or two platforms.
+- why fourth: freshly posted direct ChatGPT + n8n automation build with clear workflow components.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: social account passwords, OAuth tokens, API keys, payment access, or platform admin credentials.
+- first ask after reply: first platform target, approval/API readiness, manual-review vs auto-publish requirement.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1: Freelancer n8n workflow repair opportunity
 
 - channel: Freelancer
