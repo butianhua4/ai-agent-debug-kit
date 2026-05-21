@@ -98,6 +98,7 @@ assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_EXTERNAL_LINK_REPLY_PACK.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_GALLERY_ASSET_AUDIT.md"));
+assert.ok(manifest.files.includes("docs/FIVERR_UPLOAD_HANDOFF.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));
 assert.ok(manifest.files.includes("docs/MOBILE_STATUS.md"));

@@ -126,6 +126,7 @@ Latest:
 - Fiverr external-link reply pack added for high-risk inbox messages that claim an order exists but ask the seller to open a non-Fiverr project or payment link.
 - Fiverr gallery asset audit added to prioritize cover, PDF, GIF, portfolio, and future video uploads across the live gigs without deleting or replacing existing services.
 - Dedicated CI risk gate cover added as upload-ready PNG with editable SVG source for the third Fiverr gig gallery.
+- Fiverr upload handoff added with exact local file paths for the next cover, PDF, GIF, workflow sample, and portfolio uploads across the current gigs.
 - Chinese 299 sample-and-intake reply added to show the sample diagnosis report, request redacted materials, and route buyers into 299 / 999 / 1999+ scope.
 - Chinese 299 30-minute delivery checklist added for fast first-order diagnosis delivery with intake, failure mapping, minimal tests, risk routing, and upgrade handoff.
 - Chinese 299 custom offer pack added for Fiverr custom offers and domestic chat payment messages with scope, requirements, boundaries, pricing, and delivery fields.
