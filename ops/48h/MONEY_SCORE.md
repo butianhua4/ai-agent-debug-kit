@@ -50,7 +50,8 @@ Score rules:
 | 2026-05-22T03:23:00+08:00 | Submitted Firecrawl JS SDK automation PR | 60 | Public API automation SDK PR #3580 opened and locally tested; no bounty, no merge, not revenue |
 | 2026-05-22T06:40:00+08:00 | Prepared FinMind webhook event system bounty patch | 40 | Public $50 bounty patch prepared with signed webhook delivery and retry handling; lint/format passed, pytest blocked by existing Redis dependency; not submitted, not revenue |
 | 2026-05-22T06:55:00+08:00 | Prepared n8n public issue reply drafts | 50 | Three non-spam webhook/API failure reply drafts prepared for manual public posting; not sent, not revenue |
+| 2026-05-22T07:00:00+08:00 | Added Opire stale bounty filter | 20 | Reusable filter to avoid stale/closed/not-cloneable reward listings and focus next cycles on viable public patches; not revenue |
 
 ## Total
 
-1290
+1310

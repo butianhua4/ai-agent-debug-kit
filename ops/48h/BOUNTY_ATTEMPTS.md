@@ -656,3 +656,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - blocker/rejection reason: `git clone https://github.com/aueangpanit/electron-template.git` returned `Repository not found` even though the issue page is visible. This is likely deleted/renamed/private repository state or GitHub visibility inconsistency, so it is not a safe patch target right now.
+
+## Screening 2026-05-22: Storybook select controls bounty
+
+- bounty URL: https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG.
+- reward amount: $110 visible on Opire.
+- repo: storybookjs/storybook.
+- issue: https://github.com/storybookjs/storybook/issues/12641.
+- why selected: TypeScript UI bug with Opire reward and automation-adjacent frontend debugging value.
+- what was done: checked the upstream GitHub issue before cloning the very large monorepo.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream GitHub issue is closed and already references submitted PRs. Opire still lists available rewards, but this looks stale and high-risk for duplicate work.
+
+## Screening 2026-05-22: Formbricks server error toast bounty
+
+- bounty URL: https://app.opire.dev/issues/01JARC75G44M6EQCJCR1DTBHD6.
+- reward amount: $60 visible on Opire.
+- repo: formbricks/formbricks.
+- issue: https://github.com/formbricks/formbricks/issues/3302.
+- why selected: TypeScript error-handling bug with a clear user-facing failure mode.
+- what was done: checked upstream issue state before cloning/building.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream GitHub issue is closed with linked PR references. Low payout plus stale state makes this unsuitable for unattended patch work.
