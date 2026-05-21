@@ -390,10 +390,10 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - test result:
   - generated changelog output from `butianhua4/ai-agent-debug-kit`: passed.
   - `git diff --check`: passed.
-- PR URL or patch path: branch pushed to https://github.com/butianhua4/claude-builders-bounty/tree/add-generate-changelog-skill.
-- payout status: no PR, no award, no merge, no confirmed revenue.
-- blocker: GitHub browser action was blocked by browser security policy, and GitHub app PR creation returned `403 Resource not accessible by integration`.
-- user action required: if still available, manually comment `/opire try` on issue #1 and open a PR from `butianhua4:add-generate-changelog-skill` into `claude-builders-bounty:main`.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1905.
+- payout status: PR submitted, no award, no merge, no confirmed revenue.
+- claim status: PR #1905 was opened from the prepared public fork branch.
+- user action required: no PR-creation action remains. If the bounty is accepted, any Opire payout/KYC/payment setup remains user-only.
 
 ## Attempt 2026-05-22: Claude Builders Next.js SQLite CLAUDE.md template
 
@@ -407,10 +407,10 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
   - acceptance criteria coverage checked in `TEST_NOTES.md`: passed.
   - required sections confirmed by text scan: project structure, naming conventions, migration rules, dev commands, anti-patterns, and reasoned rules present.
   - `git diff --check`: passed.
-- PR URL or patch path: branch pushed to https://github.com/butianhua4/claude-builders-bounty/tree/add-nextjs-sqlite-claude-template.
-- payout status: no PR, no award, no merge, no confirmed revenue.
-- blocker: GitHub browser action remains blocked by browser security policy, and GitHub app PR creation returned `403 Resource not accessible by integration`.
-- user action required: if still available, manually comment `/opire try` on issue #2 and open a PR from `butianhua4:add-nextjs-sqlite-claude-template` into `claude-builders-bounty:main`.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1906.
+- payout status: PR submitted, no award, no merge, no confirmed revenue.
+- claim status: PR #1906 was opened from the prepared public fork branch.
+- user action required: no PR-creation action remains. If the bounty is accepted, any Opire payout/KYC/payment setup remains user-only.
 
 ## Attempt 2026-05-22: Claude Builders PR review agent bounty patch
 

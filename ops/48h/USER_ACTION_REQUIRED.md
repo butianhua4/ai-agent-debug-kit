@@ -53,18 +53,16 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
 - Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
 
-## 2026-05-22T02:45:00+08:00 - Manual PR required: Claude Builders changelog generator
+## 2026-05-22T02:45:00+08:00 - Submitted bounty PR: Claude Builders changelog generator
 
-- Action required: if issue #1 is still available, comment `/opire try` on https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 and open a PR from `butianhua4:add-generate-changelog-skill` into `claude-builders-bounty:main`.
-- Suggested PR title: `Add structured changelog generator`
-- Suggested PR body: `summary: adds a portable Python changelog generator that reads git commits since the latest tag and writes a categorized CHANGELOG.md. validation: generated changelog output from butianhua4/ai-agent-debug-kit and ran git diff check. closes #1`
-- Why user action is required: GitHub browser actions are currently blocked by browser security policy, and the GitHub app returned `403 Resource not accessible by integration` for PR creation.
+- Action completed: PR https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1905 is open from `butianhua4:add-generate-changelog-skill`.
+- Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
+- Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
 
-## 2026-05-22T03:00:00+08:00 - Manual PR required: Claude Builders Next.js SQLite CLAUDE.md
+## 2026-05-22T03:00:00+08:00 - Submitted bounty PR: Claude Builders Next.js SQLite CLAUDE.md
 
-- Action required: if issue #2 is still available, comment `/opire try` on https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 and open a PR from `butianhua4:add-nextjs-sqlite-claude-template` into `claude-builders-bounty:main`.
-- Suggested PR title: `Add Next.js SQLite Claude template`
-- Suggested PR body: `summary: adds an opinionated CLAUDE.md for a greenfield Next.js 15 App Router SaaS with SQLite, including project structure, naming, migration rules, dev commands, patterns, and anti-patterns. validation: reviewed acceptance criteria coverage in TEST_NOTES.md and ran git diff check. closes #2`
-- Why user action is required: GitHub browser actions are currently blocked by browser security policy, and the GitHub app returned `403 Resource not accessible by integration` for PR creation.
+- Action completed: PR https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1906 is open from `butianhua4:add-nextjs-sqlite-claude-template`.
+- Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
+- Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
