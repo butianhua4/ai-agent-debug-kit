@@ -97,6 +97,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Portfolio case promo pack: `docs/PORTFOLIO_CASE_PROMO_PACK.md`
 - Portfolio cover: `assets/agent-log-rescue-cover.svg`
 - Risk gate workflow: `docs/examples/agent-risk-gate.yml`
+- CI risk gate pass/fail sample pair: `docs/examples/ci-risk-gate-sample-pair.md`
 - Product page copy: `docs/PRODUCT_PAGE.md`
 - Launch status: `docs/LAUNCH_STATUS.md`
 - Buyer guide: `BUYER_GUIDE.md`

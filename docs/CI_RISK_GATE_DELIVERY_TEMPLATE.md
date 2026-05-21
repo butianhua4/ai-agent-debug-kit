@@ -104,9 +104,17 @@ What a risky run looks like and why it fails.
   run: |
     node cli.js \
       --input ./logs/agent-run.jsonl \
-      --fail-on high \
+      --fail-on-risk all \
       --format markdown > ai-risk-report.md
 ```
+
+## Sample Pass/Fail Logs
+
+- Passing sample: `docs/examples/ci-risk-gate-pass-log.jsonl`
+- Failing sample: `docs/examples/ci-risk-gate-fail-log.jsonl`
+- Buyer-facing explanation: `docs/examples/ci-risk-gate-sample-pair.md`
+
+Use these only as synthetic proof. Replace them with the buyer's own redacted logs before tuning real thresholds.
 
 ## Sample JSON Handoff
 

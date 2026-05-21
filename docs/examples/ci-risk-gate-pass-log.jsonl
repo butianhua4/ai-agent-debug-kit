@@ -1,0 +1,4 @@
+{"timestamp":"2026-05-21T10:00:01.000Z","level":"info","event":"agent.run.started","tool":"planner","message":"Started release-readiness check for demo workflow","durationMs":430}
+{"timestamp":"2026-05-21T10:00:03.000Z","level":"info","event":"tool.call","tool":"log-parser","message":"Parsed redacted agent log with healthy status","durationMs":610}
+{"timestamp":"2026-05-21T10:00:05.000Z","level":"info","event":"tool.call","tool":"risk-gate","message":"Baseline check completed with clean release signals","durationMs":520}
+{"timestamp":"2026-05-21T10:00:07.000Z","level":"info","event":"agent.run.completed","tool":"reporter","message":"Generated CI risk report in watch mode","durationMs":470}

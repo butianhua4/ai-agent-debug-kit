@@ -43,7 +43,7 @@ Never send passwords, API keys, OAuth tokens, cookies, payout data, identity doc
 ```yaml
 - name: Check AI agent logs
   run: |
-    node cli.js --input ./logs/agent-run.jsonl --fail-on high --format markdown > ai-risk-report.md
+    node cli.js ./logs/agent-run.jsonl --fail-on-risk all > ai-risk-report.md
 ```
 
 ## Public Proof

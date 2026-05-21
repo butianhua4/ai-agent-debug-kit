@@ -123,7 +123,7 @@ def build_ci_risk_gate_pdf() -> None:
         Spacer(1, 8),
         Paragraph("Example GitHub Actions Step", styles["Section"]),
         Paragraph(
-            "node cli.js --input ./logs/agent-run.jsonl --fail-on high --format markdown &gt; ai-risk-report.md",
+            "node cli.js ./logs/agent-run.jsonl --fail-on-risk all &gt; ai-risk-report.md",
             styles["CodeBlock"],
         ),
         Paragraph("Public Proof", styles["Section"]),

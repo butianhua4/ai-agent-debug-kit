@@ -128,6 +128,9 @@ assert.ok(manifest.files.includes("docs/examples/chinese-299-diagnosis-report-te
 assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-template.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-999-repair-plan-sample.md"));
 assert.ok(manifest.files.includes("docs/examples/chinese-299-paid-order-tracker.csv"));
+assert.ok(manifest.files.includes("docs/examples/ci-risk-gate-pass-log.jsonl"));
+assert.ok(manifest.files.includes("docs/examples/ci-risk-gate-fail-log.jsonl"));
+assert.ok(manifest.files.includes("docs/examples/ci-risk-gate-sample-pair.md"));
 assert.ok(manifest.files.includes("docs/examples/domestic-lead-tracker.csv"));
 assert.ok(manifest.files.includes("docs/examples/emergency-rescue-report-template.md"));
 assert.ok(manifest.files.includes("docs/examples/webhook-json-mapping-demo-log.jsonl"));
