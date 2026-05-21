@@ -36,7 +36,8 @@ Score rules:
 | 2026-05-22T08:15:00+08:00 | Recorded account/API blockers and added auto delivery SOP | 50 | Clarifies what can be automated now and prepares a same-day delivery path for real sanitized buyer logs |
 | 2026-05-22T08:35:00+08:00 | Prepared Fiverr urgent rescue gig refresh copy | 50 | Ready-to-paste gig title, description, packages, FAQ, gallery text, and first buyer reply for higher conversion |
 | 2026-05-22T00:00:00+08:00 | Prepared Activepieces MCP/piece strike pack | 50 | Converts a public MCP ecosystem signal into a safe proposal, public post variant, and scoped offer without counting it as revenue |
+| 2026-05-22T00:50:00+08:00 | Prepared Firecrawl JS SDK search field patch | 40 | Public TypeScript SDK patch for documented API-field forwarding; no bounty and not submitted upstream yet |
 
 ## Total
 
-700
+740

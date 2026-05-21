@@ -292,3 +292,39 @@ No runtime tests were run because this is a documentation-only change.
 - PR URL or patch path: ops/48h/ACTIVEPIECES_MCP_STRIKE.md.
 - payout status: no bounty, no award, no confirmed revenue.
 - user action required: any community comment or proposal must be sent manually through a compliant account; do not auto-post or present this as a bounty.
+
+## Attempt 2026-05-22: Firecrawl JS SDK v2 search field forwarding patch
+
+- bounty URL: none visible.
+- reward amount: $0 visible.
+- repo: firecrawl/firecrawl.
+- issue: https://github.com/firecrawl/firecrawl/issues/3437.
+- why selected: public TypeScript SDK bug with clear reproduction, small blast radius, and direct alignment with API automation/debug proof work. The issue says the Node SDK v2 `search()` options do not expose or forward documented `/v2/search` fields `country` and `enterprise`.
+- what was done: cloned the public repo, added `country?: string` and `enterprise?: Array<"default" | "anon" | "zdr">` to the JS SDK v2 `SearchRequest`, forwarded both fields in the v2 search payload builder, and added a unit test asserting `client.search()` sends those fields to `/v2/search`.
+- test result:
+  - `git diff --check`: passed.
+  - `npm.cmd run test:unit -- search.unit.test.ts`: blocked on Windows because the package script uses POSIX-style `NODE_OPTIONS=...` assignment and dependencies were not installed in the cloned repo.
+- PR URL or patch path: `ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch`.
+- payout status: no bounty, no award, no confirmed revenue.
+- PR draft title: Forward documented v2 search country and enterprise fields in JS SDK.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds `country` and `enterprise` to the JS SDK v2 `SearchRequest` type.
+- Forwards both documented fields in the `/v2/search` payload.
+- Adds a unit test covering `client.search()` payload forwarding for `country` and `enterprise`.
+
+## Context
+
+Fixes #3437. The public `/v2/search` API documents `country` and `enterprise`, but the JS SDK v2 request type and payload preparation did not expose or forward those options.
+
+## Validation
+
+- `git diff --check`
+
+I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but the package script uses POSIX-style `NODE_OPTIONS=...` assignment and this fresh clone does not have dependencies installed, so Jest did not run in this environment.
+```
+
+- user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has pull-only access to `firecrawl/firecrawl`.

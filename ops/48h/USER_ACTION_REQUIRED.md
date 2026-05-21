@@ -29,3 +29,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Suggested PR title: `Document package version checks before release`
 - Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
 - Safety boundary: no credentials, tokens, payment, KYC, or private repository access required.
+
+## 2026-05-22T00:50:00+08:00 - Optional upstream PR: Firecrawl JS SDK search fields
+
+- Action: If desired, fork `firecrawl/firecrawl`, apply `ops/48h/patches/firecrawl-js-sdk-search-country-enterprise.patch`, and open a PR for issue #3437.
+- Suggested PR title: `Forward documented v2 search country and enterprise fields in JS SDK`
+- Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
+- Safety boundary: no credentials, tokens, payment, KYC, OAuth, or private repository access required.

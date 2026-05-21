@@ -1,0 +1,73 @@
+diff --git a/apps/js-sdk/firecrawl/src/__tests__/unit/v2/search.unit.test.ts b/apps/js-sdk/firecrawl/src/__tests__/unit/v2/search.unit.test.ts
+new file mode 100644
+index 0000000..1f578b6
+--- /dev/null
++++ b/apps/js-sdk/firecrawl/src/__tests__/unit/v2/search.unit.test.ts
+@@ -0,0 +1,36 @@
++import { jest } from "@jest/globals";
++import { FirecrawlClient } from "../../../v2/client";
++
++describe("v2.search unit", () => {
++  test("forwards documented country and enterprise search fields", async () => {
++    const client = new FirecrawlClient({ apiUrl: "http://localhost:3000" });
++    const post = jest.fn(async () => ({
++      status: 200,
++      data: {
++        success: true,
++        data: {
++          web: [],
++        },
++      },
++    }));
++
++    (client as any).http = { post };
++
++    await client.search("restaurants", {
++      country: "DE",
++      enterprise: ["zdr"],
++      limit: 5,
++    });
++
++    expect(post).toHaveBeenCalledWith(
++      "/v2/search",
++      expect.objectContaining({
++        query: "restaurants",
++        country: "DE",
++        enterprise: ["zdr"],
++        limit: 5,
++      }),
++      {},
++    );
++  });
++});
+diff --git a/apps/js-sdk/firecrawl/src/v2/methods/search.ts b/apps/js-sdk/firecrawl/src/v2/methods/search.ts
+index 0d1b54b..84cc447 100644
+--- a/apps/js-sdk/firecrawl/src/v2/methods/search.ts
++++ b/apps/js-sdk/firecrawl/src/v2/methods/search.ts
+@@ -34,9 +34,11 @@ function prepareSearchPayload(req: SearchRequest): Record<string, unknown> {
+   if (req.limit != null) payload.limit = req.limit;
+   if (req.tbs != null) payload.tbs = req.tbs;
+   if (req.location != null) payload.location = req.location;
++  if (req.country != null) payload.country = req.country;
+   if (req.ignoreInvalidURLs != null)
+     payload.ignoreInvalidURLs = req.ignoreInvalidURLs;
+   if (req.timeout != null) payload.timeout = req.timeout;
++  if (req.enterprise != null) payload.enterprise = req.enterprise;
+   if (req.integration && req.integration.trim())
+     payload.integration = req.integration.trim();
+   if (req.origin) payload.origin = req.origin;
+diff --git a/apps/js-sdk/firecrawl/src/v2/types.ts b/apps/js-sdk/firecrawl/src/v2/types.ts
+index a7ba539..4ac9d6a 100644
+--- a/apps/js-sdk/firecrawl/src/v2/types.ts
++++ b/apps/js-sdk/firecrawl/src/v2/types.ts
+@@ -544,8 +544,10 @@ export interface SearchRequest {
+   limit?: number;
+   tbs?: string;
+   location?: string;
++  country?: string;
+   ignoreInvalidURLs?: boolean;
+   timeout?: number; // ms
++  enterprise?: Array<"default" | "anon" | "zdr">;
+   scrapeOptions?: ScrapeOptions;
+   integration?: string;
+   origin?: string;
