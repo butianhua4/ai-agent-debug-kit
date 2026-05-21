@@ -50,3 +50,4 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Suggested PR title: `Add public PR review agent CLI`
 - Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
+- Automation attempt result: Codex tried the connected GitHub app and received `403 Resource not accessible by integration` when commenting `/opire try`; Codex also opened the in-app browser and GitHub showed a signed-out page. User must either sign in to GitHub in the in-app browser or perform the claim/fork/PR manually.
