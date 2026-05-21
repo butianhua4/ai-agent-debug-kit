@@ -117,6 +117,7 @@ assert.ok(manifest.files.includes("docs/OPPORTUNITY_PIPELINE.md"));
 assert.ok(manifest.files.includes("docs/PLATFORM_SETUP.md"));
 assert.ok(manifest.files.includes("docs/PORTFOLIO_CASE_AUTOMATION_FAILURE_RESCUE.md"));
 assert.ok(manifest.files.includes("docs/PORTFOLIO_CASE_AGENT_LOG_RESCUE.md"));
+assert.ok(manifest.files.includes("docs/PORTFOLIO_CASE_CI_RISK_GATE.md"));
 assert.ok(manifest.files.includes("docs/PORTFOLIO_CASE_PROMO_PACK.md"));
 assert.ok(manifest.files.includes("docs/PRODUCT_PAGE.md"));
 assert.ok(manifest.files.includes("docs/QUICK_DIAGNOSIS_OFFER.md"));

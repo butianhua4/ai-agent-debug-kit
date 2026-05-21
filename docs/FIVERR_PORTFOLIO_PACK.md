@@ -59,3 +59,49 @@ Built a local-first AI agent log inspector with browser and CLI workflows, Markd
 ## Safety Note
 
 Do not upload private client work, private repository screenshots, credentials, API keys, or non-redacted logs. Only use public demo screenshots and public repository material.
+
+## Portfolio Item 2
+
+Project title:
+
+```text
+AI Agent CI Risk Gate
+```
+
+Category:
+
+```text
+AI Development
+```
+
+Role:
+
+```text
+Developer and CI workflow designer
+```
+
+Project URL:
+
+```text
+https://butianhua4.github.io/ai-agent-debug-kit/
+```
+
+Description:
+
+```text
+Created a lightweight CI risk gate concept for AI agent logs using public synthetic pass/fail samples. The gate checks for repeated tool failures, retry loops, permission errors, secret-like strings, and high-risk scores, then produces a safer handoff for warning-mode or fail-build rollout.
+```
+
+Supporting proof:
+
+```text
+docs/PORTFOLIO_CASE_CI_RISK_GATE.md
+docs/CI_RISK_GATE_ONE_PAGER.md
+docs/examples/ci-risk-gate-sample-pair.md
+```
+
+Short Version:
+
+```text
+Built a CI risk-gate workflow for AI agent logs with synthetic pass/fail examples, threshold guidance, and buyer-safe delivery boundaries.
+```
