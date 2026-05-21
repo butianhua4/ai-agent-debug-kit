@@ -1,0 +1,540 @@
+diff --git a/packages/backend/app/db/schema.sql b/packages/backend/app/db/schema.sql
+index 410189d..709fc47 100644
+--- a/packages/backend/app/db/schema.sql
++++ b/packages/backend/app/db/schema.sql
+@@ -123,3 +123,35 @@ CREATE TABLE IF NOT EXISTS audit_logs (
+   action VARCHAR(100) NOT NULL,
+   created_at TIMESTAMP NOT NULL DEFAULT NOW()
+ );
++
++CREATE TABLE IF NOT EXISTS webhook_endpoints (
++  id SERIAL PRIMARY KEY,
++  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
++  url VARCHAR(500) NOT NULL,
++  signing_secret VARCHAR(128) NOT NULL,
++  event_types JSONB,
++  enabled BOOLEAN NOT NULL DEFAULT TRUE,
++  created_at TIMESTAMP NOT NULL DEFAULT NOW()
++);
++CREATE INDEX IF NOT EXISTS idx_webhook_endpoints_user_enabled
++  ON webhook_endpoints(user_id, enabled);
++
++CREATE TABLE IF NOT EXISTS webhook_deliveries (
++  id SERIAL PRIMARY KEY,
++  endpoint_id INT NOT NULL REFERENCES webhook_endpoints(id) ON DELETE CASCADE,
++  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
++  event_type VARCHAR(100) NOT NULL,
++  payload JSONB NOT NULL,
++  status VARCHAR(20) NOT NULL DEFAULT 'pending',
++  attempts INT NOT NULL DEFAULT 0,
++  max_attempts INT NOT NULL DEFAULT 3,
++  next_retry_at TIMESTAMP,
++  last_status_code INT,
++  last_error VARCHAR(500),
++  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
++  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
++);
++CREATE INDEX IF NOT EXISTS idx_webhook_deliveries_user_created
++  ON webhook_deliveries(user_id, created_at DESC);
++CREATE INDEX IF NOT EXISTS idx_webhook_deliveries_retry
++  ON webhook_deliveries(status, next_retry_at);
+diff --git a/packages/backend/app/models.py b/packages/backend/app/models.py
+index 64d4481..ba3d776 100644
+--- a/packages/backend/app/models.py
++++ b/packages/backend/app/models.py
+@@ -133,3 +133,35 @@ class AuditLog(db.Model):
+     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=True)
+     action = db.Column(db.String(100), nullable=False)
+     created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
++
++
++class WebhookEndpoint(db.Model):
++    __tablename__ = "webhook_endpoints"
++    id = db.Column(db.Integer, primary_key=True)
++    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
++    url = db.Column(db.String(500), nullable=False)
++    signing_secret = db.Column(db.String(128), nullable=False)
++    event_types = db.Column(db.JSON, nullable=True)
++    enabled = db.Column(db.Boolean, default=True, nullable=False)
++    created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
++
++
++class WebhookDelivery(db.Model):
++    __tablename__ = "webhook_deliveries"
++    id = db.Column(db.Integer, primary_key=True)
++    endpoint_id = db.Column(
++        db.Integer, db.ForeignKey("webhook_endpoints.id"), nullable=False
++    )
++    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
++    event_type = db.Column(db.String(100), nullable=False)
++    payload = db.Column(db.JSON, nullable=False)
++    status = db.Column(db.String(20), default="pending", nullable=False)
++    attempts = db.Column(db.Integer, default=0, nullable=False)
++    max_attempts = db.Column(db.Integer, default=3, nullable=False)
++    next_retry_at = db.Column(db.DateTime, nullable=True)
++    last_status_code = db.Column(db.Integer, nullable=True)
++    last_error = db.Column(db.String(500), nullable=True)
++    created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
++    updated_at = db.Column(
++        db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False
++    )
+diff --git a/packages/backend/app/routes/__init__.py b/packages/backend/app/routes/__init__.py
+index f13b0f8..75b9577 100644
+--- a/packages/backend/app/routes/__init__.py
++++ b/packages/backend/app/routes/__init__.py
+@@ -7,6 +7,7 @@ from .insights import bp as insights_bp
+ from .categories import bp as categories_bp
+ from .docs import bp as docs_bp
+ from .dashboard import bp as dashboard_bp
++from .webhooks import bp as webhooks_bp
+ 
+ 
+ def register_routes(app: Flask):
+@@ -18,3 +19,4 @@ def register_routes(app: Flask):
+     app.register_blueprint(categories_bp, url_prefix="/categories")
+     app.register_blueprint(docs_bp, url_prefix="/docs")
+     app.register_blueprint(dashboard_bp, url_prefix="/dashboard")
++    app.register_blueprint(webhooks_bp, url_prefix="/webhooks")
+diff --git a/packages/backend/app/routes/bills.py b/packages/backend/app/routes/bills.py
+index f557e90..3745be8 100644
+--- a/packages/backend/app/routes/bills.py
++++ b/packages/backend/app/routes/bills.py
+@@ -4,6 +4,7 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
+ from ..extensions import db
+ from ..models import Bill, BillCadence, User
+ from ..services.cache import cache_delete_patterns
++from ..services.webhooks import emit_webhook_event
+ import logging
+ 
+ bp = Blueprint("bills", __name__)
+@@ -62,6 +63,7 @@ def create_bill():
+     cache_delete_patterns(
+         [f"user:{uid}:upcoming_bills*", f"user:{uid}:dashboard_summary:*"]
+     )
++    emit_webhook_event(uid, "bill.created", _bill_to_dict(b))
+     return jsonify(id=b.id), 201
+ 
+ 
+@@ -88,4 +90,19 @@ def mark_paid(bill_id: int):
+     logger.info(
+         "Marked bill paid id=%s user=%s next_due_date=%s", b.id, uid, b.next_due_date
+     )
++    emit_webhook_event(uid, "bill.paid", _bill_to_dict(b))
+     return jsonify(message="updated")
++
++
++def _bill_to_dict(b: Bill) -> dict:
++    return {
++        "id": b.id,
++        "name": b.name,
++        "amount": float(b.amount),
++        "currency": b.currency,
++        "next_due_date": b.next_due_date.isoformat(),
++        "cadence": b.cadence.value,
++        "autopay_enabled": b.autopay_enabled,
++        "channel_whatsapp": b.channel_whatsapp,
++        "channel_email": b.channel_email,
++    }
+diff --git a/packages/backend/app/routes/expenses.py b/packages/backend/app/routes/expenses.py
+index 1376d46..750c6a7 100644
+--- a/packages/backend/app/routes/expenses.py
++++ b/packages/backend/app/routes/expenses.py
+@@ -7,6 +7,7 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
+ from ..extensions import db
+ from ..models import Expense, RecurringCadence, RecurringExpense, User
+ from ..services.cache import cache_delete_patterns, monthly_summary_key
++from ..services.webhooks import emit_webhook_event
+ from ..services import expense_import
+ import logging
+ 
+@@ -84,6 +85,7 @@ def create_expense():
+             f"insights:{uid}:*",
+         ]
+     )
++    emit_webhook_event(uid, "expense.created", _expense_to_dict(e))
+     return jsonify(_expense_to_dict(e)), 201
+ 
+ 
+@@ -231,6 +233,7 @@ def update_expense(expense_id: int):
+         e.spent_at = date.fromisoformat(raw_date)
+     db.session.commit()
+     _invalidate_expense_cache(uid, e.spent_at.isoformat())
++    emit_webhook_event(uid, "expense.updated", _expense_to_dict(e))
+     return jsonify(_expense_to_dict(e))
+ 
+ 
+@@ -242,9 +245,11 @@ def delete_expense(expense_id: int):
+     if not e or e.user_id != uid:
+         return jsonify(error="not found"), 404
+     spent_at = e.spent_at.isoformat()
++    payload = _expense_to_dict(e)
+     db.session.delete(e)
+     db.session.commit()
+     _invalidate_expense_cache(uid, spent_at)
++    emit_webhook_event(uid, "expense.deleted", payload)
+     return jsonify(message="deleted")
+ 
+ 
+diff --git a/packages/backend/app/routes/webhooks.py b/packages/backend/app/routes/webhooks.py
+new file mode 100644
+index 0000000..3076711
+--- /dev/null
++++ b/packages/backend/app/routes/webhooks.py
+@@ -0,0 +1,117 @@
++from flask import Blueprint, jsonify, request
++from flask_jwt_extended import get_jwt_identity, jwt_required
++
++from ..extensions import db
++from ..models import WebhookDelivery, WebhookEndpoint
++from ..services.webhooks import (
++    SUPPORTED_EVENTS,
++    deliver_webhook,
++    generate_signing_secret,
++    is_valid_webhook_url,
++    normalize_event_types,
++)
++
++bp = Blueprint("webhooks", __name__)
++
++
++@bp.get("")
++@jwt_required()
++def list_webhooks():
++    uid = int(get_jwt_identity())
++    endpoints = (
++        db.session.query(WebhookEndpoint)
++        .filter_by(user_id=uid)
++        .order_by(WebhookEndpoint.created_at.desc())
++        .all()
++    )
++    return jsonify([_endpoint_to_dict(endpoint) for endpoint in endpoints])
++
++
++@bp.post("")
++@jwt_required()
++def create_webhook():
++    uid = int(get_jwt_identity())
++    data = request.get_json() or {}
++    url = str(data.get("url") or "").strip()
++    if not is_valid_webhook_url(url):
++        return jsonify(error="valid http or https webhook url required"), 400
++    try:
++        event_types = normalize_event_types(data.get("event_types"))
++    except ValueError as exc:
++        return jsonify(error=str(exc)), 400
++    endpoint = WebhookEndpoint(
++        user_id=uid,
++        url=url,
++        signing_secret=generate_signing_secret(),
++        event_types=event_types,
++        enabled=bool(data.get("enabled", True)),
++    )
++    db.session.add(endpoint)
++    db.session.commit()
++    response = _endpoint_to_dict(endpoint)
++    response["signing_secret"] = endpoint.signing_secret
++    return jsonify(response), 201
++
++
++@bp.get("/events")
++@jwt_required()
++def list_supported_events():
++    return jsonify(sorted(SUPPORTED_EVENTS))
++
++
++@bp.get("/deliveries")
++@jwt_required()
++def list_deliveries():
++    uid = int(get_jwt_identity())
++    deliveries = (
++        db.session.query(WebhookDelivery)
++        .filter_by(user_id=uid)
++        .order_by(WebhookDelivery.created_at.desc())
++        .limit(100)
++        .all()
++    )
++    return jsonify([_delivery_to_dict(delivery) for delivery in deliveries])
++
++
++@bp.post("/deliveries/<int:delivery_id>/retry")
++@jwt_required()
++def retry_delivery(delivery_id: int):
++    uid = int(get_jwt_identity())
++    delivery = db.session.get(WebhookDelivery, delivery_id)
++    if not delivery or delivery.user_id != uid:
++        return jsonify(error="not found"), 404
++    if delivery.status == "delivered":
++        return jsonify(error="already delivered"), 400
++    endpoint = db.session.get(WebhookEndpoint, delivery.endpoint_id)
++    if not endpoint or endpoint.user_id != uid:
++        return jsonify(error="webhook endpoint not found"), 404
++    deliver_webhook(delivery, endpoint)
++    db.session.commit()
++    return jsonify(_delivery_to_dict(delivery))
++
++
++def _endpoint_to_dict(endpoint: WebhookEndpoint) -> dict:
++    return {
++        "id": endpoint.id,
++        "url": endpoint.url,
++        "event_types": endpoint.event_types,
++        "enabled": endpoint.enabled,
++        "created_at": endpoint.created_at.isoformat(),
++    }
++
++
++def _delivery_to_dict(delivery: WebhookDelivery) -> dict:
++    return {
++        "id": delivery.id,
++        "endpoint_id": delivery.endpoint_id,
++        "event_type": delivery.event_type,
++        "status": delivery.status,
++        "attempts": delivery.attempts,
++        "max_attempts": delivery.max_attempts,
++        "next_retry_at": (
++            delivery.next_retry_at.isoformat() if delivery.next_retry_at else None
++        ),
++        "last_status_code": delivery.last_status_code,
++        "last_error": delivery.last_error,
++        "created_at": delivery.created_at.isoformat(),
++    }
+diff --git a/packages/backend/app/services/webhooks.py b/packages/backend/app/services/webhooks.py
+new file mode 100644
+index 0000000..978f599
+--- /dev/null
++++ b/packages/backend/app/services/webhooks.py
+@@ -0,0 +1,132 @@
++import hashlib
++import hmac
++import json
++import secrets
++from datetime import datetime, timedelta
++from urllib.parse import urlparse
++
++import requests
++
++from ..extensions import db
++from ..models import WebhookDelivery, WebhookEndpoint
++
++
++SUPPORTED_EVENTS = {
++    "expense.created",
++    "expense.updated",
++    "expense.deleted",
++    "bill.created",
++    "bill.paid",
++}
++
++
++def generate_signing_secret() -> str:
++    return secrets.token_urlsafe(32)
++
++
++def is_valid_webhook_url(url: str) -> bool:
++    parsed = urlparse(url)
++    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
++
++
++def normalize_event_types(raw) -> list[str] | None:
++    if raw in (None, [], ""):
++        return None
++    if not isinstance(raw, list):
++        raise ValueError("event_types must be a list")
++    event_types = [str(item).strip() for item in raw if str(item).strip()]
++    unsupported = sorted(set(event_types) - SUPPORTED_EVENTS)
++    if unsupported:
++        raise ValueError(f"unsupported event types: {', '.join(unsupported)}")
++    return event_types or None
++
++
++def sign_payload(secret: str, event_type: str, delivery_id: int, payload: dict) -> str:
++    body = _message_body(event_type, delivery_id, payload)
++    digest = hmac.new(secret.encode("utf-8"), body, hashlib.sha256).hexdigest()
++    return f"sha256={digest}"
++
++
++def emit_webhook_event(user_id: int, event_type: str, payload: dict) -> list[int]:
++    if event_type not in SUPPORTED_EVENTS:
++        return []
++    endpoints = (
++        db.session.query(WebhookEndpoint)
++        .filter_by(user_id=user_id, enabled=True)
++        .order_by(WebhookEndpoint.created_at.asc())
++        .all()
++    )
++    delivery_ids: list[int] = []
++    for endpoint in endpoints:
++        if endpoint.event_types and event_type not in endpoint.event_types:
++            continue
++        delivery = WebhookDelivery(
++            endpoint_id=endpoint.id,
++            user_id=user_id,
++            event_type=event_type,
++            payload=payload,
++        )
++        db.session.add(delivery)
++        db.session.flush()
++        delivery_ids.append(delivery.id)
++        deliver_webhook(delivery, endpoint)
++    db.session.commit()
++    return delivery_ids
++
++
++def deliver_webhook(
++    delivery: WebhookDelivery, endpoint: WebhookEndpoint | None = None
++) -> WebhookDelivery:
++    endpoint = endpoint or db.session.get(WebhookEndpoint, delivery.endpoint_id)
++    if endpoint is None:
++        delivery.status = "failed"
++        delivery.last_error = "webhook endpoint not found"
++        return delivery
++
++    delivery.attempts += 1
++    try:
++        response = requests.post(
++            endpoint.url,
++            json=delivery.payload,
++            headers={
++                "Content-Type": "application/json",
++                "X-FinMind-Event": delivery.event_type,
++                "X-FinMind-Delivery": str(delivery.id),
++                "X-FinMind-Signature": sign_payload(
++                    endpoint.signing_secret,
++                    delivery.event_type,
++                    delivery.id,
++                    delivery.payload,
++                ),
++            },
++            timeout=5,
++        )
++        delivery.last_status_code = response.status_code
++        if 200 <= response.status_code < 300:
++            delivery.status = "delivered"
++            delivery.last_error = None
++            delivery.next_retry_at = None
++        else:
++            _mark_retryable_failure(delivery, f"received HTTP {response.status_code}")
++    except requests.RequestException as exc:
++        _mark_retryable_failure(delivery, str(exc))
++    return delivery
++
++
++def _mark_retryable_failure(delivery: WebhookDelivery, error: str) -> None:
++    delivery.last_error = error[:500]
++    if delivery.attempts >= delivery.max_attempts:
++        delivery.status = "failed"
++        delivery.next_retry_at = None
++        return
++    delivery.status = "retry_scheduled"
++    delivery.next_retry_at = datetime.utcnow() + timedelta(minutes=2**delivery.attempts)
++
++
++def _message_body(event_type: str, delivery_id: int, payload: dict) -> bytes:
++    envelope = {
++        "delivery_id": delivery_id,
++        "event_type": event_type,
++        "payload": payload,
++    }
++    return json.dumps(envelope, sort_keys=True, separators=(",", ":")).encode("utf-8")
+diff --git a/packages/backend/tests/test_webhooks.py b/packages/backend/tests/test_webhooks.py
+new file mode 100644
+index 0000000..c947bed
+--- /dev/null
++++ b/packages/backend/tests/test_webhooks.py
+@@ -0,0 +1,96 @@
++from app.extensions import db
++from app.models import WebhookDelivery
++
++
++class FakeResponse:
++    def __init__(self, status_code=204):
++        self.status_code = status_code
++
++
++def test_webhook_endpoint_receives_signed_expense_event(
++    client, auth_header, monkeypatch
++):
++    calls = []
++
++    def fake_post(url, json, headers, timeout):
++        calls.append({"url": url, "json": json, "headers": headers, "timeout": timeout})
++        return FakeResponse(204)
++
++    monkeypatch.setattr("app.services.webhooks.requests.post", fake_post)
++
++    r = client.post(
++        "/webhooks",
++        json={"url": "https://example.com/hooks", "event_types": ["expense.created"]},
++        headers=auth_header,
++    )
++    assert r.status_code == 201
++    endpoint = r.get_json()
++    assert endpoint["signing_secret"]
++
++    r = client.post(
++        "/expenses",
++        json={"amount": 12.0, "description": "Webhook lunch", "date": "2026-02-12"},
++        headers=auth_header,
++    )
++    assert r.status_code == 201
++
++    assert len(calls) == 1
++    assert calls[0]["url"] == "https://example.com/hooks"
++    assert calls[0]["headers"]["X-FinMind-Event"] == "expense.created"
++    assert calls[0]["headers"]["X-FinMind-Signature"].startswith("sha256=")
++    assert calls[0]["json"]["description"] == "Webhook lunch"
++
++    r = client.get("/webhooks/deliveries", headers=auth_header)
++    assert r.status_code == 200
++    deliveries = r.get_json()
++    assert deliveries[0]["status"] == "delivered"
++    assert deliveries[0]["attempts"] == 1
++
++
++def test_webhook_delivery_failure_can_be_retried(client, auth_header, monkeypatch):
++    statuses = [500, 204]
++
++    def fake_post(url, json, headers, timeout):
++        return FakeResponse(statuses.pop(0))
++
++    monkeypatch.setattr("app.services.webhooks.requests.post", fake_post)
++
++    r = client.post(
++        "/webhooks",
++        json={"url": "https://example.com/hooks", "event_types": ["bill.created"]},
++        headers=auth_header,
++    )
++    assert r.status_code == 201
++
++    r = client.post(
++        "/bills",
++        json={
++            "name": "Internet",
++            "amount": 49.99,
++            "next_due_date": "2026-02-20",
++            "cadence": "MONTHLY",
++        },
++        headers=auth_header,
++    )
++    assert r.status_code == 201
++
++    with client.application.app_context():
++        delivery = db.session.query(WebhookDelivery).one()
++        assert delivery.status == "retry_scheduled"
++        delivery_id = delivery.id
++
++    r = client.post(f"/webhooks/deliveries/{delivery_id}/retry", headers=auth_header)
++    assert r.status_code == 200
++    retried = r.get_json()
++    assert retried["status"] == "delivered"
++    assert retried["attempts"] == 2
++
++
++def test_webhook_endpoint_rejects_unsupported_events(client, auth_header):
++    r = client.post(
++        "/webhooks",
++        json={"url": "https://example.com/hooks", "event_types": ["invoice.created"]},
++        headers=auth_header,
++    )
++    assert r.status_code == 400
++    assert "unsupported event types" in r.get_json()["error"]

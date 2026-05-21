@@ -66,3 +66,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
 - Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
+
+## 2026-05-22T06:40:00+08:00 - Optional low-payout bounty PR: FinMind webhook event system
+
+- Action available: apply `ops/48h/patches/finmind-webhook-event-system-bounty-77.patch` to a fork of `rohitdash08/FinMind` and open a PR for https://github.com/rohitdash08/FinMind/issues/77.
+- Suggested PR title/body: `ops/48h/FINMIND_WEBHOOK_PR_DRAFT.md`.
+- Why user action may be required: this repo has no existing fork/PR workflow set up in the current browser session, and the payout is only `$50`, so submitting should be weighed against higher-value leads.
+- Verification note: formatting and lint passed; local pytest is blocked by the repo's existing Redis dependency at auth login.
+- Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.

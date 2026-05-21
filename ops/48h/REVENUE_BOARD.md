@@ -70,6 +70,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/n8n/reporting-workflow-setup | open job post | 499 target | proposal_ready | User can send scoped AI reporting workflow proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.18 | Lower budget; Google/OpenAI credentials remain client-side |
 | Freelancer | https://www.freelancer.com/projects/api-integration/gohighlevel-automation-flow | open job post | 499 target | proposal_ready | User can send N8N-GoHighLevel diagnostic proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | GHL/SMS/email tokens remain client-side |
 | Freelancer | https://www.freelancer.com/projects/n8n/zoho-crm-integration-automation | open job post | 499 target | proposal_ready | User can send n8n-Zoho CRM sync proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.27 | Zoho credentials and private CRM records remain client-side |
+| FinMind | https://github.com/rohitdash08/FinMind/issues/77 | public bounty patch | 50 | patch_prepared | Open PR only if low-payout proof/claim is worth it | user + Codex | ops/48h/patches/finmind-webhook-event-system-bounty-77.patch | 0.08 | Low payout; local pytest blocked by existing Redis dependency |
 
 ## Current confirmed revenue
 
@@ -77,4 +78,4 @@ $0 confirmed.
 
 ## Current qualified pipeline
 
-No confirmed customer pipeline yet. The active monetizable assets are public proof/sales assets, proposal drafts, one prepared public docs patch, and four submitted public Claude Builders bounty PRs.
+No confirmed customer pipeline yet. The active monetizable assets are public proof/sales assets, proposal drafts, prepared public patches, one Firecrawl PR, and four submitted public Claude Builders bounty PRs.

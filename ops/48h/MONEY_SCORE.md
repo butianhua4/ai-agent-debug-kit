@@ -48,7 +48,8 @@ Score rules:
 | 2026-05-22T02:10:00+08:00 | Submitted Claude Builders changelog bounty PR | 40 | Public $50 bounty PR opened as #1905 from the prepared branch; not merged, not awarded, not revenue |
 | 2026-05-22T02:13:00+08:00 | Submitted Claude Builders Next.js SQLite CLAUDE.md bounty PR | 40 | Public $75 bounty PR opened as #1906 from the prepared branch; not merged, not awarded, not revenue |
 | 2026-05-22T03:23:00+08:00 | Submitted Firecrawl JS SDK automation PR | 60 | Public API automation SDK PR #3580 opened and locally tested; no bounty, no merge, not revenue |
+| 2026-05-22T06:40:00+08:00 | Prepared FinMind webhook event system bounty patch | 40 | Public $50 bounty patch prepared with signed webhook delivery and retry handling; lint/format passed, pytest blocked by existing Redis dependency; not submitted, not revenue |
 
 ## Total
 
-1200
+1240

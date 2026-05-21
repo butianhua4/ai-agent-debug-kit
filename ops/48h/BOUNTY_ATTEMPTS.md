@@ -630,3 +630,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: no open matching bounty issues returned by the GitHub connector search.
+
+## Patch prepared 2026-05-22: FinMind webhook event system
+
+- bounty URL: https://github.com/rohitdash08/FinMind/issues/77.
+- reward amount: $50 listed on the public issue.
+- repo: rohitdash08/FinMind.
+- issue: Create webhook event system.
+- why selected: credential-free backend feature request with a concrete deliverable: event types, signing, retries/failure handling, and documentation. It is low payout but directly aligned with automation/webhook proof work.
+- what was done: cloned the public repo, inspected Flask backend models/routes/tests, then prepared a minimal patch adding user-scoped webhook endpoints, HMAC-SHA256 signed deliveries, persisted delivery status/attempt metadata, manual retry endpoint, and event emission for expense/bill lifecycle events.
+- test result: `black --check app tests` passed; `flake8 app tests` passed. `pytest tests/test_webhooks.py tests/test_expenses.py tests/test_bills.py` could not complete locally because the existing auth test path attempts to connect to Redis at `redis:6379`; this blocks existing tests before webhook assertions run.
+- PR URL or patch path: `ops/48h/patches/finmind-webhook-event-system-bounty-77.patch`; PR draft at `ops/48h/FINMIND_WEBHOOK_PR_DRAFT.md`.
+- payout status: no award, no confirmed revenue.
+- next action: if user wants to pursue the low-payout bounty, open a PR from the prepared patch and note the Redis-local-test limitation honestly.
