@@ -194,3 +194,39 @@ Package-level verification could not be completed in the unattended environment 
 ```
 
 - user action required: open a fork/branch or PR manually if the user wants this contribution submitted upstream; no GitHub write access is available for this public repo from the current connector.
+
+## Attempt 2026-05-22: OpenClaw skill trigger-quality docs patch
+
+- bounty URL: none.
+- reward amount: $0 visible.
+- repo: openclaw/openclaw.
+- issue: https://github.com/openclaw/openclaw/issues/50090
+- why selected: public OpenClaw skill ecosystem issue, directly aligned with `agent-skill-packs` visibility and with a low-risk docs-only slice around "invisible trigger failures"; this supports future OpenClaw community exposure even without a bounty.
+- what was done: cloned the public repo and prepared a docs patch for `docs/tools/skills.md` adding a "Description and trigger quality" section that teaches skill authors to write user-intent-oriented descriptions and concrete trigger examples without adding unimplemented schema.
+- test result:
+  - `git diff --check`: passed in `bounty-work/openclaw`.
+  - docs-only patch; no runtime tests required.
+- PR URL or patch path: `ops/48h/patches/openclaw-skill-description-trigger-quality.patch`.
+- payout status: not a bounty, not revenue.
+- PR draft title: Document skill description and trigger quality guidance.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds a docs section explaining why `description` quality matters for skill selection.
+- Shows concrete examples that map user language to skill intent.
+- Recommends adding example user phrases in `SKILL.md` bodies and marking passive/meta skills explicitly.
+
+## Context
+
+This is a narrow docs-only slice related to #50090 and the "invisible trigger failure" discussion. It avoids introducing new schema fields or security behavior; it only documents authoring guidance that skill publishers can apply today.
+
+## Validation
+
+- `git diff --check`
+
+No runtime tests were run because this is a documentation-only change.
+```
+
+- user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has no write access to `openclaw/openclaw`.

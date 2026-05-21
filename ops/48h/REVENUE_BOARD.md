@@ -39,6 +39,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Reddit r/n8n | https://www.reddit.com/r/n8n/comments/1tjirvz/one_bad_workflow_took_down_our_entire_n8n/ | high-intent community pain | 499-5000 target | reply_draft_ready | User can post helpful recovery/circuit-breaker reply if subreddit rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.15 | No auto-DM/no spam; no explicit budget |
 | Reddit r/n8n | https://www.reddit.com/r/n8n/comments/1t16lib/error_details_workflow_did_not_finish_possible/ | community pain | 499-1500 target | reply_draft_candidate | User can post helpful OOM/watcher reply if subreddit rules allow | user | ops/48h/LEAD_CANDIDATES.csv | 0.10 | No explicit budget |
 | n8n Community | https://community.n8n.io/t/can-someone-help-me-production-webhook-does-not-execute-workflow-http-500-reading-execute/247738 | community pain | 499 target | reply_candidate | Helpful diagnostic reply only if rules permit | user | ops/48h/LEAD_CANDIDATES.csv | 0.08 | Not a direct job; avoid spam |
+| OpenClaw | https://github.com/openclaw/openclaw/issues/50090 | public issue patch | 0 | patch_prepared | User can manually open upstream PR if useful for community exposure | user | ops/48h/patches/openclaw-skill-description-trigger-quality.patch | 0.12 | No bounty; current connector has no write access to upstream |
 
 ## Current confirmed revenue
 

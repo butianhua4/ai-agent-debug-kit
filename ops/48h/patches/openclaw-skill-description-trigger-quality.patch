@@ -1,0 +1,51 @@
+diff --git a/docs/tools/skills.md b/docs/tools/skills.md
+index b4697292..97938cb8 100644
+--- a/docs/tools/skills.md
++++ b/docs/tools/skills.md
+@@ -218,6 +218,46 @@ by the embedded agent supports **single-line** frontmatter keys only;
+ `metadata` should be a **single-line JSON object**. Use `{baseDir}` in
+ instructions to reference the skill folder path.
+ 
++### Description and trigger quality
++
++The `description` is the main signal the model sees when deciding whether a
++skill is relevant to the current request. Write it in the same words an
++operator is likely to use, not only in internal implementation terms.
++
++Good descriptions answer three questions:
++
++- What user problem does this skill solve?
++- What concrete inputs or artifacts does it work with?
++- When should the model choose this skill instead of a generic shell or search
++  workflow?
++
++For example, prefer a description like:
++
++```yaml
++description: Diagnose OpenClaw gateway startup failures from logs, config paths, and service status output.
++```
++
++over a description like:
++
++```yaml
++description: Operates on gateway-facing platform APIs.
++```
++
++When a skill should normally be invoked directly by a user, include example
++phrases in the body of `SKILL.md` so the intent is concrete:
++
++```markdown
++Use this skill when the user asks things like:
++
++- "Why is my OpenClaw gateway failing to start?"
++- "Check these gateway logs for the root cause."
++- "My scheduled OpenClaw job stopped running."
++```
++
++For passive or meta skills, make that explicit in the body and consider setting
++`disable-model-invocation: true` if the instructions should not compete with
++active user-facing skills in the normal prompt.
++
+ ### Optional frontmatter keys
+ 
+ <ParamField path="homepage" type="string">

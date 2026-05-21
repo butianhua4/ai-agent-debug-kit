@@ -13,3 +13,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Any Algora/GitHub payout setup, tax form, KYC, or payment profile setup is USER_ACTION_REQUIRED.
 - Any community post that requires the user's personal account context should be posted or confirmed by the user.
 - If desired, the user must fork/open an upstream PR for `567-labs/instructor-js#8` using `ops/48h/patches/0001-Add-cookbook-pages-for-existing-examples.patch`, because the current connector has pull-only access to that public repo.
+
+## 2026-05-22T00:30:00+08:00 - Optional upstream PR: OpenClaw skill docs
+
+- Action: If desired, fork `openclaw/openclaw`, apply `ops/48h/patches/openclaw-skill-description-trigger-quality.patch`, and open a PR.
+- Suggested PR title: `Document skill description and trigger quality guidance`
+- Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
+- Safety boundary: no credentials, tokens, payment, KYC, or private repository access required.
