@@ -565,3 +565,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: public release notes show #4440 was already changed/fixed in PHPUnit 12.5.15 and 13.0.6. Opire still lists it, so this is likely stale and already claimed.
+
+## Screening 2026-05-22: qtop Slurm support challenge
+
+- bounty URL: https://app.opire.dev/home entry for qtop/qtop Challenge #3.
+- reward amount: $55.55 visible on Opire.
+- repo: qtop/qtop.
+- issue: https://github.com/qtop/qtop/issues/356.
+- why selected: recent Python bounty with visible reward and no private credentials required.
+- what was done: checked issue body and maintainer update before cloning.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: maintainer requires three Slurm command-trace conformance test cases, three cluster screenshots, RHEL8/Python 3.6 compatibility, ruff, exact LLM disclosure, possible identity verification, and likely multiple rebases. This is not a safe unattended 45-minute revenue patch.
+
+## Screening 2026-05-22: TypeORM migration data-loss bounty
+
+- bounty URL: https://app.opire.dev/home entry for typeorm/typeorm.
+- reward amount: $190 visible on Opire.
+- repo: typeorm/typeorm.
+- issue: https://github.com/typeorm/typeorm/issues/3357.
+- why selected: TypeScript/Postgres migration bug with visible bounty and strong fit for automation/data-loss prevention.
+- what was done: inspected issue state, relevant `PostgresQueryRunner.changeColumn` source, and recent issue comments.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: maintainers explicitly wrote that a fix is under active review at PR #11620 and asked contributors not to open new PRs. Multiple recent competing PRs already exist, so submitting another patch would be spammy and low-probability.
