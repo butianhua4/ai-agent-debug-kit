@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- CI risk gate chat handoff for using the proof card, one-page PDF, and safe buyer requirements in Fiverr conversations.
 - CI risk gate pass/block proof card generated from the synthetic pass/fail sample logs for Fiverr gallery use.
 - Synthetic CI risk gate pass/fail sample logs for gallery proof and delivery QA.
 - CI risk gate delivery template for faster Fiverr order fulfillment.

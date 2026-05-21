@@ -4,6 +4,8 @@ Use this pack when a Fiverr buyer asks about the AI agent CI risk gate service.
 
 Goal: turn a vague inquiry into a safe, scoped order without asking for secrets, private repositories, payment details, or off-platform access.
 
+If the buyer needs proof before sharing requirements, use `docs/CI_RISK_GATE_CHAT_HANDOFF.md` with the pass/block proof card first.
+
 ## Fast Fit Check
 
 Good fit:
