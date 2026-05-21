@@ -114,7 +114,10 @@ Use:
 
 Use:
 
-`docs/CHINESE_299_PAID_ORDER_HANDOFF.md`
+- paid order handoff: `docs/CHINESE_299_PAID_ORDER_HANDOFF.md`
+- paid order launch checklist: `docs/CHINESE_299_PAID_ORDER_LAUNCH_CHECKLIST.md`
+- paid order tracker: `docs/CHINESE_299_PAID_ORDER_TRACKER.md`
+- tracker CSV: `docs/examples/chinese-299-paid-order-tracker.csv`
 
 Start only when:
 
@@ -129,10 +132,22 @@ Do not start from:
 - unknown payment screenshots;
 - unconfirmed off-platform claims.
 
+Order launch flow:
+
+1. Confirm the order is visible in a platform dashboard or the owner confirms payment.
+2. Create one tracker row in `docs/examples/chinese-299-paid-order-tracker.csv` or a private copy.
+3. Mark `status` as `paid_active`, `waiting_payment_confirmation`, `missing_materials`, `blocked`, or `in_progress`.
+4. Mark `risk_flags` before opening any material.
+5. Send the scope-lock message from `docs/CHINESE_299_PAID_ORDER_LAUNCH_CHECKLIST.md`.
+6. Start the 30-minute diagnosis only after the material is complete and safe.
+
+Never store passwords, API keys, tokens, cookies, OAuth codes, payout data, KYC, tax, wallet, payment details, private customer data, external links, or raw production logs with secrets in the tracker.
+
 ## 6. Deliver 299 Diagnosis
 
 Use:
 
+- launch checklist: `docs/CHINESE_299_PAID_ORDER_LAUNCH_CHECKLIST.md`
 - 30-minute checklist: `docs/CHINESE_299_30_MIN_DELIVERY_CHECKLIST.md`
 - report template: `docs/examples/chinese-299-diagnosis-report-template.md`
 - sample report: `docs/examples/chinese-299-diagnosis-sample-report.md`
@@ -186,6 +201,8 @@ Use:
 
 - lead tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
 - tracker CSV: `docs/examples/domestic-lead-tracker.csv`
+- paid order tracker: `docs/CHINESE_299_PAID_ORDER_TRACKER.md`
+- paid order tracker CSV: `docs/examples/chinese-299-paid-order-tracker.csv`
 
 Record:
 
@@ -198,6 +215,18 @@ Record:
 - delivery file;
 - upgrade recommendation;
 - follow-up date.
+
+For paid orders, also record:
+
+- package status;
+- diagnosis deadline;
+- material status;
+- risk flags;
+- owner confirmation needed: yes/no;
+- report path;
+- upgrade route.
+
+Keep tracker notes operational only. Do not paste buyer secrets, payment details, private logs, or external links.
 
 ## Daily Operating Checklist
 
