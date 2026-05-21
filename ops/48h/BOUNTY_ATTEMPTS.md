@@ -643,3 +643,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: `ops/48h/patches/finmind-webhook-event-system-bounty-77.patch`; PR draft at `ops/48h/FINMIND_WEBHOOK_PR_DRAFT.md`.
 - payout status: no award, no confirmed revenue.
 - next action: if user wants to pursue the low-payout bounty, open a PR from the prepared patch and note the Redis-local-test limitation honestly.
+
+## Screening 2026-05-22: Electron tray orange dot indicator
+
+- bounty URL: https://app.opire.dev/issues/01K6K4YTSWT7XF53GM3KCTBG7S.
+- reward amount: $100 visible on Opire.
+- repo: aueangpanit/electron-template.
+- issue: https://github.com/aueangpanit/electron-template/issues/1.
+- why selected: TypeScript/Electron bounty with a narrow UI/icon requirement: keep macOS tray template behavior while adding an orange status dot.
+- what was done: opened the public GitHub issue and attempted to clone the repository for implementation.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- blocker/rejection reason: `git clone https://github.com/aueangpanit/electron-template.git` returned `Repository not found` even though the issue page is visible. This is likely deleted/renamed/private repository state or GitHub visibility inconsistency, so it is not a safe patch target right now.
