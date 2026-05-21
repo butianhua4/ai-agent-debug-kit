@@ -102,6 +102,7 @@ assert.ok(manifest.files.includes("docs/FIVERR_GALLERY_ASSET_AUDIT.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_UPLOAD_HANDOFF.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_ONE_PAGER.md"));
 assert.ok(manifest.files.includes("docs/CI_RISK_GATE_BUYER_REPLY_PACK.md"));
+assert.ok(manifest.files.includes("docs/CI_RISK_GATE_DELIVERY_TEMPLATE.md"));
 assert.ok(manifest.files.includes("docs/LAUNCH_STATUS.md"));
 assert.ok(manifest.files.includes("docs/MICRO_PRODUCT_PACKS.md"));
 assert.ok(manifest.files.includes("docs/MOBILE_STATUS.md"));
