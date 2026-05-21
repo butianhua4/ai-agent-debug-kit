@@ -4,6 +4,30 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority -4: Fresh Freelancer n8n GoHighLevel automation flow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api-integration/gohighlevel-automation-flow
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #16
+- suggested offer: `$499 architecture diagnostic`; budget-fit implementation only if one lead-to-booking path is scoped.
+- why first: posted half a minute ago, explicit N8N + GoHighLevel + AI Agent Admin + CRM/calendar/email/SMS automation fit.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: GoHighLevel API keys, tokens, SMS billing access, email/calendar passwords, payment access, or customer records.
+- first ask after reply: written reference-video steps, fake lead payload, first path to automate, booking rules, and placeholder logging target.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -3.5: Fresh Freelancer n8n Zoho CRM sync
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/zoho-crm-integration-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #17
+- suggested offer: `$499 CRM sync diagnostic`; use platform hourly starter for implementation after first object is scoped.
+- why high: posted half a minute ago, only one proposal in search result, direct n8n + CRM + API + data mapping + Docker fit.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: Zoho credentials, API keys, tokens, private CRM records, payment access, or self-hosted server passwords.
+- first ask after reply: fake Zoho payload, target endpoint schema, field mapping rules, conflict policy, n8n/Docker version.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority -3: Fresh Freelancer broken n8n business workflow
 
 - channel: Freelancer

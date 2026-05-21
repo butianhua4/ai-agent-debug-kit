@@ -390,6 +390,76 @@ Suggested scope: $499 diagnostic/build plan, or a budget-fit MVP if we keep the 
 Next question to ask: Can you share a fake/sample dataset and one example report prompt?
 User action required: User must send through Freelancer manually if account/rules permit. Keep Google/OpenAI credentials client-side.
 
+## [LEAD #16]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api-integration/gohighlevel-automation-flow
+Pain: Buyer wants an N8N workflow that connects GoHighLevel to lead pipeline triggers, booking/calendar automation, campaign email tracking, SMS sends, live chat/voice handoff to GoHighLevel AI Agent Admin, and interaction logging.
+Suggested package: Architecture diagnostic or tightly scoped first-workflow implementation.
+Suggested price: $499 diagnostic/architecture plan; budget-fit first workflow if limited to one lead-trigger-to-booking path.
+Risk: GoHighLevel API keys, SMS/email sending, calendar data, and AI Agent Admin access are credential-sensitive. No tokens or live account access in chat; client configures credentials on their side.
+
+Message draft:
+
+Hi, I can help map and build the N8N to GoHighLevel automation safely: lead pipeline trigger, booking/calendar sync, campaign email/SMS routing, AI agent handoff, and interaction logging.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need your GoHighLevel API keys, tokens, passwords, SMS billing access, or account credentials in chat. Please share:
+- the reference video goal as a written step list or screenshots,
+- a fake/sample lead/contact payload,
+- the exact first flow you want working,
+- desired calendar/booking behavior,
+- email/SMS trigger rules using placeholders,
+- where interaction logs should be written.
+
+My first delivery would be:
+- architecture map for the flow,
+- n8n node plan and JSON mapping,
+- placeholder-based auth/env var setup,
+- error/retry/fallback recommendations,
+- handoff notes so your team can safely add real credentials.
+
+Suggested scope: $499 for diagnostic and implementation plan, or a budget-fit first workflow if we keep it to one lead-to-booking path.
+
+Next question to ask: Which single path should be automated first: new lead to booking, campaign email, SMS, or AI-agent handoff?
+User action required: User must send through Freelancer manually if account/rules permit. Keep GoHighLevel tokens client-side.
+
+## [LEAD #17]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/zoho-crm-integration-automation
+Pain: Buyer needs production-ready n8n workflows for reliable bi-directional Zoho CRM sync, field transformations, target endpoint updates, self-hosted Docker n8n, tests, and documentation.
+Suggested package: CRM sync reliability diagnostic or platform hourly starter.
+Suggested price: $499 diagnostic for sync architecture and failure prevention; platform hourly starter for implementation.
+Risk: Zoho CRM credentials and customer data are sensitive. Start from fake payloads, field lists, API docs, and placeholder credentials only.
+
+Message draft:
+
+Hi, I can help design and implement reliable n8n <-> Zoho CRM synchronization with clean field mapping, transformations, error handling, and documentation.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need Zoho credentials, API keys, tokens, passwords, or private customer records in chat. To start safely, please share:
+- fake/sample CRM create/update payloads,
+- target endpoint schema or API docs,
+- required field mapping rules,
+- conflict handling rules for bi-directional updates,
+- n8n/Docker version,
+- expected retry/error notification behavior.
+
+My approach:
+- map both sync directions and possible data conflicts,
+- define idempotency/deduplication rules,
+- implement or document transformations with placeholder credentials,
+- add retry/error-handling paths,
+- provide a handoff doc so your team can tweak mappings safely.
+
+Suggested first scope: $499 diagnostic and sync design, or hourly implementation through the platform once the first entity/object is scoped.
+
+Next question to ask: Which Zoho object should be synced first, and what target endpoint/schema does it map to?
+User action required: User must send through Freelancer manually if account/rules permit. Keep Zoho credentials client-side.
+
 ## [LEAD #9]
 
 Source: Freelancer
