@@ -119,3 +119,94 @@ The question I would ask first: are the silent failures mostly credentials/API s
 
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
+
+## [LEAD #5]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+Pain: Open job for existing n8n workflows with intermittent failures, unreliable webhooks, unexpected API errors, AI nodes returning empty outputs, JSON mapping mismatches, broken loops/branches, missing retries, incomplete error handling, and performance slowdowns.
+Suggested package: Same-Day Workflow Rescue, with an upgrade path to the 48-Hour AI Automation Rescue Sprint.
+Suggested price: $1,500 for a focused same-day rescue of the highest-impact workflow group; $5,000 if they need a 48-hour stabilization sprint across multiple workflows with error handling, retry strategy, and handoff documentation.
+Risk: The client may expect direct n8n environment access. Start with sanitized exports, redacted execution logs, screenshots, and a scope call inside the platform. Do not request passwords, API keys, tokens, payment access, or private credentials.
+
+Message draft:
+
+Hi, this is a strong fit for my AI automation rescue workflow. I help diagnose and stabilize failing n8n automations, webhook/API failures, JSON mapping issues, AI-node empty outputs, broken loop/branch logic, and missing retry/error-handling paths.
+
+Offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, payment access, or private credentials to start. A safe first step is to review sanitized workflow exports, redacted failed execution logs, screenshots of the failing nodes, and a short list of the highest-impact workflows.
+
+My approach would be:
+- triage failures by blast radius, frequency, and business impact,
+- inspect webhook payload shape and JSON field mapping drift,
+- identify broken expressions, loop/branch assumptions, and AI-node input/output mismatch,
+- add or recommend retry, fallback, and error-reporting paths,
+- provide a concise change log and prevention checklist.
+
+Suggested scope: $1,500 for a same-day rescue focused on the most business-critical workflow group. If you want a broader 48-hour stabilization sprint across multiple workflows, monitoring, retries, and documentation, I would quote $5,000 after reviewing the sanitized material.
+
+Can you share one sanitized workflow export, one redacted failed execution log, and which workflow has the highest business impact?
+
+Next question to ask: Which 1-3 workflows are causing the most business impact right now?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #6]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/zapier/fix-zapier-error-issues
+Pain: Zapier to Salesforce integration keeps throwing errors even though the visible mapping looks correct. Client wants root cause isolated quickly and either a repaired Zap or a streamlined rebuild with a concise change note.
+Suggested package: Quick Diagnostic for root-cause isolation, or Same-Day Workflow Rescue if repair/rebuild is included.
+Suggested price: $499 diagnostic; $1,500 if they want same-day repair, rebuild, validation, and handoff notes.
+Risk: Salesforce and Zapier can involve sensitive CRM data and credentials. Start with redacted Zap run history, screenshots, payload samples with fake data, and field mapping screenshots only.
+
+Message draft:
+
+Hi, I can help isolate the Zapier-to-Salesforce failure and either repair the current Zap or rebuild the trigger/action path cleanly.
+
+Offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, payment access, or private credentials to begin. Please share redacted Zap run history, the exact error text, screenshots of the field mapping, and a fake/sample payload that matches the real structure.
+
+My diagnostic path would be:
+- reproduce the failure from redacted run history,
+- check Salesforce object/field type mismatch, required fields, picklist values, and null handling,
+- verify Zapier trigger/action mapping and filters,
+- identify whether the fastest fix is a mapping repair, formatter step, filter guard, or clean rebuild,
+- provide a concise change note and a post-fix validation checklist.
+
+Suggested scope: $499 for root-cause diagnostic and a precise fix plan. If you want me to repair/rebuild and validate the Zap end to end, I would quote $1,500 for same-day rescue.
+
+Can you share the redacted Zap error, object name, and one sample payload with fake values?
+
+Next question to ask: Is the error happening before Salesforce receives the request, or after Salesforce rejects a mapped field?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #7]
+
+Source: Reddit r/n8n
+URL: https://www.reddit.com/r/n8n/comments/1tjirvz/one_bad_workflow_took_down_our_entire_n8n/
+Pain: A single n8n Cloud workflow OOM-killed the instance for 4+ hours, causing 503 downtime and client-facing SLA pain. Poster asks for monitoring, circuit breakers, batch conventions, and recovery options.
+Suggested package: Quick Diagnostic for one workflow and recovery plan; 48-Hour AI Automation Rescue Sprint if they want production hardening across client-facing workflows.
+Suggested price: $499 diagnostic; $5,000 for 48-hour rescue/hardening if business-critical workflows and SLAs are involved.
+Risk: Reddit replies must be helpful, non-spam, and public. No DMs. Do not ask for secrets, workflow exports with credentials, or account access.
+
+Message draft:
+
+For this specific failure mode, I would treat it less like a normal workflow bug and more like an incident-response gap.
+
+Offer page and safe intake boundary if you want outside help from sanitized material only: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+A practical recovery/hardening pass would usually include:
+- find the OOM pattern first: batch size, binary data retention, Code/Merge nodes inside loops, execution data saved too aggressively, or API pagination that expanded unexpectedly,
+- add an external heartbeat outside n8n Cloud so the alert still fires when the instance is unreachable,
+- add per-workflow volume checks, because "no error" is not the same as "business process is healthy",
+- design a circuit-breaker pattern around high-volume workflows so they can stop before taking down the whole instance,
+- document a manual quarantine/recovery runbook for client-facing workflows.
+
+I would not need passwords, API keys, tokens, or account access to start. A safe first pass can be done from a sanitized workflow shape, redacted execution/error history, estimated item sizes, and the last-known-good run.
+
+If this is tied to client SLAs, the first question I would ask is: which workflow has the highest blast radius, and what input size or batch changed before the outage?
+
+Next question to ask: Which workflow has the highest blast radius, and what changed in input size/batching before the outage?
+User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.

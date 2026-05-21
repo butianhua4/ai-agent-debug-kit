@@ -29,7 +29,8 @@ Score rules:
 | 2026-05-21T23:58:00+08:00 | Found high-intent n8n workflow audit lead and reply draft | 80 | Public pain signal for 50 broken workflows; reply is user-send only and not revenue |
 | 2026-05-22T00:05:00+08:00 | Added public emergency rescue offer page | 50 | Gives proposal drafts and public posts a proof/safe-intake landing link |
 | 2026-05-22T00:15:00+08:00 | Prepared ready-to-send short draft pack | 50 | Reduces friction for manual sending across the top 3 highest-fit opportunities |
+| 2026-05-22T00:10:00+08:00 | Found next-strike n8n/Zapier emergency leads and prepared 3 reply drafts | 80 | Adds one fresh open Freelancer n8n debugging job, one open Zapier/Salesforce fix job, and one high-SLA n8n outage reply draft |
 
 ## Total
 
-340
+420
