@@ -43,3 +43,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Suggested PR title: `Add destructive Bash command PreToolUse hook`
 - Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
+
+## 2026-05-22T01:45:00+08:00 - Optional bounty claim: Claude Builders PR review agent
+
+- Action: If desired and still available, comment `/opire try` on `claude-builders-bounty/claude-builders-bounty#4`, apply `ops/48h/patches/claude-builders-pr-review-agent.patch`, and open a PR.
+- Suggested PR title: `Add public PR review agent CLI`
+- Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
+- Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.

@@ -362,3 +362,37 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 ```
 
 - user action required: bounty claiming requires a compliant `/opire try` comment and upstream PR from a user-controlled GitHub account. Codex did not claim the bounty or submit the PR.
+
+## Attempt 2026-05-22: Claude Builders PR review agent bounty patch
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.
+- reward amount: $150 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.
+- why selected: public Claude Code/agent bounty with direct fit for reusable agent/skill-pack proof. It can be implemented without secrets because public GitHub PR `.diff` URLs are readable without tokens.
+- what was done: prepared a deterministic Python `claude-review` CLI/sub-agent that accepts `--pr https://github.com/owner/repo/pull/123`, fetches the public diff, analyzes changed files, test coverage signals, risky paths, risky added/removed lines, and emits a structured Markdown comment with summary, risks, improvement suggestions, and confidence. Added README usage and two sample outputs from real public Firecrawl PRs.
+- test result:
+  - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3577`: passed and produced structured Markdown.
+  - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3579`: passed and produced structured Markdown.
+  - `git diff --check -- issue-4-pr-review-agent`: passed.
+- PR URL or patch path: `ops/48h/patches/claude-builders-pr-review-agent.patch`.
+- payout status: no award, no merge, no confirmed revenue.
+- PR draft title: Add public PR review agent CLI.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds a credential-free `claude-review` CLI/sub-agent for public GitHub PR review.
+- Accepts `--pr https://github.com/owner/repo/pull/123` and fetches the public `.diff`.
+- Emits structured Markdown with summary, risks, improvement suggestions, and confidence.
+- Includes README usage and two sample outputs from real public Firecrawl PRs.
+
+## Validation
+
+- `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3577`
+- `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3579`
+- `git diff --check -- issue-4-pr-review-agent`
+```
+
+- user action required: bounty claiming requires a compliant `/opire try` comment and upstream PR from a user-controlled GitHub account. Codex did not claim the bounty or submit the PR.
