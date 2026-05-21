@@ -120,6 +120,106 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #8]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/ai-development/systems-engineer-for-openclaw-40382443
+Pain: Buyer wants a self-hosted OpenClaw system on a VPS with LLM integration, Telegram, dashboards, task workflows, Docker, Nginx, SSL, firewall/hardening, and reliable handoff.
+Suggested package: OpenClaw deployment diagnostic first, then Same-Day Workflow Rescue / implementation sprint.
+Suggested price: $499 diagnostic; $1,500 implementation sprint if the scope is one VPS deployment plus documented handoff.
+Risk: Server access, domain/DNS, Telegram tokens, LLM provider keys, and production hardening can involve credentials. Keep all secrets client-side and start from architecture, screenshots, sanitized logs, and a user-run command checklist.
+
+Message draft:
+
+Hi, I can help turn the OpenClaw/VPS setup into a reproducible deployment plan and implementation workflow: Docker services, Nginx/SSL, firewall checks, Telegram/LLM integration boundaries, dashboard handoff, and a simple operations runbook.
+
+Relevant proof/safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, Telegram tokens, server root credentials, or payment access in chat. A safe start is:
+- VPS OS/version and whether Docker is already installed,
+- domain/subdomain and intended SSL setup,
+- screenshots or sanitized logs of the current OpenClaw error/state,
+- desired LLM provider and Telegram workflow, using placeholders for credentials,
+- the top 1-2 workflows that must run first.
+
+My first pass would be:
+- map the target architecture,
+- identify deployment blockers and missing env/service settings,
+- prepare a least-privilege/user-run setup checklist,
+- validate Nginx/SSL/firewall assumptions,
+- produce a rebuild and handoff note so the system is maintainable.
+
+Suggested scope: $499 for diagnostic and deployment plan. If you want the actual single-server setup and handoff documentation, I would quote $1,500 through the platform after reviewing the sanitized details.
+
+Next question to ask: What VPS OS/version are you using, and is OpenClaw already installed or starting from a clean server?
+User action required: User must send through Freelancer manually if account/rules permit. Do not request server passwords or tokens.
+
+## [LEAD #9]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/artificial-intelligence/engineers-for-automation-workflows
+Pain: Buyer needs n8n engineers for ongoing automation workflows: API integrations, rate limiting, error handling, high-volume processing, appointment booking, website population, and scraping/outreach workflows.
+Suggested package: Workflow reliability audit or scoped first automation rescue/build.
+Suggested price: $499 diagnostic for one workflow; platform hourly starter for ongoing work; $1,500 for one production-ready workflow rescue/build.
+Risk: Scraping/outreach can violate platform rules or privacy expectations. Only accept compliant data sources, no spam, no credential collection, and no bypassing rate limits/ToS.
+
+Message draft:
+
+Hi, I can help with n8n workflow reliability, API integration, rate limiting, webhook/JSON mapping, and production handoff for automation workflows.
+
+Relevant proof/safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, cookies, payment access, or private credentials to start. For scraping/outreach flows, I only work with allowed data sources and compliant usage boundaries.
+
+For a first paid scope, I suggest selecting one priority workflow and giving me:
+- expected behavior,
+- actual failure or bottleneck,
+- redacted execution logs/screenshots,
+- fake/sample payloads,
+- allowed data sources and rate limits,
+- the business impact and deadline.
+
+My delivery would include:
+- workflow map and failure points,
+- API/webhook mapping review,
+- retry/rate-limit/error branch recommendations,
+- corrected workflow logic or implementation notes,
+- handoff checklist for monitoring and future changes.
+
+Suggested scope: $499 diagnostic for the first workflow. If you want one production-ready workflow repaired or built with retries/error handling and handoff notes, I would quote $1,500 through the platform.
+
+Next question to ask: Which one workflow is the highest priority, and what data sources are explicitly allowed?
+User action required: User must send through Freelancer manually if account/rules permit. Do not accept spam, credential, or ToS-bypass work.
+
+## [LEAD #10]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/ai-development/Build-Workflows.html
+Pain: Buyer wants production-ready AI-agent workflows in n8n or Make, triggered by webhooks, enriched through APIs, with error handling and quick onboarding.
+Suggested package: $499 first-workflow diagnostic or $1,500 Same-Day Workflow Rescue/build for one scoped workflow.
+Suggested price: $499 diagnostic; $1,500 for one production workflow with validation and handoff notes.
+Risk: Could require API keys/tokens and unclear scope across multiple workflows. Start with fake payloads, API docs, screenshots, and placeholder env vars only.
+
+Message draft:
+
+Hi, this fits my AI automation rescue/build workflow. I can help build or stabilize one production n8n/Make AI-agent workflow with webhook triggers, API enrichment, JSON mapping, error handling, and a clear handoff note.
+
+Relevant proof/safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, cookies, or payment access to start. Please share sanitized examples only: fake webhook payloads, API docs, screenshots of current flow/state, expected output, and any redacted error logs.
+
+My suggested first scope:
+- confirm webhook input shape and expected output,
+- map API enrichment steps and field transformations,
+- design retry/fallback/error branches,
+- validate the happy path plus common failure cases,
+- deliver a concise setup/change log and handoff checklist.
+
+Suggested scope: $499 if you want diagnostic plus a precise build plan. $1,500 if you want one production-ready workflow implemented/repaired with validation and handoff notes.
+
+Next question to ask: Which platform should the first workflow use, n8n or Make, and can you share one fake webhook payload plus the desired final output?
+User action required: User must send through Freelancer manually if account/rules permit. Keep all API credentials client-side.
+
 ## [LEAD #9]
 
 Source: Freelancer

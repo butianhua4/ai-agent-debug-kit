@@ -4,6 +4,42 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority -1: Fresh Freelancer OpenClaw VPS production setup
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/ai-development/systems-engineer-for-openclaw-40382443
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #8
+- suggested offer: `$499 deployment diagnostic`; upsell to `$1,500` only after the buyer confirms one VPS, one OpenClaw install, and documented handoff.
+- why first: direct OpenClaw + DevOps fit, clear production pain, budget signal `$250-750 AUD`, and a strong bridge to the public `agent-skill-packs` trust asset.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: server passwords, SSH private keys, Telegram tokens, API keys, payment access, DNS registrar login, or wallet/KYC.
+- first ask after reply: VPS OS/version, current OpenClaw state, sanitized logs/screenshots, intended domain, and which one workflow must run first.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -0.5: Fresh Freelancer n8n automation workflows engineer
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/artificial-intelligence/engineers-for-automation-workflows
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #9
+- suggested offer: `$499 workflow reliability audit`; quote `$1,500` for one scoped production workflow with retries/error handling and handoff.
+- why high: very fresh ongoing/full-time signal and direct match to n8n, API integrations, rate limits, error handling, and high-volume automation.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: credentials, API keys, cookies, private datasets, or permission to scrape/DM outside allowed platform rules.
+- first ask after reply: one priority workflow, allowed data sources, fake payloads, and redacted execution context.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -0.25: Fresh Freelancer AI-agent n8n/Make workflow build
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/ai-development/Build-Workflows.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #10
+- suggested offer: `$499 first-workflow diagnostic`; quote `$1,500` for one implemented/repaired workflow with validation and handoff notes.
+- why high: immediate-start language, exact AI-agent workflow fit, webhook/API/error-handling language, and clean boundary for one workflow.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: API keys, tokens, platform passwords, wallet/payment access, or private customer data.
+- first ask after reply: n8n vs Make, fake webhook payload, desired final output, API docs, and sanitized error screenshots.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 00: Fresh Freelancer OpenClaw business automation
 
 - channel: Freelancer
