@@ -15,6 +15,8 @@ Message draft:
 
 Hi, I can help with this. Your stack is exactly the kind of AI automation work I handle: n8n/Zapier/Make workflows, OpenAI or Claude API steps, webhook payloads, Airtable/Google Sheets/Gmail/Twilio integrations, and debugging broken workflow logic.
 
+Here is the offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 For safety, I do not need passwords, API keys, tokens, or payment/admin credentials. To start, please share sanitized screenshots, workflow diagrams/exports with credentials removed, and the latest error messages or execution logs.
 
 My first diagnostic pass would:
@@ -43,6 +45,8 @@ Risk: Could require Twilio/n8n access; request safe exports, screenshots, and re
 Message draft:
 
 Hi, I can help stabilize the Twilio + n8n AI voice flow and get one clean call loop working. I work on failed automations, webhook routing, AI node failures, JSON mapping, and API integration debugging.
+
+Here is the offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
 
 I do not need passwords, API keys, tokens, wallet/payment access, or private credentials to begin. Please share sanitized screenshots of the n8n workflow, redacted execution logs, the Twilio webhook/error screen, and the expected call path.
 
@@ -73,6 +77,8 @@ Message draft:
 
 Hi, I can help repair and stabilize this n8n workflow. The issues you listed are a strong match for my workflow rescue process: broken trigger references, disconnected branches, AI Agent model connections, data reference errors, webhook payload mapping, and end-to-end validation.
 
+Here is the offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 For security, I do not need passwords, API keys, tokens, wallet/payment access, or private credentials to start. Please provide a sanitized n8n workflow export with credentials removed, redacted execution logs, and screenshots of the failing nodes.
 
 I would approach this in three steps:
@@ -99,6 +105,8 @@ Risk: Reddit community reply must be helpful first and must not look like spam. 
 Message draft:
 
 I would not migrate everything first. With inherited n8n estates, the fastest first step is usually a read-only triage pass:
+
+Offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
 
 1. Pull the last 30-60 days of execution history and rank workflows by run count, failure rate, and blast radius.
 2. Separate dead/seasonal flows from active business-critical flows before touching architecture.

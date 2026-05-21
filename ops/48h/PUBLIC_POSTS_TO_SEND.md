@@ -10,6 +10,8 @@ Post:
 
 If your automation suddenly stopped working, I can help diagnose it without needing your passwords, API keys, tokens, wallet access, or payment/admin credentials.
 
+Offer page / safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 I focus on urgent automation failures like:
 - n8n workflow execution errors
 - Zapier or Make webhook/JSON mapping problems
@@ -54,6 +56,8 @@ If you want a quick triage, reply with:
 
 I help debug failing n8n workflows using sanitized logs or credential-free workflow exports. I focus on webhook payloads, JSON mapping, OpenAI/Claude nodes, AI Agent model connections, trigger references, and broken execution paths.
 
+Safe intake and offer details: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 I do not need passwords, API keys, tokens, or credentials to start. A redacted execution log and screenshot are enough for a first diagnostic.
 
 I currently have 2 urgent slots:
@@ -66,6 +70,8 @@ If this is allowed here, I am happy to help people who have a specific failing w
 ## Reddit / Indie Hackers version
 
 I am offering a small number of urgent automation rescue slots for founders/operators whose n8n, Make, Zapier, or OpenAI workflow is failing.
+
+Offer details and safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
 
 Typical problems:
 - webhook data not parsing,
@@ -88,6 +94,8 @@ Two urgent slots open. Send tool + expected behavior + actual behavior + redacte
 
 Offering 2 urgent AI automation rescue slots this week.
 
+Details: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 I help fix failing n8n / Make / Zapier / OpenAI / Claude workflows using sanitized logs only.
 
 No passwords, API keys, tokens, wallet, or payment access needed.
@@ -103,7 +111,8 @@ Best fit: webhook/JSON mapping failures, AI node errors, broken n8n executions, 
 
 I specialize in urgent AI automation repair: n8n, Make, Zapier, OpenAI/Claude APIs, webhook payloads, JSON mapping, and workflow execution debugging.
 
+Offer details and safe intake: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
 I can start from sanitized screenshots, redacted execution logs, or credential-free workflow exports. I do not need passwords, API keys, tokens, or payment/admin access.
 
 For a focused workflow repair, I can provide a diagnostic, fix plan, implementation, testing notes, and a concise handoff report.
-

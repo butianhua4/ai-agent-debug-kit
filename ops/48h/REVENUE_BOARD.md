@@ -31,6 +31,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Opire | https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG | reward issue | 110 | rejected-low | No action unless all higher-value paths stall | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.03 | 1 solver claimed and low payout |
 | Opire | https://github.com/hexgrad/kokoro/issues/290 | reward issue | 1620 | rejected-risk | No action | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Looks like funding/donation for maintainer work, not a clear external patch bounty |
 | Owned asset | https://github.com/butianhua4/ai-agent-debug-kit | sales asset | 499-5000 | shipped | Keep as proof link for outbound/inbound replies | Codex | sales/48h-emergency-rescue-onepager.md | 0.20 | Needs external distribution |
+| Owned offer page | https://butianhua4.github.io/ai-agent-debug-kit/rescue.html | landing page | 499-5000 | shipped | Use as proof/safe-intake link in proposals and posts | Codex | rescue.html | 0.25 | Needs GitHub Pages propagation and external distribution |
 | Owned asset | https://github.com/butianhua4/agent-skill-packs | trust asset | 499-5000 | shipped | Use as agent/skill-pack proof asset | Codex | docs/OPENCLAW_COMMUNITY_GUIDE.md | 0.15 | Needs community posting by user or approved channel |
 
 ## Current confirmed revenue
