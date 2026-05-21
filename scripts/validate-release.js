@@ -81,6 +81,7 @@ assert.ok(manifest.files.includes("docs/CHINESE_BUYER_PRE_DIAGNOSIS_ASSET_COPY.m
 assert.ok(manifest.files.includes("docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md"));
 assert.ok(manifest.files.includes("docs/CHINESE_299_24H_FOLLOW_UP_CADENCE.md"));
+assert.ok(manifest.files.includes("docs/CHINESE_DAILY_LEAD_REVIEW_CHECKLIST.md"));
 assert.ok(manifest.files.includes("assets/domestic-299-what-to-send.svg"));
 assert.ok(manifest.files.includes("assets/domestic-299-what-to-send.png"));
 assert.ok(manifest.files.includes("assets/domestic-299-do-not-send.svg"));

@@ -61,6 +61,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Chinese 299 eight-image posting caption: `docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md`
 - Chinese 299 mobile posting checklist: `docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md`
 - Chinese 299 24-hour follow-up cadence: `docs/CHINESE_299_24H_FOLLOW_UP_CADENCE.md`
+- Chinese daily lead review checklist: `docs/CHINESE_DAILY_LEAD_REVIEW_CHECKLIST.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
 - Domestic 299 upload checklist: `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
