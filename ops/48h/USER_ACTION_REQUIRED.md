@@ -20,3 +20,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Suggested PR title: `Document skill description and trigger quality guidance`
 - Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
 - Safety boundary: no credentials, tokens, payment, KYC, or private repository access required.
+
+## 2026-05-22T01:10:00+08:00 - Optional upstream PR: actions/typescript-action release docs
+
+- Action: If desired, fork `actions/typescript-action`, apply `ops/48h/patches/actions-typescript-action-release-version-check-readme.patch`, and open a PR.
+- Suggested PR title: `Document package version checks before release`
+- Why user action is required: the current GitHub connector has no write permission to this public upstream repository.
+- Safety boundary: no credentials, tokens, payment, KYC, or private repository access required.

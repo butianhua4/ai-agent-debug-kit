@@ -230,3 +230,40 @@ No runtime tests were run because this is a documentation-only change.
 ```
 
 - user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has no write access to `openclaw/openclaw`.
+
+## Attempt 2026-05-22: actions/typescript-action release-version docs patch
+
+- bounty URL: none.
+- reward amount: $0 visible.
+- repo: actions/typescript-action.
+- issue: https://github.com/actions/typescript-action/issues/854
+- why selected: public GitHub Actions template issue discussing how to prevent release mistakes when `package.json` is not updated before tagging; this is directly aligned with CI/release automation proof work and has a low-risk README-only slice.
+- what was done: cloned the public repo and prepared a README patch adding "Checking Package Versions Before Release" guidance under the release section. The patch explains why the release helper does not mutate `package.json`/`package-lock.json`, and recommends a PR check for manifest version readiness before protected-branch merge.
+- test result:
+  - `git diff --check`: passed in `bounty-work/actions-typescript-action`.
+  - `git apply --reverse --ignore-whitespace --check`: passed against the modified working tree.
+  - docs-only patch; no runtime tests required.
+- PR URL or patch path: `ops/48h/patches/actions-typescript-action-release-version-check-readme.patch`.
+- payout status: not a bounty, not revenue.
+- PR draft title: Document package version checks before release.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds README guidance for checking package versions before running the release helper.
+- Clarifies that the release helper reminds users about `package.json` but does not update `package.json` or `package-lock.json` automatically.
+- Recommends a PR check for manifest version readiness before release branches are merged.
+
+## Context
+
+This addresses the safer documentation path discussed in #854 without changing release-script behavior or assuming a specific package manager workflow.
+
+## Validation
+
+- `git diff --check`
+
+No runtime tests were run because this is a documentation-only change.
+```
+
+- user action required: submit via fork/PR manually if the user wants this contribution sent upstream; current connector has pull-only access to `actions/typescript-action`.

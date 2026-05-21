@@ -1,0 +1,32 @@
+diff --git a/README.md b/README.md
+index ec71ad6..edff640 100644
+--- a/README.md
++++ b/README.md
+@@ -259,6 +259,27 @@ following steps:
+    to create a new release in GitHub so users can easily reference the new tags
+    in their workflows.
+ 
++### Checking Package Versions Before Release
++
++The release helper reminds you to update the `version` field in `package.json`,
++but it does not update `package.json` or `package-lock.json` automatically. This
++keeps the script runtime-agnostic for template users who may adapt the project
++to different package managers or release processes.
++
++If your action should block releases until the manifest version is updated, add
++a pull request check that validates the version before changes are merged. For a
++Node.js action, this check should usually verify that:
++
++- `package.json` contains the new version you intend to release
++- `package-lock.json` has been regenerated when package metadata changes
++- the version has not already been published as a release tag
++
++For example, a workflow can use the
++[`issue-ops/semver`](https://github.com/issue-ops/semver) action in check-only
++mode to compare the manifest version against repository tags. When paired with
++branch protection, this prevents release pull requests from merging until the
++package version is ready for the next tag.
++
+ ## Dependency License Management
+ 
+ This template includes a GitHub Actions workflow,
