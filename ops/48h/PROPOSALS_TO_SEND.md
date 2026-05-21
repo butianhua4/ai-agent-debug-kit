@@ -120,6 +120,28 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #8]
+
+Source: GitHub Activepieces
+URL: https://github.com/activepieces/activepieces/issues/13083
+Pain: Existing MCP server wants broader catalog/automation ecosystem exposure. This is not a bounty, but it signals demand for MCP servers and automation pieces that are easier to package, document, validate, and submit.
+Suggested package: Quick Diagnostic first; Same-Day Piece Rescue if implementation scope is clear.
+Suggested price: $499 diagnostic; $1,500 same-day connector/piece rescue; $5,000 48-hour sprint only if the integration is business-critical and has clear scope.
+Risk: Do not present this as a paid bounty. Do not ask for API keys, OAuth consent, private credentials, or account access. Manual posting/commenting must follow GitHub/community rules.
+
+Message draft:
+
+Hi, I can help turn a working MCP server or automation connector into a cleaner, testable package that is easier to submit, debug, and hand off.
+
+I work from public docs, sanitized logs, sample payloads with fake values, and credential-free exports. I do not need passwords, API keys, tokens, OAuth consent, wallets, payment access, or private credentials.
+
+For a first pass, I can provide a $499 diagnostic covering schema clarity, error handling, sample payloads, README/docs gaps, and safe marketplace/community submission readiness. If you want implementation help, I can scope a $1,500 same-day connector/piece rescue or a $5,000 48-hour sprint for a business-critical MCP/automation path.
+
+Can you share the public docs or repo link, one sanitized failing tool call or workflow log if any, and the expected output?
+
+Next question to ask: Is the current blocker technical reliability, submission documentation, tool schema clarity, or marketplace/community discovery?
+User action required: User must send or adapt this manually only where community/platform rules allow. Do not auto-comment or spam.
+
 ## [LEAD #5]
 
 Source: Freelancer

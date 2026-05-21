@@ -116,3 +116,29 @@ Offer details and safe intake: https://butianhua4.github.io/ai-agent-debug-kit/r
 I can start from sanitized screenshots, redacted execution logs, or credential-free workflow exports. I do not need passwords, API keys, tokens, or payment/admin access.
 
 For a focused workflow repair, I can provide a diagnostic, fix plan, implementation, testing notes, and a concise handoff report.
+
+## Activepieces / MCP / connector version
+
+Title: I help package and debug MCP servers, automation pieces, and AI workflow connectors
+
+Post:
+
+If your MCP server, Activepieces piece, n8n workflow, Zapier/Make connector, or AI-agent tool call works in a demo but is fragile in real usage, I can help harden it from sanitized material only.
+
+I focus on:
+- unclear tool schemas,
+- missing sample payloads,
+- brittle webhook/JSON mapping,
+- weak error messages,
+- AI-agent tool outputs that break downstream automation,
+- docs gaps before community or marketplace submission,
+- connector handoff reports for non-technical operators.
+
+I do not need passwords, API keys, tokens, OAuth consent, wallet access, payment access, or private credentials. A safe first pass can start from public docs, sanitized logs, fake-value payloads, screenshots, and expected vs actual output.
+
+Packages:
+- $499 MCP / connector diagnostic
+- $1,500 same-day piece or connector rescue
+- $5,000 48-hour MCP / automation sprint for business-critical workflows
+
+Two urgent slots are open. Send the tool/platform, expected behavior, actual behavior, and a sanitized error/log screenshot.

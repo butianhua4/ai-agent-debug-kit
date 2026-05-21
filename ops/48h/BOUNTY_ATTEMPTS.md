@@ -279,3 +279,16 @@ No runtime tests were run because this is a documentation-only change.
 - test result: no code test run for rejected candidates; `actions/typescript-action#854` patch validation is recorded above.
 - PR URL or patch path: `ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md`.
 - payout status: no award, no merge, no confirmed revenue.
+
+## Attempt 2026-05-22: Activepieces MCP / piece issue screening
+
+- bounty URL: none visible.
+- reward amount: $0 visible.
+- repo: activepieces/activepieces.
+- issue: https://github.com/activepieces/activepieces/issues/13083, https://github.com/activepieces/activepieces/issues/8072, https://github.com/activepieces/activepieces/issues/8135.
+- why selected: Activepieces is directly related to no-code automation, MCP server exposure, and reusable pieces, which matches the AI automation emergency rescue offer and the separate agent/skill-pack trust asset.
+- what was done: screened open MCP/piece requests and README context. #13083 was kept as a market signal for MCP/piece packaging, while #8072 and #8135 were rejected because existing PRs are finalized/pending app review and the scopes touch OAuth/app-review boundaries.
+- test result: no code test run; no safe patch target accepted.
+- PR URL or patch path: ops/48h/ACTIVEPIECES_MCP_STRIKE.md.
+- payout status: no bounty, no award, no confirmed revenue.
+- user action required: any community comment or proposal must be sent manually through a compliant account; do not auto-post or present this as a bounty.

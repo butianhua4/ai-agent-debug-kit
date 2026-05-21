@@ -47,6 +47,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Account access | ops/48h/AUTO_EXECUTION_STATUS.md | execution status | 0 | blockers_recorded | Continue automatic public-repo and patch work; user must provide compliant platform account/API for automatic submissions | user + Codex | ops/48h/AUTO_EXECUTION_STATUS.md | 0.00 | No usable Freelancer/Upwork/Algora/community posting API available |
 | Delivery SOP | ops/48h/AUTO_DELIVERY_SOP.md | delivery asset | 499-5000 | ready | Use immediately when a qualified buyer sends sanitized logs/screenshots | Codex | ops/48h/AUTO_DELIVERY_SOP.md | 0.18 | Needs real buyer evidence to activate |
 | Fiverr gig refresh | sales/fiverr-gig-refresh-urgent-rescue.md | sales asset | 499-5000 | ready | User can update the Fiverr gig manually with the urgent rescue positioning | user | sales/fiverr-gig-refresh-urgent-rescue.md | 0.22 | Requires logged-in Fiverr account; Codex cannot auto-edit gig without browser/API access |
+| Activepieces MCP | https://github.com/activepieces/activepieces/issues/13083 | market signal | 499-5000 | strike_pack_ready | Use as MCP/piece integration service angle, not as confirmed bounty revenue | user + Codex | ops/48h/ACTIVEPIECES_MCP_STRIKE.md | 0.14 | No visible bounty; manual community/platform posting required |
 
 ## Current confirmed revenue
 
