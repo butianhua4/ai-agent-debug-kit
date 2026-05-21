@@ -59,6 +59,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic 299 sensitive-data safety card: `assets/domestic-299-do-not-send.png`
 - Domestic 299 summary card: `assets/domestic-299-summary-card.png`
 - Chinese 299 eight-image posting caption: `docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md`
+- Chinese 299 mobile posting checklist: `docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md`
 - Chinese 299 diagnosis one-pager: `docs/CHINESE_299_DIAGNOSIS_ONE_PAGER.md`
 - Domestic 299 upload checklist: `docs/DOMESTIC_299_UPLOAD_CHECKLIST.md`
 - Domestic lead triage tracker: `docs/DOMESTIC_LEAD_TRIAGE_TRACKER.md`
