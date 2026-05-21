@@ -25,7 +25,8 @@ Score rules:
 | 2026-05-21T22:30:00+08:00 | Ran npm run preflight after ops files | 20 | Smoke tests, extension validation, release build, and release validation passed |
 | 2026-05-21T22:45:00+08:00 | Screened Opire public rewards | 0 | Useful filtering, but no high-fit actionable paid target accepted |
 | 2026-05-21T23:45:00+08:00 | Prepared instructor-js public docs patch | 40 | Public proof patch prepared for issue #8; not submitted and not revenue |
+| 2026-05-21T23:55:00+08:00 | Prepared manual send queue | 50 | Turns proposal drafts and public posts into a prioritized user-sendable revenue action list |
 
 ## Total
 
-110
+160
