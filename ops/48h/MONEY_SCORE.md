@@ -26,7 +26,8 @@ Score rules:
 | 2026-05-21T22:45:00+08:00 | Screened Opire public rewards | 0 | Useful filtering, but no high-fit actionable paid target accepted |
 | 2026-05-21T23:45:00+08:00 | Prepared instructor-js public docs patch | 40 | Public proof patch prepared for issue #8; not submitted and not revenue |
 | 2026-05-21T23:55:00+08:00 | Prepared manual send queue | 50 | Turns proposal drafts and public posts into a prioritized user-sendable revenue action list |
+| 2026-05-21T23:58:00+08:00 | Found high-intent n8n workflow audit lead and reply draft | 80 | Public pain signal for 50 broken workflows; reply is user-send only and not revenue |
 
 ## Total
 
-160
+240

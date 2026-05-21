@@ -87,3 +87,27 @@ Could you share the sanitized workflow export and one failed execution log so I 
 Next question to ask: Can they provide a sanitized workflow export and one failed execution log?
 User action required: User must send this through Freelancer if project status/account access allows.
 
+## [LEAD #4]
+
+Source: Reddit r/n8n
+URL: https://www.reddit.com/r/n8n/comments/1tgrlhg/we_have_50_n8n_flows_undocumented_constantly/
+Pain: Poster inherited about 50 n8n workflows with no documentation, no naming conventions, silent failures, and unclear business-critical ownership. They are deciding whether to salvage/document or migrate to Python.
+Suggested package: Quick Diagnostic for a small first step; 48-Hour AI Automation Rescue Sprint if they want an urgent audit of the whole inherited workflow estate.
+Suggested price: $499 for a first diagnostic on 3-5 workflows; $1,500 for a same-day rescue of one critical flow; $5,000 for a 48-hour audit/triage sprint across a batch of workflows.
+Risk: Reddit community reply must be helpful first and must not look like spam. Do not ask for credentials, API keys, tokens, private workflow exports with secrets, or paid access.
+
+Message draft:
+
+I would not migrate everything first. With inherited n8n estates, the fastest first step is usually a read-only triage pass:
+
+1. Pull the last 30-60 days of execution history and rank workflows by run count, failure rate, and blast radius.
+2. Separate dead/seasonal flows from active business-critical flows before touching architecture.
+3. For the active flows, look for the common silent-failure patterns: `Continue On Fail`, expired OAuth/credentials, changed webhook/API response shapes, missing error branches, and nodes writing to external systems without a verification step.
+4. Document each live workflow in a consistent format before deciding whether it should stay in n8n, become a sub-workflow, or move to Python/Cloud Run.
+
+If you want a safe outside review, I can help from sanitized workflow exports and redacted execution logs only. No passwords, API keys, tokens, or account access needed. A useful first pass would be 3-5 representative workflows, then a priority matrix for salvage vs rewrite.
+
+The question I would ask first: are the silent failures mostly credentials/API schema changes, swallowed node errors, or unclear business ownership?
+
+Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
+User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
