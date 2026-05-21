@@ -140,3 +140,4 @@ Latest:
 - Domestic posting bundle and upload checklist updated to include the summary card in the recommended eight-image order.
 - Chinese 299 eight-image posting caption added for Xianyu, Xiaohongshu, WeChat/private groups, comment hooks, buyer intake, safety-stop replies, and posting checks.
 - Chinese 299 mobile posting checklist added with exact eight-image upload order, fast platform copy, reply rules, tracking fields, and stop conditions.
+- Chinese 299 24-hour follow-up cadence added for domestic comments and DMs, including 0-minute, 2-hour, 12-hour, and 24-hour replies plus stop rules.
