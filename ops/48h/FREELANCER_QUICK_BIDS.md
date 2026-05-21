@@ -4,6 +4,44 @@ Purpose: short user-sendable drafts for the highest-fit overseas automation oppo
 
 Confirmed revenue remains `$0` until a paid order, paid invoice, or awarded bounty is visible.
 
+## Bid 0A: n8n Webhook-MySQL Automation
+
+- Source: Freelancer
+- URL: https://www.freelancer.com/projects/n8n/webhook-mysql-automation
+- Suggested package: compact fixed n8n build; upgrade to Quick Diagnostic only if buyer wants hardening.
+- Suggested price: fit buyer's listed `$30-250` budget for MVP; `$499` if hardened validation/replay docs are requested.
+- Risk: MySQL/schema/live webhook data can contain sensitive info. Start only from fake payloads, fake schemas, and placeholders.
+
+Message draft:
+
+Hi, I can build this n8n Webhook -> validation/transform -> MySQL workflow with clear mapping, duplicate protection, and handoff notes.
+
+I do not need production database passwords, API keys, tokens, or private credentials to start. Please share a sample webhook payload with fake values, the target MySQL table/column schema, and the field that should be used as the unique dedupe key.
+
+My build plan: Webhook trigger, payload parsing, field mapping, required-field validation, duplicate checks, failure branches for bad payloads or DB write errors, sample-call tests, and documentation for updating mappings later.
+
+I can keep the compact MVP inside your listed budget. If you want stronger rescue-grade validation, replay testing, and failure documentation, I can quote that as a $499 hardening/diagnostic pass.
+
+First question: what field should be used as the unique key to prevent duplicate rows?
+
+## Bid 0B: n8n JSON Webhook Trigger
+
+- Source: Freelancer
+- URL: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
+- Suggested package: compact fixed webhook build.
+- Suggested price: fit buyer's `$30-250` budget for MVP; `$499` for hardened validation/logging/test matrix.
+- Risk: API-key auth can tempt credential sharing. Use placeholder env vars and sample payloads only.
+
+Message draft:
+
+Hi, I can build the n8n webhook trigger path with JSON POST handling, API-key authentication pattern, validation, and a short setup guide.
+
+I do not need your real API key, tokens, passwords, or private credentials. I can deliver the workflow using placeholder environment variables and a sample payload, then document exactly where you add the real value on your side.
+
+Implementation plan: define the POST webhook contract and JSON schema, add API-key header validation using an environment variable placeholder, normalize/validate incoming JSON, return clear success/error responses, add curl/Postman-style tests, and provide import/redeploy notes.
+
+First question: what header name should carry the API key, and what should the success response look like?
+
 ## Bid 1: n8n Automation Workflow Debugging
 
 - Source: Freelancer
