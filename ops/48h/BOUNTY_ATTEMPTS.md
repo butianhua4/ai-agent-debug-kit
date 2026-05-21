@@ -474,3 +474,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: public references show the issue has an existing submitted PR (#33200), the IssueHunt issue is closed/referenced by that PR, and Opire says the bounty is already claimed by another solver. Too much collision risk for an overnight auto patch.
+
+## Screening 2026-05-22: Formbricks internal server error toast bounty
+
+- bounty URL: https://app.opire.dev/issues/01JARC75G44M6EQCJCR1DTBHD6.
+- reward amount: $60 visible on Opire.
+- repo: formbricks/formbricks.
+- issue: https://github.com/formbricks/formbricks/issues/3302.
+- why selected: visible TypeScript bounty with frontend/backend error-handling scope close to automation rescue positioning.
+- what was done: checked the Opire issue page and the upstream GitHub issue state before cloning.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream GitHub issue #3302 is already closed as completed, with significant discussion history. Opire still shows it as open/available, so treating it as stale avoids wasting a patch attempt on a likely already-resolved bounty.
+
+## Screening 2026-05-22: Gitea actions token permissions bounty
+
+- bounty URL: https://app.opire.dev/home entry for go-gitea/gitea plus Algora public bounty listing.
+- reward amount: $80 visible on Opire; Algora public search also shows stacked amounts around the same issue.
+- repo: go-gitea/gitea.
+- issue: https://github.com/go-gitea/gitea/issues/24635.
+- why selected: live security/CI automation permissions problem with stronger strategic fit than small UI bugs.
+- what was done: screened the public issue and bounty metadata for payout clarity and implementation complexity.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- decision: backlog only. This is a large Go/product-design change around Actions token permission policy, not a safe 45-minute patch. It may be revisited only if no smaller JS/TS/docs/CI bounty is available.
