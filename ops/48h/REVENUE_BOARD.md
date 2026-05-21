@@ -74,6 +74,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | n8n GitHub | https://github.com/n8n-io/n8n/issues/10621 | public reply draft | 499 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.06 | No visible budget; avoid spam |
 | n8n GitHub | https://github.com/n8n-io/n8n/issues/14267 | public reply draft | 499-1500 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.07 | No visible budget; avoid spam |
 | n8n GitHub | https://github.com/n8n-io/n8n/issues/18268 | public reply draft | 499 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.05 | No visible budget; avoid spam |
+| Freelancer | https://www.freelancer.com/projects/n8n/urgent-workflow-consultation-needed | open job post | 499-1500 target | proposal_ready | User can send urgent n8n consultation proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.26 | No auto-bid; need sanitized workflow/export/logs only |
 
 ## Current confirmed revenue
 

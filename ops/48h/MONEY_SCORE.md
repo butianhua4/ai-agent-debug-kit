@@ -51,7 +51,8 @@ Score rules:
 | 2026-05-22T06:40:00+08:00 | Prepared FinMind webhook event system bounty patch | 40 | Public $50 bounty patch prepared with signed webhook delivery and retry handling; lint/format passed, pytest blocked by existing Redis dependency; not submitted, not revenue |
 | 2026-05-22T06:55:00+08:00 | Prepared n8n public issue reply drafts | 50 | Three non-spam webhook/API failure reply drafts prepared for manual public posting; not sent, not revenue |
 | 2026-05-22T07:00:00+08:00 | Added Opire stale bounty filter | 20 | Reusable filter to avoid stale/closed/not-cloneable reward listings and focus next cycles on viable public patches; not revenue |
+| 2026-05-22T06:58:00+08:00 | Added urgent n8n consultation lead and proposal draft | 80 | Fresh high-intent n8n emergency lead converted into a safe Freelancer-ready diagnostic proposal; not sent and not revenue |
 
 ## Total
 
-1310
+1390

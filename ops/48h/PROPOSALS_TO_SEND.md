@@ -123,6 +123,37 @@ User action required: User must post this manually only if subreddit rules allow
 ## [LEAD #8]
 
 Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/urgent-workflow-consultation-needed
+Pain: Buyer has an urgent n8n workflow consultation need and likely needs rapid triage of a failing workflow, webhook/API mapping, or execution-path issue before deciding whether to repair or rebuild.
+Suggested package: Quick Diagnostic first, with upgrade path to Same-Day Workflow Rescue if they want implementation and validation.
+Suggested price: $499 diagnostic; $1,500 if they want same-day repair, workflow JSON handoff, validation notes, and a prevention checklist.
+Risk: Freelancer proposal must be sent manually by the user. Do not request n8n login, passwords, API keys, tokens, or live credentials. Start from sanitized exports, redacted logs, screenshots, and fake payloads only.
+
+Message draft:
+
+Hi, I can help with the urgent n8n workflow consultation and quickly isolate where the workflow is failing.
+
+I specialize in failing AI automations, n8n/Make/Zapier workflows, webhook/JSON mapping problems, API integration errors, and execution-log diagnosis.
+
+I do not need passwords, API keys, tokens, payment access, or private credentials to start. A safe first step is enough: sanitized workflow export, redacted execution error/log, screenshots of the failing nodes, expected result vs actual result, and one fake/sample payload with the same structure as production data.
+
+My diagnostic process would be:
+- identify whether the failure is in the trigger, webhook payload shape, node expression, JSON mapping, API response, or branch/loop logic,
+- map the exact failing path and business impact,
+- provide a clear root-cause note,
+- recommend the smallest safe fix,
+- if you want repair included, validate the workflow path and provide handoff notes so it is easier to maintain.
+
+Suggested scope: $499 for urgent diagnostic and fix plan. If you want same-day repair and validation, I would quote $1,500 after seeing the sanitized workflow/logs.
+
+Can you share the sanitized workflow export, one redacted failed execution log or screenshot, and the deadline for the workflow to be working again?
+
+Next question to ask: Is the workflow currently failing at the trigger/webhook step, during a node execution, or after an API response comes back?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #8]
+
+Source: Freelancer
 URL: https://www.freelancer.com/projects/ai-development/systems-engineer-for-openclaw-40382443
 Pain: Buyer wants a self-hosted OpenClaw system on a VPS with LLM integration, Telegram, dashboards, task workflows, Docker, Nginx, SSL, firewall/hardening, and reliable handoff.
 Suggested package: OpenClaw deployment diagnostic first, then Same-Day Workflow Rescue / implementation sprint.
