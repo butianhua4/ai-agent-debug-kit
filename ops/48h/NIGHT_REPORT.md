@@ -1,5 +1,37 @@
 # Overseas Night Shift Report
 
+## 2026-05-22 07:42 +08:00 checkpoint
+
+1. Confirmed revenue:
+   - `$0`. No platform-paid order, paid invoice, bounty award, or merged bounty PR is confirmed yet.
+2. Paid / awarded / ordered evidence:
+   - None.
+3. High-value pipeline:
+   - New Freelancer ManyChat+n8n/Make automation specialist lead, proposal-ready for `$499-$1,500`.
+   - New Freelancer n8n Automation Engineer lead, proposal-ready as a `$499` paid workflow audit/trial.
+4. Bounty attempts:
+   - Terminator bounty search found no open bounty-labeled issues through the GitHub connector.
+   - ToolJet Opire `$45` issue was screened and rejected because upstream issue #6655 is already closed/completed.
+5. PRs created or prepared:
+   - No new PR in this node. Existing TypeORM #12532 remains open.
+6. Tests run:
+   - Pending after file edits; run `npm run preflight` before commit.
+7. Fiverr inbox/orders:
+   - Not checked in this node; no confirmed Fiverr revenue recorded.
+8. Leads found:
+   - `https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed`
+   - `https://www.freelancer.com/projects/n8n/automation-engineer`
+9. Assets shipped:
+   - Updated `LEAD_CANDIDATES.csv`, `PROPOSALS_TO_SEND.md`, `SEND_QUEUE.md`, `REVENUE_BOARD.md`, and `MONEY_SCORE.md` with fresh proposal-ready lead strike package.
+10. Blockers requiring user:
+   - Freelancer proposal sending remains user/platform-account action. Codex prepared drafts only and did not auto-bid.
+11. Next 3 highest-value actions:
+   - If user is awake and on Freelancer, send ManyChat+n8n proposal first.
+   - Send n8n automation engineer paid-trial proposal second only if account/rules allow.
+   - Continue public bounty scan for a patchable JS/TS issue while waiting.
+12. MONEY_SCORE:
+   - +80 fresh high-intent lead/proposal package. Pipeline only, not revenue.
+
 ## 2026-05-22 07:30 +08:00 checkpoint
 
 1. Confirmed revenue:

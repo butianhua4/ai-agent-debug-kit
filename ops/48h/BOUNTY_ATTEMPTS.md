@@ -720,3 +720,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: appears to be TTS language/model/G2P/voice-support work rather than a short JS automation patch. It needs language data/audio validation and is not safe to claim as a quick unattended bounty without a narrower scoped issue.
+
+## Screening 2026-05-22: mediar-ai/terminator bounty program
+
+- bounty URL: https://github.com/mediar-ai/terminator.
+- reward amount: unknown from current open-issue search.
+- repo: mediar-ai/terminator.
+- issue: searched open issues for `bounty`, `reward`, `workflow`, and `good first issue`.
+- why selected: the README advertises a bounty developer program and the repo is directly adjacent to desktop automation and agent workflows.
+- what was done: checked repo metadata and searched open issue text with the GitHub connector.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: no open bounty/reward issues were returned by the connector search in this cycle, so there is no safe paid patch target yet.
+
+## Screening 2026-05-22: ToolJet code-hinter Opire bounty
+
+- bounty URL: https://app.opire.dev/issues/01J8898W2WES9F4FJ57GDG0BYS.
+- reward amount: $45 visible on Opire.
+- repo: ToolJet/ToolJet.
+- issue: https://github.com/ToolJet/ToolJet/issues/6655.
+- why selected: JavaScript issue with a narrow UI text bug and visible Opire reward.
+- what was done: fetched upstream issue before cloning the large repo.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream GitHub issue is already closed as completed, so submitting a duplicate fix would likely be stale/no payout.

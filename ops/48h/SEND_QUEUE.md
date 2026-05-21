@@ -359,3 +359,27 @@ When the user sends one item, update:
 - `ops/48h/NIGHT_REPORT.md`: record as pipeline, not revenue.
 
 Only move to confirmed revenue after platform order/payment/award evidence exists.
+
+## Priority 1A: Freelancer ManyChat + n8n/Make automation specialist
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #9
+- suggested offer: `$499 Quick Diagnostic` as a paid audit, or `$1,500 Same-Day Workflow Rescue` for one production funnel + CRM/email automation path.
+- why urgent: public crawl says posted less than 20 seconds ago, payment method verified, and the buyer explicitly asks for reliability, error logging, retry/error policies, exports, runbook, and handover.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: ManyChat login, CRM login, API keys, tokens, email platform credentials, real customer lead data, or payment access.
+- first ask after reply: sanitized funnel outline/screenshots, fake lead payload, CRM/email field map, redacted error examples, and desired retry policy.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 1B: Freelancer n8n Automation Engineer ongoing role
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/automation-engineer
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #10
+- suggested offer: `$499 paid workflow audit/trial`, then platform hourly only if the user wants lower-rate ongoing pipeline.
+- why urgent: fresh ongoing n8n + AI workflow + webhook/API + CRM automation fit; broad scope can be narrowed to one paid trial.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: API keys, tokens, CRM credentials, social posting credentials, customer data, payment access, or off-platform contact.
+- first ask after reply: one sanitized workflow export, one redacted execution log/screenshot, and the highest-business-impact workflow.
+- status after user sends: move to `proposal_sent`.

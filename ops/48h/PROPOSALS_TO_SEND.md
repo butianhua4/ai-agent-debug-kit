@@ -120,6 +120,64 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #9]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed
+Pain: Buyer needs ManyChat funnels plus reliable n8n or Make automations connected to CRM/email tools, with webhooks, REST APIs, JSON mapping, error logging, retry/error policies, exports, runbook, and handover.
+Suggested package: Quick Diagnostic first, or Same-Day Workflow Rescue for one production funnel + automation path.
+Suggested price: $499 diagnostic/audit; $1,500 for same-day implementation/rescue of one scoped ManyChat-to-CRM/email workflow.
+Risk: ManyChat, CRM, and email platforms can involve private leads and credentials. Start from sanitized funnel screenshots, fake lead payloads, redacted errors, and field maps only. Do not request logins, API keys, tokens, or customer data.
+
+Message draft:
+
+Hi, this fits my automation rescue/build process well. I can help design and stabilize the ManyChat -> n8n/Make -> CRM/email path with reliable webhook handling, JSON mapping, error logging, retries, exported workflow files, and a concise runbook.
+
+Safe intake boundary: I do not need passwords, API keys, tokens, payment access, or private credentials to start. Please share sanitized funnel screenshots or export notes, a fake/sample lead payload, the CRM/email field map, and any redacted error examples.
+
+My approach:
+- map the ManyChat trigger and payload shape,
+- define the CRM/email target fields and validation rules,
+- build or repair the n8n/Make flow with clear JSON mapping,
+- add basic retry/error branches and logging,
+- deliver workflow exports plus a short runbook and handover checklist.
+
+Suggested first scope: $499 for a diagnostic/architecture pass with exact implementation steps, or $1,500 for a same-day rescue/build of one production funnel + automation path. If you prefer hourly on Freelancer, I can start with a tightly scoped paid trial around one funnel and one CRM/email destination.
+
+Can you share the funnel trigger, target CRM/email platform, and one fake lead payload with the fields you expect to sync?
+
+Next question to ask: Which single funnel and CRM/email destination should be stabilized first?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #10]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-engineer
+Pain: Buyer wants n8n automation engineers for AI workflows, agentic systems, API integrations, webhook logic, CRM automation, lead routing, content/social pipelines, troubleshooting, optimization, and documentation.
+Suggested package: Quick Diagnostic as a paid trial, then platform hourly ongoing support if they like the work.
+Suggested price: $499 paid workflow audit/trial; then hourly within platform range only if user chooses to pursue this lower-rate pipeline.
+Risk: Broad ongoing role can sprawl and may include social posting or CRM credentials. Keep first offer to one workflow audit using sanitized exports/logs only. Do not request API keys, tokens, CRM credentials, social posting credentials, or private customer data.
+
+Message draft:
+
+Hi, I can help with n8n and AI workflow reliability, especially webhook/API integrations, OpenAI-driven automations, CRM/lead-routing flows, troubleshooting, optimization, and documentation.
+
+Safe intake boundary: I do not need passwords, API keys, tokens, payment access, or private credentials to start. A good first paid trial can be done from a sanitized workflow export, redacted execution logs, fake payloads, and screenshots of the failing or highest-priority nodes.
+
+For a trial task, I would suggest auditing and improving one business-critical workflow:
+- identify webhook/API/JSON mapping risks,
+- check error handling, retries, and fallback paths,
+- isolate AI-node input/output assumptions,
+- recommend or implement a small reliability patch,
+- deliver a concise runbook and next-step backlog.
+
+Suggested first scope: $499 for a fixed workflow audit/troubleshooting pass, or we can structure it as a small hourly trial inside Freelancer if you prefer. After that, ongoing maintenance can be scoped by workflow priority.
+
+Can you share one sanitized workflow export, one redacted failed execution log or screenshot, and the top workflow you want stabilized first?
+
+Next question to ask: What is the first workflow where failure creates the highest business impact?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
 ## [LEAD #8]
 
 Source: Freelancer

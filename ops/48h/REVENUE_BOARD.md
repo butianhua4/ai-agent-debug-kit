@@ -76,6 +76,8 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | n8n GitHub | https://github.com/n8n-io/n8n/issues/18268 | public reply draft | 499 target | reply_draft_ready | User can post helpful diagnostic reply only if GitHub/community rules allow | user | ops/48h/N8N_PUBLIC_ISSUE_REPLY_DRAFTS.md | 0.05 | No visible budget; avoid spam |
 | Freelancer | https://www.freelancer.com/projects/n8n/urgent-workflow-consultation-needed | open job post | 499-1500 target | proposal_ready | User can send urgent n8n consultation proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.26 | No auto-bid; need sanitized workflow/export/logs only |
 | Opire/TypeORM | https://github.com/typeorm/typeorm/pull/12532 | public bounty PR | 120 | pr_submitted_compile_passed | Monitor upstream review/CI and Opire award status | Codex + GitHub app | https://github.com/typeorm/typeorm/pull/12532 | 0.18 | No merge/award yet; compile passed, targeted DB test blocked by missing ormconfig/Postgres DB |
+| Freelancer | https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed | open job post | 499-1500 target | proposal_ready | User can send ManyChat+n8n/Make reliability proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.31 | No auto-bid; needs sanitized funnel outline, fake payload, and field map only |
+| Freelancer | https://www.freelancer.com/projects/n8n/automation-engineer | open job post | 499 trial target | proposal_ready | User can send n8n automation engineer paid-trial proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | Low hourly range; narrow first to paid workflow audit |
 
 ## Current confirmed revenue
 
