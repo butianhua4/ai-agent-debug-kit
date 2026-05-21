@@ -12,6 +12,13 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Fiverr debug service: https://www.fiverr.com/aibuildflow/fix-agent-workflow-errors-and-debug-automation-logs
 - Fiverr automation service: https://www.fiverr.com/aibuildflow/build-a-custom-ai-automation-script-for-your-workflow
 - Fiverr CI risk gate service: https://www.fiverr.com/aibuildflow/set-up-an-ai-agent-log-risk-gate-for-your-ci-workflow
+- 48H revenue sprint commander pack: `sales/COMMANDER_PACK_0.md`
+- 48H emergency rescue one-pager: `sales/48h-emergency-rescue-onepager.md`
+- Emergency rescue intake form: `sales/client-intake-form.md`
+- Emergency rescue reply templates: `sales/triage-reply-templates-cn.md` and `sales/triage-reply-templates-en.md`
+- Emergency rescue public posts: `sales/public-posts-cn.md` and `sales/public-posts-en.md`
+- Emergency rescue lead tracker: `sales/lead-tracker.csv`
+- SAMPLE emergency delivery report: `sales/sample-delivery-report.md`
 - Emergency AI automation rescue offer: `docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md`
 - n8n / Make / Zapier automation failure rescue: `docs/AUTOMATION_FAILURE_RESCUE_OFFER.md`
 - Automation failure rescue promo pack: `docs/AUTOMATION_FAILURE_RESCUE_PROMO_PACK.md`
