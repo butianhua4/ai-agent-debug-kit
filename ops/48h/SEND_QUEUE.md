@@ -4,6 +4,42 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority -2: Fresh Freelancer n8n workflow debugging and optimization
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #11
+- suggested offer: `$1,500 Same-Day Workflow Rescue`; allow `$499` diagnostic if the buyer wants a smaller first step.
+- why first: exact emergency-rescue match, posted less than 20 seconds ago in search result, payment-method verified, and lists the exact pain terms: unreliable webhooks, API errors, empty AI-node outputs, JSON mapping mismatches, broken loops, missing retries.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: n8n login, API keys, tokens, passwords, payment access, private customer data, or credentials.
+- first ask after reply: one sanitized workflow export, one redacted failed execution, fake payload, and the highest-impact workflow.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -1.5: Fresh Freelancer n8n automation engineer
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/automation-engineer
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #12
+- suggested offer: `$499 workflow reliability audit`; quote `$1,500` for one scoped production workflow with validation and handoff.
+- why high: open about 7 hours ago, ongoing support signal, direct match to n8n AI workflows, webhook logic, APIs, OpenAI/LangChain, Python/JS, Docker, and troubleshooting.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: credentials, API keys, cookies, private datasets, or permission to do spam/outreach outside allowed platform rules.
+- first ask after reply: highest-priority workflow, integrations touched, expected vs actual behavior, and sanitized logs/screenshots.
+- status after user sends: move to `proposal_sent`.
+
+## Priority -1.25: Fresh Freelancer N8N webhook trigger integration
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #13
+- suggested offer: `$499 Quick Diagnostic`; budget-fit implementation only if one trigger/one JSON flow is confirmed.
+- why high: still open, clear small scope, direct match to webhook, JSON, API-key authentication, Node.js/API integration.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: real API keys, production tokens, account passwords, payment access, or private endpoint secrets.
+- first ask after reply: fake JSON payload, placeholder auth header shape, expected response, and whether it is custom node vs workflow.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority -1: Fresh Freelancer OpenClaw VPS production setup
 
 - channel: Freelancer

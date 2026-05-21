@@ -220,6 +220,104 @@ Suggested scope: $499 if you want diagnostic plus a precise build plan. $1,500 i
 Next question to ask: Which platform should the first workflow use, n8n or Make, and can you share one fake webhook payload plus the desired final output?
 User action required: User must send through Freelancer manually if account/rules permit. Keep all API credentials client-side.
 
+## [LEAD #11]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+Pain: Existing n8n workflows are failing intermittently: unreliable webhooks, unexpected API-node errors, inconsistent/empty AI-node outputs, JSON mapping mismatches, broken loops/conditionals, missing retries, and performance slowdowns.
+Suggested package: Same-Day Workflow Rescue focused on the most business-critical workflow group.
+Suggested price: $1,500 for same-day rescue; if they want a small first step, platform hourly starter or $499 diagnostic.
+Risk: Existing n8n environments may contain credentials and live business data. Start from sanitized workflow export, redacted failed executions, screenshots, and fake payloads only.
+
+Message draft:
+
+Hi, this is exactly the type of n8n rescue work I focus on: intermittent workflow failures, webhook/API errors, AI-node empty outputs, JSON mapping issues, broken branching/loops, missing retry paths, and performance slowdowns.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need n8n login credentials, API keys, tokens, passwords, or payment access to begin. The safest first step is to review:
+- one sanitized workflow export,
+- redacted failed execution logs,
+- screenshots of the failing nodes,
+- one fake/sample webhook payload,
+- the top 1-3 workflows ranked by business impact.
+
+My rescue process would be:
+- identify the root cause by workflow section and data shape,
+- check webhook trigger reliability and API-node error handling,
+- fix JSON mapping/loop/conditional assumptions,
+- add or recommend retry, fallback, and failure-reporting paths,
+- provide a concise change log and prevention checklist.
+
+Suggested scope: $1,500 Same-Day Workflow Rescue for the most business-critical workflow group. If you prefer a smaller first step, I can start with a $499 diagnostic/fix plan through the platform.
+
+Next question to ask: Which workflow is causing the highest business impact right now, and can you share one redacted failed execution plus a fake payload?
+User action required: User must send through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #12]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-engineer
+Pain: Buyer needs ongoing n8n automation engineering for AI workflows, agentic systems, third-party APIs, webhook logic, CRM lead routing, content pipelines, troubleshooting, optimization, documentation, and operations support.
+Suggested package: Workflow reliability audit first, then scoped platform hourly support.
+Suggested price: $499 reliability audit for first workflow; platform hourly starter for ongoing work; $1,500 for one production rescue/build.
+Risk: Broad ongoing role can drift into low-rate general staffing. Keep the first engagement scoped around one workflow, one KPI, and safe artifacts.
+
+Message draft:
+
+Hi, I can support n8n AI workflow engineering with a reliability-first approach: webhook/API logic, OpenAI/LangChain integrations, CRM routing, content pipelines, troubleshooting, optimization, and handoff documentation.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, cookies, or private credentials in chat. To start safely, I would ask for:
+- the highest-priority workflow,
+- expected vs actual behavior,
+- redacted logs/screenshots,
+- fake/sample payloads,
+- allowed integrations and compliance boundaries,
+- the weekly support expectation.
+
+For the first engagement, I suggest a focused reliability audit on one workflow, then we can expand to ongoing platform work if the fit is good. Deliverables would include failure analysis, workflow map, retry/error-handling recommendations, implementation notes, and a maintainable handoff checklist.
+
+Suggested first scope: $499 workflow reliability audit, or $1,500 if you want one production workflow repaired/built with validation and handoff notes.
+
+Next question to ask: What is the first workflow you want stabilized or built, and which integrations does it touch?
+User action required: User must send through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #13]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
+Pain: Buyer needs an N8N webhook trigger that sends JSON data via POST with API-key authentication and a robust integration shape.
+Suggested package: Quick Diagnostic or budget-fit webhook implementation.
+Suggested price: $499 Quick Diagnostic/implementation plan; budget-fit fixed scope if buyer insists on the listed range.
+Risk: Real API keys and production endpoints must not be shared in chat. Work from fake payloads, placeholder auth headers, API docs, and test endpoints.
+
+Message draft:
+
+Hi, I can help design and implement the N8N webhook trigger with clean JSON payload handling, POST behavior, API-key authentication, and a simple test/validation handoff.
+
+Safe intake / proof link: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need real API keys, passwords, tokens, or production credentials to start. Please share:
+- a fake/sample JSON payload,
+- the expected request/response format,
+- the authentication header shape using placeholders,
+- whether this is a custom n8n node, HTTP Request workflow, or external trigger integration,
+- the success and failure cases you want tested.
+
+My delivery would include:
+- webhook trigger design,
+- JSON validation/mapping,
+- placeholder-based API-key auth wiring,
+- test payloads and error cases,
+- concise setup and handoff notes.
+
+Suggested scope: $499 for a complete diagnostic/implementation plan and test checklist. If the implementation is limited to one trigger and one JSON flow, I can keep it budget-fit through the platform.
+
+Next question to ask: Is this a custom n8n node package or an n8n workflow using Webhook/HTTP Request nodes?
+User action required: User must send through Freelancer manually if account/rules permit. Keep real API keys client-side.
+
 ## [LEAD #9]
 
 Source: Freelancer
