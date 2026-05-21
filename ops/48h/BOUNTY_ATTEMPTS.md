@@ -500,3 +500,42 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - decision: backlog only. This is a large Go/product-design change around Actions token permission policy, not a safe 45-minute patch. It may be revisited only if no smaller JS/TS/docs/CI bounty is available.
+
+## Screening 2026-05-22: ToolJet code-hinter header bounty
+
+- bounty URL: https://app.opire.dev/home entry for ToolJet/ToolJet.
+- reward amount: $45 visible on Opire.
+- repo: ToolJet/ToolJet.
+- issue: https://github.com/ToolJet/ToolJet/issues/6655.
+- why selected: JavaScript UI bug with a narrow title/header fix, superficially suitable for a quick patch.
+- what was done: checked upstream GitHub issue status before cloning.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: upstream issue #6655 is already closed as completed. Opire still lists it, so the safest action is to avoid a stale/duplicate patch.
+
+## Screening 2026-05-22: Trovu PWA external URL bounty
+
+- bounty URL: https://app.opire.dev/home entry for trovu/trovu.
+- reward amount: $70 visible on Opire.
+- repo: trovu/trovu.
+- issue: https://github.com/trovu/trovu/issues/329.
+- why selected: TypeScript/JavaScript/HTML PWA behavior issue and visible reward.
+- what was done: checked issue body and reward comments.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: issue requires real Android PWA verification and explicitly rejects untested `window.open()`/`_blank` style patches. It is also heavily contested and already claimed by multiple PRs. Not suitable for safe unattended work.
+
+## Screening 2026-05-22: Electron template tray indicator bounty
+
+- bounty URL: https://app.opire.dev/issues/01K6K4YTSWT7XF53GM3KCTBG7S.
+- reward amount: $100 visible on Opire.
+- repo: aueangpanit/electron-template.
+- issue: Tray icon should have an orange dot indicator.
+- why selected: TypeScript/Electron UI indicator task with moderate reward and apparently small scope.
+- what was done: searched public references and previous clone access.
+- test result: not attempted.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: the repository was not publicly cloneable from the available GitHub reference during earlier screening, and Opire lists it as already claimed by two solvers. Without public repo access this cannot be completed safely.
