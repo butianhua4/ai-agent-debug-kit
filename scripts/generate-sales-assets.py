@@ -446,8 +446,63 @@ def build_chinese_999_repair_plan_proof_png() -> None:
     img.save(output, "PNG")
 
 
+def build_ci_risk_gate_sample_proof_png() -> None:
+    ASSETS.mkdir(exist_ok=True)
+    output = ASSETS / "ci-risk-gate-sample-proof.png"
+
+    img = Image.new("RGB", (1280, 720), "#f8fafc")
+    draw = ImageDraw.Draw(img)
+
+    title = _font(54, bold=True)
+    subtitle = _font(26)
+    h2 = _font(30, bold=True)
+    body = _font(23)
+    body_bold = _font(23, bold=True)
+    mono = _font(22)
+    small = _font(20)
+
+    draw.rounded_rectangle((48, 42, 1232, 160), radius=30, fill="#111827")
+    draw.text((84, 64), "CI Risk Gate: Pass vs Block", font=title, fill="#ffffff")
+    draw.text((88, 128), "Synthetic proof for AI agent logs before merge or release", font=subtitle, fill="#d1fae5")
+
+    left = (64, 196, 606, 482)
+    right = (674, 196, 1216, 482)
+    draw.rounded_rectangle(left, radius=28, fill="#ecfdf3", outline="#86efac", width=3)
+    draw.rounded_rectangle(right, radius=28, fill="#fef2f2", outline="#fca5a5", width=3)
+
+    draw.text((98, 228), "PASS", font=h2, fill="#15803d")
+    draw.text((98, 270), "Clean redacted log", font=body_bold, fill="#14532d")
+    for y, text in [
+        (318, "0 errors / 0 warnings"),
+        (356, "No secret-like text"),
+        (394, "Safe for baseline CI"),
+    ]:
+        draw.ellipse((102, y + 7, 120, y + 25), fill="#16a34a")
+        draw.text((138, y), text, font=body, fill="#166534")
+
+    draw.text((708, 228), "BLOCK", font=h2, fill="#b42318")
+    draw.text((708, 270), "Risky agent log", font=body_bold, fill="#7f1d1d")
+    for y, text in [
+        (318, "Repeated permission failure"),
+        (356, "Secret-like token text"),
+        (394, "Non-zero CI exit"),
+    ]:
+        draw.ellipse((712, y + 7, 730, y + 25), fill="#dc2626")
+        draw.text((748, y), text, font=body, fill="#991b1b")
+
+    draw.rounded_rectangle((64, 516, 1216, 648), radius=24, fill="#ffffff", outline="#d0d5dd", width=2)
+    draw.text((96, 544), "Buyer result:", font=body_bold, fill="#111827")
+    draw.text((250, 544), "I add a lightweight gate that turns redacted agent logs into pass/fail CI evidence.", font=body, fill="#344054")
+    draw.text((96, 586), "Sample command:", font=body_bold, fill="#111827")
+    draw.text((96, 616), "node cli.js docs/examples/ci-risk-gate-fail-log.jsonl --fail-on-risk all", font=small, fill="#175cd3")
+
+    draw.text((66, 676), "Public demo assets only. Do not send passwords, API keys, cookies, identity docs, or private customer data.", font=small, fill="#667085")
+    img.save(output, "PNG")
+
+
 if __name__ == "__main__":
     build_automation_rescue_pdf()
     build_automation_rescue_gif()
     build_chinese_diagnosis_one_pager_png()
     build_chinese_999_repair_plan_proof_png()
+    build_ci_risk_gate_sample_proof_png()

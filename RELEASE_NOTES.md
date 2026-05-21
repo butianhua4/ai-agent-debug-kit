@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- CI risk gate pass/block proof card generated from the synthetic pass/fail sample logs for Fiverr gallery use.
 - Synthetic CI risk gate pass/fail sample logs for gallery proof and delivery QA.
 - CI risk gate delivery template for faster Fiverr order fulfillment.
 - CI risk gate buyer reply pack for turning Fiverr inquiries into scoped orders.

@@ -65,6 +65,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Domestic 299 summary card: `assets/domestic-299-summary-card.png`
 - CI risk gate cover: `assets/ci-risk-gate-cover.png`
 - CI risk gate cover source: `assets/ci-risk-gate-cover.svg`
+- CI risk gate pass/block proof card: `assets/ci-risk-gate-sample-proof.png`
 - CI risk gate one-page PDF: `assets/ci-risk-gate-one-pager.pdf`
 - Chinese 299 eight-image posting caption: `docs/CHINESE_299_EIGHT_IMAGE_POSTING_CAPTION.md`
 - Chinese 299 mobile posting checklist: `docs/CHINESE_299_MOBILE_POSTING_CHECKLIST.md`

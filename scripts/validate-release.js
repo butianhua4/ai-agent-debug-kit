@@ -94,6 +94,7 @@ assert.ok(manifest.files.includes("assets/domestic-299-summary-card.svg"));
 assert.ok(manifest.files.includes("assets/domestic-299-summary-card.png"));
 assert.ok(manifest.files.includes("assets/ci-risk-gate-cover.svg"));
 assert.ok(manifest.files.includes("assets/ci-risk-gate-cover.png"));
+assert.ok(manifest.files.includes("assets/ci-risk-gate-sample-proof.png"));
 assert.ok(manifest.files.includes("assets/ci-risk-gate-one-pager.pdf"));
 assert.ok(manifest.files.includes("docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/FIVERR_ACTIVE_SOURCING.md"));

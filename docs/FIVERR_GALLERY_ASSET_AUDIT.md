@@ -87,10 +87,11 @@ I set up a lightweight CI gate that flags risky AI agent logs before they ship o
 Recommended gallery order:
 
 1. `assets/ci-risk-gate-cover.png`
-2. `assets/ci-risk-gate-one-pager.pdf`
-3. `docs/examples/agent-risk-gate.yml`
-4. `docs/CI_USAGE.md`
-5. `docs/CLI_REFERENCE.md`
+2. `assets/ci-risk-gate-sample-proof.png`
+3. `assets/ci-risk-gate-one-pager.pdf`
+4. `docs/examples/agent-risk-gate.yml`
+5. `docs/examples/ci-risk-gate-sample-pair.md`
+6. `docs/CI_USAGE.md`
 
 Current gap:
 
@@ -99,7 +100,8 @@ Current gap:
 Recommended next asset:
 
 - Upload `assets/ci-risk-gate-cover.png` first.
-- Upload `assets/ci-risk-gate-one-pager.pdf` second when Fiverr allows a document.
+- Upload `assets/ci-risk-gate-sample-proof.png` second to show pass/block behavior.
+- Upload `assets/ci-risk-gate-one-pager.pdf` third when Fiverr allows a document.
 - Use `assets/ci-risk-gate-cover.svg` as the editable source.
 
 ## Gig 4 / Draft: AI Workflow Cost And Failure Audit

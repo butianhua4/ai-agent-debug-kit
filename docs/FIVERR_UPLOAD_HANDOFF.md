@@ -125,19 +125,31 @@ C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk-gate-cover.svg
 ```
 
-3. Workflow sample:
+3. Pass/block proof card:
+
+```text
+C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk-gate-sample-proof.png
+```
+
+4. Workflow sample:
 
 ```text
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\docs\examples\agent-risk-gate.yml
 ```
 
-4. One-page PDF:
+5. Pass/fail sample pair:
+
+```text
+C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\docs\examples\ci-risk-gate-sample-pair.md
+```
+
+6. One-page PDF:
 
 ```text
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\assets\ci-risk-gate-one-pager.pdf
 ```
 
-5. CI usage doc:
+7. CI usage doc:
 
 ```text
 C:\Users\33065\Documents\Codex\2026-05-18\5000\ai-agent-debug-kit\docs\CI_USAGE.md
