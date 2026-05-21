@@ -46,6 +46,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | FinMind | https://github.com/rohitdash08/FinMind/issues/77 | bounty issue | 50 | rejected-low | Fallback only if proof patch is needed and higher-value paths stall | Codex | ops/48h/HIGH_VALUE_BOUNTY_REFRESH_2026-05-22.md | 0.04 | Low payout and crowded issue comments |
 | Account access | ops/48h/AUTO_EXECUTION_STATUS.md | execution status | 0 | blockers_recorded | Continue automatic public-repo and patch work; user must provide compliant platform account/API for automatic submissions | user + Codex | ops/48h/AUTO_EXECUTION_STATUS.md | 0.00 | No usable Freelancer/Upwork/Algora/community posting API available |
 | Delivery SOP | ops/48h/AUTO_DELIVERY_SOP.md | delivery asset | 499-5000 | ready | Use immediately when a qualified buyer sends sanitized logs/screenshots | Codex | ops/48h/AUTO_DELIVERY_SOP.md | 0.18 | Needs real buyer evidence to activate |
+| Fiverr gig refresh | sales/fiverr-gig-refresh-urgent-rescue.md | sales asset | 499-5000 | ready | User can update the Fiverr gig manually with the urgent rescue positioning | user | sales/fiverr-gig-refresh-urgent-rescue.md | 0.22 | Requires logged-in Fiverr account; Codex cannot auto-edit gig without browser/API access |
 
 ## Current confirmed revenue
 

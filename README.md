@@ -18,6 +18,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - Emergency rescue intake form: `sales/client-intake-form.md`
 - Emergency rescue reply templates: `sales/triage-reply-templates-cn.md` and `sales/triage-reply-templates-en.md`
 - Emergency rescue public posts: `sales/public-posts-cn.md` and `sales/public-posts-en.md`
+- Fiverr urgent rescue gig refresh: `sales/fiverr-gig-refresh-urgent-rescue.md`
 - Emergency rescue lead tracker: `sales/lead-tracker.csv`
 - SAMPLE emergency delivery report: `sales/sample-delivery-report.md`
 - Emergency AI automation rescue offer: `docs/EMERGENCY_AI_AUTOMATION_RESCUE_OFFER.md`
