@@ -395,6 +395,23 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - blocker: GitHub browser action was blocked by browser security policy, and GitHub app PR creation returned `403 Resource not accessible by integration`.
 - user action required: if still available, manually comment `/opire try` on issue #1 and open a PR from `butianhua4:add-generate-changelog-skill` into `claude-builders-bounty:main`.
 
+## Attempt 2026-05-22: Claude Builders Next.js SQLite CLAUDE.md template
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2.
+- reward amount: $75 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2.
+- why selected: public Claude Code template bounty, directly aligned with agent/skill-pack positioning and safe to implement without secrets or external accounts.
+- what was done: created branch `butianhua4:add-nextjs-sqlite-claude-template` in the public fork and implemented `issue-2-nextjs-sqlite-claude` with an opinionated `CLAUDE.md`, README, and acceptance-criteria test notes.
+- test result:
+  - acceptance criteria coverage checked in `TEST_NOTES.md`: passed.
+  - required sections confirmed by text scan: project structure, naming conventions, migration rules, dev commands, anti-patterns, and reasoned rules present.
+  - `git diff --check`: passed.
+- PR URL or patch path: branch pushed to https://github.com/butianhua4/claude-builders-bounty/tree/add-nextjs-sqlite-claude-template.
+- payout status: no PR, no award, no merge, no confirmed revenue.
+- blocker: GitHub browser action remains blocked by browser security policy, and GitHub app PR creation returned `403 Resource not accessible by integration`.
+- user action required: if still available, manually comment `/opire try` on issue #2 and open a PR from `butianhua4:add-nextjs-sqlite-claude-template` into `claude-builders-bounty:main`.
+
 ## Attempt 2026-05-22: Claude Builders PR review agent bounty patch
 
 - bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.

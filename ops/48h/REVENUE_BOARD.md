@@ -52,6 +52,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 | public bounty PR | 100 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1904 | 0.16 | No award/merge yet; payout/KYC/payment remains user-only |
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 | public bounty PR | 150 | pr_submitted | Monitor upstream review and Opire award status | Codex + user-auth browser | https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903 | 0.18 | No award/merge yet; payout/KYC/payment remains user-only |
 | Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 | public bounty branch | 50 | branch_pushed | User can manually claim and open PR from pushed fork branch | user | https://github.com/butianhua4/claude-builders-bounty/tree/add-generate-changelog-skill | 0.10 | Browser GitHub action blocked; app PR creation 403 |
+| Claude Builders Bounty | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 | public bounty branch | 75 | branch_pushed | User can manually claim and open PR from pushed fork branch | user | https://github.com/butianhua4/claude-builders-bounty/tree/add-nextjs-sqlite-claude-template | 0.10 | Browser GitHub action blocked; app PR creation 403 |
 
 ## Current confirmed revenue
 

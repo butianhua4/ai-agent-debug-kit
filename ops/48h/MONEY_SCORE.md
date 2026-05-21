@@ -44,7 +44,8 @@ Score rules:
 | 2026-05-22T02:00:00+08:00 | Submitted Claude Builders PR review agent bounty PR | 80 | Public $150 bounty PR opened as #1903 after `/opire try`; not merged, not awarded, not revenue |
 | 2026-05-22T02:20:00+08:00 | Submitted Claude Builders destructive Bash hook bounty PR | 80 | Public $100 bounty PR opened as #1904 after `/opire try`; not merged, not awarded, not revenue |
 | 2026-05-22T02:45:00+08:00 | Pushed Claude Builders changelog bounty branch | 40 | Public $50 bounty branch pushed and locally validated; PR blocked by browser policy and GitHub app 403 |
+| 2026-05-22T03:00:00+08:00 | Pushed Claude Builders Next.js SQLite CLAUDE.md bounty branch | 40 | Public $75 bounty branch pushed and locally validated; PR blocked by browser policy and GitHub app 403 |
 
 ## Total
 
-1020
+1060
