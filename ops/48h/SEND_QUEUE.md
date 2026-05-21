@@ -4,6 +4,54 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority 0: Fresh Freelancer Portuguese n8n error repair
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/corre-fluxo
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #10
+- suggested offer: compact urgent fix inside buyer budget; use `$499 Quick Diagnostic` if they want documented root cause, validation, and prevention notes.
+- why first: freshly posted, only a few proposals, direct n8n AI agent error repair request.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: financial credentials, bank/payment access, passwords, API keys, tokens, or real customer data.
+- first ask after reply: redacted execution log, workflow screenshot, failing node name.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 0A: Fresh Freelancer n8n Workflow Automation & Alerts
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/Workflow-Automation-Alerts.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #9
+- suggested offer: `$499 Quick Diagnostic` leading to `$1,500 Same-Day Workflow Rescue`.
+- why second: freshly posted, `$250-750` budget, explicit webhook/API/JSON/retry/fail-safe/documentation scope.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: live API keys, app passwords, OAuth grants, production tokens, payment access.
+- first ask after reply: fake App1 event payload, target App2/App3 notification schema, API docs/screenshots.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 0B: Fresh Freelancer n8n/Relevance AI sales automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/eloveriz2004_39512544.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #12
+- suggested offer: `$499 workflow diagnostic` or compliant hourly starter through Freelancer.
+- why third: freshly posted ongoing n8n + Relevance AI + sales/marketing automation request.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: customer records, CRM credentials, API keys, OAuth tokens, payment access.
+- first ask after reply: first workflow goal, fake/sample schema, APIs/data sources involved.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 0C: Fresh Freelancer prompt-to-video n8n MVP
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/Automated-Video-Workflow-Development.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #11
+- suggested offer: compact MVP inside low visible budget; use `$499` only if scope expands to hardened polling/retry/documentation.
+- why fourth: freshly posted AI/n8n video workflow proof, but budget is low.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: image/video API keys, Google OAuth, Drive credentials, payment access.
+- first ask after reply: target image endpoint, animation provider, fake prompt, output naming format.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 0: Fresh Freelancer n8n Webhook-MySQL automation
 
 - channel: Freelancer

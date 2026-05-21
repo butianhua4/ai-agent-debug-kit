@@ -149,6 +149,97 @@ Can you share one fake sample event from App1, the target notification format fo
 Next question to ask: Are App1/App2/App3 documented APIs, or do we need to infer behavior from existing requests/screenshots?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #10]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/corre-fluxo
+Pain: Portuguese buyer says a financial AI agent has an error in n8n and needs correction.
+Suggested package: Quick Diagnostic or compact urgent fix because this is a direct repair request with low proposal count.
+Suggested price: $499 Quick Diagnostic if they can share enough sanitized material; otherwise adapt to a smaller platform-budget urgent fix.
+Risk: Financial workflows may include sensitive data, payment logic, private customer records, or credentials. Do not request bank/payment access, API keys, passwords, tokens, or live financial data.
+
+Message draft:
+
+Olá, posso ajudar a diagnosticar e corrigir o erro do seu agente financeiro no n8n de forma segura.
+
+Para começar, não preciso de senha, API key, token, acesso a pagamento, carteira, banco ou credenciais privadas. O ideal é você enviar apenas:
+- print do node que falhou,
+- execution log com dados sensíveis removidos,
+- estrutura geral do workflow,
+- qual era o resultado esperado e qual erro aconteceu.
+
+Meu processo:
+- identificar se o erro vem de webhook, mapeamento JSON, expressão, HTTP Request, OpenAI/AI Agent, timeout ou credenciais mal configuradas,
+- corrigir o fluxo com dados de teste/fictícios,
+- adicionar tratamento de erro/retry quando fizer sentido,
+- entregar um resumo curto do que foi ajustado e como evitar o problema de novo.
+
+Se for um erro pontual, posso tratar como correção urgente. Se precisar de diagnóstico completo com validação e documentação, recomendo um pacote de $499.
+
+Você consegue enviar um print do erro e o execution log com dados sensíveis removidos?
+
+Next question to ask: O erro acontece em qual node do n8n e qual mensagem aparece no execution log?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #11]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/Automated-Video-Workflow-Development.html
+Pain: Buyer wants an n8n workflow that turns one text prompt into a short video: image generation, animation API polling, error/timeout handling, Google Drive storage, and metadata logging.
+Suggested package: Compact MVP because the visible budget is low; upgrade to diagnostic only if they need robust polling/retries and handoff documentation.
+Suggested price: Budget-fit MVP on platform; $499 diagnostic/build pass if the scope expands beyond the stated budget.
+Risk: External image/video APIs and Google Drive usually require credentials/OAuth. Keep credentials client-side and work from placeholder environment variables plus screenshots/docs.
+
+Message draft:
+
+Hi, I can help build a compact n8n workflow for the prompt-to-video path: prompt input, image generation request, animation job submission, polling until render is complete, timeout/error handling, Google Drive save, and metadata logging.
+
+I do not need passwords, API keys, tokens, OAuth consent, or Google account access to start. I can build the workflow with placeholder credentials and test it from fake prompts/sample responses, then document exactly where your credentials go on your side.
+
+For this budget, I would keep the first version focused:
+- one prompt input path,
+- one image endpoint,
+- one animation provider,
+- polling with timeout handling,
+- Drive folder save,
+- short setup notes.
+
+If you want production-grade retries, branching for multiple providers, logging dashboards, and stronger failure recovery, I would scope that separately as a diagnostic/build pass.
+
+Can you share which image endpoint and animation provider you want to use, plus one sample prompt and expected output naming format?
+
+Next question to ask: Which animation provider should the first MVP target: Runway, Pika, or another API?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #12]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/eloveriz2004_39512544.html
+Pain: Buyer needs n8n and Relevance AI automation for sales/marketing data, API integrations, and smooth operation without errors.
+Suggested package: Quick Diagnostic for the first automation path; ongoing hourly only after scope is clear.
+Suggested price: $499 workflow diagnostic, or platform hourly starter if the buyer insists on hourly.
+Risk: Sales/marketing data may include customer records and connected SaaS credentials. Begin with fake schema, redacted screenshots, and sample payloads only.
+
+Message draft:
+
+Hi, I can help set up and stabilize n8n automation for sales and marketing data, including API integrations, Relevance AI steps, error handling, and clear handoff documentation.
+
+I do not need passwords, API keys, tokens, or private customer data to start. Please share a redacted workflow goal, fake/sample data schema, screenshots of the tools involved, and the expected output.
+
+My approach would be:
+- define the first business-critical workflow,
+- map source data into the required sales/marketing destination,
+- add validation and error branches so failures are visible,
+- connect Relevance AI only through safe placeholder credentials during build,
+- document how to maintain and extend the workflow.
+
+Suggested first step: a $499 diagnostic/build plan for one workflow, or an hourly starter through Freelancer if you prefer ongoing support.
+
+Can you share the first workflow you want automated and which APIs or data sources are involved?
+
+Next question to ask: What is the first sales/marketing workflow that currently costs the most manual time or breaks most often?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #8]
 
 Source: Freelancer
