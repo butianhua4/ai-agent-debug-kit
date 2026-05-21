@@ -53,7 +53,8 @@ Score rules:
 | 2026-05-22T07:00:00+08:00 | Added Opire stale bounty filter | 20 | Reusable filter to avoid stale/closed/not-cloneable reward listings and focus next cycles on viable public patches; not revenue |
 | 2026-05-22T06:58:00+08:00 | Added urgent n8n consultation lead and proposal draft | 80 | Fresh high-intent n8n emergency lead converted into a safe Freelancer-ready diagnostic proposal; not sent and not revenue |
 | 2026-05-22T07:03:00+08:00 | Promoted urgent n8n consultation lead to send queue | 50 | Moves the fresh diagnostic lead into the top manual-send position with safe intake boundaries; not sent and not revenue |
+| 2026-05-22T07:08:00+08:00 | Prepared TypeORM Postgres varchar length bounty patch | 40 | Public $120 Opire bounty patch prepared with PR draft; tests blocked by pnpm/Corepack/Postgres environment; not submitted and not revenue |
 
 ## Total
 
-1440
+1480

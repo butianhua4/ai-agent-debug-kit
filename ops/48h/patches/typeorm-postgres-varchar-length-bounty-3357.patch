@@ -1,0 +1,45 @@
+diff --git a/src/driver/postgres/PostgresQueryRunner.ts b/src/driver/postgres/PostgresQueryRunner.ts
+index 5aa46cb..a333568 100644
+--- a/src/driver/postgres/PostgresQueryRunner.ts
++++ b/src/driver/postgres/PostgresQueryRunner.ts
+@@ -1328,7 +1328,6 @@ export class PostgresQueryRunner
+ 
+         if (
+             oldColumn.type !== newColumn.type ||
+-            oldColumn.length !== newColumn.length ||
+             newColumn.isArray !== oldColumn.isArray ||
+             (!oldColumn.generatedType &&
+                 newColumn.generatedType === "STORED") ||
+@@ -1619,6 +1618,7 @@ export class PostgresQueryRunner
+             }
+ 
+             if (
++                newColumn.length !== oldColumn.length ||
+                 newColumn.precision !== oldColumn.precision ||
+                 newColumn.scale !== oldColumn.scale
+             ) {
+diff --git a/test/github-issues/1733/issue-1733.test.ts b/test/github-issues/1733/issue-1733.test.ts
+index 852c553..9c05460 100644
+--- a/test/github-issues/1733/issue-1733.test.ts
++++ b/test/github-issues/1733/issue-1733.test.ts
+@@ -34,11 +34,20 @@ describe("github issues > #1733 Postgresql driver does not detect/support varyin
+                 column1.length = "500"
+                 column2.length = ""
+ 
++                await connection.getRepository(Post).save({
++                    name: "keeps existing value",
++                    name2: "keeps existing value too",
++                })
++
+                 await connection.synchronize()
+ 
+                 table = await queryRunner.getTable("post")
+                 table!.findColumnByName("name")!.length.should.be.equal("500")
+                 table!.findColumnByName("name2")!.length.should.be.empty
++                const savedPost = await connection
++                    .getRepository(Post)
++                    .findOneByOrFail({ name: "keeps existing value" })
++                savedPost.name2.should.be.equal("keeps existing value too")
+ 
+                 column1.length = ""
+                 column2.length = "255"
