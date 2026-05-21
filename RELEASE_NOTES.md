@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- CI risk gate buyer FAQ and objection replies for access, samples, guarantees, timing, and pricing hesitations.
 - CI risk gate buyer intake mini-form for turning vague Fiverr messages into safe, priced requirements.
 - CI risk gate delivery QA checklist for checking buyer materials, validation, scope, and safety boundaries before delivery.
 - CI risk gate custom offer calculator for quickly routing safe buyer requirements into Starter, Standard, or Premium pricing.

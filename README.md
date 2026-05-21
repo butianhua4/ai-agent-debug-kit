@@ -88,6 +88,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - CI risk gate buyer reply pack: `docs/CI_RISK_GATE_BUYER_REPLY_PACK.md`
 - CI risk gate chat handoff: `docs/CI_RISK_GATE_CHAT_HANDOFF.md`
 - CI risk gate buyer intake mini-form: `docs/CI_RISK_GATE_BUYER_INTAKE_MINI_FORM.md`
+- CI risk gate buyer FAQ and objections: `docs/CI_RISK_GATE_BUYER_FAQ_AND_OBJECTIONS.md`
 - CI risk gate custom offer calculator: `docs/CI_RISK_GATE_CUSTOM_OFFER_CALCULATOR.md`
 - CI risk gate delivery template: `docs/CI_RISK_GATE_DELIVERY_TEMPLATE.md`
 - CI risk gate delivery QA checklist: `docs/CI_RISK_GATE_DELIVERY_QA_CHECKLIST.md`

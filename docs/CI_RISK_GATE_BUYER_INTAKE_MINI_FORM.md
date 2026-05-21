@@ -45,6 +45,7 @@ Please do not send passwords, API keys, OAuth tokens, cookies, private customer 
 - Buyer wants a runnable CI step: require at least one redacted sample or synthetic substitute.
 - Buyer wants multiple jobs, formats, or tuned thresholds: route toward Premium.
 - Buyer asks for direct login, private repo access, secrets, or external links: rescope before continuing.
+- Buyer hesitates about access, samples, guarantees, timing, or pricing: use `docs/CI_RISK_GATE_BUYER_FAQ_AND_OBJECTIONS.md`.
 
 ## Package Routing
 

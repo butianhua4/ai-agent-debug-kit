@@ -6,6 +6,8 @@ Goal: turn a vague inquiry into a safe, scoped order without asking for secrets,
 
 If the buyer needs proof before sharing requirements, use `docs/CI_RISK_GATE_CHAT_HANDOFF.md` with the pass/block proof card first.
 
+If the buyer hesitates about access, guarantees, samples, price, or delivery timing, use `docs/CI_RISK_GATE_BUYER_FAQ_AND_OBJECTIONS.md` before writing a custom offer.
+
 ## Fast Fit Check
 
 Good fit:
