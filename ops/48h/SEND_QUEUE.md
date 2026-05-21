@@ -8,7 +8,7 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 
 - channel: Freelancer
 - url: https://www.freelancer.com/projects/n8n/workflow-repair-optimization
-- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #3
+- draft source: `ops/48h/FREELANCER_QUICK_BIDS.md` bid #3, or `ops/48h/PROPOSALS_TO_SEND.md` lead #3 for the longer version
 - suggested offer: `$1,500 Same-Day Workflow Rescue`; offer `$5,000 48-Hour Rescue Sprint` only if the buyer confirms full critical repair, optimization, testing, and handoff scope.
 - why first: explicit broken workflow, n8n, WhatsApp/audio/AI model connection issues, data references, testing, and documentation. This is closest to the rescue offer.
 - send condition: user confirms the project is still open and platform account allows a compliant proposal.
@@ -28,7 +28,31 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: redacted Twilio webhook error screen, n8n execution log, and the expected call path.
 - status after user sends: move to `proposal_sent`.
 
-## Priority 3: Freelancer AI workflow automation build/maintain
+## Priority 3: Freelancer n8n automation workflow debugging
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+- draft source: `ops/48h/FREELANCER_QUICK_BIDS.md` bid #1, or `ops/48h/PROPOSALS_TO_SEND.md` lead #5 for the longer version
+- suggested offer: `$1,500 Same-Day Workflow Rescue`; only mention `$5,000` if the buyer confirms multiple workflows, retries/error handling, monitoring notes, and handoff documentation.
+- why third: newest direct match to intermittent n8n failures, unreliable webhooks, API errors, AI-node empty outputs, JSON mapping mismatches, broken loops, and missing retries.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: n8n login, API keys, tokens, passwords, payment access, or private credentials.
+- first ask after reply: one sanitized workflow export, one redacted failed execution log, screenshots of failing nodes, and the top 1-3 business-critical workflows.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 4: Freelancer Zapier to Salesforce error fix
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/zapier/fix-zapier-error-issues
+- draft source: `ops/48h/FREELANCER_QUICK_BIDS.md` bid #2, or `ops/48h/PROPOSALS_TO_SEND.md` lead #6 for the longer version
+- suggested offer: `$499 Quick Diagnostic`; upgrade to `$1,500 Same-Day Workflow Rescue` for repair/rebuild/validation.
+- why fourth: explicit urgent integration failure with a visible fixed-budget range.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Salesforce login, Zapier login, API keys, tokens, CRM exports with real customer data, or payment access.
+- first ask after reply: redacted Zap run history, exact error text, mapping screenshots, Salesforce object name, and fake/sample payload.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 5: Freelancer AI workflow automation build/maintain
 
 - channel: Freelancer
 - url: https://www.freelancer.com/projects/n8n/expertise-based-workflow-automation
@@ -40,7 +64,7 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: identify one highest-priority workflow and request sanitized logs/screenshots.
 - status after user sends: move to `proposal_sent`.
 
-## Priority 4: n8n Community service post or reply
+## Priority 6: n8n Community service post or reply
 
 - channel: n8n Community
 - url: https://community.n8n.io/t/freelancer-n8n-automation-expert-gmail-google-sheets-slack-ai-email-classification/289856
@@ -51,7 +75,7 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - do not ask for: credentials or off-platform payment if community rules prohibit commercial solicitation.
 - first ask after reply: sanitized execution logs or workflow outline.
 
-## Priority 5: LinkedIn/X public service post
+## Priority 7: LinkedIn/X public service post
 
 - channel: LinkedIn or X
 - url: user account
