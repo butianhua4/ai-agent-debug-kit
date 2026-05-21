@@ -92,17 +92,18 @@ This file records public bounty work only. A bounty is not revenue until it is e
 - payout status: not awarded, not paid.
 - risk: low payout, likely hardware-design heavy, and acceptance requires board ordering/testing.
 
-### Candidate-proof: Archestra JSON server args textarea
+### Rejected-reserved: Archestra JSON server args textarea
 
-- bounty URL: none visible.
-- reward amount: $0 visible.
+- bounty URL: https://github.com/archestra-ai/archestra/issues/3859
+- reward amount: $100 visible on GitHub labels.
 - repo: archestra-ai/archestra.
 - issue: https://github.com/archestra-ai/archestra/issues/3859
 - why selected: small AI/MCP workflow UX issue that could become a public proof patch if no paid bounty is viable.
-- what was done: screened via GitHub issue search.
+- what was done: screened via GitHub issue search and issue detail fetch.
 - test result: not attempted.
 - PR URL or patch path: none.
-- payout status: no bounty visible, not revenue.
+- payout status: not awarded, not paid.
+- rejection reason: issue is labeled "Reserved for SE interview"; do not claim or patch in unattended mode.
 
 ## Attempt 2026-05-21: Opire scan
 
@@ -154,3 +155,42 @@ This file records public bounty work only. A bounty is not revenue until it is e
 - PR URL or patch path: none.
 - payout status: not awarded, not paid.
 - rejection reason: reads like funding/donation for maintainer language-model work, not a clear external patch issue.
+
+## Attempt 2026-05-21: instructor-js public docs patch
+
+- bounty URL: none.
+- reward amount: $0 visible.
+- repo: 567-labs/instructor-js.
+- issue: https://github.com/567-labs/instructor-js/issues/8
+- why selected: public TypeScript/OpenAI documentation issue labeled `help wanted` and `good first issue`; it asks for additional examples and tutorials, and the repo already had runnable examples missing from the docs navigation.
+- what was done: cloned the public repo, added cookbook pages for existing examples, and wired them into the docs index and mkdocs navigation.
+- test result:
+  - `git diff --check`: passed.
+  - local doc target check: passed for new docs pages and referenced example files.
+  - `npm.cmd run type-check`: blocked because dependencies were not installed.
+  - `npm.cmd install`: timed out before creating `node_modules`; no package-level verification completed.
+- PR URL or patch path: `ops/48h/patches/0001-Add-cookbook-pages-for-existing-examples.patch`.
+- payout status: not a bounty, not revenue.
+- PR draft title: Add cookbook pages for existing examples.
+- PR draft body:
+
+```md
+## Summary
+
+- Adds cookbook pages for the existing multiple search queries, image table extraction, and entity resolution examples.
+- Links the new pages from the cookbook index.
+- Adds the new pages to the mkdocs Cookbook navigation.
+
+## Context
+
+This addresses part of #8 by turning existing examples into browsable docs pages. The implementation avoids changing runtime code and only documents examples that already exist in the repository.
+
+## Validation
+
+- `git diff --check`
+- Verified referenced docs/example paths exist locally
+
+Package-level verification could not be completed in the unattended environment because dependencies were not installed and `npm install` timed out before creating `node_modules`.
+```
+
+- user action required: open a fork/branch or PR manually if the user wants this contribution submitted upstream; no GitHub write access is available for this public repo from the current connector.

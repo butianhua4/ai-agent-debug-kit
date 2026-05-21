@@ -12,4 +12,4 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Upwork proposals must remain drafts unless the user provides approved API/platform workflow and confirms submission.
 - Any Algora/GitHub payout setup, tax form, KYC, or payment profile setup is USER_ACTION_REQUIRED.
 - Any community post that requires the user's personal account context should be posted or confirmed by the user.
-
+- If desired, the user must fork/open an upstream PR for `567-labs/instructor-js#8` using `ops/48h/patches/0001-Add-cookbook-pages-for-existing-examples.patch`, because the current connector has pull-only access to that public repo.

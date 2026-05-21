@@ -1,0 +1,350 @@
+From 644ffe2e903c1d304b0632e17d2c0010513ce66e Mon Sep 17 00:00:00 2001
+From: Codex Patch Bot <codex-patch@example.invalid>
+Date: Thu, 21 May 2026 23:41:27 +0800
+Subject: [PATCH] Add cookbook pages for existing examples
+
+---
+ docs/examples/entity_resolution.md        | 101 ++++++++++++++++++++++
+ docs/examples/extract_table_from_image.md |  96 ++++++++++++++++++++
+ docs/examples/index.md                    |   3 +
+ docs/examples/multiple_search_queries.md  |  91 +++++++++++++++++++
+ mkdocs.yml                                |   3 +
+ 5 files changed, 294 insertions(+)
+ create mode 100644 docs/examples/entity_resolution.md
+ create mode 100644 docs/examples/extract_table_from_image.md
+ create mode 100644 docs/examples/multiple_search_queries.md
+
+diff --git a/docs/examples/entity_resolution.md b/docs/examples/entity_resolution.md
+new file mode 100644
+index 0000000..5cbb62d
+--- /dev/null
++++ b/docs/examples/entity_resolution.md
+@@ -0,0 +1,101 @@
++# Entity Resolution
++
++This example extracts entities from a document, resolves references between
++them, and saves the result as an interactive graph.
++
++!!! tips "Motivation"
++
++    Entity resolution is useful when a document contains cross-references such
++    as dates, parties, payments, obligations, or dependencies. A structured
++    schema can capture both the extracted facts and the relationships needed to
++    resolve them.
++
++## Define the entity schema
++
++Each entity includes a stable id, source quotes, properties, and dependencies on
++other entities.
++
++```ts
++import Instructor from "@/instructor"
++import OpenAI from "openai"
++import { z } from "zod"
++
++const PropertySchema = z.object({
++  key: z.string(),
++  value: z.string(),
++  resolved_absolute_value: z.string()
++})
++
++const EntitySchema = z.object({
++  id: z.number(),
++  subquote_string: z.array(z.string()),
++  entity_title: z.string(),
++  properties: z.array(PropertySchema),
++  dependencies: z.array(z.number())
++})
++
++const DocumentExtractionSchema = z.object({
++  entities: z.array(EntitySchema)
++})
++```
++
++## Extract entities from text
++
++The system prompt asks the model to extract facts and resolve references.
++Instructor validates the result against the entity graph schema.
++
++```ts
++const oai = new OpenAI({
++  apiKey: process.env.OPENAI_API_KEY ?? undefined,
++  organization: process.env.OPENAI_ORG_ID ?? undefined
++})
++
++const client = Instructor({
++  client: oai,
++  mode: "TOOLS"
++})
++
++const askAi = async (input: string) => {
++  return client.chat.completions.create({
++    messages: [
++      {
++        role: "system",
++        content:
++          "You are an entity resolution system. Extract and resolve a list of entities from the following document."
++      },
++      {
++        role: "user",
++        content: input
++      }
++    ],
++    model: "gpt-4o",
++    response_model: {
++      schema: DocumentExtractionSchema,
++      name: "Document Extraction"
++    },
++    max_retries: 3,
++    seed: 1
++  })
++}
++```
++
++## Visualize the graph
++
++The example includes a helper that converts the extracted entities into an HTML
++graph using `vis-network`.
++
++```ts
++import { saveHtmlDocument } from "./exampleGraphMaker"
++
++const model = await askAi(content)
++saveHtmlDocument(model, "entityGraph")
++```
++
++The full runnable example lives in
++`examples/resolving-complex-entitities/index.ts`.
++
++!!! note "Adapting the example"
++
++    For production use, tighten the schema around your domain-specific entities
++    and keep `subquote_string` fields so reviewers can trace every structured
++    result back to the source text.
+diff --git a/docs/examples/extract_table_from_image.md b/docs/examples/extract_table_from_image.md
+new file mode 100644
+index 0000000..a234d7a
+--- /dev/null
++++ b/docs/examples/extract_table_from_image.md
+@@ -0,0 +1,96 @@
++# Extracting Tables from Images
++
++This example shows how to extract a structured table from an image by combining
++Instructor, a Zod response model, and a vision-capable OpenAI model.
++
++!!! tips "Motivation"
++
++    Many documents arrive as screenshots, scanned reports, or embedded images.
++    A structured response model gives the model a target shape for the title,
++    caption, and table data instead of returning free-form prose.
++
++## Define the table response
++
++Create a schema for the output you want to receive. The table field is kept
++flexible because image tables may have different columns and row shapes.
++
++```ts
++import Instructor from "@/instructor"
++import OpenAI from "openai"
++import { z } from "zod"
++
++const TableResponseSchema = z.object({
++  title: z.string(),
++  caption: z.string(),
++  table: z.any()
++})
++```
++
++## Configure Instructor
++
++Use Markdown JSON mode so the response can be parsed back into the schema.
++
++```ts
++const oai = new OpenAI({
++  apiKey: process.env.OPENAI_API_KEY,
++  organization: process.env.OPENAI_ORG_ID
++})
++
++const instructor = Instructor({
++  client: oai,
++  mode: "MD_JSON"
++})
++```
++
++## Extract the table
++
++Pass both the image and an instruction that asks for a concise title, caption,
++and table. The `response_model` tells Instructor which schema to validate.
++
++```ts
++const extractTableFromImage = async (imageUrl: string) => {
++  return instructor.chat.completions.create({
++    model: "gpt-4-vision-preview",
++    response_model: {
++      schema: TableResponseSchema,
++      name: "table extraction"
++    },
++    max_tokens: 1_000,
++    messages: [
++      {
++        role: "user",
++        content: [
++          {
++            type: "image_url",
++            image_url: { url: imageUrl }
++          },
++          {
++            type: "text",
++            text: `
++              First, reason about the best headers for the table.
++              Then write a concise title and caption.
++              Lastly, produce the table.
++            `
++          }
++        ]
++      }
++    ]
++  })
++}
++```
++
++## Run the example
++
++The full runnable example lives in
++`examples/extract-table-from-image/index.ts`.
++
++```ts
++const table = await extractTableFromImage(IMAGE_URL)
++console.log("Extracted Table: ", table)
++```
++
++!!! note "Schema design"
++
++    If your table format is known in advance, replace `z.any()` with a stricter
++    schema such as `z.array(z.object({ ... }))`. A stricter schema improves
++    validation and makes downstream processing safer.
+diff --git a/docs/examples/index.md b/docs/examples/index.md
+index e234ebb..8f15606 100644
+--- a/docs/examples/index.md
++++ b/docs/examples/index.md
+@@ -17,3 +17,6 @@
+ - [How are exact citations retrieved using regular expressions and smart prompting?](./validated_citations.md)
+ - [How to enable OpenAI's moderation](./content_moderation.md)
+ - [How are search queries segmented through function calling and multi-task definitions?](./segmenting_search.md)
++- [How are multiple search queries extracted from one request?](./multiple_search_queries.md)
++- [How can tables be extracted from images?](./extract_table_from_image.md)
++- [How are document entities resolved and visualized?](./entity_resolution.md)
+diff --git a/docs/examples/multiple_search_queries.md b/docs/examples/multiple_search_queries.md
+new file mode 100644
+index 0000000..9390880
+--- /dev/null
++++ b/docs/examples/multiple_search_queries.md
+@@ -0,0 +1,91 @@
++# Multiple Search Queries
++
++This example converts a natural-language request into several typed search
++queries that can be executed in parallel.
++
++!!! tips "Motivation"
++
++    Users often ask for several things in one sentence. A structured extraction
++    step can split the request into separate searches while preserving the
++    search title, query text, and destination type.
++
++## Define the search schema
++
++Each search has a title, a query, and a type. The example uses `VIDEO` and
++`EMAIL`, but you can replace these with the destinations your application uses.
++
++```ts
++import Instructor from "@/instructor"
++import OpenAI from "openai"
++import { z } from "zod"
++
++const SearchSchema = z.object({
++  title: z.string().describe("Title of the request"),
++  query: z.string().describe("Query to search for relevant content"),
++  type: z.enum(["VIDEO", "EMAIL"]).describe("Type of search")
++})
++
++const MultiSearchSchema = z.object({
++  searches: z.array(SearchSchema).describe("List of searches")
++})
++```
++
++## Segment the request
++
++Ask the model to segment the user request into the structured response model.
++
++```ts
++const oai = new OpenAI({
++  apiKey: process.env.OPENAI_API_KEY ?? undefined,
++  organization: process.env.OPENAI_ORG_ID ?? undefined
++})
++
++const client = Instructor({
++  client: oai,
++  mode: "FUNCTIONS"
++})
++
++async function segment(data: string) {
++  return client.chat.completions.create({
++    messages: [
++      {
++        role: "system",
++        content: "You are a helpful assistant."
++      },
++      {
++        role: "user",
++        content: `Consider the data below:\n${data} and segment it into multiple search queries`
++      }
++    ],
++    model: "gpt-4-1106-preview",
++    response_model: {
++      schema: MultiSearchSchema,
++      name: "Multi Search"
++    },
++    max_tokens: 1000,
++    temperature: 0.1
++  })
++}
++```
++
++## Execute searches
++
++The output can be mapped into your own search functions.
++
++```ts
++async function executeMultiSearch(multiSearch: z.infer<typeof MultiSearchSchema>) {
++  return Promise.all(
++    multiSearch.searches.map(search => {
++      console.log(`Searching for ${search.title} with ${search.query} using ${search.type}`)
++    })
++  )
++}
++```
++
++The full runnable example lives in
++`examples/multiple_search_queries/index.ts`.
++
++!!! note "Extending search types"
++
++    Add more enum values when your application supports additional backends such
++    as `DOCS`, `TICKETS`, `CRM`, or `TRANSCRIPTS`.
+diff --git a/mkdocs.yml b/mkdocs.yml
+index c580457..eaca77b 100644
+--- a/mkdocs.yml
++++ b/mkdocs.yml
+@@ -142,6 +142,9 @@ nav:
+     - Citing Sources: 'examples/validated_citations.md'
+     - Content Moderation: 'examples/content_moderation.md'
+     - Expanding Search Queries (RAG): 'examples/segmenting_search.md'
++    - Multiple Search Queries: 'examples/multiple_search_queries.md'
++    - Extracting Tables from Images: 'examples/extract_table_from_image.md'
++    - Entity Resolution: 'examples/entity_resolution.md'
+   - Blog:
+     - "blog/index.md"
+   
+-- 
+2.53.0.windows.3
+

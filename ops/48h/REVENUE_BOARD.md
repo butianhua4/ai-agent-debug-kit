@@ -13,8 +13,9 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Algora/GitHub | https://github.com/archestra-ai/archestra/issues/3851 | bounty issue | 900 | rejected | No action | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Closed, core-team only / reserved |
 | Algora/GitHub | https://github.com/archestra-ai/archestra/issues/3378 | bounty issue | 500 | rejected | No action | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Closed and reserved for a specific contributor |
 | Algora/GitHub | https://github.com/tscircuit/tscircuit/issues/328 | bounty issue | 100 | candidate-low | Only consider if no higher-value public target is viable | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.10 | Low payout and hardware-design acceptance path |
-| GitHub | https://github.com/archestra-ai/archestra/issues/3859 | public issue | 0 | candidate-proof | Consider patch only as proof asset, not revenue | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.12 | No visible bounty amount |
+| GitHub/Algora | https://github.com/archestra-ai/archestra/issues/3859 | bounty issue | 100 | rejected | No action | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Reserved for SE interview |
 | GitHub | https://github.com/archestra-ai/archestra/issues/4030 | public issue | 0 | candidate-proof | Consider patch only as proof asset, not revenue | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.12 | No visible bounty amount |
+| GitHub | https://github.com/567-labs/instructor-js/issues/8 | public docs issue | 0 | patch_prepared | User can manually submit patch as upstream PR | user | ops/48h/patches/0001-Add-cookbook-pages-for-existing-examples.patch | 0.18 | No bounty; no connector write access to create PR |
 | GitHub/Algora | https://github.com/calcom/cal.com/issues/23104 | bounty issue | 2000 | rejected for now | Recheck only if reopened | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Issue is closed |
 | GitHub/Algora | https://github.com/twentyhq/twenty/issues?q=IMAP+algora+bounty | bounty issue | 2500 | rejected for now | No action | Codex | ops/48h/BOUNTY_ATTEMPTS.md | 0.00 | Search result points to completed/closed IMAP bounty |
 | Freelancer | https://www.freelancer.com/projects/n8n/urgent-workflow-consultation-needed | market post | hourly | blocked/market-signal | Do not contact automatically; use as offer positioning signal | user | ops/48h/LEAD_CANDIDATES.csv | 0.00 | In Progress / awarded |
@@ -36,4 +37,4 @@ $0 confirmed.
 
 ## Current qualified pipeline
 
-No confirmed customer pipeline yet. The only active monetizable assets are public proof/sales assets and unverified bounty candidates.
+No confirmed customer pipeline yet. The active monetizable assets are public proof/sales assets, proposal drafts, and one prepared public docs patch.

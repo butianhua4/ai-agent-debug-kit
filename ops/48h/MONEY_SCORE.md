@@ -11,6 +11,7 @@ Score rules:
 - high-intent lead found: +80
 - public sales asset shipped: +50
 - release shipped: +40
+- public patch prepared, no bounty: +40
 - test passed: +20
 - Fiverr no-message check: 0
 - pure log update: -20
@@ -23,7 +24,8 @@ Score rules:
 | 2026-05-21T22:20:00+08:00 | Added 48h overseas revenue ops board files | 50 | Verifiable tracking asset for revenue, bounty, lead, and blocker separation |
 | 2026-05-21T22:30:00+08:00 | Ran npm run preflight after ops files | 20 | Smoke tests, extension validation, release build, and release validation passed |
 | 2026-05-21T22:45:00+08:00 | Screened Opire public rewards | 0 | Useful filtering, but no high-fit actionable paid target accepted |
+| 2026-05-21T23:45:00+08:00 | Prepared instructor-js public docs patch | 40 | Public proof patch prepared for issue #8; not submitted and not revenue |
 
 ## Total
 
-70
+110
