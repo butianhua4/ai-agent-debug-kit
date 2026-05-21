@@ -591,3 +591,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: maintainers explicitly wrote that a fix is under active review at PR #11620 and asked contributors not to open new PRs. Multiple recent competing PRs already exist, so submitting another patch would be spammy and low-probability.
+
+## Patch prepared 2026-05-22: Opire reward filter ordering
+
+- bounty URL: Opire public issue search / rewards platform improvement.
+- reward amount: no confirmed reward visible for this GitHub issue.
+- repo: Opire/frontend.
+- issue: https://github.com/Opire/frontend/issues/39.
+- why selected: public TypeScript/Next.js issue from the rewards platform itself asking for more reward filtering options, including creation date. It is low-risk, credential-free, and aligned with finding better paid issues faster.
+- what was done: inspected `app/home/_components/Filters/Filters.tsx`, `app/home/_utils/buildEndpointWithSearchAndPagination.ts`, `app/home/page.tsx`, `app/home/view.tsx`, and prepared a patch that adds reward ordering controls for highest/lowest reward and newest/oldest creation date.
+- test result: upstream repo was not cloned in this node; patch is prepared only. Local `ai-agent-debug-kit` preflight should be run before committing the patch artifact.
+- PR URL or patch path: `ops/48h/patches/opire-frontend-reward-sort-filter.patch`.
+- payout status: no award, no confirmed revenue.
+- next action: if user wants community exposure, manually fork/PR the patch to `Opire/frontend`; otherwise keep as proof of public-repo patch capability.

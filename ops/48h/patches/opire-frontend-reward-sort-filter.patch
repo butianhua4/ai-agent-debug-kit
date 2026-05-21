@@ -1,0 +1,216 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: butianhua4 <butianhua4@users.noreply.github.com>
+Date: Fri, 22 May 2026 05:58:00 +0800
+Subject: [PATCH] Add reward sort filter options
+
+Adds a small reward ordering filter for Opire home rewards so users can
+switch between highest/lowest reward amount and newest/oldest reward date.
+
+Fixes Opire/frontend#39.
+---
+ app/home/_components/Filters/Filters.tsx        | 83 ++++++++++++++++++++++--
+ app/home/_utils/buildEndpointWithSearchAndPagination.ts |  2 +
+ app/home/page.tsx                               | 11 ++++
+ app/home/view.tsx                               | 32 ++++++++-
+ 4 files changed, 120 insertions(+), 8 deletions(-)
+
+diff --git a/app/home/_components/Filters/Filters.tsx b/app/home/_components/Filters/Filters.tsx
+index 8d6537a..0000000 100644
+--- a/app/home/_components/Filters/Filters.tsx
++++ b/app/home/_components/Filters/Filters.tsx
+@@
+ import { ProgrammingLanguageType } from "../../../_core/_types/ProgrammingLanguageType";
+ import { RewardFilterUserTrying, UsersTryingFilter } from "./UsersTryingFilter";
+ 
++export type RewardSortField = "price" | "createdAt";
++export type RewardSortDirection = "asc" | "desc";
++
+ export interface RewardFilters {
+     price: {
+         min: number;
+         max: number | null;
+     };
+     programmingLanguages: ProgrammingLanguageType[];
+     usersTrying: RewardFilterUserTrying;
++    sort: {
++        field: RewardSortField;
++        direction: RewardSortDirection;
++    };
+ }
+ 
+ export const DEFAULT_REWARD_FILTERS: RewardFilters = {
+@@
+     },
+     programmingLanguages: [],
+     usersTrying: "BOTH",
++    sort: {
++        field: "price",
++        direction: "desc",
++    },
+ };
+ 
+ const URL_KEYS = {
+@@
+     },
+     PROGRAMMING_LANGUAGES: "programmingLanguages",
+     USERS_TRYING: "usersTrying",
++    SORT: {
++        FIELD: "sortBy",
++        DIRECTION: "sortDirection",
++    },
+ };
+@@
+         const usersTrying = searchParams.get(URL_KEYS.USERS_TRYING)
+             ? (searchParams
+                 .get(URL_KEYS.USERS_TRYING)! as RewardFilterUserTrying)
+             : DEFAULT_REWARD_FILTERS.usersTrying;
++        const sortFieldParam = searchParams.get(URL_KEYS.SORT.FIELD);
++        const sortDirectionParam = searchParams.get(URL_KEYS.SORT.DIRECTION);
++        const sortField: RewardSortField = sortFieldParam === "createdAt" ? "createdAt" : DEFAULT_REWARD_FILTERS.sort.field;
++        const sortDirection: RewardSortDirection = sortDirectionParam === "asc" ? "asc" : DEFAULT_REWARD_FILTERS.sort.direction;
+ 
+         return {
+             price: {
+                 min: minPrice,
+                 max: maxPrice,
+             },
+             programmingLanguages,
+             usersTrying,
++            sort: {
++                field: sortField,
++                direction: sortDirection,
++            },
+         };
+     }
+@@
+         );
+     };
+ 
++    const updateSortFilter = (sort: RewardFilters["sort"]) => {
++        setFilters((oldFilters) => ({
++            ...oldFilters,
++            sort,
++        }));
++
++        populateMultipleParamToURL([
++            { key: URL_KEYS.SORT.FIELD, value: sort.field === DEFAULT_REWARD_FILTERS.sort.field ? "" : sort.field },
++            { key: URL_KEYS.SORT.DIRECTION, value: sort.direction === DEFAULT_REWARD_FILTERS.sort.direction ? "" : sort.direction },
++        ]);
++    };
++
+     return (
+         <div className="filters flex w-full items-center gap-2 overflow-x-auto px-3 py-2.5 sm:px-6 lg:px-8">
+-            <button className="h-8 shrink-0 rounded-lg border border-white/10 px-3 leading-none text-opire-text transition hover:border-opire-emerald/40" style={{ fontSize: 12 }} type="button">
+-                Ordered by: price
+-            </button>
++            <RewardSortFilter value={filters.sort} onApply={updateSortFilter} />
+ 
+             <PriceFilter
+                 value={[filters.price.min, filters.price.max]}
+@@
+         </div>
+     );
+ }
++
++const sortOptions: { label: string; value: RewardFilters["sort"] }[] = [
++    { label: "Reward: highest", value: { field: "price", direction: "desc" } },
++    { label: "Reward: lowest", value: { field: "price", direction: "asc" } },
++    { label: "Newest", value: { field: "createdAt", direction: "desc" } },
++    { label: "Oldest", value: { field: "createdAt", direction: "asc" } },
++];
++
++function RewardSortFilter({ value, onApply }: { value: RewardFilters["sort"]; onApply: (sort: RewardFilters["sort"]) => void }) {
++    const activeOption = sortOptions.find((option) => option.value.field === value.field && option.value.direction === value.direction) ?? sortOptions[0];
++
++    return (
++        <div className="flex shrink-0 rounded-lg border border-white/10 bg-white/[0.035] p-0.5 text-xs">
++            {sortOptions.map((option) => {
++                const isActive = option.value.field === value.field && option.value.direction === value.direction;
++
++                return (
++                    <button
++                        key={`${option.value.field}-${option.value.direction}`}
++                        aria-label={`Ordered by ${activeOption.label}`}
++                        className={`rounded-md px-2.5 py-1 transition ${isActive ? "bg-opire-emerald/15 text-opire-lime" : "text-opire-muted hover:text-opire-text"}`}
++                        type="button"
++                        onClick={() => onApply(option.value)}
++                    >
++                        {option.label}
++                    </button>
++                );
++            })}
++        </div>
++    );
++}
+diff --git a/app/home/_utils/buildEndpointWithSearchAndPagination.ts b/app/home/_utils/buildEndpointWithSearchAndPagination.ts
+index 255517b..0000000 100644
+--- a/app/home/_utils/buildEndpointWithSearchAndPagination.ts
++++ b/app/home/_utils/buildEndpointWithSearchAndPagination.ts
+@@
+     const params = new URLSearchParams({
+         page: page.toString(),
+         itemsPerPage: itemsPerPage.toString(),
+         minPrice: filters.price.min.toString(),
++        sortBy: filters.sort.field,
++        sortDirection: filters.sort.direction,
+     });
+diff --git a/app/home/page.tsx b/app/home/page.tsx
+index a5b8898..0000000 100644
+--- a/app/home/page.tsx
++++ b/app/home/page.tsx
+@@
+     const maxPrice = typeof resolvedSearchParams.maxPrice === "string" ? resolvedSearchParams.maxPrice : undefined;
+     const programmingLanguages = typeof resolvedSearchParams.programmingLanguages === "string" ? resolvedSearchParams.programmingLanguages.split(",") : undefined;
+     const usersTrying = typeof resolvedSearchParams.usersTrying === "string" ? resolvedSearchParams.usersTrying : undefined;
++    const sortBy = typeof resolvedSearchParams.sortBy === "string" ? resolvedSearchParams.sortBy : undefined;
++    const sortDirection = typeof resolvedSearchParams.sortDirection === "string" ? resolvedSearchParams.sortDirection : undefined;
+ 
+     const filters: RewardFilters = {
+         price: {
+             min: minPrice ? +minPrice : 0,
+@@
+         },
+         programmingLanguages: (programmingLanguages ?? []) as ProgrammingLanguageType[],
+         usersTrying: usersTrying as RewardFilterUserTrying ?? "BOTH",
++        sort: {
++            field: sortBy === "createdAt" ? "createdAt" : "price",
++            direction: sortDirection === "asc" ? "asc" : "desc",
++        },
+     };
+diff --git a/app/home/view.tsx b/app/home/view.tsx
+index d867d34..0000000 100644
+--- a/app/home/view.tsx
++++ b/app/home/view.tsx
+@@
+-import { type Ref, type ReactNode, useEffect, useRef, useState } from "react";
++import { type Ref, type ReactNode, useEffect, useMemo, useRef, useState } from "react";
+@@
+     const searchParams = useSearchParams();
+     const pathname = usePathname();
++    const sortedRewards = useMemo(() => sortRewards(rewards ?? [], filters.sort), [filters.sort, rewards]);
+@@
+-    const selectedRewardIndex = selectedReward ? rewards.findIndex((reward) => reward.id === selectedReward.id) : -1;
++    const selectedRewardIndex = selectedReward ? sortedRewards.findIndex((reward) => reward.id === selectedReward.id) : -1;
+@@
+-            selectReward(rewards[selectedRewardIndex - 1]);
++            selectReward(sortedRewards[selectedRewardIndex - 1]);
+@@
+-            selectReward(rewards[selectedRewardIndex + 1]);
++            selectReward(sortedRewards[selectedRewardIndex + 1]);
+@@
+-                        items={rewards}
++                        items={sortedRewards}
+@@
+ }
++
++function sortRewards(rewards: IssueListDTO[], sort: RewardFilters["sort"]) {
++    const direction = sort.direction === "asc" ? 1 : -1;
++
++    return [...rewards].sort((first, second) => {
++        if (sort.field === "createdAt") {
++            return (first.createdAt - second.createdAt) * direction;
++        }
++
++        return (getPriceInUSD_CENT(first.pendingPrice) - getPriceInUSD_CENT(second.pendingPrice)) * direction;
++    });
++}
