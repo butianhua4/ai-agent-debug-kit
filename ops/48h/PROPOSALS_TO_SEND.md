@@ -149,6 +149,96 @@ Can you share one fake sample event from App1, the target notification format fo
 Next question to ask: Are App1/App2/App3 documented APIs, or do we need to infer behavior from existing requests/screenshots?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #13]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/self-hosted-setup
+Pain: Buyer needs n8n installed on a clean dedicated Linux server behind Nginx with PostgreSQL, SSL, persistent environment variables, systemd or Docker, basic hardening, and handoff notes.
+Suggested package: Budget-fit setup package; upsell only if they want hardening review, backup/restore, monitoring, and incident runbook.
+Suggested price: Platform-budget setup; $499 if they want a documented hardening diagnostic plus setup verification.
+Risk: Server setup can involve root access, SSH credentials, DNS, SSL, and firewall changes. Do not ask for passwords/API keys/tokens in chat. Recommend a temporary least-privilege user, screen share, or user-run command list.
+
+Message draft:
+
+Hi, I can help set up a self-hosted n8n instance on your Linux server with Nginx reverse proxy, PostgreSQL, SSL, persistent environment variables, and a service setup that survives reboot.
+
+For safety, please do not send passwords, private keys, API keys, or server secrets in chat. We can work through a temporary least-privilege user, screen-share, or I can provide exact commands for you to run while I guide the setup.
+
+My delivery would include:
+- Node.js/n8n installation or Docker deployment,
+- PostgreSQL connection and persistent env configuration,
+- Nginx reverse proxy with Let's Encrypt SSL,
+- systemd/Docker restart behavior,
+- basic firewall/fail2ban recommendations,
+- a short handoff note for restart, upgrade, env vars, and rollback.
+
+Before starting, I would confirm the Linux distribution, domain/DNS status, preferred Docker vs native install, and whether ports 80/443 are open.
+
+Can you share the server OS, domain name status, and whether you prefer Docker or native systemd install?
+
+Next question to ask: Is DNS already pointed to the server, and do you want Docker Compose or native n8n/systemd?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request credentials.
+
+## [LEAD #14]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automatyzacja-odpowiedzi-facebooku
+Pain: Polish buyer wants an n8n AI workflow that replies to Facebook page comments in real time, filters spam/trolls/own replies, reads post/comment history for context, controls tone, and includes full installation/configuration documentation.
+Suggested package: Quick Diagnostic for architecture and safety rules, then Same-Day Workflow Rescue/Build if API permissions and scope are clear.
+Suggested price: $499 diagnostic; $1,500 workflow build if they want implementation, testing, and docs.
+Risk: Facebook page automation requires Meta app permissions/OAuth and can create public-facing brand replies. Client must own OAuth/page permissions and approve tone/safety rules. Do not request tokens or page passwords.
+
+Message draft:
+
+Hi, I can help design and build this n8n + AI Facebook comment automation with safety rules, context retrieval, filtering, and documentation.
+
+I do not need Facebook passwords, API keys, OAuth tokens, payment access, or private credentials to start. The safe first step is to work from screenshots of the Meta app setup, fake/redacted comment samples, desired tone examples, and the exact page/comment scenarios you want handled.
+
+My approach would be:
+- capture new comments through the proper webhook path,
+- filter own replies, empty comments, event posts, spam, and troll-like messages,
+- retrieve original post context and prior interaction history where available,
+- classify sentiment/intent before deciding whether to reply,
+- generate a reply in the chosen brand tone,
+- add logging, error handling, and a manual-review option for risky comments,
+- document setup, environment variables, and maintenance.
+
+Suggested first step: $499 architecture/safety diagnostic. If everything is clear and Meta permissions are ready on your side, I can scope the implementation as a $1,500 workflow build.
+
+Can you share fake examples of comments you want answered, comments you want ignored, and the preferred brand tone?
+
+Next question to ask: Should risky/negative comments be auto-replied to, or routed to manual review first?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request OAuth tokens.
+
+## [LEAD #15]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/desenvolvedor-para-agente
+Pain: Portuguese startup wants an n8n developer to evolve an AI sales agent that already handles conversations, payments, inventory, integrations, reports, and virtual assistant features.
+Suggested package: Technical audit first because the scope includes payment/inventory and production business logic.
+Suggested price: $499 technical diagnostic; ongoing hourly via platform only after safe scope is confirmed.
+Risk: Payment systems, inventory, customer data, and connected platforms can require sensitive credentials and high-risk access. Payment/KYC/wallet/tokens are strictly client-side.
+
+Message draft:
+
+Olá, posso ajudar na evolução técnica do agente de vendas com n8n, APIs, automações, relatórios e integrações, começando por uma análise segura da arquitetura atual.
+
+Por segurança, não preciso de senhas, API keys, tokens, acesso a pagamento, carteira, KYC ou credenciais privadas para iniciar. A primeira etapa pode ser feita com logs anonimizados, prints do workflow, payloads fictícios, documentação das integrações e descrição dos pontos que falham ou precisam evoluir.
+
+Meu foco inicial seria:
+- mapear o fluxo atual do agente de vendas,
+- identificar gargalos em pagamentos, estoque, relatórios e integrações sem tocar em credenciais,
+- revisar webhooks, tratamento de erros, retries e validações,
+- propor melhorias por prioridade de impacto,
+- entregar um plano técnico claro para implementação segura.
+
+Sugestão: começar com um diagnóstico técnico de $499 para definir escopo, riscos e plano de execução. Depois disso, podemos seguir por hora dentro da plataforma para os módulos aprovados.
+
+Você consegue compartilhar uma visão geral do workflow atual, os principais pontos de falha e exemplos com dados fictícios?
+
+Next question to ask: Qual parte hoje gera mais impacto: pagamento, estoque, integrações, relatórios ou conversão do agente?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request payment credentials.
+
 ## [LEAD #10]
 
 Source: Freelancer
