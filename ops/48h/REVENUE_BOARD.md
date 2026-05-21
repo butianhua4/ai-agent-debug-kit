@@ -56,6 +56,9 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/n8n/webhook-mysql-automation | open job post | 250-499 target | proposal_ready | User can send prepared proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | No auto-bid; ask for fake payload/schema only |
 | Freelancer | https://www.freelancer.in/projects/n8n/Meta-Webhook-Automation.html | open job post | 499-1500 target | proposal_ready | User can send diagnostic-first proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.18 | Meta/OAuth/token setup is user-only; no secrets |
 | Freelancer | https://www.freelancer.com/projects/api/develop-webhook-trigger-integration | open job post | 250-499 target | proposal_ready | User can send prepared proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.20 | No real API key; use placeholder env var |
+| Freelancer | https://www.freelancer.com/projects/n8n/developer-for-llm-data-workflows | open job post | 499-1500 target | proposal_ready | User can send prepared ongoing n8n/LLM proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.25 | Needs sanitized sample data; no API keys |
+| Freelancer | https://www.freelancer.com/projects/n8n/automation-system | open job post | 499-5000 target | proposal_ready | User can send architecture-first proposal before deadline | user | ops/48h/PROPOSALS_TO_SEND.md | 0.22 | Scope can balloon; no off-platform contact |
+| Freelancer | https://www.freelancer.com/projects/chatgpt/Driven-Social-Post-Automation.html | open job post | 499-1500 target | proposal_ready | User can send AI social n8n MVP proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.18 | Social publishing OAuth/API approvals are user/client side |
 
 ## Current confirmed revenue
 

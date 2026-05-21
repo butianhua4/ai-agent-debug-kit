@@ -150,6 +150,102 @@ Can you share one sample payload and the target MySQL columns with fake values?
 Next question to ask: What field should be used as the unique dedupe key?
 User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
 
+## [LEAD #11]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/developer-for-llm-data-workflows
+Pain: Company needs ongoing n8n workflows for AI/LLM data collection, processing, reporting, and API integrations.
+Suggested package: Paid discovery for architecture and first workflow scope, then Same-Day Workflow Rescue/Build for the first production workflow.
+Suggested price: $499 discovery/diagnostic; $1,500 for first scoped workflow sprint if requirements are clear.
+Risk: LLM visibility workflows may involve scraped data, internal analytics, and API credentials. Start with sanitized sample data and docs only.
+
+Message draft:
+
+Hi, I can help build and maintain n8n workflows for LLM data collection, processing, and reporting.
+
+My strongest fit is turning unreliable AI/API workflows into documented, testable flows with clear input/output contracts, error branches, retries, and handoff notes.
+
+For safety, I do not need passwords, API keys, tokens, or private credentials to begin. Please share one representative workflow goal, sanitized sample input/output data, and the APIs or data sources involved.
+
+Suggested first step:
+- map one workflow end to end,
+- define the payload schema and data quality checks,
+- identify which steps belong in n8n vs small custom scripts,
+- add failure handling/logging,
+- deliver an importable workflow JSON plus runbook.
+
+I would start with a $499 discovery/diagnostic if the scope is still broad, or a $1,500 first workflow sprint if you already know the first production workflow.
+
+What is the first workflow you want automated: data collection, enrichment, analysis, or reporting?
+
+Next question to ask: Which one workflow would prove the collaboration fastest?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #12]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-system
+Pain: Buyer wants a complete n8n AI/ML automation system with architecture plan, workflows, custom scripts/nodes, deployment guidance, and handoff docs.
+Suggested package: Architecture diagnostic first, then 48-hour sprint only after a tight MVP scope.
+Suggested price: $499 architecture diagnostic; $1,500-$5,000 depending on the number of workflows and whether custom ML/scripts are needed.
+Risk: Scope can balloon. Avoid promising full AI/ML system without a defined first workflow and acceptance criteria.
+
+Message draft:
+
+Hi, I can help translate your business process into a reliable n8n-based AI automation system.
+
+I would recommend starting with a small architecture sprint before building everything. That keeps the scope controlled and prevents a workflow that works in a demo but fails in production.
+
+I do not need passwords, API keys, tokens, or private credentials to start. Please share the business process, expected inputs/outputs, target APIs/tools, and one sample dataset with fake values.
+
+My first pass would produce:
+- workflow architecture map,
+- which parts belong in n8n vs lightweight scripts/custom nodes,
+- AI/ML endpoint integration points,
+- error handling/retry/logging strategy,
+- first MVP workflow plan,
+- handoff and deployment checklist.
+
+If the first workflow is clear, I can implement it as a focused sprint. If the process is still broad, I would start with a $499 architecture diagnostic and then quote implementation once the MVP is defined.
+
+What is the first business outcome this automation must complete end to end?
+
+Next question to ask: What is the smallest workflow that proves the system works?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
+## [LEAD #13]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/chatgpt/Driven-Social-Post-Automation.html
+Pain: Buyer wants a daily n8n workflow using ChatGPT and image generation to create, format, publish, and log social posts across Facebook, Instagram, and YouTube.
+Suggested package: Architecture diagnostic or compact MVP; full same-day rescue/build only after API publishing constraints are clear.
+Suggested price: $499 architecture diagnostic; $1,500 for a scoped MVP with one or two platforms; larger sprint only if full multi-platform publishing and monitoring is required.
+Risk: Social publishing requires OAuth/API permissions and platform policy compliance. User/client must handle app credentials and approvals.
+
+Message draft:
+
+Hi, I can help design and build the n8n workflow for AI-assisted social content generation, formatting, publishing, and audit logging.
+
+For safety and platform compliance, I do not need passwords, API keys, tokens, or account access to begin. We can start from placeholder credentials, sample prompts, and a fake publishing payload. You can connect real platform credentials on your side after import.
+
+Recommended MVP:
+- daily trigger,
+- ChatGPT copy/hashtag/script generation from your template,
+- optional image-generation branch,
+- platform-specific formatter,
+- Google Sheet/Airtable audit log,
+- error branch for failed generation or publishing,
+- documentation for credential setup and manual review mode.
+
+Before quoting the full build, I would confirm which platforms already have API access approved and whether posts should publish automatically or wait for review.
+
+Suggested start: $499 architecture diagnostic, or $1,500 for a scoped MVP if the platform/API access is already ready.
+
+Which platform should the MVP publish to first: Facebook, Instagram, or YouTube?
+
+Next question to ask: Do they already have approved API access for the target publishing platforms?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
 ## [LEAD #9]
 
 Source: Freelancer
