@@ -4,6 +4,18 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority -4.75: Fresh Freelancer urgent n8n workflow consultation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/urgent-workflow-consultation-needed
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #8
+- suggested offer: `$499 Quick Diagnostic`; upgrade to `$1,500 Same-Day Workflow Rescue` if they want implementation and validation.
+- why first: urgent wording, direct n8n consultation fit, and likely short path from diagnostic to paid workflow repair.
+- send condition: user sends manually through Freelancer if account/rules permit.
+- do not ask for: n8n login, API keys, tokens, passwords, live credentials, payment access, private customer data, or cloud account access.
+- first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority -4: Fresh Freelancer n8n GoHighLevel automation flow
 
 - channel: Freelancer
