@@ -149,6 +149,35 @@ Can you share the funnel trigger, target CRM/email platform, and one fake lead p
 Next question to ask: Which single funnel and CRM/email destination should be stabilized first?
 User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
 
+## [LEAD #11]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-specialist-39677438
+Pain: Buyer needs n8n workflows for project automation, Google Sheets data processing, Slack notifications, and workflow management.
+Suggested package: Budget-fit seed build or Quick Diagnostic.
+Suggested price: $250-$499 fixed seed scope for one workflow because the public budget is $30-$250; keep $499 as the higher-quality diagnostic/build option only if they accept a broader reliability pass.
+Risk: Google Sheets and Slack integrations can require OAuth or credentials. Start with fake sheet rows, desired Slack message format, and a client-side credential setup checklist only. Do not request Google/Slack login, OAuth access, API keys, tokens, or private sheet data.
+
+Message draft:
+
+Hi, I can help build this as a clean n8n workflow with Google Sheets input/data processing and Slack notifications.
+
+To keep it safe and fast, I do not need your Google/Slack login, OAuth access, API keys, tokens, or private sheet data to start. Please share a fake/sample sheet row, the trigger condition, the desired Slack message format, and what should count as a successful run.
+
+For a first version I would:
+- map the Google Sheets row fields and validation rules,
+- build the n8n workflow with clear node names,
+- add basic guards for missing/invalid data,
+- format and send the Slack notification,
+- provide the exported workflow JSON and a short setup/runbook so you can connect credentials on your side.
+
+I can do a compact fixed-scope seed build for one workflow within your posted budget, or a $499 diagnostic/build pass if you want stronger logging, error handling, and handoff documentation.
+
+Can you share one fake sheet row and the exact Slack notification text you want generated?
+
+Next question to ask: What event should trigger the workflow: new row, updated row, schedule, or manual run?
+User action required: User must send this manually through Freelancer if account/rules permit. Do not auto-bid.
+
 ## [LEAD #10]
 
 Source: Freelancer

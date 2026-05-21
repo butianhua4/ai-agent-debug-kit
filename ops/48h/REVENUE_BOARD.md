@@ -78,6 +78,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Opire/TypeORM | https://github.com/typeorm/typeorm/pull/12532 | public bounty PR | 120 | pr_submitted_compile_passed | Monitor upstream review/CI and Opire award status | Codex + GitHub app | https://github.com/typeorm/typeorm/pull/12532 | 0.18 | No merge/award yet; compile passed, targeted DB test blocked by missing ormconfig/Postgres DB |
 | Freelancer | https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed | open job post | 499-1500 target | proposal_ready | User can send ManyChat+n8n/Make reliability proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.31 | No auto-bid; needs sanitized funnel outline, fake payload, and field map only |
 | Freelancer | https://www.freelancer.com/projects/n8n/automation-engineer | open job post | 499 trial target | proposal_ready | User can send n8n automation engineer paid-trial proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | Low hourly range; narrow first to paid workflow audit |
+| Freelancer | https://www.freelancer.com/projects/n8n/automation-specialist-39677438 | open job post | 250-499 target | proposal_ready | User can send n8n Google Sheets + Slack seed workflow proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.29 | Lower budget; no Google/Slack OAuth or credentials handled by Codex |
 
 ## Current confirmed revenue
 

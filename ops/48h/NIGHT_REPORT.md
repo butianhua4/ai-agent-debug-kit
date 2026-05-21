@@ -1,5 +1,34 @@
 # Overseas Night Shift Report
 
+## 2026-05-22 07:50 +08:00 checkpoint
+
+1. Confirmed revenue:
+   - `$0`. No paid order, paid invoice, award, or merged bounty PR is confirmed.
+2. Paid / awarded / ordered evidence:
+   - None.
+3. High-value pipeline:
+   - Fresh Freelancer n8n Google Sheets + Slack seed-workflow lead added with a budget-fit proposal.
+4. Bounty attempts:
+   - No new bounty patch in this node.
+5. PRs created or prepared:
+   - No new PR in this node.
+6. Tests run:
+   - Pending after file edits; run `npm run preflight` before commit.
+7. Fiverr inbox/orders:
+   - Not checked in this node.
+8. Leads found:
+   - `https://www.freelancer.com/projects/n8n/automation-specialist-39677438`
+9. Assets shipped:
+   - Lead row, proposal draft, send queue entry, revenue board row, and money score update for the n8n Google Sheets + Slack opportunity.
+10. Blockers requiring user:
+   - Freelancer proposal sending remains user/platform-account action. Codex did not auto-bid.
+11. Next 3 highest-value actions:
+   - Send the ManyChat+n8n proposal first if Freelancer account is available.
+   - Send the Google Sheets+Slack n8n seed proposal as a lower-friction seed order.
+   - Continue scanning public bounty targets that can become submitted PRs.
+12. MONEY_SCORE:
+   - +80 high-intent lead converted to proposal-ready pipeline; not revenue.
+
 ## 2026-05-22 07:42 +08:00 checkpoint
 
 1. Confirmed revenue:

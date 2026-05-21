@@ -383,3 +383,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: API keys, tokens, CRM credentials, social posting credentials, customer data, payment access, or off-platform contact.
 - first ask after reply: one sanitized workflow export, one redacted execution log/screenshot, and the highest-business-impact workflow.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1C: Freelancer n8n Google Sheets + Slack seed workflow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/automation-specialist-39677438
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #11
+- suggested offer: compact seed build inside posted `$30-$250` budget, or `$499` only if the buyer accepts stronger logging/error handling/docs.
+- why urgent: public crawl says posted less than 20 seconds ago, only 1 proposal, payment method verified, and concrete n8n + Google Sheets + Slack scope.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Google login, Slack login, OAuth access, API keys, tokens, private sheet data, or payment access.
+- first ask after reply: one fake sheet row, trigger condition, desired Slack message text, and success criteria.
+- status after user sends: move to `proposal_sent`.

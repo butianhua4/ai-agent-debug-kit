@@ -58,7 +58,8 @@ Score rules:
 | 2026-05-22T07:18:00+08:00 | Improved TypeORM bounty validation | 20 | Installed pnpm dependencies and confirmed compile passes; DB test still blocked by missing ormconfig/Postgres; not submitted and not revenue |
 | 2026-05-22T07:30:00+08:00 | Submitted TypeORM Postgres varchar length bounty PR | 80 | Public $120 Opire bounty PR opened as typeorm/typeorm#12532 after fork creation and branch push; not merged, not awarded, not revenue |
 | 2026-05-22T07:42:00+08:00 | Added fresh ManyChat/n8n and n8n automation engineer proposal pack | 80 | Two fresh Freelancer automation leads converted into safe, user-sendable proposal drafts and send queue entries; not sent and not revenue |
+| 2026-05-22T07:50:00+08:00 | Added n8n Google Sheets Slack seed-workflow proposal | 80 | Fresh verified-client Freelancer n8n job converted into a budget-fit proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-1680
+1760
