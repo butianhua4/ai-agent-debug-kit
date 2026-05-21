@@ -67,6 +67,8 @@ Please paste the non-sensitive details here: CI provider, log format, desired ri
 
 Use this only after the buyer has given enough safe details.
 
+For a faster decision table, use `docs/CI_RISK_GATE_CUSTOM_OFFER_CALCULATOR.md`.
+
 Starter fit:
 
 - Buyer only needs a template workflow and threshold advice.
