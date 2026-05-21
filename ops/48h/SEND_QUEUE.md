@@ -4,6 +4,42 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority 00: Fresh Freelancer OpenClaw business automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #17
+- suggested offer: `$499 discovery diagnostic`, then `$1,500` first workflow or `$5,000` 48-hour sprint if urgency/scope confirms.
+- why first: posted half a minute ago, `$250-750` budget, direct OpenClaw + business automation fit.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: store/admin passwords, API keys, payment credentials, customer data, tokens, OAuth grants.
+- first ask after reply: first priority workflow, sample FAQ, fake order, inventory schema, desired alert rules.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 00A: Fresh Freelancer OpenClaw on AWS
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/open-claw/set-openclaw-aws
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #16
+- suggested offer: `$499 setup diagnostic` or compliant hourly starter.
+- why second: posted less than a minute ago, direct OpenClaw setup fit.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: AWS root credentials, passwords, API keys, private keys, tokens, payment access.
+- first ask after reply: whether EC2 already exists, access method, representative workflow test.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 00B: OpenClaw Windows autonomous suite
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/openclaw-windows-autonomous-suite
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #18
+- suggested offer: `$499 technical setup diagnostic` leading to `$1,500 implementation sprint`.
+- why third: `$250-750` budget and strong fit for OpenClaw, browser automation, Python, master/sub-agent setup.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: browser cookies, passwords, API keys, sensitive scrape targets, local private files.
+- first ask after reply: Windows version, current install status, first safe browser task to test.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 0: Fresh Freelancer Portuguese n8n error repair
 
 - channel: Freelancer

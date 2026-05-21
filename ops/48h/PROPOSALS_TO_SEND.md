@@ -239,6 +239,95 @@ Você consegue compartilhar uma visão geral do workflow atual, os principais po
 Next question to ask: Qual parte hoje gera mais impacto: pagamento, estoque, integrações, relatórios ou conversão do agente?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request payment credentials.
 
+## [LEAD #16]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/open-claw/set-openclaw-aws
+Pain: Buyer wants OpenClaw deployed reproducibly on one AWS EC2 Windows Server 2022 instance, with dependencies, AWS networking/storage, a representative end-to-end workflow run, captured logs, and rebuild/restore documentation.
+Suggested package: OpenClaw setup diagnostic first, then implementation once AWS/security boundaries are clear.
+Suggested price: $499 setup diagnostic or hourly starter through Freelancer; larger reproducible deployment/hardening can be scoped after discovery.
+Risk: The buyer says they will supply AWS credentials. Do not accept credentials in chat. AWS access/security group changes are high-impact. Recommend client-side screen-share, temporary least-privilege IAM access, or user-run command/runbook.
+
+Message draft:
+
+Hi, I can help set up a reproducible OpenClaw workflow on a single Windows Server 2022 EC2 instance and document the build so it can be restored later.
+
+For security, please do not send AWS root credentials, passwords, API keys, tokens, or private keys in chat. A safe workflow is either screen-share/user-run steps, or a temporary least-privilege IAM user with only the exact EC2/network permissions needed for the setup.
+
+My setup plan would be:
+- confirm instance size, Windows Server 2022 baseline, inbound/outbound network needs, and storage requirements,
+- install and verify OpenClaw dependencies,
+- configure the workflow runtime and environment variables,
+- run one representative job end to end,
+- capture logs and validation screenshots,
+- deliver concise rebuild/restore documentation.
+
+Suggested first step: a $499 setup diagnostic/runbook to lock down prerequisites, security boundaries, and the exact deployment path. After that I can continue implementation through Freelancer once access method and scope are approved.
+
+Can you share whether the EC2 instance is already created, and whether you prefer screen-share/user-run setup or temporary least-privilege IAM access?
+
+Next question to ask: Is the EC2 instance already provisioned, and what OpenClaw workflow should be used as the representative end-to-end test?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request AWS credentials.
+
+## [LEAD #17]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
+Pain: Buyer wants OpenClaw to automate customer service, inventory, and sales: FAQ/helpdesk replies, simple order processing, contact nurturing, inventory reorder alerts, and business notifications.
+Suggested package: Discovery/architecture diagnostic first, then a staged OpenClaw automation sprint.
+Suggested price: $499 discovery diagnostic; $1,500 for the first production workflow; $5,000 for a 48-hour multi-workflow sprint if they confirm urgency and scope.
+Risk: Customer service, order processing, sales, and inventory may involve store/admin access, customer data, payment flows, and messaging platform credentials. Keep first pass to fake data, sample FAQ, redacted screenshots, and client-side credentials only.
+
+Message draft:
+
+Hi, this is a strong fit for an OpenClaw business automation rollout. I would start by turning the scope into a staged plan so customer service, inventory, and sales automations are reliable instead of one large fragile workflow.
+
+I do not need passwords, API keys, store admin access, payment credentials, or private customer data to begin. A safe first step is to work from sample FAQs, fake orders, redacted screenshots, a sample inventory table, and the desired messaging/alert rules.
+
+My approach:
+- map the customer-service flow first: FAQ, order-status intents, handoff rules, and no-answer fallback,
+- define safe order-processing boundaries so payment/admin actions stay client-side,
+- design inventory reorder alerts from fake/sample stock data,
+- add logging, approval checkpoints, and failure notifications,
+- deliver a staged build plan and implementation checklist.
+
+Suggested first step: $499 discovery/architecture diagnostic. If you want implementation, I would scope the first production workflow at $1,500, or a broader 48-hour automation sprint at $5,000 after reviewing the sample materials.
+
+Can you share your first priority: FAQ/helpdesk automation, contact nurturing, order processing, or reorder alerts?
+
+Next question to ask: Which one workflow would save the most time or prevent the most missed revenue this week?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request store/admin credentials.
+
+## [LEAD #18]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/openclaw-windows-autonomous-suite
+Pain: Buyer wants OpenClaw on Windows as an all-in-one autonomous assistant with reliable browser automation, Python coding support, master/sub-agent reporting, low recurring costs, and a setup/daily-use guide.
+Suggested package: Technical setup diagnostic followed by implementation sprint.
+Suggested price: $499 diagnostic; $1,500 implementation sprint if the Windows environment and access method are safe.
+Risk: Browser automation and local agent setup can involve account sessions, local files, credentials, and web scraping boundaries. Keep setup local/client-controlled and avoid handling passwords, cookies, API keys, or sensitive scraping targets.
+
+Message draft:
+
+Hi, I can help design and set up a Windows OpenClaw autonomous assistant stack with browser automation, Python coding support, and a master/sub-agent structure that reports results cleanly.
+
+For safety, I do not need passwords, API keys, tokens, browser cookies, or account credentials. We can set this up through screen-share/user-run steps, placeholder credentials, and local test workflows that do not touch sensitive accounts.
+
+My plan would be:
+- verify Windows prerequisites and install OpenClaw dependencies,
+- configure browser automation for safe test targets first,
+- wire a Python workspace for read/write/execute coding support,
+- define master agent and sub-agent task/report conventions,
+- add logging and failure reporting,
+- provide a concise setup, daily-use, and update guide.
+
+Suggested first step: $499 technical setup diagnostic to confirm environment, dependencies, browser automation boundaries, and agent hierarchy. If the environment is ready, I can scope implementation at $1,500.
+
+Can you share your Windows version, whether OpenClaw is already installed, and the first safe browser task you want tested?
+
+Next question to ask: Which browser automation task should be the first proof: form filling, navigation, or scraping from a permitted public/test site?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid or request credentials.
+
 ## [LEAD #10]
 
 Source: Freelancer
