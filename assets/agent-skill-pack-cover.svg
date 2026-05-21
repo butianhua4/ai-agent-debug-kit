@@ -1,0 +1,40 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#F7F8F4"/>
+  <rect x="88" y="84" width="1424" height="832" rx="28" fill="#FFFFFF" stroke="#222222" stroke-width="4"/>
+  <rect x="128" y="124" width="1344" height="120" rx="18" fill="#101414"/>
+  <text x="172" y="194" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">Agent + Skill Pack</text>
+  <text x="1070" y="194" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#7CFFB2">Reusable AI workflow system</text>
+
+  <text x="144" y="330" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#141818">Turn repeated prompts into</text>
+  <text x="144" y="396" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#141818">a safe operating asset</text>
+  <text x="148" y="458" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#4C5454">Role definition, skill triggers, boundaries, test cases, and handoff guide.</text>
+
+  <rect x="144" y="548" width="360" height="184" rx="18" fill="#EEF7FF" stroke="#9EC9F5" stroke-width="3"/>
+  <text x="178" y="610" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#121818">Starter</text>
+  <text x="178" y="658" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#121818">$99</text>
+  <text x="178" y="704" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4C5454">1 compact workflow skill</text>
+
+  <rect x="560" y="548" width="360" height="184" rx="18" fill="#F3F1FF" stroke="#B9B0FF" stroke-width="3"/>
+  <text x="594" y="610" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#121818">Standard</text>
+  <text x="594" y="658" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#121818">$299</text>
+  <text x="594" y="704" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4C5454">Agent + 2-3 skill blocks</text>
+
+  <rect x="976" y="548" width="360" height="184" rx="18" fill="#FFF4E8" stroke="#F2B66D" stroke-width="3"/>
+  <text x="1010" y="610" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#121818">Premium</text>
+  <text x="1010" y="658" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#121818">$599</text>
+  <text x="1010" y="704" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4C5454">Workflow map + QA kit</text>
+
+  <rect x="144" y="782" width="1192" height="72" rx="16" fill="#E9F7EF" stroke="#8BCBA5" stroke-width="3"/>
+  <text x="178" y="828" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#13351F">Safe scope: no passwords, no payment access, no KYC, no private tokens, no spam automation.</text>
+
+  <g transform="translate(1208 286)">
+    <rect x="0" y="0" width="168" height="168" rx="28" fill="#111818"/>
+    <circle cx="84" cy="84" r="46" fill="#7CFFB2"/>
+    <rect x="54" y="50" width="60" height="68" rx="8" fill="#111818"/>
+    <circle cx="73" cy="78" r="7" fill="#7CFFB2"/>
+    <circle cx="96" cy="78" r="7" fill="#7CFFB2"/>
+    <path d="M61 108H108" stroke="#7CFFB2" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="1372" y="882" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#6C7474">AI Agent Debug Kit</text>
+</svg>

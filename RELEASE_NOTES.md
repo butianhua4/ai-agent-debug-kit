@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- Agent + skill pack buyer-facing one-pager and cover asset for upload/posting.
 - Agent + skill pack product offer for selling reusable AI workflow instructions, trigger rules, safety boundaries, test cases, and handoff guides.
 - Fast order opportunity board for separating real near-term order paths from stale bounties and non-browsable Fiverr brief flows.
 - Fast public bounty screen for Opire/Algora/GitHub opportunities, including an actionable Electron/TypeScript USD 100 candidate and rejected stale issues.

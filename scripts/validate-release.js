@@ -33,9 +33,11 @@ assert.ok(manifest.files.includes("assets/domestic-299-diagnosis-one-pager.png")
 assert.ok(manifest.files.includes("assets/domestic-999-repair-plan-proof.png"));
 assert.ok(manifest.files.includes("assets/automation-rescue-one-pager.pdf"));
 assert.ok(manifest.files.includes("assets/automation-rescue-demo.gif"));
+assert.ok(manifest.files.includes("assets/agent-skill-pack-cover.svg"));
 assert.ok(manifest.files.includes("assets/product-preview.svg"));
 assert.ok(manifest.files.includes("docs/AI_WORKFLOW_COST_AUDIT_OFFER.md"));
 assert.ok(manifest.files.includes("docs/AGENT_SKILL_PACK_OFFER.md"));
+assert.ok(manifest.files.includes("docs/AGENT_SKILL_PACK_ONE_PAGER.md"));
 assert.ok(manifest.files.includes("docs/BUG_REPORT_TRIAGE_OFFER.md"));
 assert.ok(manifest.files.includes("docs/AEO_DELIVERY_CHECKLIST.md"));
 assert.ok(manifest.files.includes("docs/AEO_OUTREACH_AND_QUOTE_PACK.md"));
