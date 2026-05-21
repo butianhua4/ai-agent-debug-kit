@@ -4,6 +4,30 @@ Purpose: convert prepared assets into user-sendable actions without violating pl
 
 Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty is visible.
 
+## Priority 0: Fresh Freelancer n8n Webhook-MySQL automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/webhook-mysql-automation
+- draft source: `ops/48h/READY_TO_SEND_NOW.md` draft 0A, or `ops/48h/PROPOSALS_TO_SEND.md` lead #8
+- suggested offer: compact fixed build inside buyer budget; use `$499 Quick Diagnostic` only if they want hardening/replay testing/failure documentation.
+- why first: freshly posted direct n8n webhook + JSON mapping + MySQL project, low ambiguity, no OAuth required for first pass.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: database password, production DB host, API keys, tokens, payment access, or real customer data.
+- first ask after reply: fake/sample webhook payload, fake schema/table columns, expected dedupe key.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 0B: Fresh Freelancer n8n JSON webhook trigger
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api/develop-webhook-trigger-integration
+- draft source: `ops/48h/READY_TO_SEND_NOW.md` draft 0C, or `ops/48h/PROPOSALS_TO_SEND.md` lead #10
+- suggested offer: compact fixed MVP inside buyer budget; `$499` only for hardened version with validation, logs, and test matrix.
+- why second: clear small API/webhook build, direct JSON and API-key scope, good chance for a quick first small order.
+- send condition: user confirms the project is still open and Freelancer account allows a compliant proposal.
+- do not ask for: real API key, live secrets, production URLs with credentials, payment access.
+- first ask after reply: expected JSON fields, API-key header name, success/error response format.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1: Freelancer n8n workflow repair opportunity
 
 - channel: Freelancer
