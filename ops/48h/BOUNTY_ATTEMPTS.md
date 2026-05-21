@@ -375,8 +375,9 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
   - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3577`: passed and produced structured Markdown.
   - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3579`: passed and produced structured Markdown.
   - `git diff --check -- issue-4-pr-review-agent`: passed.
-- PR URL or patch path: `ops/48h/patches/claude-builders-pr-review-agent.patch`.
-- payout status: no award, no merge, no confirmed revenue.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903 plus `ops/48h/patches/claude-builders-pr-review-agent.patch`.
+- payout status: PR submitted, no award, no merge, no confirmed revenue.
+- claim status: `/opire try` comment was posted from the user-controlled GitHub session before PR submission.
 - PR draft title: Add public PR review agent CLI.
 - PR draft body:
 
@@ -395,4 +396,19 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - `git diff --check -- issue-4-pr-review-agent`
 ```
 
-- user action required: bounty claiming requires a compliant `/opire try` comment and upstream PR from a user-controlled GitHub account. Codex did not claim the bounty or submit the PR.
+- user action required: no PR-creation action remains. If the bounty is accepted, any Opire payout/KYC/payment setup remains user-only.
+
+## Submission 2026-05-22: Claude Builders PR review agent PR
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.
+- reward amount: $150 visible.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4.
+- what was done: posted `/opire try`, forked the repository, applied the prepared patch, validated the CLI against two public Firecrawl PRs, pushed branch `butianhua4:add-pr-review-agent`, and opened upstream PR #1903.
+- test result:
+  - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3577`: passed.
+  - `python.exe issue-4-pr-review-agent/claude-review.py --pr https://github.com/firecrawl/firecrawl/pull/3579`: passed.
+  - `git diff --check`: passed.
+- PR URL or patch path: https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903.
+- payout status: no award, no merge, no confirmed revenue.
+- user action required: monitor PR/Opire notifications; any payout, KYC, tax, wallet, or payment profile step is user-only.

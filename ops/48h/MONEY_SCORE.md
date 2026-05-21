@@ -6,6 +6,7 @@ Score rules:
 - awarded/merged bounty: +800
 - PR submitted for $1000+ bounty: +300
 - PR prepared for $1000+ bounty: +200
+- public bounty PR submitted under $1000: +80
 - client sent sanitized logs: +200
 - quote requested: +150
 - high-intent lead found: +80
@@ -39,7 +40,8 @@ Score rules:
 | 2026-05-22T00:50:00+08:00 | Prepared Firecrawl JS SDK search field patch | 40 | Public TypeScript SDK patch for documented API-field forwarding; no bounty and not submitted upstream yet |
 | 2026-05-22T01:10:00+08:00 | Prepared Claude Builders destructive Bash hook bounty patch | 40 | Public $100 bounty patch prepared and locally tested; not claimed/submitted, not revenue |
 | 2026-05-22T01:45:00+08:00 | Prepared Claude Builders PR review agent bounty patch | 40 | Public $150 bounty patch prepared and validated on two real PRs; not claimed/submitted, not revenue |
+| 2026-05-22T02:00:00+08:00 | Submitted Claude Builders PR review agent bounty PR | 80 | Public $150 bounty PR opened as #1903 after `/opire try`; not merged, not awarded, not revenue |
 
 ## Total
 
-820
+900

@@ -6,7 +6,7 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 
 - Platform accounts/APIs are required before Codex can submit bids, accept jobs, or post community replies automatically. Current automatic work can continue on public repos, public issue research, patches, validation, and proposal/post drafts.
 - Freelancer/Upwork/Algora/Reddit/n8n community posting is account-gated unless the user provides a compliant authenticated workflow. Codex must not invent account access or claim messages were sent.
-- This run did not expose an in-app browser automation tool after tool search, so Fiverr/Freelancer page clicking is currently blocked from Codex. Public repo work and public-web research can continue automatically.
+- In-app browser GitHub access is now available for the logged-in user session and was used only for the public Claude Builders bounty workflow. Fiverr/Freelancer/community posting remains account/rule-gated unless the user explicitly authorizes a specific safe action.
 
 ## Standing blockers
 
@@ -44,10 +44,10 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
 
-## 2026-05-22T01:45:00+08:00 - Optional bounty claim: Claude Builders PR review agent
+## 2026-05-22T01:45:00+08:00 - Submitted bounty PR: Claude Builders PR review agent
 
-- Action: If desired and still available, comment `/opire try` on `claude-builders-bounty/claude-builders-bounty#4`, apply `ops/48h/patches/claude-builders-pr-review-agent.patch`, and open a PR.
+- Action completed: Codex used the user-authenticated in-app browser session to comment `/opire try`, fork the public repo, apply `ops/48h/patches/claude-builders-pr-review-agent.patch`, push `butianhua4:add-pr-review-agent`, and open upstream PR https://github.com/claude-builders-bounty/claude-builders-bounty/pull/1903.
 - Suggested PR title: `Add public PR review agent CLI`
-- Why user action is required: claiming/submitting the bounty requires the user's GitHub/Opire account and compliance with that bounty's rules.
+- Why user action may still be required: any Opire award acceptance, payout profile, KYC, tax, wallet, or payment step is user-only.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
-- Automation attempt result: Codex tried the connected GitHub app and received `403 Resource not accessible by integration` when commenting `/opire try`; Codex also opened the in-app browser and GitHub showed a signed-out page. User must either sign in to GitHub in the in-app browser or perform the claim/fork/PR manually.
+- Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
