@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- CI risk gate delivery QA checklist for checking buyer materials, validation, scope, and safety boundaries before delivery.
 - CI risk gate custom offer calculator for quickly routing safe buyer requirements into Starter, Standard, or Premium pricing.
 - CI risk gate chat handoff for using the proof card, one-page PDF, and safe buyer requirements in Fiverr conversations.
 - CI risk gate pass/block proof card generated from the synthetic pass/fail sample logs for Fiverr gallery use.

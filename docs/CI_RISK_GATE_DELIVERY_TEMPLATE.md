@@ -4,6 +4,8 @@ Use this template after completing a Fiverr order for the AI agent CI risk gate 
 
 Do not include private repository names, raw production logs, credentials, API keys, tokens, cookies, customer data, payment data, or identity documents. Use redacted examples only.
 
+Before delivery, run the one-screen QA check in `docs/CI_RISK_GATE_DELIVERY_QA_CHECKLIST.md`.
+
 ## Delivery Message
 
 ```text

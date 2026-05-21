@@ -89,6 +89,7 @@ A zero-dependency browser tool for inspecting AI agent run logs.
 - CI risk gate chat handoff: `docs/CI_RISK_GATE_CHAT_HANDOFF.md`
 - CI risk gate custom offer calculator: `docs/CI_RISK_GATE_CUSTOM_OFFER_CALCULATOR.md`
 - CI risk gate delivery template: `docs/CI_RISK_GATE_DELIVERY_TEMPLATE.md`
+- CI risk gate delivery QA checklist: `docs/CI_RISK_GATE_DELIVERY_QA_CHECKLIST.md`
 - Example Markdown report: `docs/examples/sample-report.md`
 - Example JSON report: `docs/examples/sample-report.json`
 - Example AEO readiness report: `docs/examples/aeo-readiness-sample-report.md`
