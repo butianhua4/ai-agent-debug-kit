@@ -52,6 +52,7 @@ GitHub release draft: `docs/GITHUB_RELEASE_DRAFT.md`.
 
 Latest:
 
+- Fast public bounty screen for Opire/Algora/GitHub opportunities, including an actionable Electron/TypeScript USD 100 candidate and rejected stale issues.
 - CI risk gate proof caption pack for Fiverr profile, portfolio, buyer DM, LinkedIn/GitHub, and Chinese platform posts.
 - CI risk gate portfolio proof sheet built from synthetic pass/fail logs for profile and buyer-facing use.
 - CI risk gate custom offer runbook that combines intake, FAQ handling, package routing, offer drafting, and delivery QA.
