@@ -552,3 +552,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: email credentials, OAuth consent, API keys, calendar credentials, private emails, deletion authority, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: fake sample emails, categories, safe-delete rules, calendar workflow, dashboard fields, and human-review requirements.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1M: Freelancer HubSpot-to-Slack n8n Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/hubspot-slack-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #25
+- suggested offer: `$499 Quick Diagnostic` if they have a failing setup, or `$1,500 Same-Day Workflow Rescue/build` for a production-ready HubSpot-to-Slack alert workflow.
+- why urgent: $750-$1,500 fixed budget, posted less than 20 seconds ago, and the scope is narrow enough to deliver quickly while still matching the emergency automation offer.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: HubSpot tokens, Slack tokens, OAuth consent, API keys, CRM PII, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: HubSpot object to watch, fake sample record, desired Slack template, fields to include, alert frequency, and duplicate-prevention rule.
+- status after user sends: move to `proposal_sent`.

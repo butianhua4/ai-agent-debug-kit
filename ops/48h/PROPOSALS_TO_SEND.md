@@ -215,6 +215,36 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #25]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/hubspot-slack-automation
+Pain: Buyer needs a dependable n8n workflow that detects new HubSpot contacts or deals, maps lead fields, and posts a clean formatted alert to Slack with owner/source data and a direct HubSpot record link.
+Suggested package: Same-Day Workflow Rescue/build for one production-ready HubSpot-to-Slack alert workflow.
+Suggested price: $499 if they need a quick diagnostic of the existing n8n/HubSpot/Slack setup; $1,500 for same-day build, testing, error handling, and handoff documentation.
+Risk: HubSpot and Slack require OAuth/tokens and may include CRM PII. Do not request or handle credentials, OAuth consent, API keys, or real lead data. Work from fake payloads and client-side authorization only.
+
+Message draft:
+
+Hi, I can build this as a clean, dependable n8n workflow with field mapping, duplicate/failure protection, and a simple handoff document.
+
+I do not need HubSpot tokens, Slack tokens, OAuth consent, API keys, or real CRM data to start. A safe first pass can be done from a fake HubSpot contact/deal payload, the desired Slack message format, and screenshots or notes about your n8n instance.
+
+My approach:
+- confirm whether New Contact or New Deal is the more reliable trigger,
+- map required fields: name, email, company, lead source, owner, and HubSpot URL,
+- format the Slack message clearly and include @here only if that is truly desired,
+- add guardrails for missing fields and duplicate alerts,
+- test with a fake HubSpot record,
+- deliver the n8n JSON export plus concise setup and troubleshooting notes.
+
+Suggested scope: $499 for a diagnostic if your current setup is partly built and failing. If you want me to build and validate the workflow end to end, I would quote $1,500 for same-day rescue/build with testing and documentation.
+
+Can you share the exact HubSpot object to watch, a fake sample record, and the Slack message format you want?
+
+Next question to ask: Should the alert fire for every new contact, only qualified contacts, or only deals that reach a specific pipeline stage?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #24]
 
 Source: Freelancer
