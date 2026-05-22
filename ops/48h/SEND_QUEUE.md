@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 1R: Freelancer PDF to Software Data Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/pdf-software-data-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #30
+- suggested offer: `$499` sample-driven diagnostic/design, or `$750` scoped MVP for 5-10 sample PDFs with spreadsheet lookup, mismatch flagging, UI automation dry-run, activity log, and docs.
+- why urgent: $250-$750 USD budget, payment verified client, detailed acceptance criteria, and exact PDF extraction + RPA + spreadsheet validation fit.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: production login, passwords, private customer data, payment data, API keys, unattended sandbox credentials, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: 5-10 sanitized sample PDFs, fake spreadsheet rows, target fields, mismatch rules, software type, and screen recording of the manual process.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1Q: Freelancer N8n PDF Reader Automation
 
 - channel: Freelancer

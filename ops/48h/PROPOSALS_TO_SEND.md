@@ -149,6 +149,36 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #30]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/pdf-software-data-automation
+Pain: Buyer needs automation that extracts text and numerical data from PDF estimates, validates it against a spreadsheet database, consolidates customer/estimate variables, and enters the result into proprietary software via UI/keyboard automation.
+Suggested package: Sample-driven PDF extraction and RPA diagnostic, then a scoped MVP using sanitized sample PDFs and fake spreadsheet data.
+Suggested price: $499 diagnostic/design; $750 scoped MVP for a limited sample set, spreadsheet lookup, mismatch flagging, UI dry-run, and activity log.
+Risk: Proprietary software and PDF estimates can include private customer data and credentials. Use sanitized samples, fake spreadsheet rows, and screen recordings first. Any sandbox login or production software control must stay client-side or be explicitly handled by the client within platform rules.
+
+Message draft:
+
+Hi, I can help design and build this PDF-to-software automation as a sample-driven RPA workflow.
+
+I do not need production credentials, passwords, API keys, payment access, or private customer data to start. The safest first step is to use sanitized PDF estimates, fake spreadsheet rows, and a screen recording of the manual data-entry process. If a sandbox login is required later, you can control that on your side or via a platform-approved workflow; I do not need unattended access to private credentials.
+
+My approach would be:
+- extract required text and numeric values from representative PDFs,
+- validate extracted values against the spreadsheet/database rules,
+- flag mismatches before submission,
+- consolidate customer and estimate variables into a structured record,
+- automate the proprietary software data-entry path through the most reliable stack for your environment,
+- produce an activity log and a short troubleshooting handoff note.
+
+Suggested scope: $499 for a diagnostic/design using sample PDFs, fake spreadsheet data, and a manual-process recording. If you want a working MVP, I would quote $750 for a limited sample set with extraction, lookup validation, mismatch flagging, UI automation dry-run, and documentation.
+
+Can you share 5-10 sanitized sample PDFs, fake spreadsheet rows, the fields that must be entered, and a short screen recording of the manual process?
+
+Next question to ask: Is the proprietary software a desktop app, browser app, or remote/VPN-only system?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #29]
 
 Source: Freelancer
