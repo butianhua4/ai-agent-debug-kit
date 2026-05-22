@@ -143,7 +143,8 @@ Score rules:
 | 2026-05-22T19:19:00+08:00 | Added public lead conversion playbook | 50 | Turned the Yashbank lead-research insight into a reusable dual-track system for paid lead fulfillment and our own public-source high-ticket automation pipeline; not sent and not revenue |
 | 2026-05-22T19:30:00+08:00 | Prepared Yashbank trial leads workbook | 200 | Real buyer sent a template attachment; Codex generated and verified a 10-lead public-source trial workbook plus CSV/preview for upload. This is high-intent pipeline but not awarded, not paid, and not revenue |
 | 2026-05-22T20:58:00+08:00 | Submitted Amrod API Freelancer bid | 150 | Platform bid submitted at USD 220 / 3 days for WordPress Amrod API integration; no paid upgrades selected. This is live pipeline but not awarded, not paid, and not revenue |
+| 2026-05-22T21:29:00+08:00 | Submitted Open-Source ATS Freelancer bid | 150 | Platform bid submitted at INR 9500 / 5 days for a Nuxt/Postgres/Drizzle/Docker ATS upgrade; no paid upgrades selected. This is live pipeline but not awarded, not paid, and not revenue |
 
 ## Total
 
-7640
+7790
