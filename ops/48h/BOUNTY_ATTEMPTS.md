@@ -1039,3 +1039,30 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no merge, no confirmed revenue.
 - rejection reason: electron-template cannot currently be cloned/fetched through GitHub APIs, so no safe patch cycle can start; ToolJet is stale/closed and would be a duplicate/no-payout path. Continue searching for open, cloneable, low-risk JS/TS/docs/CI targets.
+
+## Screening 2026-05-22T14:06:00+08:00: Opire stale JS/TS follow-up
+
+- bounty URL:
+  - https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG / https://github.com/storybookjs/storybook/issues/12641.
+  - https://app.opire.dev/issues/01JH00AXGKW2B660P4QE078RKC / https://github.com/tal7aouy/vscode-icons/issues/87.
+  - https://app.opire.dev/issues/01KA11Y47CEP1V9EWCN028RQNJ / https://github.com/o2sdev/openselfservice/issues/354.
+- reward amount:
+  - Storybook controls: `$110`.
+  - vscode-icons NestJS icons: `$20`.
+  - openselfservice inline filters: `$20`.
+- repo:
+  - `storybookjs/storybook`.
+  - `tmhamed/vscode-icons` after GitHub redirect from `tal7aouy/vscode-icons`.
+  - `o2sdev/openselfservice`.
+- issue:
+  - Storybook #12641.
+  - vscode-icons #87.
+  - openselfservice #354.
+- why selected: all appeared in public Opire search results as TypeScript/JavaScript tasks and looked small enough to screen quickly before committing time to a clone/test/PR cycle.
+- what was done:
+  - Opened Opire pages and live GitHub issue metadata.
+  - Checked issue status, repository status, reward availability, and PR viability before cloning.
+- test result: not attempted because no target passed the safe patch gate.
+- PR URL or patch path: none.
+- payout status: no award, no merge, no confirmed revenue.
+- rejection reason: Storybook #12641 is closed with submitted/follow-up PR references; vscode-icons is archived/read-only as of 2026-01-16, so no effective upstream PR can be made; openselfservice #354 is closed and reward is paid. Shifted back to overseas automation lead conversion instead of stale bounty work.

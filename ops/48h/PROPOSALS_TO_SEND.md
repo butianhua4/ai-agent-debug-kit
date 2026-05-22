@@ -2280,3 +2280,33 @@ Which tool do you want as the central queue: Google Sheets, Airtable, Notion, Tr
 
 Next question to ask: What should be the central content queue, and should first version schedule drafts for approval instead of auto-publishing?
 User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request social passwords, OAuth grants, access tokens, API keys, paid-ad/payment access, scraping, spam behavior, or off-platform contact.
+
+## [LEAD #40]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-engineer
+Pain: Buyer wants 1-2 n8n automation engineers to build and maintain AI workflows, backend workflows, webhook logic, CRM processes, lead routing, content pipelines, social posting, and troubleshooting/optimization.
+Suggested package: Low-risk paid test workflow or capped diagnostic only. This is not a high-ticket emergency rescue lead because the posted budget is only `$2-8/hour`.
+Suggested price: `$8/hour` capped 5-hour diagnostic/test task, or skip in favor of higher-ticket leads if bids are limited.
+Risk: Low hourly budget can consume time without meaningful revenue. The role may require ongoing account/tool access, CRM data, OAuth grants, or private API credentials. Keep all credentials client-side and start with sanitized examples.
+
+Message draft:
+
+Hi, I can help with n8n AI automation workflows, webhook logic, API integrations, and workflow troubleshooting.
+
+My best fit is stabilizing and documenting workflows so they are easier to maintain: clear input/output contracts, JSON mapping, error branches, retries, and handoff notes.
+
+For safety, I do not need passwords, API keys, OAuth grants, tokens, CRM credentials, payment access, or private production data to start. A good first task can use sanitized sample payloads, screenshots, a redacted workflow map, and fake CRM rows.
+
+Suggested first step:
+- choose one paid test workflow,
+- define the trigger, expected output, and failure cases,
+- build or review the n8n flow with error handling,
+- provide documentation and next-step recommendations.
+
+Because your hourly range is low, I would keep the first milestone tightly scoped: up to 5 hours for one diagnostic/test workflow. If the collaboration works, we can continue with additional workflows.
+
+Which first workflow is most urgent: lead routing, CRM sync, webhook/API integration, AI content pipeline, or troubleshooting an existing broken flow?
+
+Next question to ask: Can they provide one sanitized workflow brief with sample input/output and acceptance criteria?
+User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request passwords, API keys, OAuth grants, tokens, production CRM data, payment access, wallet, KYC, or off-platform contact.
