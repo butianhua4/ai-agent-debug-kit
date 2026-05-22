@@ -215,6 +215,41 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #17]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/make-com/automation-specialist-for-make-com
+Pain: Buyer needs a Make.com training rollout communication system where Google Sheets cohort templates trigger 22 scheduled Email/SMS/WhatsApp messages to multiple stakeholder types, with date-offset logic, working-day calculations, iterators, and reliable delivery.
+Suggested package: Quick Diagnostic for schedule/date-offset architecture; Same-Day Workflow Rescue/build for the first cohort workflow.
+Suggested price: $499 diagnostic; $1,500 for one production-ready training cohort scenario with documentation and test cases.
+Risk: Twilio/WhatsApp and learner communication can involve credentials, phone numbers, consent/compliance, and real participant data. Start from sanitized sheets, fake dates, placeholder message templates, and no credentials.
+
+Message draft:
+
+Hi, I can help build this Make.com training communication workflow with a strong focus on schedule logic, testability, and handoff documentation.
+
+I do not need passwords, API keys, Twilio tokens, WhatsApp credentials, OAuth consent, or real learner data to start. A safe first pass can be done from a sanitized Google Sheets template, fake cohort dates, placeholder message text, and your stakeholder/message schedule.
+
+To answer your two screening questions:
+
+1. For a trigger that fires at 9AM and 3PM across a multi-day training session, I would model the cohort/session dates in Google Sheets, generate due message rows or calculated send windows, then let Make.com run on a scheduled interval and filter for messages whose send time is due and not yet sent. I would store sent status, timestamp, channel, and error state back to the sheet so retries are controlled and messages are not duplicated.
+
+2. For working days, I would avoid hard-coding simple calendar offsets. I would use a working-day helper table or formula-driven date columns in Google Sheets, excluding weekends and any client-specific holidays, then Make.com consumes the already-resolved send dates. If needed, Make can also route through a small function/webhook helper, but I would keep the first version transparent for non-developers.
+
+My proposed first milestone:
+- map the 22 messages by stakeholder, channel, trigger date, and offset,
+- design the Google Sheets control columns,
+- build the Make scenario with iterators, filters, and status updates,
+- add error logging/retry visibility,
+- deliver a concise handoff doc and test checklist.
+
+Suggested scope: $499 for a diagnostic/architecture pass, or $1,500 to build and validate the first production-ready cohort workflow.
+
+Can you share a sanitized sheet template, the 22-message schedule, channel rules, and any holidays/working-day rules that must be respected?
+
+Next question to ask: Which stakeholder message sequence should be built and tested first if we narrow the first milestone?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #12]
 
 Source: Freelancer

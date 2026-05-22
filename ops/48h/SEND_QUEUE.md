@@ -455,3 +455,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: WhatsApp/Messenger credentials, API keys, OAuth consent, CRM/customer records, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: sanitized scenario map, fake lead payload, state transitions, current failure examples, and the one revenue-critical path to harden first.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1I: Freelancer Make.com training rollout communication system
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/make-com/automation-specialist-for-make-com
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #17
+- suggested offer: `$499 Quick Diagnostic` for scheduling/date-offset architecture, or `$1,500 Same-Day Workflow Rescue/build` for the first production-ready cohort workflow.
+- why urgent: public crawl says posted half a minute ago, $750-1500 USD fixed price, payment method verified, and the buyer asks specific Make.com screening questions around 9AM/3PM triggers and working-day calculations.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Twilio token, WhatsApp credentials, API keys, OAuth consent, real learner data, phone lists, payment access, or off-platform contact.
+- first ask after reply: sanitized Google Sheets template, 22-message schedule, fake cohort dates, stakeholder/channel rules, and working-day/holiday rules.
+- status after user sends: move to `proposal_sent`.
