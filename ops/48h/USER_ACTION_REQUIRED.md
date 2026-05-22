@@ -92,3 +92,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Verification note: `corepack pnpm install --frozen-lockfile` passed and `corepack pnpm run compile` passed. Targeted DB test is blocked locally by missing `ormconfig.json` / Postgres test DB.
 - Automation attempt result: upstream PR submitted; no award, no merge, no confirmed revenue yet.
 - Safety boundary: no passwords, tokens, payment, KYC, OAuth, or private repository access should be shared with Codex.
+
+## 2026-05-22T14:45:00+08:00 - Freelancer profile gate blocks live bids
+
+- Live check: `https://www.freelancer.com/projects/api/Optimize-Automated-Reselling-Workflow/details` is open, budget CAD 250-750, payment-verified buyer, and strongly matches the emergency automation rescue offer.
+- Submission blocker: Freelancer requires profile/compliance completion before bidding. The visible required fields include skills, email verification, profile fields, hourly rate, legal/address fields, country/state/ZIP, and date of birth.
+- User-only action: complete those personal/compliance fields inside Freelancer. Codex must not invent, submit, or store them.
+- Experience gate: the buyer says not to apply without shipped Claude Cowork workflows. Either confirm real Claude Cowork experience exists, or use the transparent limited-fit draft in `ops/48h/CLAUDE_COWORK_RESELLER_BID_BRIEF.md`.
+- Current action: Codex prepared the bid brief, but no Freelancer bid has been sent and no revenue is confirmed.
