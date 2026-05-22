@@ -4,6 +4,35 @@ Purpose: short user-sendable drafts for the highest-fit overseas automation oppo
 
 Confirmed revenue remains `$0` until a paid order, paid invoice, or awarded bounty is visible.
 
+## Post-profile submission order
+
+Current Freelancer blocker: bidding is blocked until the user completes the platform profile/compliance step. Codex must not invent personal legal fields such as address or date of birth, and must not add funds.
+
+Once the profile is saved, submit only projects that pass these checks:
+
+1. `Optimize Automated Reselling Workflow in Claude Cowork`
+   - URL: https://www.freelancer.com/projects/api/Optimize-Automated-Reselling-Workflow/details
+   - Budget: CAD $250-750
+   - Submit only if the user can honestly represent Claude Cowork workflow experience, or use the limited-fit transparency draft in `PROPOSALS_TO_SEND.md`.
+   - Why first: payment-verified client, clear paid audit request, exact rescue pattern.
+2. `Ongoing Zapier Automation Management`
+   - URL: https://www.freelancer.com/projects/zapier/ongoing-zapier-automation-management
+   - Budget: CAD $250-750
+   - Why second: ongoing Zapier/OpenAI/OCR/Xero maintenance pain and recurring revenue potential.
+3. `AI Bid Filter Automation`
+   - URL: https://www.freelancer.com/projects/natural-language-processing/bid-filter-automation
+   - Budget: $750-1500 USD
+   - Why third: self-contained automation MVP with clear deliverables and fewer credential needs if input comes from sanitized exports.
+4. `Correção em Fluxo N8N`
+   - URL: https://www.freelancer.com/projects/n8n/corre-fluxo
+   - Budget: $30-250 USD
+   - Why fourth: fast seed repair candidate, but lower ticket.
+
+Do not bid on:
+
+- `Twilio-Vercel Integration Setup`: page says revenue-share only / no upfront payment.
+- `N8n PDF Reader Automation`: currently closed and asks for funds to unlock select-freelancer bidding.
+
 ## Bid 0AA: Quick Fix of n8n AI Agent Webhook
 
 - Source: Freelancer
