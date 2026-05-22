@@ -78,7 +78,8 @@ Score rules:
 | 2026-05-22T09:13:00+08:00 | Added smart email workflow assistant proposal | 80 | $750-1500 AI email/workflow assistant lead converted into a safety-first diagnostic/build proposal; not sent and not revenue |
 | 2026-05-22T09:18:00+08:00 | Added HubSpot-to-Slack n8n proposal | 80 | Fresh $750-1500 narrow n8n CRM alert lead converted into a fast same-day rescue/build proposal; not sent and not revenue |
 | 2026-05-22T09:24:00+08:00 | Addressed TypeORM bounty PR review feedback | 40 | Existing public bounty PR updated after robot review; compile and diff check passed; not merged, not awarded, not revenue |
+| 2026-05-22T09:23:00+08:00 | Added tennis tournament data automation proposal | 80 | Fresh $1500-3000 AUD Python/Drive/Airtable reporting lead converted into a safe proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-3000
+3080

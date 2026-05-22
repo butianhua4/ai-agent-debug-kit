@@ -120,6 +120,35 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #26]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/python/tennis-tournament-data-automation
+Pain: Buyer needs a Python automation pipeline that monitors Google Drive for Tournament Planner backup files, extracts tournament/player/event/points data, syncs it into Airtable, and produces leaderboard/report outputs for Adobe AEM.
+Suggested package: Quick Diagnostic for file format and data-flow mapping; Same-Day Workflow Rescue/prototype for one representative backup-to-Airtable/report path; larger scoped build only after schema and output format are confirmed.
+Suggested price: $499 diagnostic; $1,500 prototype; up to the posted $3,000 AUD range for the full scoped pipeline if sample files, Airtable schema, and AEM output requirements are clear.
+Risk: Google Drive, Airtable, and AEM usually involve OAuth/API credentials and private data. Start from sanitized/sample backup files, fake Airtable fields, screenshots/schema, and example report output only. Do not request or handle credentials, OAuth, API keys, payment access, or private player data.
+
+Message draft:
+
+Hi, I can help build or rescue this Tournament Planner to Airtable/reporting automation as a safe data-pipeline project.
+
+I do not need passwords, API keys, OAuth access, Google Drive access, Airtable credentials, AEM credentials, or private player data to start. A safe first step is to review one or two sanitized/sample backup files, the target Airtable schema, and examples of the leaderboard/report format you want AEM to consume.
+
+My approach would be:
+- inspect the Tournament Planner backup format and define a stable parser,
+- map tournaments, players, events, points, and IDs into a repeatable Airtable schema,
+- design duplicate/update handling so repeated Drive files do not corrupt standings,
+- generate leaderboard/report outputs in the format AEM needs,
+- provide a validation checklist, sample fixtures, and a short handoff note.
+
+Suggested scope: $499 for a file-format/data-flow diagnostic and implementation plan. If you want a working prototype for one representative backup file through Airtable/report output, I would quote $1,500. For the full Drive-monitoring pipeline, I would confirm scope against your sample files and output format, then keep it within the posted $1,500-$3,000 AUD range if the data shape is consistent.
+
+Can you share one sanitized/sample backup file, the Airtable table/field structure, and an example of the expected leaderboard/report output?
+
+Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #14]
 
 Source: Freelancer

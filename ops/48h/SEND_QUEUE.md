@@ -564,3 +564,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: HubSpot tokens, Slack tokens, OAuth consent, API keys, CRM PII, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: HubSpot object to watch, fake sample record, desired Slack template, fields to include, alert frequency, and duplicate-prevention rule.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1N: Freelancer Tennis Tournament Data Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/python/tennis-tournament-data-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #26
+- suggested offer: `$499` file-format/data-flow diagnostic, `$1,500` prototype for one representative backup-to-Airtable/report path, or up to the posted `$3,000 AUD` range for the full scoped pipeline.
+- why urgent: $1,500-$3,000 AUD budget, freshly visible public lead, and strong fit for Python data automation plus workflow reliability.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Google Drive credentials, Airtable tokens, AEM credentials, OAuth consent, API keys, private player data, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: sanitized/sample backup file, Airtable schema, leaderboard/report example, AEM output format, update frequency, and duplicate/update rule.
+- status after user sends: move to `proposal_sent`.
