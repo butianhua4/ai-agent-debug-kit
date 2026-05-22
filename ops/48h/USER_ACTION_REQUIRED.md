@@ -131,3 +131,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Current status: platform bid submitted; no award, no order, no payment, and no confirmed revenue yet.
 - Next user action required only if the buyer replies, awards the project, or Freelancer asks for payment/KYC/tax/payout verification.
 - Safety boundary: no Outlook password, Microsoft admin login, OAuth grant, API keys, tokens, live customer emails, payment, KYC, or off-platform contact. Start from sanitized sample emails, blank quote template, fake product rows, and folder-structure screenshots only.
+
+## 2026-05-22T17:40:00+08:00 - Freelancer public profile improved
+
+- Action completed: Codex updated the public Freelancer headline and summary so buyers see a focused AI automation / webhook / API reliability offer instead of a sparse profile.
+- Visible positioning: AI automation workflow repair, n8n, Zapier, Make, Power Automate, Outlook workflows, OpenAI/Claude API issues, JSON mapping, retry logic, error handling, handoff documentation, and sanitized-log-only boundaries.
+- Current blocker: Freelancer portfolio items require an image/file upload flow. Codex could not safely complete the system file chooser from the browser automation surface.
+- User action required only if a portfolio item should be added: upload a safe portfolio image such as `C:\Users\33065\Documents\Codex\2026-05-18\5000\fiverr-portfolio-ai-agent-debug-kit.png`, then Codex can fill the title/description/link fields.
+- Safety boundary: do not upload identity documents, private client screenshots, API keys, tokens, customer data, or fake client results as portfolio proof.
