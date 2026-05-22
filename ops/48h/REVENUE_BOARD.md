@@ -89,6 +89,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/automation/automation-logic-specialist-day-project | open job post | 499 target | proposal_ready | User can send automation logic specialist proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.20 | Crowded job; credentials/OAuth/payment data stay client-side |
 | Freelancer | https://www.freelancer.com/projects/api/reviewer-for-business-automation-plans | open job post | 499 target | proposal_ready | User can send automation plan reviewer proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.21 | Crowded review role; credentials/OAuth/private data stay founder-side |
 | Freelancer | https://www.freelancer.com/projects/api/automation-build-architect-for-live | open job post | 500-750 target | proposal_ready | User can send live automation build architect proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.22 | Crowded support role; founder credentials/OAuth/payment data stay founder-side |
+| Freelancer | https://www.freelancer.com/projects/automation/custom-workflow-automation | open job post | 499-5000 target | proposal_ready | User can send high-ticket custom n8n workflow automation proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.30 | High-budget fit; WhatsApp/Telegram/API/OAuth/phone list/customer data stay client-side |
 
 ## Current confirmed revenue
 

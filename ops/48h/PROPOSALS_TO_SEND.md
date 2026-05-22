@@ -215,6 +215,48 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #22]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/custom-workflow-automation
+Pain: Buyer wants several manual messaging tasks turned into production-ready n8n workflows for WhatsApp/Telegram notifications and data-driven processing, including architecture, triggers, branching logic, error handling, dynamic content, attachments, fallback channels, and custom API wrappers if native connectors are not enough.
+Suggested package: 48-Hour AI Automation Rescue Sprint if urgent; otherwise start with architecture diagnostic and one production workflow path.
+Suggested price: $499 architecture diagnostic; $1,500 for one same-day workflow rescue/build; $5,000 for a 48-hour sprint covering architecture plus the first hardened workflows.
+Risk: WhatsApp/Telegram integrations can involve API credentials, bot tokens, phone numbers, consent/compliance, and customer data. Start from sanitized payloads, fake recipients, placeholder templates, and no credentials.
+
+Message draft:
+
+Hi, this is a strong fit for my n8n automation rescue/build workflow. I focus on turning fragile or manual automation processes into reliable workflows with clear triggers, data mapping, branching, retries, fallback channels, and handoff documentation.
+
+I do not need WhatsApp/Telegram credentials, API keys, bot tokens, OAuth consent, phone lists, payment access, or production customer data to start. A safe first pass can be done from sanitized scenario descriptions, fake event payloads, placeholder message templates, and your current manual process.
+
+For this project, I would approach it in three layers:
+
+1. Architecture blueprint
+- map each manual task to a trigger, source payload, transformation, notification target, fallback path, and success criteria,
+- identify which parts use native n8n nodes and which require HTTP/API wrapper nodes,
+- define idempotency and duplicate-prevention strategy so the same event does not notify twice.
+
+2. Production workflow path
+- build one high-impact notification path first,
+- process/enrich the event data into analytics-friendly fields,
+- send dynamic WhatsApp/Telegram content,
+- support attachments or fallback channels where needed,
+- log success, failure, retry count, and owner.
+
+3. Hardening and handoff
+- add validation for missing fields and malformed payloads,
+- add retry/failure branches,
+- document setup, testing, and future extension points,
+- provide a concise runbook for common failures.
+
+Suggested starting scope: $499 for an architecture diagnostic and implementation plan. If you want me to build one production-ready workflow path first, I would quote $1,500. If the goal is to move fast across the architecture and first hardened workflows, I can scope this as a $5,000 48-hour rescue sprint after reviewing the sanitized scenarios.
+
+Can you share the list of manual messaging tasks, one fake event payload, the desired WhatsApp/Telegram message templates, and the fallback rules for failed notifications?
+
+Next question to ask: Which one manual messaging task has the highest business impact and should be automated first?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #21]
 
 Source: Freelancer

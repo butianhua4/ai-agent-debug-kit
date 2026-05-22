@@ -516,3 +516,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: founder credentials, API keys, OAuth consent, Stripe/QuickBooks/Gmail/CRM secrets, payment access, customer records, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: founder tool stack, live hours, expected triage process, top integrations, and whether post-session blocker/fix log is needed.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1J: Freelancer Custom N8N Workflow Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/custom-workflow-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #22
+- suggested offer: `$499 Architecture Diagnostic`, `$1,500 Same-Day Workflow Rescue` for one production notification path, or `$5,000 48-Hour Sprint` for architecture plus first hardened workflows.
+- why urgent: $3,000-$5,000 fixed budget, exact n8n/WhatsApp/Telegram/data-processing/error-handling fit, and strong alignment with the emergency rescue offer.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: WhatsApp/Telegram credentials, bot tokens, API keys, OAuth consent, phone lists, customer data, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: scenario list, fake event payloads, desired message templates, fallback rules, current manual process, and highest-impact workflow path.
+- status after user sends: move to `proposal_sent`.
