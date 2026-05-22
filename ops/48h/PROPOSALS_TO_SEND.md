@@ -183,6 +183,38 @@ Can you share one sanitized webhook payload, the target GHL/HubSpot field map, a
 Next question to ask: Which one lead-tracking or follow-up workflow is most costly when it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and do not move payment off-platform.
 
+## [LEAD #16]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/automation-integration-engineer-make-com
+Pain: Buyer needs a production-ready Make.com automation system for lead reactivation and appointments, including WhatsApp API, Messenger webhooks, Google Sheets as a CRM/state machine, rate limits, retries, delays, kill switch/pause logic, and human handoff.
+Suggested package: Quick Diagnostic for architecture/failure-mode review; Same-Day Workflow Rescue for one critical Make scenario; 48-Hour AI Automation Rescue Sprint only if they need accelerated hardening across multiple flows.
+Suggested price: $499 diagnostic; $1,500 for one critical scenario rescue; $5,000 for a 48-hour reliability sprint if scope is urgent and multi-flow.
+Risk: WhatsApp, Messenger, and CRM automations can involve API credentials, OAuth, customer PII, and messaging compliance. Start only from sanitized diagrams, fake lead payloads, and placeholder endpoint docs.
+
+Message draft:
+
+Hi, your project is a strong fit for my automation rescue/hardening workflow because you are thinking in states, retries, rate limits, kill switches, and failure modes rather than just connecting apps.
+
+I can help with Make.com scenario architecture, webhook payload mapping, Google Sheets state-machine design, retry/fallback logic, and production handoff documentation.
+
+I do not need passwords, API keys, tokens, OAuth consent, WhatsApp/Messenger credentials, or real customer records to start. A safe first pass can be done from sanitized scenario diagrams, fake lead payloads, desired state transitions, and screenshots of current modules/errors.
+
+For the first milestone, I would recommend narrowing to one critical path:
+- inbound lead/message event,
+- state lookup/update in Google Sheets,
+- rate-limit and retry rules,
+- handoff or booking trigger,
+- kill-switch/pause behavior,
+- logging and failure notification.
+
+Suggested starting scope: $499 for a diagnostic/architecture review of one scenario and failure-mode plan. If you want me to build or harden one production-critical Make scenario with retry/fallback logic and documentation, I would quote $1,500. If the timeline is urgent across multiple flows, this could become a $5,000 48-hour rescue sprint after reviewing sanitized materials.
+
+Can you share a sanitized scenario map, one fake lead payload, the state transitions you want in Google Sheets, and the highest-risk failure mode you want prevented first?
+
+Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #12]
 
 Source: Freelancer

@@ -67,7 +67,8 @@ Score rules:
 | 2026-05-22T08:16:00+08:00 | Added n8n automation form interface proposal | 80 | Fresh $250-750 Freelancer n8n + form MVP lead converted into a safe diagnostic/sprint proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T08:21:00+08:00 | Added n8n workflow alerts proposal | 80 | Fresh $250-750 Freelancer n8n alert workflow lead converted into a safe diagnostic/rescue proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T08:27:00+08:00 | Added GHL webhook automation proposal | 80 | Fresh Freelancer GHL/Zapier/HubSpot webhook automation lead converted into a safe diagnostic/rescue proposal and send queue entry; not sent and not revenue |
+| 2026-05-22T08:32:00+08:00 | Added Make.com WhatsApp CRM proposal | 80 | Higher-budget $1800-3000 Make.com automation lead converted into a safe diagnostic/rescue/sprint proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-2160
+2240

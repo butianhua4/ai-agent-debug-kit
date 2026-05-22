@@ -443,3 +443,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: GHL login, HubSpot login, Zapier login, Clay/RB2B credentials, API keys, tokens, OAuth consent, private CRM records, customer data, payment access, or off-platform contact.
 - first ask after reply: sanitized webhook payload, fake lead sample, target field map, current error examples, and the one workflow that must work first.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1H: Freelancer Make.com WhatsApp CRM automation system
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/automation-integration-engineer-make-com
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #16
+- suggested offer: `$499 Quick Diagnostic` for architecture/failure-mode review, `$1,500 Same-Day Workflow Rescue` for one critical Make scenario, or `$5,000 48-Hour Sprint` only after sanitized scope review.
+- why urgent: visible budget is approximately `$1,800-$3,000`, project is active, and the buyer explicitly asks for production-grade Make.com automation with WhatsApp/Messenger webhooks, Google Sheets state machine, rate limits, retries, kill switch, and failure-mode thinking.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: WhatsApp/Messenger credentials, API keys, OAuth consent, CRM/customer records, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: sanitized scenario map, fake lead payload, state transitions, current failure examples, and the one revenue-critical path to harden first.
+- status after user sends: move to `proposal_sent`.
