@@ -419,3 +419,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: n8n login, hosting password, API keys, tokens, OAuth, production data, payment access, or off-platform contact.
 - first ask after reply: sanitized workflow JSON, written spec, fake form payloads, desired fields, current error screenshots, and first must-work path.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1F: Freelancer n8n workflow automation and alerts
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/Workflow-Automation-Alerts.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #14
+- suggested offer: `$499 Quick Diagnostic` for payload/schema/failure-mode review, or `$1,500 Same-Day Workflow Rescue` for one reliable alert workflow with retries, fail-safes, and docs.
+- why urgent: public crawl says open, posted 6 minutes ago, $250-750 budget, and the buyer explicitly needs n8n, JSON logic, webhook/API triggers, REST/GraphQL integrations, retries, fail-safe nodes, and documentation.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: App credentials, API keys, tokens, OAuth consent, private app data, production customer events, payment access, or off-platform contact.
+- first ask after reply: sanitized App1 event payload, target App2/App3 notification schema, current failure examples, and highest-priority alert path.
+- status after user sends: move to `proposal_sent`.

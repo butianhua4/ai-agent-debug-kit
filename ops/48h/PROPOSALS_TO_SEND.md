@@ -120,6 +120,35 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #14]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/Workflow-Automation-Alerts.html
+Pain: Buyer needs an n8n workflow that watches App1 endpoints/webhooks, transforms event data with JSON logic, and sends concise in-app notification payloads to App2 and App3 with retries, conditional branches, fail-safe handling, and clear documentation.
+Suggested package: Quick Diagnostic if they want a safe review of payloads and workflow architecture first; Same-Day Workflow Rescue if they want one production alert workflow implemented and validated.
+Suggested price: $499 diagnostic; $1,500 for a focused rescue/build of one reliable alert workflow with fail-safes and handoff docs.
+Risk: The project mentions REST/GraphQL authentication and custom headers. Keep all credentials on the client side; only request sanitized payloads, schema examples, screenshots, and placeholder endpoint details.
+
+Message draft:
+
+Hi, I can help build this as a reliable n8n alert workflow, especially the parts around webhook/API triggers, JSON transformation, retries, conditional routing, and fail-safe notification handling.
+
+I do not need passwords, API keys, tokens, OAuth consent, or private credentials to start. A safe first pass can be done from sanitized sample payloads, screenshots, target notification schemas, and placeholder endpoint documentation.
+
+My approach would be:
+- map the App1 event payload and identify the fields App2/App3 actually need,
+- design the n8n trigger and transformation path with clear JSON mapping,
+- add retry/fallback branches so failed notifications do not disappear silently,
+- define validation cases for normal events, missing fields, API errors, and rate-limit responses,
+- deliver a clean workflow export plus concise handoff documentation.
+
+Suggested scope: $499 for a quick diagnostic of the event payloads, schema, and failure modes. If you want me to build and validate one production alert workflow, I would quote $1,500 for a same-day rescue/build with retries, fail-safes, and documentation.
+
+Can you share one sanitized App1 event payload, the expected App2/App3 notification shape, and any current error or edge case you already know about?
+
+Next question to ask: Which one alert path is most business-critical to make reliable first?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid or request credentials.
+
 ## [LEAD #12]
 
 Source: Freelancer
