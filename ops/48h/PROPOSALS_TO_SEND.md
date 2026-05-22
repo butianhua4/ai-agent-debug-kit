@@ -2251,3 +2251,32 @@ What is the exact blocker right now: webhook verification, sending messages, rec
 
 Next question to ask: Which Meta/WhatsApp step is failing, and can they share a screenshot with tokens/phone/customer data hidden?
 User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Meta login, access token, API key, OAuth grant, patient data, phone list, payment access, KYC, or off-platform contact.
+
+## [LEAD #39]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/social-media-management/Automate-Multi-Platform-Social-Posts
+Pain: Buyer needs a workflow that queues articles, images, and videos, then schedules/publishes to Facebook, Instagram, and LinkedIn reliably.
+Suggested package: Manual-review-first automation design/prototype, not a blind auto-posting system.
+Suggested price: `AUD 250` fixed seed milestone for queue design, scheduling logic, test data, and handoff notes.
+Risk: Social publishing often requires OAuth grants, account permissions, platform tokens, paid-ad/payment controls, and can drift into spam. Keep all account connections client-operated and start with a review queue rather than unattended posting.
+
+Message draft:
+
+Hi, I can help design and prototype a reliable social-post automation workflow around a single content queue.
+
+I do not need your social account passwords, OAuth grants, API tokens, paid-ad access, payment access, or private credentials to start. The safe first version can work from sanitized sample posts, your desired queue fields, scheduling rules, approval rules, and screenshots of the tools you want to use. Any live Facebook/Instagram/LinkedIn connection can stay client-operated on your side.
+
+For the first milestone, I would focus on:
+- defining the content queue fields for articles, images, and videos,
+- mapping scheduling rules per platform,
+- adding a manual approval/review step before publishing,
+- designing failure alerts and a simple retry/checklist flow,
+- documenting how to add content and adjust schedules safely.
+
+Suggested start: AUD 250 fixed for a scoped workflow plan/prototype using sample content and a manual-review queue. After that, the live platform connections can be added with you controlling the accounts and permissions.
+
+Which tool do you want as the central queue: Google Sheets, Airtable, Notion, Trello, or something else?
+
+Next question to ask: What should be the central content queue, and should first version schedule drafts for approval instead of auto-publishing?
+User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request social passwords, OAuth grants, access tokens, API keys, paid-ad/payment access, scraping, spam behavior, or off-platform contact.

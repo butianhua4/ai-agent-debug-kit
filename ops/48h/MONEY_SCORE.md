@@ -111,7 +111,8 @@ Score rules:
 | 2026-05-22T13:35:00+08:00 | Added Power Automate maintenance workflow proposal | 80 | Live Freelancer search lead converted into a safe Microsoft 365 workflow proposal with client-side credential/OAuth boundaries; not sent and not revenue |
 | 2026-05-22T13:42:00+08:00 | Added Syspro-to-Excel data automation proposal | 80 | Live Freelancer data-extraction lead converted into a safe ERP/Excel automation proposal with credential and private-data boundaries; not sent and not revenue |
 | 2026-05-22T13:48:00+08:00 | Added WhatsApp Cloud API Meta integration proposal | 80 | Live Freelancer AI WhatsApp integration lead converted into a safe client-operated setup proposal with PHI/token/OAuth boundaries; not sent and not revenue |
+| 2026-05-22T13:53:00+08:00 | Added multi-platform social post automation proposal | 80 | Live Freelancer social automation lead converted into a manual-review-first queue proposal with OAuth/publishing/payment boundaries; not sent and not revenue |
 
 ## Total
 
-4960
+5040
