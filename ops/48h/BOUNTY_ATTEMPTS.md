@@ -895,3 +895,22 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: search results were either security-vulnerability programs outside the safe revenue boundary, stale/general bounty platform pages, no explicit current bounty, or already-known leads in the current send queue. Switch back to high-intent automation lead/proposal work.
+
+## Screening 2026-05-22: Voice AI / Vapi / n8n appointment automation scan
+
+- bounty URL: public Freelancer search results for Vapi, n8n voice AI, AI receptionist, AI phone appointment, and scheduling sync opportunities.
+- reward amount: no new clean high-fit opportunity was added in this pass.
+- repos: not applicable.
+- issues checked:
+  - AI Customer Service Automation.
+  - Automated AI Phone System Development.
+  - Agente de Voz IA Dental.
+  - Fix VAPI-n8n Scheduling Sync.
+  - Full Voice AI Automation with Vapi & n8n.
+  - related phone appointment / medical assistant project snippets.
+- why selected: voice AI and n8n scheduling are adjacent to the emergency automation offer and can produce high-intent troubleshooting work when the project is open and scoped to logs/workflows.
+- what was done: screened public search results for current status, budget, compliance risk, and whether a safe first proposal could avoid credentials, outbound-call risk, healthcare data, or off-platform contact.
+- test result: not attempted; no code repository was involved.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: most surfaced projects were closed or in progress, healthcare/medical outbound-call projects with sensitive data and consent risk, or old/low-budget voice automation posts. Keep monitoring for narrow `Vapi/n8n scheduling sync` repair tasks where the buyer provides sanitized workflow exports/logs and no live calling credentials.
