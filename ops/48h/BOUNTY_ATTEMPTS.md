@@ -876,3 +876,22 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: the issue is a broad security-sensitive product feature, not a 45-minute patch, and Gitea's current changelog already references `Add configurable permissions for Actions automatic tokens (#36173)`, indicating the core requested capability likely has an implementation path or landed work. Skip unless maintainers explicitly confirm remaining narrow follow-up work.
+
+## Screening 2026-05-22: Public JS/TS/docs/CI bounty web scan
+
+- bounty URL: public web search across GitHub, Algora, Opire, and general bounty indexes.
+- reward amount: no clean new reward with a clear payout path and low-risk JS/TS/docs/CI patch scope was selected.
+- repos:
+  - actions/typescript-action.
+  - fastify/fastify.
+  - general GitHub/Algora/Opire public issue indexes.
+- issues checked:
+  - https://github.com/actions/typescript-action/issues.
+  - public Fastify docs/CI pull request and issue search snippets.
+  - GitHub/Algora/Opire search results for `bounty TypeScript docs CI JavaScript reward paid`.
+- why selected: this was the forced post-report public bounty scan after the prior revenue checkpoint, focused on low-risk docs/CI/JS/TS tasks.
+- what was done: searched for open bounty/paid/reward signals, filtered out security bug-bounty programs, old/general platform docs, no-payout-path listings, and already-crowded or already-queued automation leads.
+- test result: not attempted; no repo was cloned because no actionable new public patch target met the 45-minute patch/PR threshold.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: search results were either security-vulnerability programs outside the safe revenue boundary, stale/general bounty platform pages, no explicit current bounty, or already-known leads in the current send queue. Switch back to high-intent automation lead/proposal work.
