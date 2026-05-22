@@ -183,5 +183,54 @@ If you are open to this approach, can you share whether Higgsfield is currently 
 2. Use Bid #2 second for the highest fixed-price MVP.
 3. Use Bid #3 third for a fast first-order seed repair.
 4. Use Bid #4 only if the Claude Cowork experience gate is acceptable.
+5. Use Bid #5 immediately if the n8n debugging project is still open; it is the strongest match for the emergency rescue offer.
 
 If the platform asks for paid upgrades, deposits, identity verification, KYC, tax, payout, wallet, or withdrawal setup, stop and mark `USER_ACTION_REQUIRED`.
+
+## Bid #5: n8n Automation Workflow Debugging & Optimization
+
+URL: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+
+Suggested bid amount:
+
+```text
+25 USD/hour
+```
+
+Suggested delivery/time field:
+
+```text
+2 days
+```
+
+Opening line:
+
+```text
+I can diagnose and stabilize failing n8n workflows using sanitized exports, redacted execution logs, and fake payloads.
+```
+
+Proposal:
+
+```text
+Hi, this is exactly the type of n8n reliability work I focus on: intermittent workflow failures, webhook issues, API node errors, AI node output problems, JSON mapping mismatches, broken branches, retries, and error handling.
+
+I do not need your n8n password, API keys, OAuth grants, tokens, payment access, or production customer data to start. The safest first step is to work from sanitized workflow exports/screenshots, redacted execution logs, fake payloads, and a short priority list of the workflows causing the biggest business impact.
+
+For the first diagnostic/stabilization pass, I would:
+- identify the top failure patterns across executions,
+- isolate webhook trigger and payload-shape problems,
+- clean up JSON mapping and expression issues,
+- add safer retry and error-handling branches,
+- document each root cause and fix,
+- leave a short prevention checklist so future workflows are easier to debug.
+
+Suggested start: USD 25/hour with an 8-hour cap for the first emergency diagnostic and stabilization pass. If you prefer fixed price, I can scope a USD 499 Quick Diagnostic around 1-2 priority workflows and a written repair plan.
+
+Can you share one sanitized workflow export or screenshots, redacted failed execution logs, and the top 2 workflows causing the most impact?
+```
+
+Do not ask for:
+
+```text
+n8n password, API keys, OAuth grants, tokens, production customer data, payment access, KYC, wallet, or off-platform contact.
+```

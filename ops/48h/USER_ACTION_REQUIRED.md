@@ -139,3 +139,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Current blocker: Freelancer portfolio items require an image/file upload flow. Codex could not safely complete the system file chooser from the browser automation surface.
 - User action required only if a portfolio item should be added: upload a safe portfolio image such as `C:\Users\33065\Documents\Codex\2026-05-18\5000\fiverr-portfolio-ai-agent-debug-kit.png`, then Codex can fill the title/description/link fields.
 - Safety boundary: do not upload identity documents, private client screenshots, API keys, tokens, customer data, or fake client results as portfolio proof.
+
+## 2026-05-22T18:11:00+08:00 - Ready-to-send Freelancer bid: n8n emergency debugging
+
+- Action available: submit the prepared bid for `https://www.freelancer.com/projects/data-processing/automation-workflow-debugging` if the project is still open and Freelancer bid quota/rules allow.
+- Prepared fields: `ops/48h/FREELANCER_BID_FIELD_PACK.md` Bid #5.
+- Suggested bid: USD 25/hour, 2 days, with an 8-hour cap in the proposal text.
+- Why user action may be required: Freelancer final bid submission, paid upgrades, identity verification, KYC, tax, payout, wallet, deposits, or account compliance are user-only.
+- Safety boundary: no n8n password, API keys, OAuth grants, tokens, production customer data, payment access, KYC, wallet, or off-platform contact.
