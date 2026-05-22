@@ -149,6 +149,35 @@ Can you share the sanitized workflow JSON and one fake example row showing the e
 Next question to ask: Is the current failure in the database read step, field mapping step, or the destination service write step?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #13]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/angular-js/automation-form-interface
+Pain: Buyer has a Claude-generated n8n workflow draft and written spec, but needs it turned into a reliable end-to-end automation with retries, clean failure notifications, and a lightweight form interface for input.
+Suggested package: Quick Diagnostic first if the existing workflow/spec needs audit; Same-Day Workflow Rescue if they want the repaired workflow plus form MVP delivered together.
+Suggested price: $499 Quick Diagnostic; $1,500 Same-Day Workflow Rescue for one polished workflow path plus a simple responsive form interface.
+Risk: May require access to n8n, hosting, or API credentials. Do not request credentials, tokens, OAuth, or production data. Start from sanitized workflow JSON, fake payloads, screenshots, and the written spec.
+
+Message draft:
+
+Hi, this is a strong fit. I help turn rough AI-generated n8n workflows into reliable production-ready automations with clean JSON mapping, retries, failure notifications, and concise handoff docs.
+
+I do not need passwords, API keys, tokens, OAuth access, or production data to start. A safe first step is to review the written spec, sanitized n8n workflow JSON, fake form payloads, current error screenshots, and the expected output for one complete path.
+
+My approach would be:
+- audit the Claude-generated workflow against your written spec,
+- identify broken nodes, missing data validation, expression/mapping issues, and retry gaps,
+- tighten the n8n logic so the happy path and failure path are both clear,
+- build a simple responsive form interface that submits exactly the fields the workflow expects,
+- add a short validation checklist and handoff notes so you can maintain the MVP.
+
+Suggested scope: $499 for a diagnostic and implementation plan if you want the safest first step. If you want the workflow repair plus a simple form MVP in one sprint, I would quote $1,500 after seeing the sanitized workflow and spec.
+
+Can you share the sanitized workflow export, the written spec, and one fake example form submission with expected output?
+
+Next question to ask: Which one end-to-end path must work first: form submit -> n8n -> data processing -> final destination?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #9]
 
 Source: Freelancer

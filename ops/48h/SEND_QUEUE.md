@@ -407,3 +407,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: database credentials, API keys, tokens, production rows, private records, payment access, or off-platform contact.
 - first ask after reply: sanitized workflow export, fake table/schema sample, expected destination/output, current error screenshot, and success criteria.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1E: Freelancer n8n automation + form interface MVP
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/angular-js/automation-form-interface
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #13
+- suggested offer: `$499 Quick Diagnostic` if the existing Claude-generated workflow needs audit; `$1,500 Same-Day Workflow Rescue` for repaired n8n logic plus simple form MVP.
+- why urgent: $250-750 budget, payment method verified, buyer already has a workflow draft and written spec, and the exact pain is converting AI-generated automation into a reliable deliverable with retries and failure notifications.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: n8n login, hosting password, API keys, tokens, OAuth, production data, payment access, or off-platform contact.
+- first ask after reply: sanitized workflow JSON, written spec, fake form payloads, desired fields, current error screenshots, and first must-work path.
+- status after user sends: move to `proposal_sent`.

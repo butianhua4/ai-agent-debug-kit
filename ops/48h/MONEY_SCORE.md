@@ -64,7 +64,8 @@ Score rules:
 | 2026-05-22T08:55:00+08:00 | Screened Opire TypeScript quick-patch candidates | 20 | Eliminated a 404 Electron bounty and closed Storybook bounty before cloning, preserving focus for viable paid patches; not revenue |
 | 2026-05-22T09:08:00+08:00 | Added n8n database workflow repair proposal | 80 | Fresh Freelancer n8n repair lead converted into a safe budget-fit proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T09:15:00+08:00 | Screened Claude Builders #5 bounty | 20 | Avoided a crowded duplicate n8n workflow bounty with many existing PRs and kept cycles available for cleaner targets; not revenue |
+| 2026-05-22T08:16:00+08:00 | Added n8n automation form interface proposal | 80 | Fresh $250-750 Freelancer n8n + form MVP lead converted into a safe diagnostic/sprint proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-1920
+2000
