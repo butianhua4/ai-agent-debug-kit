@@ -149,6 +149,40 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #27]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/process-automation/make-com-automation-expert-make.html
+Pain: Buyer wants a Make.com expert to guide a business development automation setup over Zoom while they share their own screen and keep account control. They explicitly require fixed price, no passwords, no direct account access, a working tested scenario, correctly configured modules/connections, and basic failure handling.
+Suggested package: Fixed-price safe screen-share Make.com rescue/implementation seed session.
+Suggested price: EUR 250 fixed price if the workflow can be completed in one focused session plus handoff notes. If scope expands beyond one scenario, quote a follow-up after the first working path is validated.
+Risk: Screen-share sessions can drift into live credential/OAuth/payment/account setup. Keep the client in control of all account actions. Do not request or receive passwords, API keys, tokens, OAuth access, payment access, or private credentials.
+
+Message draft:
+
+Hi, this is a very good fit for how I handle automation rescue/build work: screen-share only, no passwords, and no direct account access.
+
+I can guide the Make.com setup while you stay in control of your own account. I do not need passwords, API keys, tokens, OAuth access, payment access, or private credentials. If a connection needs to be authorized, you would do that yourself on your screen.
+
+For one fixed-price session, I would focus on:
+- clarifying the business development workflow and expected result,
+- building/configuring the Make.com scenario with you on screen,
+- checking trigger/module configuration and data mapping,
+- adding basic failure handling such as filters, fallbacks, or notifications where relevant,
+- running an end-to-end test with your test data,
+- leaving you with short notes on how to adjust inputs/settings later.
+
+Suggested fixed price: EUR 250 for one focused workflow setup/troubleshooting session with test run and handoff notes. Included: one Make.com scenario path, basic failure handling, and a concise walkthrough. Excluded: direct account access, credential handling, custom app development outside Make.com, or multi-scenario buildout unless we agree a follow-up scope.
+
+Relevant examples I can discuss safely:
+1. CRM/contact intake automation with field mapping, filters, and alerting.
+2. Email/lead notification workflow with retry/fallback checks and a simple operator handoff note.
+
+Can you share what apps the workflow connects, what should trigger the scenario, and what a successful test run should produce?
+
+Next question to ask: Is the scenario already partially built, or should the screen-share session start from a blank Make.com scenario?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #14]
 
 Source: Freelancer

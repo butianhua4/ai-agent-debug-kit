@@ -576,3 +576,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Google Drive credentials, Airtable tokens, AEM credentials, OAuth consent, API keys, private player data, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: sanitized/sample backup file, Airtable schema, leaderboard/report example, AEM output format, update frequency, and duplicate/update rule.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1O: Freelancer Make.com Screen-Share Automation Setup
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/process-automation/make-com-automation-expert-make.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #27
+- suggested offer: `EUR 250` fixed seed implementation/rescue session for one Make.com scenario with test run and handoff notes.
+- why urgent: buyer explicitly wants no passwords and no direct account access, which matches the safe-intake boundary; payment verified 5.0 client; open and active recently.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: passwords, API keys, tokens, OAuth consent, payment access, wallet, KYC, private credentials, or off-platform contact.
+- first ask after reply: apps connected, trigger, expected output, whether scenario is already partially built, test data type, and desired failure notification behavior.
+- status after user sends: move to `proposal_sent`.
