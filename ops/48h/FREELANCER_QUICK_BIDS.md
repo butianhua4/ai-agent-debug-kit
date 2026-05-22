@@ -40,6 +40,10 @@ Once the profile is saved, submit only projects that pass these checks:
    - URL: https://www.freelancer.com/projects/ai-development/systems-engineer-for-openclaw-40382443
    - Budget: $250-750 AUD
    - Why seventh: direct OpenClaw/VPS/Docker/Nginx/SSL/Telegram systems fit; use `ops/48h/OPENCLAW_SYSTEMS_ENGINEER_BID.md`.
+8. `OpenClaw Windows Autonomous Suite`
+   - URL: https://www.freelancer.com/projects/automation/openclaw-windows-autonomous-suite
+   - Budget: $250-750 USD
+   - Why eighth: direct OpenClaw/Windows/browser automation/Python/master-agent setup fit; use `ops/48h/OPENCLAW_WINDOWS_AUTONOMOUS_BID.md`.
 
 Do not bid on:
 

@@ -119,7 +119,8 @@ Score rules:
 | 2026-05-22T14:22:00+08:00 | Added Make.com training system bid pack | 80 | Converted active $750-1500 Make.com/Twilio/WhatsApp training rollout lead into a bid-field-ready proposal with explicit answers to buyer screening questions; not sent and not revenue |
 | 2026-05-22T14:27:00+08:00 | Added OpenClaw business automation bid pack | 80 | Converted active $250-750 OpenClaw business automation lead into a bid-field-ready diagnostic proposal with safe fake-data prototype boundaries; not sent and not revenue |
 | 2026-05-22T14:32:00+08:00 | Added OpenClaw systems engineer bid pack | 80 | Converted active OpenClaw VPS/Docker/Nginx/SSL/Telegram lead into a bid-field-ready deployment diagnostic with strict secret-handling boundaries; not sent and not revenue |
+| 2026-05-22T14:38:00+08:00 | Added OpenClaw Windows autonomous suite bid pack | 80 | Converted active $250-750 OpenClaw Windows/browser automation/Python lead into a bid-field-ready proposal with public/test demo and no-credential boundaries; not sent and not revenue |
 
 ## Total
 
-5480
+5560
