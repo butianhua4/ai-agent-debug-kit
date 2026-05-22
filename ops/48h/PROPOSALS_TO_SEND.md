@@ -2193,3 +2193,32 @@ Which Microsoft 365 tools are you using for the request intake today: Forms, Sha
 
 Next question to ask: What is the current intake source and who must be notified at each request status?
 User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Microsoft credentials, OAuth grants, tenant admin access, private building data, payment access, KYC, or off-platform contact.
+
+## [LEAD #37]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-extraction/Syspro-Excel-Data-Integration
+Pain: Buyer needs pricing and MOQ data extracted from Syspro into an Excel sheet, with manual update capability.
+Suggested package: Data extraction diagnostic/prototype first, then a scoped extractor once the field map and safe data source are clear.
+Suggested price: `$499` diagnostic/prototype using sanitized exports; `$750` scoped build if they can provide sample data and client-operated Syspro access.
+Risk: Syspro may require private ERP credentials or direct production database/API access, and pricing/MOQ data may be sensitive. Keep all access client-side; start from sanitized exports, screenshots, fake item rows, and an Excel template.
+
+Message draft:
+
+Hi, I can help design and build a safe Syspro-to-Excel extraction workflow for pricing and MOQ data.
+
+I do not need your Syspro password, database credentials, API keys, OAuth access, production private data, payment access, or private credentials to start. The safest first step is to work from a sanitized Syspro export or screenshots, a fake sample of item/pricing/MOQ rows, and your target Excel layout.
+
+For the first milestone, I would:
+- confirm exactly which Syspro fields need to map into Excel,
+- design the manual refresh/update flow,
+- build or specify the extraction approach based on the safe data source available,
+- create validation checks for missing/invalid prices and MOQ values,
+- deliver a working Excel output format plus handoff notes.
+
+Suggested start: $499 for a diagnostic/prototype using sanitized sample data and the final Excel column structure. If the data source is straightforward and client-operated access is available on your side, I can scope the full extractor around $750.
+
+Can you share the target Excel columns and a sanitized example of 5-10 product rows with pricing and MOQ fields?
+
+Next question to ask: What Syspro data access method is allowed: export file, report, ODBC/API through client-side setup, or manual CSV download?
+User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Syspro credentials, production database access, API keys, OAuth, private pricing data, payment access, KYC, or off-platform contact.
