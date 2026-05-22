@@ -2135,3 +2135,32 @@ If you are open to this approach, can you share whether Higgsfield is currently 
 
 Next question to ask: Are Higgsfield jobs handled through polling or callbacks, and can failed steps resume individually?
 User action required: Freelancer bidding is blocked until the user completes profile/legal fields. Also confirm whether real Claude Cowork experience exists before submitting; do not misrepresent.
+
+## [LEAD #35]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+Pain: Buyer has multiple unreliable n8n workflows with intermittent failures: webhook triggers not firing, API errors, empty AI-node outputs, JSON mapping mismatches, broken loops/branches, missing retries, and incomplete error handling.
+Suggested package: AI Automation Emergency Rescue Sprint diagnostic, scoped to one highest-impact workflow first.
+Suggested price: `$499` fixed diagnostic/rescue plan, or `$25/hour` capped first milestone if Freelancer requires hourly bidding.
+Risk: Existing n8n environment may involve private credentials, OAuth grants, customer data, or live production workflows. Keep all secret handling client-side and start from sanitized logs/screenshots/fake payloads only.
+
+Message draft:
+
+Hi, I can help stabilize your existing n8n workflows. The issues you listed - webhook triggers not firing, API nodes failing, AI nodes returning empty outputs, JSON mapping mismatches, broken branches, and missing retry/error handling - are exactly the kind of workflow rescue work I focus on.
+
+I do not need passwords, API keys, tokens, OAuth grants, payment access, or private credentials to start. A safe first step is enough: sanitized execution logs, screenshots of failing nodes, fake sample payloads, the workflow structure, expected output, actual output, and which workflow is causing the biggest business impact.
+
+For the first diagnostic/rescue milestone, I would:
+- identify the top failure points in one priority workflow,
+- trace webhook/API/AI-node/JSON mapping issues,
+- propose retry, fallback, and error logging improvements,
+- fix safe expression/mapping/branching issues where possible from the provided evidence,
+- deliver a concise report with root causes, fixes made, and the next stabilization plan.
+
+Suggested first milestone: $499 fixed for one priority workflow diagnostic and stabilization plan. If you prefer hourly, I can start at $25/hour with a capped first pass and written findings before expanding.
+
+Which workflow fails most often right now, and can you share a redacted execution log plus a fake sample payload for that flow?
+
+Next question to ask: Which one workflow has the highest business impact, and can they provide sanitized execution logs/failing-node screenshots/fake payloads?
+User action required: Freelancer profile/compliance gate must be completed before bidding. Do not request credentials, private customer data, OAuth grants, payment access, wallet, KYC, or off-platform contact.

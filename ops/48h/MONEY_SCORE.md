@@ -105,7 +105,8 @@ Score rules:
 | 2026-05-22T12:29:00+08:00 | Added ongoing AI automation developer proposal | 80 | Open recurring Freelancer OpenAI/Zapier/Make/Python automation role converted into a scoped $400 paid-trial proposal; not sent and not revenue |
 | 2026-05-22T13:03:00+08:00 | Addressed TypeORM duplicate ALTER/test leak feedback | 40 | Existing public $120 bounty PR updated for Qodo duplicate ALTER and metadata-mutation test feedback; compile and diff check passed; not merged, not awarded, not revenue |
 | 2026-05-22T13:11:00+08:00 | Added Freelancer bid field pack | 50 | Converts proposal-ready leads into platform form-ready bid amounts, timelines, and copy for immediate submission after the profile gate; not sent and not revenue |
+| 2026-05-22T13:16:00+08:00 | Added urgent n8n workflow debugging lead and proposal target | 80 | Fresh Freelancer lead directly matches emergency rescue offer: n8n webhook/API/OpenAI/JSON mapping failures with payment-verified buyer; not sent and not revenue |
 
 ## Total
 
-4600
+4680
