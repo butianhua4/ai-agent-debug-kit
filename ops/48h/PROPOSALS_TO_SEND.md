@@ -2222,3 +2222,32 @@ Can you share the target Excel columns and a sanitized example of 5-10 product r
 
 Next question to ask: What Syspro data access method is allowed: export file, report, ODBC/API through client-side setup, or manual CSV download?
 User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Syspro credentials, production database access, API keys, OAuth, private pricing data, payment access, KYC, or off-platform contact.
+
+## [LEAD #38]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api-developmet/WhatsApp-Cloud-API-Meta-Integration
+Pain: Buyer already has an AI WhatsApp agent built with Lovable.dev and OpenAI for a dental clinic, and needs help connecting WhatsApp Cloud API / Meta Developer App integration.
+Suggested package: Fixed seed integration diagnostic and setup guidance, with the client operating Meta credentials and app access themselves.
+Suggested price: `$250` fixed seed milestone if the issue is Meta app/webhook/token configuration and one test conversation path.
+Risk: Dental clinic context can involve patient data; Meta setup can require app admin permissions, business verification, access tokens, webhooks, phone-number setup, and OAuth-like authorization. Keep all secrets and real patient/customer data client-side.
+
+Message draft:
+
+Hi, I can help connect and troubleshoot the WhatsApp Cloud API / Meta Developer App side of your existing AI WhatsApp agent.
+
+I do not need your Meta login, access token, API key, OAuth grant, patient data, phone list, payment access, or private credentials. The safest way to start is with screenshots of the current Meta app status/error, a fake webhook payload, the callback URL structure, and a client-operated screen share where you keep all sensitive access on your side.
+
+For a first seed milestone, I would:
+- review the Meta Developer App / WhatsApp Cloud API setup path,
+- identify whether the blocker is webhook verification, phone-number setup, token/app permissions, business verification, or payload handling,
+- map the Lovable.dev/OpenAI agent handoff point,
+- test with fake/non-patient sample messages,
+- provide a short checklist and handoff notes so the integration can be maintained.
+
+Suggested first milestone: $250 fixed for one WhatsApp Cloud API / Meta integration diagnostic and a working test-message path, assuming the account/app setup is available client-side and no private patient data is shared.
+
+What is the exact blocker right now: webhook verification, sending messages, receiving messages, phone-number setup, permissions, or Meta business verification?
+
+Next question to ask: Which Meta/WhatsApp step is failing, and can they share a screenshot with tokens/phone/customer data hidden?
+User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Meta login, access token, API key, OAuth grant, patient data, phone list, payment access, KYC, or off-platform contact.
