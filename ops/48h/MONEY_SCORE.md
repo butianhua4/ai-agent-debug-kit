@@ -75,7 +75,8 @@ Score rules:
 | 2026-05-22T08:57:00+08:00 | Added live automation build architect proposal | 80 | Open $250-750 live API/webhook/auth troubleshooting role converted into a screening-question-ready proposal; not sent and not revenue |
 | 2026-05-22T09:02:00+08:00 | Added custom n8n workflow automation proposal | 80 | $3000-5000 custom n8n/WhatsApp/Telegram automation lead converted into a high-ticket diagnostic/rescue/sprint proposal; not sent and not revenue |
 | 2026-05-22T09:08:00+08:00 | Added WordPress Zapier intake rebuild proposal | 80 | Fresh $1500-3000 Zapier/Stripe/HubSpot/DocuSign/Drive/Xero intake automation lead converted into a safe high-fit proposal; not sent and not revenue |
+| 2026-05-22T09:13:00+08:00 | Added smart email workflow assistant proposal | 80 | $750-1500 AI email/workflow assistant lead converted into a safety-first diagnostic/build proposal; not sent and not revenue |
 
 ## Total
 
-2800
+2880

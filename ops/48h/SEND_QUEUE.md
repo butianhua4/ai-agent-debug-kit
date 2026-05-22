@@ -540,3 +540,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Stripe credentials, HubSpot credentials, DocuSign/PandaDoc credentials, Google Drive OAuth, Xero credentials, API keys, payment authority, client PII, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: intake form fields, fake sample payload, HubSpot field map, document trigger rules, Drive folder naming rules, Xero invoice template assumptions, and the highest-risk path.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1L: Freelancer Smart Email & Workflow AI Assistant
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/ai-chatbot/smart-email-workflow-assistant
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #24
+- suggested offer: `$499 Architecture/Safety Diagnostic`, or `$1,500 Same-Day Workflow Rescue/build` for one safe email triage + workflow module.
+- why urgent: $750-$1,500 budget and exact AI workflow/safety fit around safe-delete logic, workflow automation, calendar sync, prioritization, and dashboard/API.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: email credentials, OAuth consent, API keys, calendar credentials, private emails, deletion authority, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: fake sample emails, categories, safe-delete rules, calendar workflow, dashboard fields, and human-review requirements.
+- status after user sends: move to `proposal_sent`.

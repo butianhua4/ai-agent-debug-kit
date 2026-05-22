@@ -215,6 +215,36 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #24]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/ai-chatbot/smart-email-workflow-assistant
+Pain: Buyer wants a smart email and workflow AI assistant with safe-delete/archive logic, documentation workflow automation, calendar sync/reminders, tone-aware rewriting, prioritization, and a dashboard/API.
+Suggested package: Architecture and safety diagnostic first, then one production module build/rescue.
+Suggested price: $499 diagnostic; $1,500 for one safe email triage + workflow module with test cases and handoff documentation.
+Risk: Email automation can delete/archive private data or access calendars. Do not request credentials, OAuth consent, API keys, private emails, or deletion authority. Start from fake emails, sanitized labels, screenshots, and explicit safety rules.
+
+Message draft:
+
+Hi, this is a strong fit for my AI workflow automation and safety-focused build process. For an email/workflow assistant, the most important part is not just generating replies. It is preventing unsafe deletes, avoiding duplicate actions, making prioritization explainable, and giving the user a clear dashboard of what happened.
+
+I do not need email passwords, OAuth consent, API keys, private mailbox access, calendar credentials, or deletion authority to start. A safe first pass can be done from fake email samples, sanitized categories, screenshots, desired dashboard fields, and explicit safe-delete/archive rules.
+
+My approach would be:
+- design the email state model: new, triaged, needs reply, archived, safe-delete candidate, human review,
+- define strict guardrails before anything is deleted or archived,
+- build test cases for false positives, important client mail, receipts, attachments, calendar conflicts, and bulk actions,
+- separate "draft suggestion" from "send/delete action" unless you explicitly want a human approval gate,
+- add logging so every automated decision has a reason and can be audited,
+- expose key workflow states in a simple dashboard/API.
+
+Suggested starting scope: $499 for an architecture and safety diagnostic, including the email state model, automation boundaries, and test plan. If you want one production-ready module first, I would quote $1,500 for a safe email triage + workflow module with dashboard fields and handoff documentation.
+
+Can you share fake sample emails, the categories you want, what "safe delete" means in your business, and which action should always require human review?
+
+Next question to ask: Should this assistant only draft recommendations first, or should any actions be allowed automatically after testing?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #23]
 
 Source: Freelancer
