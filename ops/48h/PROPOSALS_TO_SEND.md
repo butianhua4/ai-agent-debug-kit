@@ -215,6 +215,45 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #18]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api-developmet/automated-python-lead-generation-mvp
+Pain: Buyer wants a Python backend automation MVP that scores business websites, generates Claude-powered personalized email drafts, sends through a third-party platform, books appointments, and provides a simple dashboard.
+Suggested package: Compliance-first Quick Diagnostic before implementation; limited Same-Day Workflow Rescue only for architecture, logging, queue safety, and prototype reliability if the data and outreach path is compliant.
+Suggested price: $499 diagnostic; $1,500 for a focused architecture/prototype hardening milestone. Do not quote the full $5,000 sprint until data-source, consent, email compliance, and platform rules are clear.
+Risk: This includes scraping, cold outreach, email sending, and calendar booking. Must avoid spam, unauthorized scraping, ToS bypass, sensitive data collection, or credential handling. No API keys, platform passwords, payment access, OAuth, or live sending credentials should be requested.
+
+Message draft:
+
+Hi, I can help with the backend automation architecture, queue reliability, Claude API integration design, logging, and dashboard handoff for this MVP.
+
+Because this involves lead sourcing and outbound email, I would start with a compliance-first architecture review before building. I will not help with spam, unauthorized scraping, bypassing platform terms, or handling private credentials. I also do not need passwords, API keys, OAuth consent, payment access, or live sending credentials to begin.
+
+A safe first milestone can be done from sanitized materials:
+- approved data-source list and any platform usage limits,
+- fake/sample business records,
+- website scoring criteria,
+- Claude prompt/output requirements,
+- email approval/sending rules,
+- calendar booking flow,
+- desired dashboard fields and status states.
+
+My diagnostic would cover:
+- queue/state design so records do not get duplicated or lost,
+- scoring pipeline structure and failure handling,
+- Claude prompt/input/output schema with safety checks,
+- review gates before any outbound message is sent,
+- rate limiting and audit logs,
+- dashboard status model and handoff notes.
+
+Suggested starting scope: $499 for a compliance-first technical diagnostic and implementation plan. If the outreach/data-source rules are clean, I can then quote $1,500 for a focused prototype hardening milestone around queue reliability, Claude API draft generation, logging, and dashboard state tracking.
+
+Can you share the approved data sources, whether every outbound recipient is allowed under your compliance policy, and a fake sample record showing the desired input/output?
+
+Next question to ask: Is the MVP intended to generate draft emails for human approval first, or to send automatically?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and reject spam/ToS-bypass/sensitive scraping scope.
+
 ## [LEAD #17]
 
 Source: Freelancer

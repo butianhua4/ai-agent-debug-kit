@@ -467,3 +467,16 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Twilio token, WhatsApp credentials, API keys, OAuth consent, real learner data, phone lists, payment access, or off-platform contact.
 - first ask after reply: sanitized Google Sheets template, 22-message schedule, fake cohort dates, stakeholder/channel rules, and working-day/holiday rules.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 2A: Freelancer Python Claude lead-generation MVP
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api-developmet/automated-python-lead-generation-mvp
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #18
+- suggested offer: `$499 compliance-first architecture diagnostic`; `$1,500 prototype hardening` only if data-source, consent, and outreach rules are clean.
+- why second-tier: $3,000-$5,000 budget is strong, but cold email/scraping introduces compliance and platform-risk concerns. Treat as architecture/reliability only until compliance is clear.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: sending platform credentials, API keys, OAuth consent, payment access, live prospect lists, sensitive personal data, wallet, KYC, private tokens, or off-platform contact.
+- do not accept: spam, unauthorized scraping, ToS bypass, evasion, or automatic outreach without lawful basis and client-side controls.
+- first ask after reply: approved data sources, compliance rules, fake sample record, desired scoring criteria, draft-vs-send policy, and dashboard fields.
+- status after user sends: move to `proposal_sent`.
