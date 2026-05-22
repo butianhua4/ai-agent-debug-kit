@@ -7,10 +7,22 @@ Purpose: prioritize the freshest OpenClaw opportunities for manual, platform-com
 - URL: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
 - Why first: freshly posted, `$250-750` budget, direct OpenClaw business automation fit across customer service, sales, and inventory.
 - Suggested opening: position as staged architecture first, not a vague all-in-one promise.
-- Suggested offer: `$499` discovery diagnostic, then `$1,500` first workflow or `$5,000` 48-hour sprint only if urgency and scope are confirmed.
+- Suggested offer: `$499` discovery diagnostic, then a budget-fit first workflow inside the posted `$250-750` range. Only mention a larger `$1,500+` sprint after the buyer confirms urgency, current stack, and a paid follow-up scope inside the platform.
 - Safe first ask: sample FAQ, fake order, inventory schema, preferred alert channel, and the single workflow that saves the most time this week.
-- Do not ask for: store admin passwords, API keys, payment credentials, customer data, tokens, OAuth grants.
+- Do not ask for: store admin passwords, API keys, payment credentials, customer data, tokens, OAuth grants, payment-capture authority, fulfillment authority, wallet access, or off-platform contact.
+- Strict boundary: if the buyer mentions captured payments, order fulfillment, or live inventory changes, keep Codex's role to architecture, fake-data prototype, rules, logs, and handoff notes. Buyer/client must operate real store permissions, payment flows, and fulfillment actions.
+- Fastest safe first milestone: FAQ/order-status chatbot flow plus inventory/reorder alert prototype using fake products and fake orders. This creates proof without touching real customers, real payments, or live inventory.
 - Draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #17.
+
+### Tight Manual Bid Variant
+
+Use this shorter version if the proposal form has limited space:
+
+I can help scope this OpenClaw business automation in a safe staged way. I would start with a `$499` diagnostic or a budget-fit first workflow inside your posted range: FAQ/order-status chatbot plus inventory/reorder alert prototype using fake orders/products first.
+
+I do not need store admin passwords, API keys, payment credentials, OAuth grants, live customer data, or fulfillment authority to start. If payments/order fulfillment are part of the workflow, you keep those permissions on your side; I can provide the architecture, fake-data prototype, validation checklist, and handoff notes.
+
+Can you share a sample FAQ, fake order example, inventory fields, preferred alert channel, and the one workflow that would save the most time this week?
 
 ## 2. Set Up OpenClaw on AWS
 
