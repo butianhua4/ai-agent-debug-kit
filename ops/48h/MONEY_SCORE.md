@@ -102,7 +102,8 @@ Score rules:
 | 2026-05-22T11:23:00+08:00 | Added Portuguese n8n financial-agent repair proposal | 80 | Fresh $30-250 Freelancer n8n financial-agent error lead converted into a safe Portuguese seed-repair proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T11:30:00+08:00 | Added ongoing Zapier automation management proposal | 80 | Fresh CAD 250-750 Freelancer Zapier/OpenAI/OCR/Xero maintenance lead converted into a safe audit/rescue proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T11:31:00+08:00 | Added AI bid-filter automation proposal | 80 | Open $750-1500 Freelancer spam-bid filtering automation lead converted into a safe MVP proposal and send queue entry; not sent and not revenue |
+| 2026-05-22T12:29:00+08:00 | Added ongoing AI automation developer proposal | 80 | Open recurring Freelancer OpenAI/Zapier/Make/Python automation role converted into a scoped $400 paid-trial proposal; not sent and not revenue |
 
 ## Total
 
-4430
+4510

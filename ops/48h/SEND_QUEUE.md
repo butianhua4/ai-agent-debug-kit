@@ -732,3 +732,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Freelancer credentials, cookies, private platform access, payment authority, API keys, tokens, account automation that violates platform rules, wallet, KYC, or off-platform contact.
 - first ask after reply: safe input source, 30-50 sanitized labeled bid examples, spam categories, acceptable false-positive threshold, output queue format, and whether only sample-file processing is allowed.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 2E: Freelancer AI Automation Developer Ongoing Work
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/openai/automation-developer-needed-for-ongoing
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #33
+- suggested offer: `$400` first-month paid trial for one scoped AI automation build/repair plus handoff notes.
+- why second-tier: ongoing monthly work can become recurring revenue, but the posted budget is modest and scope must be controlled tightly.
+- send condition: user confirms Freelancer account/rules allow a compliant proposal and sends only through the platform.
+- do not ask for: passwords, API keys, OAuth grants, tokens, production private data, payment access, wallet, KYC, private credentials, or off-platform contact.
+- first ask after reply: first workflow priority, tools/APIs involved, sanitized input/output examples, acceptance criteria, and preferred maintenance cadence.
+- status after user sends: move to `proposal_sent`.

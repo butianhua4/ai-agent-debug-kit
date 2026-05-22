@@ -2073,3 +2073,34 @@ What input source do you want the bot to process first: exported bid data, email
 
 Next question to ask: What safe input source can they provide first, and can they share 30-50 sanitized examples labeled spam/not-spam?
 User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, scrape account pages, request credentials, or automate platform actions without an approved API/client-side export.
+
+## [LEAD #33]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/openai/automation-developer-needed-for-ongoing
+Pain: Buyer wants an ongoing AI automation developer to build and maintain OpenAI, Zapier, Make, API, and Python automations on a monthly basis.
+Suggested package: Paid monthly trial focused on one production workflow plus maintenance notes.
+Suggested price: `$400` first-month trial aligned with posted monthly budget; position it as one critical workflow build/repair plus documentation, not unlimited support.
+Risk: Ongoing role can drift into credential handling, production data, and off-platform contact. Keep all work on platform, use sanitized sample payloads, client-operated OAuth/API setup, and explicit milestone boundaries.
+
+Message draft:
+
+Hi, I can help with ongoing AI automation work across OpenAI, Zapier, Make, APIs, and Python scripts.
+
+I usually start with one paid trial workflow so we can prove reliability before expanding. I do not need passwords, API keys, tokens, OAuth grants, payment access, or private credentials to begin. For the first workflow, I can work from sanitized sample payloads, screenshots, workflow diagrams, and client-operated API/OAuth setup.
+
+For the first month, I would focus on:
+- selecting one highest-impact automation to build or stabilize,
+- mapping trigger, inputs, API calls, AI step, outputs, and failure handling,
+- implementing the workflow or Python helper script,
+- adding basic validation, logging, and retry/fallback notes,
+- delivering concise documentation so the workflow can be maintained.
+
+Suggested first milestone: $400 for one scoped AI automation build/repair plus handoff notes. If the first workflow goes well, we can continue monthly with a backlog of automations.
+
+Examples of the kind of work I can cover: OpenAI extraction/classification, webhook/JSON mapping, Zapier/Make/n8n workflow repair, Python API scripts, and automation failure audits.
+
+Which one workflow would you want handled first, and what tools/APIs are involved?
+
+Next question to ask: Which one workflow should be the paid trial, and can they share sanitized input/output examples plus acceptance criteria?
+User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, ask for credentials, or move conversation off-platform.
