@@ -696,3 +696,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: database passwords, API keys, OAuth consent, tokens, private records, payment access, wallet, KYC, private credentials, or off-platform contact.
 - first ask after reply: sanitized workflow export, redacted failing node/error, fake database row, expected output, and downstream service field map.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1R: Freelancer Portuguese n8n Financial Agent Repair
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/corre-fluxo
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #30
+- suggested offer: `$250` fixed urgent seed repair if the buyer can provide a sanitized workflow export, redacted execution log, failing-node screenshot, and fake input/output sample.
+- why urgent: posted minutes ago, open, direct n8n error repair request, payment-verified Brazil buyer, and the scope is narrow enough to close as a seed order before higher-budget rescue work.
+- send condition: user confirms Freelancer account/rules allow a compliant proposal and uses the prepared Portuguese draft without asking for off-platform contact.
+- do not ask for: passwords, API keys, tokens, bank access, wallets, payment access, OAuth consent, customer financial records, private credentials, or off-platform contact.
+- first ask after reply: failing node name, sanitized workflow export, redacted error screenshot/log, fake sample payload, expected result, and deadline.
+- status after user sends: move to `proposal_sent`.

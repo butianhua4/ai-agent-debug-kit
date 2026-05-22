@@ -1986,3 +1986,32 @@ If this is tied to client SLAs, the first question I would ask is: which workflo
 
 Next question to ask: Which workflow has the highest blast radius, and what changed in input size/batching before the outage?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
+
+## [LEAD #30]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/corre-fluxo
+Pain: Buyer in Brazil says they have a financial agent with an error in n8n and need it corrected. The job is fresh, direct, and narrow enough for an urgent seed repair.
+Suggested package: Urgent n8n workflow repair seed package.
+Suggested price: `$250` fixed if one workflow can be repaired from sanitized export/logs; upsell only after the first fix if the financial agent has multiple failing branches.
+Risk: Financial-agent workflows can involve sensitive business/financial data and credentials. Do not request passwords, API keys, tokens, wallets, bank access, payment access, OAuth grants, private customer data, or production credentials. Work only from sanitized workflow export, redacted execution logs, screenshots, and fake sample payloads.
+
+Message draft:
+
+Olá, consigo ajudar a corrigir esse erro no seu fluxo do n8n para o agente financeiro.
+
+Para começar com segurança, não preciso de senha, API key, token, acesso bancário, carteira, dados de pagamento ou credenciais privadas. Posso analisar apenas materiais sanitizados: export do workflow sem credenciais, print do erro, log de execução com dados sensíveis ocultados, e um exemplo falso do input/output esperado.
+
+Meu plano para esse reparo:
+- identificar o nó exato onde o fluxo quebra,
+- revisar mapeamento de JSON, expressões e campos obrigatórios,
+- verificar webhook/API/HTTP Request, Code node, IF/Switch/Merge e qualquer chamada de IA usada pelo agente,
+- ajustar tratamento de erro, fallback e validação mínima,
+- entregar o workflow corrigido ou um patch claro com notas curtas do que mudou.
+
+Sugestão de escopo: US$250 fixo para corrigir um fluxo principal, validar com dados de teste e entregar um resumo do reparo. Se houver vários fluxos ou integrações adicionais, eu aviso antes de ampliar o escopo.
+
+Você pode enviar um print do erro, o nome do nó que falha e um export do workflow sem credenciais?
+
+Next question to ask: Qual é o nó que falha e qual era o resultado esperado do agente financeiro?
+User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid or ask for credentials.
