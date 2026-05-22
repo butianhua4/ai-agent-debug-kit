@@ -155,3 +155,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Current status: platform bid submitted; no award, no order, no payment, and no confirmed revenue yet.
 - Next user action required only if the buyer replies, awards the project, or Freelancer asks for payment/KYC/tax/payout verification.
 - Safety boundary: no private scraping, spam outreach, off-platform commission/payment handling, credentials, private customer data, KYC, tax, wallet, or payout handling. Keep any buyer conversation on Freelancer.
+
+## 2026-05-22T18:50:00+08:00 - Web-AI lead buyer replied; sample sent
+
+- Action completed: Buyer `Yashbank` replied on Freelancer and asked for sample leads for CRM dashboards, web tools, cloud setup, and AI/workflow-related builds.
+- Codex response sent: 3 public-source sample leads with company, contact path, public signal, problem noticed, and service-fit note.
+- Current status: buyer response pipeline; no award, no order, no payment, and no confirmed revenue yet.
+- User action required only if the buyer awards the project, requests payment/KYC/tax/payout setup, or asks for off-platform handling.
+- Safety boundary: keep communication on Freelancer. Do not share private scraped lists, personal emails from non-public sources, spam lists, credentials, private client data, payment details, KYC, tax, wallet, payout, or off-platform commission/payment handling.
