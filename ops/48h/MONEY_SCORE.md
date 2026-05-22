@@ -121,7 +121,8 @@ Score rules:
 | 2026-05-22T14:32:00+08:00 | Added OpenClaw systems engineer bid pack | 80 | Converted active OpenClaw VPS/Docker/Nginx/SSL/Telegram lead into a bid-field-ready deployment diagnostic with strict secret-handling boundaries; not sent and not revenue |
 | 2026-05-22T14:38:00+08:00 | Added OpenClaw Windows autonomous suite bid pack | 80 | Converted active $250-750 OpenClaw Windows/browser automation/Python lead into a bid-field-ready proposal with public/test demo and no-credential boundaries; not sent and not revenue |
 | 2026-05-22T14:42:00+08:00 | Added OpenClaw AWS setup bid pack | 80 | Converted OpenClaw AWS EC2 Windows setup lead into a bid-field-ready diagnostic/runbook proposal with strict AWS credential and billing boundaries; not sent and not revenue |
+| 2026-05-22T14:48:00+08:00 | Added Freelancer top 3 send script | 50 | Condensed the highest-probability Freelancer targets into a concrete send order with bid amounts, delivery fields, proposal source files, fallback order, and post-send accounting; not sent and not revenue |
 
 ## Total
 
-5640
+5690
