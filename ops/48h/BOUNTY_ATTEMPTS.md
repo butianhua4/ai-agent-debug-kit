@@ -928,6 +928,19 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: pushed commit `c1516f2` to https://github.com/typeorm/typeorm/pull/12532 and commented on the PR with validation notes.
 - payout status: no award, no merge, no confirmed revenue yet.
 
+## Follow-up 2026-05-22: TypeORM PR #12532 duplicate ALTER/test leak feedback addressed
+
+- bounty URL: https://app.opire.dev/issues/01HWJNZ5HQMVG2TCW6XHQQJ3QT.
+- reward amount: `$120`.
+- repo: typeorm/typeorm.
+- issue: https://github.com/typeorm/typeorm/issues/3357.
+- PR: https://github.com/typeorm/typeorm/pull/12532.
+- why selected: Qodo posted fresh actionable feedback on the active bounty PR. Closing review gaps is the shortest path toward merge/award.
+- what was done: added shared `columnTypeChanged`, `columnSpatialTypeChanged`, and `columnCollationChanged` checks so the standalone type/spatial `ALTER ... TYPE` query is skipped when the later collation query already applies the full type; restored mutated Postgres collation metadata in `finally` blocks to avoid order-dependent tests.
+- test result: `corepack pnpm run compile` passed; `git diff --check` passed.
+- PR URL or patch path: pushed commit `a919eae` to https://github.com/typeorm/typeorm/pull/12532 and commented on the PR with validation notes.
+- payout status: no award, no merge, no confirmed revenue yet.
+
 ## Screening 2026-05-22: Opire TypeScript quick-patch pass
 
 - bounty URL: public Opire search results for TypeScript/JavaScript quick-patch targets.
