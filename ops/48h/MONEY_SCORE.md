@@ -115,7 +115,8 @@ Score rules:
 | 2026-05-22T13:56:00+08:00 | Screened Opire JS/TS quick-patch candidates | 20 | Rejected an inaccessible electron-template bounty and closed ToolJet issue before wasting clone/test cycles; not revenue |
 | 2026-05-22T13:58:00+08:00 | Added publish blocker and send queue | 50 | Converts the current no-revenue bottleneck into exact user-only profile actions and a prioritized send queue for immediate Freelancer submissions after the gate clears; not sent and not revenue |
 | 2026-05-22T14:07:00+08:00 | Added low-budget n8n automation engineer proposal | 80 | Fresh open Freelancer n8n/AI automation role converted into a bounded paid-test proposal, while stale Opire JS/TS bounties were filtered out; not sent and not revenue |
+| 2026-05-22T14:16:00+08:00 | Saved high-ticket Make.com pattern and rejected closed project | 50 | Verified the $1800-3000 Make.com/WhatsApp/CRM project is closed, removed it from sendable pipeline, and preserved the high-ticket reliability pattern for future live leads; not sent and not revenue |
 
 ## Total
 
-5190
+5240
