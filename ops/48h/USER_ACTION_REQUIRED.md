@@ -4,6 +4,7 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 
 ## Current blockers
 
+- 2026-05-22T12:51:00+08:00 - Freelancer bidding is blocked by the platform's profile completion flow. It requires user-only personal/compliance fields including address and date of birth, plus hourly rate/profile details, before bids can be submitted. Codex selected relevant skills but must not invent or enter personal legal/compliance data. After the user saves this profile step, Codex can continue with safe platform-internal proposals.
 - Platform accounts/APIs are required before Codex can submit bids, accept jobs, or post community replies automatically. Current automatic work can continue on public repos, public issue research, patches, validation, and proposal/post drafts.
 - Freelancer/Upwork/Algora/Reddit/n8n community posting is account-gated unless the user provides a compliant authenticated workflow. Codex must not invent account access or claim messages were sent.
 - In-app browser GitHub access is now available for the logged-in user session and was used only for the public Claude Builders bounty workflow. Fiverr/Freelancer/community posting remains account/rule-gated unless the user explicitly authorizes a specific safe action.

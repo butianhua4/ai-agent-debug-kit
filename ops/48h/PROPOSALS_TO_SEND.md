@@ -2104,3 +2104,34 @@ Which one workflow would you want handled first, and what tools/APIs are involve
 
 Next question to ask: Which one workflow should be the paid trial, and can they share sanitized input/output examples plus acceptance criteria?
 User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, ask for credentials, or move conversation off-platform.
+
+## [LEAD #34]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/Optimize-Automated-Reselling-Workflow/details
+Pain: Buyer has a flaky Claude Cowork ecommerce reselling workflow that only runs end-to-end about 60% of the time. Listing uploads stall, Higgsfield jobs hang, comparable research is slow, and the workflow lacks retry logic, parallelism, and observability.
+Suggested package: Paid automation audit first, then quote repair/rebuild after evidence review.
+Suggested price: `CAD $499` paid audit if actual Claude Cowork experience can be represented honestly; otherwise do not submit or submit only an honest limited-fit note.
+Risk: The buyer explicitly says not to apply without shipped Claude Cowork workflows. Do not claim experience we cannot verify. The workflow may involve seller accounts, marketplace APIs, product data, Higgsfield API keys, and ecommerce credentials. No passwords, API keys, tokens, OAuth grants, seller account access, payment access, wallet, KYC, or private credentials.
+
+Message draft:
+
+Hi, your issue sounds like a workflow reliability problem rather than a generic AI problem: stalled upload steps, long-running Higgsfield jobs, slow research, missing retry logic, no resumability, and no execution-level observability.
+
+Before I bid aggressively, I want to be transparent: I can help with API orchestration, async job polling, webhook/retry patterns, failure logs, and automation rescue work. If you require prior shipped Claude Cowork-specific production workflows only, please confirm whether you are open to a focused paid audit from someone with adjacent AI automation/API reliability experience.
+
+For a safe first step, I would not need passwords, API keys, tokens, seller account access, marketplace login access, payment access, or private credentials. I can start from a screen share, a sanitized workflow map, redacted failure/timing logs, fake product payloads, and screenshots of the failing steps.
+
+For the initial audit, I would check first:
+- whether the Higgsfield step uses polling, callbacks, or a blocking wait,
+- whether each long-running job has timeout, retry, and idempotency handling,
+- whether product-upload, research, and media-generation steps can be checkpointed and resumed separately,
+- whether comparable research and Higgsfield generation can run in parallel,
+- what execution logs exist today and where failure context is lost.
+
+Suggested initial scope: CAD $499 for a 1-3 hour paid audit plus a written recommendation: fix-in-place vs rebuild, top 3-5 failure causes, and a repair quote for the chosen path.
+
+If you are open to this approach, can you share whether Higgsfield is currently handled by polling only, and whether failed Cowork steps can be resumed individually or the full run must restart?
+
+Next question to ask: Are Higgsfield jobs handled through polling or callbacks, and can failed steps resume individually?
+User action required: Freelancer bidding is blocked until the user completes profile/legal fields. Also confirm whether real Claude Cowork experience exists before submitting; do not misrepresent.
