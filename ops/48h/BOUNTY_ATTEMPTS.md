@@ -863,3 +863,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - test result: `corepack pnpm run compile` passed; `git diff --check` passed; targeted DB test remains blocked locally by missing root `ormconfig.json` / Postgres test DB config.
 - PR URL or patch path: pushed commit `6d30896` to the existing PR branch and commented on the PR with the validation notes.
 - payout status: no award, no merge, no confirmed revenue yet.
+
+## Screening 2026-05-22: Gitea Actions automatic-token permissions bounty
+
+- bounty URL: https://algora.io/org/go-gitea/bounties/community and https://github.com/go-gitea/gitea/issues/24635.
+- reward amount: visible Algora community bounty entries include `$20`, `$100`, and `$200` for the same proposal issue; Opire public search also surfaced an `$80` listing for the same topic.
+- repo: go-gitea/gitea.
+- issue: https://github.com/go-gitea/gitea/issues/24635.
+- why selected: open-source CI/token-permission feature looked adjacent to automation safety and had enough visible bounty value to justify a quick feasibility check.
+- what was done: searched the exact issue title and current Gitea metadata before cloning; compared the open proposal with recent public changelog signals.
+- test result: not attempted; no clone/test cycle started.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: the issue is a broad security-sensitive product feature, not a 45-minute patch, and Gitea's current changelog already references `Add configurable permissions for Actions automatic tokens (#36173)`, indicating the core requested capability likely has an implementation path or landed work. Skip unless maintainers explicitly confirm remaining narrow follow-up work.
