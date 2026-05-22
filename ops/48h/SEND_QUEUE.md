@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 2E: Freelancer Daily PDF Upload Automation Workflow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/power-automate/daily-pdf-upload-automation-workflow
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #32
+- suggested offer: `$499` architecture/risk diagnostic, or `$750` synthetic-data POC for SharePoint detection, Dataverse matching, logging, alerts, and simulated/client-operated EHR upload.
+- why second-tier: budget and acceptance criteria are good, but healthcare/EHR/PHI and browser-upload automation make this higher risk than ordinary PDF workflow jobs.
+- send condition: user confirms the project is still open, platform account allows a compliant proposal, and messaging clearly avoids PHI/credentials.
+- do not ask for: PHI, EHR credentials, passwords, OAuth consent, API keys, production login, payment access, compliance authority, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: synthetic PDFs, fake Dataverse rows, filename/metadata matching rules, alert format, run schedule, and whether a non-PHI sandbox exists.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1S: Freelancer Copilot Studio Doc Automation
 
 - channel: Freelancer

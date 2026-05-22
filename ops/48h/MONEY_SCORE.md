@@ -87,7 +87,8 @@ Score rules:
 | 2026-05-22T09:53:00+08:00 | Added n8n PDF reader automation proposal | 80 | Fresh $250-750 n8n/PDF extraction lead converted into a sanitized-sample MVP proposal; not sent and not revenue |
 | 2026-05-22T09:58:00+08:00 | Added PDF-to-software RPA proposal | 80 | $250-750 PDF extraction/spreadsheet validation/proprietary software RPA lead converted into a sample-driven MVP proposal; not sent and not revenue |
 | 2026-05-22T10:03:00+08:00 | Added Copilot Studio document automation proposal | 80 | Fresh $250-750 Copilot Studio/Power Automate document-generation POC converted into a safe scoped proposal; not sent and not revenue |
+| 2026-05-22T10:04:00+08:00 | Added Daily PDF EHR upload diagnostic proposal | 80 | Fresh $250-750 SharePoint/Dataverse/EHR PDF upload lead converted into a high-risk synthetic-data-only diagnostic proposal; not sent and not revenue |
 
 ## Total
 
-3570
+3650

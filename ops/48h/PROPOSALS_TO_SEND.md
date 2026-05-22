@@ -149,6 +149,36 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #32]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/power-automate/daily-pdf-upload-automation-workflow
+Pain: Buyer needs a Microsoft 365 automation that watches a SharePoint folder for 250-300 daily PDF reports, matches each PDF to a Dataverse member record, uploads to the correct Qualifacts In-Sync EHR browser record, logs failures, and sends email/Teams alerts.
+Suggested package: Architecture/risk diagnostic first; safe proof-of-concept only with synthetic PDFs/fake member records and either simulated EHR upload or client-operated sandbox.
+Suggested price: $499 diagnostic; $750 POC if limited to SharePoint detection, matching, logging, alerting, and simulated/client-operated upload.
+Risk: Healthcare/EHR workflow may involve PHI, credentials, compliance requirements, browser automation into a medical system, and production account access. Do not request or handle PHI, EHR passwords, OAuth, API keys, production login, or compliance authority.
+
+Message draft:
+
+Hi, I can help design this Microsoft 365/Power Automate workflow, but I would handle it carefully because it touches an EHR and potentially PHI.
+
+I do not need EHR credentials, passwords, OAuth access, API keys, payment access, or any real member/PHI data to start. A safe first step is to use synthetic PDFs, fake Dataverse member rows, and a non-PHI sandbox or simulated upload step. Any Qualifacts login, production upload, or compliance decision should remain under your control.
+
+My suggested approach:
+- review the SharePoint folder trigger and daily scheduling requirements,
+- define the matching rule between PDF filename/metadata and Dataverse member records,
+- build a test flow for detection, matching, failure logging, and email/Teams alerts,
+- simulate or client-operate the EHR upload step during validation,
+- document credential rotation/configuration fields without me receiving credentials,
+- produce a handoff checklist for a full test-day run.
+
+Suggested scope: $499 for architecture/risk diagnostic and a precise implementation plan. If you want a proof of concept, I would quote $750 for SharePoint detection, Dataverse matching with fake records, logging, alerts, and a simulated/client-operated EHR upload step.
+
+Can you share synthetic sample PDFs, fake Dataverse rows, the filename/metadata matching rule, and whether a non-PHI sandbox exists?
+
+Next question to ask: Is there a Qualifacts sandbox or test tenant with fake members, or should the first POC simulate the upload step?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #31]
 
 Source: Freelancer
