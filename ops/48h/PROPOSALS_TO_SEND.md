@@ -254,6 +254,50 @@ Can you share the approved data sources, whether every outbound recipient is all
 Next question to ask: Is the MVP intended to generate draft emails for human approval first, or to send automatically?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and reject spam/ToS-bypass/sensitive scraping scope.
 
+## [LEAD #19]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/automation-logic-specialist-day-project
+Pain: Buyer needs someone to own the workflow logic layer during a one-day automation build: triggers, conditions, API data mapping, error handling, edge cases, testable success criteria, and live re-scoping.
+Suggested package: Quick Diagnostic / logic review for one workflow set, positioned as a build-day support role.
+Suggested price: $499 diagnostic or approximately $500 platform bid for the one-day logic specialist role.
+Risk: The example includes Stripe, Gmail, and QuickBooks, which may involve credentials, OAuth, billing data, and private customer records. Codex should only prepare the logic plan and ask for sanitized examples; the client/user handles any access inside the platform and tools.
+
+Message draft:
+
+Hi, I can own the logic layer for a one-day automation build: triggers, conditions, data mapping, failure handling, success criteria, and edge cases before the Build Architect executes. Hershey.
+
+I do not need passwords, OAuth consent, API keys, payment access, or private customer records to start. For the pre-build call, I would work from sanitized workflow plans, fake records, screenshots, and an access checklist so we can flag gaps without handling credentials directly.
+
+Example of a complex automation I would map:
+For a service business, a new approved job triggers an invoice/follow-up flow. The logic is:
+- job is marked complete or approved,
+- validate customer, billing email, line items, tax region, and invoice amount,
+- create or update the customer record,
+- create invoice in the billing/accounting system,
+- send customer email only after invoice creation succeeds,
+- log every step and branch outcome,
+- retry transient API failures,
+- route missing data to a human review queue,
+- prevent duplicates by storing source job ID and invoice ID,
+- test with normal job, missing email, zero amount, duplicate job, failed payment, API timeout, and manual override cases.
+
+For your Stripe/Gmail/QuickBooks example, I would structure it as:
+1. Trigger: job status changes to ready-to-invoice.
+2. Guard checks: required customer fields, billable amount, invoice line items, duplicate invoice check.
+3. Billing branch: create or update Stripe invoice/payment request if Stripe is the payment entry point.
+4. Accounting branch: create matching QuickBooks customer/invoice entry, or queue for manual review if mapping is incomplete.
+5. Email branch: Gmail follow-up is sent only after invoice/accounting status is confirmed, with separate templates for sent, failed, overdue, and manual-review states.
+6. Error handling: no silent failures. Every branch writes status, error text, retry count, and owner.
+7. Test criteria: each workflow gets a success condition before build starts, then test cases for happy path, missing data, duplicate events, API timeout, partial failure, and rollback/manual intervention.
+
+If something cannot be built as originally planned during a live client engagement, I would stop that specific branch, explain the blocker in business language, propose a safe fallback, and keep the rest of the workflow moving. For example: if QuickBooks mapping is blocked by a missing account/category, I would still complete the job-status, invoice draft, email template, and error queue, then document the exact field needed to finish the accounting branch.
+
+Can you share the workflow list, success criteria for each one, and which tools the Build Architect will execute in?
+
+Next question to ask: Which workflow is most likely to fail under edge cases during the build day?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #17]
 
 Source: Freelancer

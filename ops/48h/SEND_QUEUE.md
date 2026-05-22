@@ -480,3 +480,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not accept: spam, unauthorized scraping, ToS bypass, evasion, or automatic outreach without lawful basis and client-side controls.
 - first ask after reply: approved data sources, compliance rules, fake sample record, desired scoring criteria, draft-vs-send policy, and dashboard fields.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 2B: Freelancer Automation Logic Specialist 1-day role
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/automation-logic-specialist-day-project
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #19
+- suggested offer: approximately `$499` / `$500` one-day logic review and build-day support.
+- why second-tier: excellent match for workflow edge cases, API data mapping, and test criteria, but already has 80+ proposals and the client has no ratings yet.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Stripe/Gmail/QuickBooks credentials, OAuth consent, customer records, billing data, API keys, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: sanitized workflow list, success criteria, fake records, tools used by the Build Architect, and access-gap checklist.
+- status after user sends: move to `proposal_sent`.
