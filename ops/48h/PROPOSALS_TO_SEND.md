@@ -149,6 +149,35 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #31]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/power-automate/copilot-studio-doc-automation
+Pain: Buyer needs a Microsoft Copilot Studio proof of concept where users upload source files, trigger generation with an explicit prompt, and receive structured Word, PowerPoint, and Excel outputs through SharePoint storage, Adaptive Cards, and Power Automate or equivalent generation logic.
+Suggested package: Microsoft document automation architecture diagnostic, then a scoped POC for one upload-to-template-generation path.
+Suggested price: $499 architecture diagnostic; $750 scoped POC for one document type/output path if sanitized sample files and templates are available.
+Risk: Microsoft tenant, SharePoint, Copilot Studio, and file upload flows can involve OAuth, tenant admin permissions, private documents, and template IP. Keep all tenant/admin/auth actions client-side and start from sanitized files/templates.
+
+Message draft:
+
+Hi, I can help scope and build this Copilot Studio document automation POC in a controlled first phase.
+
+I do not need Microsoft tenant admin credentials, passwords, OAuth access, API keys, payment access, or private documents to start. A safe first step is to use sanitized sample files, placeholder SharePoint storage rules, and example Word/PowerPoint/Excel templates.
+
+My suggested approach:
+- review the target user flow: upload -> Adaptive Card prompt -> generation trigger -> output file,
+- define the metadata extraction and template-fill requirements,
+- build one first path for a single document/input type and one output template,
+- keep the flow manually triggered only, as requested,
+- add basic validation and handoff notes so the POC can be expanded safely.
+
+Suggested scope: $499 for architecture review and a precise implementation plan. If you want a working POC, I would quote $750 for one upload-to-generation path using sanitized sample files and client-side Microsoft tenant actions.
+
+Can you share one sanitized source file, the first output template, and which output type should be implemented first: Word, PowerPoint, or Excel?
+
+Next question to ask: Should the first POC path generate Word, PowerPoint, or Excel output first?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #30]
 
 Source: Freelancer

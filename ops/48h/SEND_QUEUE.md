@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 1S: Freelancer Copilot Studio Doc Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/power-automate/copilot-studio-doc-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #31
+- suggested offer: `$499` architecture diagnostic, or `$750` scoped POC for one upload-to-template-generation path.
+- why urgent: freshly visible $250-$750 USD Microsoft document automation POC, clear deliverables, and exact Copilot Studio/Power Automate/SharePoint workflow fit.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Microsoft tenant admin credentials, OAuth consent, API keys, passwords, private documents, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: sanitized source file, first output template, metadata fields, Adaptive Card flow, SharePoint storage rule, and first output type.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1R: Freelancer PDF to Software Data Automation
 
 - channel: Freelancer
