@@ -135,7 +135,8 @@ Score rules:
 | 2026-05-22T17:56:00+08:00 | Added Power Automate email processor proposal | 80 | Fresh Freelancer Microsoft 365 shared-mailbox automation lead converted into a safe bid-ready proposal; not sent and not revenue |
 | 2026-05-22T18:01:00+08:00 | Added n8n webhook MySQL proposal | 80 | Fresh Freelancer n8n webhook-to-MySQL automation lead converted into a safe bid-ready proposal; not sent and not revenue |
 | 2026-05-22T18:08:00+08:00 | Added n8n emergency workflow debugging proposal | 80 | Fresh payment-verified Freelancer n8n reliability/debugging lead converted into a safe bid-ready emergency diagnostic proposal; not sent and not revenue |
+| 2026-05-22T18:16:00+08:00 | Added first-to-bid Web-AI lead research proposal | 80 | Live open 0-bid Freelancer lead generation project converted into a safe public-source proposal; profile gate blocks sending; not sent and not revenue |
 
 ## Total
 
-6760
+6840

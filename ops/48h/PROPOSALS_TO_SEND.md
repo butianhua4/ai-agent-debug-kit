@@ -2401,3 +2401,33 @@ Can you share one sanitized workflow export or screenshots, redacted failed exec
 
 Next question to ask: Which workflow failure is costing the most right now: missed webhook triggers, API errors, AI node output, JSON mapping, loop/condition logic, or missing retries?
 User action required: Send manually through Freelancer if platform rules allow. Do not request n8n passwords, API keys, OAuth grants, tokens, production data, payment access, KYC, or off-platform contact.
+
+## [LEAD #44]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/lead-generation/Curated-Leads-for-Web-Services
+Pain: Buyer sells premium sites, SaaS MVPs, dashboards, and AI automations and needs 50 high-quality European startup/e-commerce leads with a real pain signal and reason the buyer's services fit.
+Suggested package: Manual, quality-first public-source lead research batch for AI automation/web/SaaS prospects.
+Suggested price: `INR 3500` fixed for the first 50-lead trial batch. Do not discuss off-platform commission; keep all payment and bonus handling inside Freelancer.
+Risk: Lead generation can become spammy or privacy-sensitive if done badly. Use public sources only, no scraping behind login walls, no purchased lists, no private personal data, no cold outreach from the user's account, and no off-platform payment.
+
+Message draft:
+
+Hi, I can help with the first 50-lead trial batch, focused on European startups and e-commerce brands that show a clear web/SaaS/AI automation pain signal.
+
+I would keep this quality-first rather than volume-first. I will not use purchased lists, private databases, scraped login-only data, spam tools, or any outreach from your account. The deliverable would be a spreadsheet/Airtable-style table built from public sources such as company websites, LinkedIn public profiles/pages, product launches, job posts, changelogs, marketplace pages, and startup/community directories.
+
+For each lead, I would include:
+- company and contact path,
+- public profile/site/product link,
+- the trigger that made it interesting,
+- the likely pain or growth opportunity,
+- why your premium site/SaaS/dashboard/AI automation offer may fit,
+- a priority score so you can review the best leads first.
+
+Suggested first milestone: INR 3500 for 50 manually qualified leads. I can also include a short summary of the top patterns I found so you know which niche looks strongest.
+
+Before I start, can you confirm your strongest offer right now: premium websites, SaaS MVPs, dashboards, or AI automation? I will tune the lead criteria around that offer.
+
+Next question to ask: Which European countries and buyer profile should be prioritized first?
+User action required: Freelancer currently shows a profile gate before bidding: add a matching skill such as Lead Generation / Market Research / SaaS, verify email if prompted, and complete profile fields. Do not handle KYC, tax, payout, deposits, wallet, or off-platform commission/payment.
