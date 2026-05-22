@@ -824,3 +824,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: `aueangpanit/electron-template` returned GitHub `404 Not Found`, so the repo/issue is not safely actionable despite the Opire listing. Storybook #12641 is already closed and has a referenced submitted PR, so it is not a clean current bounty target.
+
+## Screening 2026-05-22: Claude Builders issue #5 weekly n8n summary bounty
+
+- bounty URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5.
+- reward amount: `$200`.
+- repo: claude-builders-bounty/claude-builders-bounty.
+- issue: `[BOUNTY $200] WORKFLOW: n8n + Claude Code - automated weekly dev summary`.
+- why selected: direct n8n + Claude workflow fit and higher payout than the already submitted Claude Builders issues.
+- what was done: fetched issue comments and searched all PRs referencing weekly dev summary / n8n / issue #5 before starting any implementation.
+- test result: not attempted; no unique patch selected.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: issue #5 is highly crowded, with many `/opire try` comments and numerous existing PRs already implementing the exact n8n weekly summary workflow. A late duplicate submission would have low award probability unless the maintainer explicitly asks for another variant.

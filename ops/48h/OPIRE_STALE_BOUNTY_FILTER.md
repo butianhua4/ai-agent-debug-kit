@@ -34,6 +34,7 @@ Purpose: prevent wasted night-shift cycles on Opire listings that still show ava
 | 2026-05-22T08:27:00+08:00 | Coolify project-specific members bounty | https://github.com/coollabsio/coolify/issues/6894 | 1000 | skip | Multiple active and historical full implementation PRs already exist, so a late duplicate would have low payout probability. |
 | 2026-05-22T08:28:00+08:00 | FinMind webhook event system bounty | https://github.com/rohitdash08/FinMind/issues/77 | 50 | skip-for-now | Local patch exists, but multiple active PRs already claim the bounty; defer unless maintainer signals additional submissions are wanted. |
 | 2026-05-22T08:55:00+08:00 | Electron tray icon orange dot indicator | https://github.com/aueangpanit/electron-template/issues/1 | 100 | skip | Opire shows an open reward, but GitHub repository/issue returns `404 Not Found`, so there is no public cloneable target. |
+| 2026-05-22T09:15:00+08:00 | Claude Builders weekly n8n dev summary workflow | https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 | 200 | skip | Issue has many `/opire try` claims and numerous existing PRs for the same n8n weekly summary workflow, making a late duplicate low probability. |
 
 ## Next Higher-Value Search Pattern
 
