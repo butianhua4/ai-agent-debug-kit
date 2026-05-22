@@ -100,3 +100,11 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - User-only action: complete those personal/compliance fields inside Freelancer. Codex must not invent, submit, or store them.
 - Experience gate: the buyer says not to apply without shipped Claude Cowork workflows. Either confirm real Claude Cowork experience exists, or use the transparent limited-fit draft in `ops/48h/CLAUDE_COWORK_RESELLER_BID_BRIEF.md`.
 - Current action: Codex prepared the bid brief, but no Freelancer bid has been sent and no revenue is confirmed.
+
+## 2026-05-22T15:05:00+08:00 - Freelancer skill/profile gate blocks IBM webMethods bid
+
+- Live check: `https://www.freelancer.com/projects/api-developmet/IBM-WebMethods-API-Automation/details` is open, budget INR 2,500+ per hour, only 2 bids, and the buyer is identity/payment/deposit/email/phone verified.
+- Submission blocker: Freelancer requires profile completion, email verification, hourly rate, and at least one matching skill before bidding.
+- Domain gate: the buyer asks for proven IBM webMethods Integration Server / Trading Networks / Designer / Deployer or comparable IBM middleware experience. Codex must not misrepresent experience.
+- User-only action: complete Freelancer profile/compliance fields and confirm whether the account can honestly present IBM webMethods experience. If not, use the transparent API-reliability-specialist draft in `ops/48h/IBM_WEBMETHODS_B2B_BID_BRIEF.md`.
+- Current action: Codex prepared the bid brief, but no Freelancer bid has been sent and no revenue is confirmed.
