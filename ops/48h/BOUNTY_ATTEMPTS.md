@@ -778,3 +778,30 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: Gmail and Canva bounties explicitly state an existing PR has been finalized and ask contributors not to submit more PRs while app review is pending. BuyWhere is a catalog/listing request, not a bounty request.
+
+## Screening 2026-05-22: Firecrawl/Coolify duplicate public patch targets
+
+- bounty URL: none confirmed; public issue/PR scan for fast automation-adjacent patch candidates.
+- reward amount: no confirmed bounty for Firecrawl issues; Coolify #6894 claims `$1,000`.
+- repos:
+  - firecrawl/firecrawl.
+  - coollabsio/coolify.
+  - rohitdash08/FinMind.
+- issues checked:
+  - https://github.com/firecrawl/firecrawl/issues/2582
+  - https://github.com/firecrawl/firecrawl/issues/3300
+  - https://github.com/firecrawl/firecrawl/issues/3373
+  - https://github.com/firecrawl/firecrawl/issues/3407
+  - https://github.com/firecrawl/firecrawl/issues/3441
+  - https://github.com/firecrawl/firecrawl/issues/3394
+  - https://github.com/firecrawl/firecrawl/issues/3477
+  - https://github.com/firecrawl/firecrawl/issues/3323
+  - https://github.com/firecrawl/firecrawl/issues/3169
+  - https://github.com/coollabsio/coolify/issues/6894
+  - https://github.com/rohitdash08/FinMind/issues/77
+- why selected: public TypeScript/SDK/webhook/automation fit and one visible `$1,000` bounty signal.
+- what was done: searched issue and PR history before touching code to avoid duplicate bounty or duplicate OSS patch submissions.
+- test result: not attempted; no unique patch selected.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: all high-fit Firecrawl issues checked have existing PRs except #3210, whose described CLI source path is not present in the current repository checkout. Coolify #6894 already has multiple competing PRs, including recent full implementations. FinMind #77 already has several PRs, while our local patch remains prepared but not submitted.

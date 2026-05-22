@@ -13,6 +13,7 @@ Purpose: prevent wasted night-shift cycles on Opire listings that still show ava
 - Issue requires private credentials, paid accounts, production data, OAuth approvals, or high-permission tokens.
 - Issue or bounty is explicitly reserved for interviews, candidates, or a named solver.
 - Issue text says the PR is already finalized, under platform/app review, or asks contributors not to submit more PRs.
+- Existing PR search shows multiple active full implementations for the same bounty and the task is not safely splittable.
 
 ## Checked Listings
 
@@ -29,6 +30,8 @@ Purpose: prevent wasted night-shift cycles on Opire listings that still show ava
 | 2026-05-22T08:06:00+08:00 | Activepieces MCP piece bounty for Gmail | https://github.com/activepieces/activepieces/issues/8072 | 150 | skip | Issue says the PR is finalized and asks contributors to refrain from additional PRs while app review is pending. |
 | 2026-05-22T08:08:00+08:00 | Activepieces MCP piece bounty for Canva | https://github.com/activepieces/activepieces/issues/8135 | 150 | skip | Issue says the PR is finalized and asks contributors to refrain from additional PRs while app review is pending. |
 | 2026-05-22T08:10:00+08:00 | Activepieces BuyWhere integration listing | https://github.com/activepieces/activepieces/issues/13083 | 0 | skip | Listing request without a bounty signal or scoped emergency automation patch. |
+| 2026-05-22T08:27:00+08:00 | Coolify project-specific members bounty | https://github.com/coollabsio/coolify/issues/6894 | 1000 | skip | Multiple active and historical full implementation PRs already exist, so a late duplicate would have low payout probability. |
+| 2026-05-22T08:28:00+08:00 | FinMind webhook event system bounty | https://github.com/rohitdash08/FinMind/issues/77 | 50 | skip-for-now | Local patch exists, but multiple active PRs already claim the bounty; defer unless maintainer signals additional submissions are wanted. |
 
 ## Next Higher-Value Search Pattern
 
