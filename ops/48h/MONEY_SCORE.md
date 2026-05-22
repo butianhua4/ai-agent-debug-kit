@@ -113,7 +113,8 @@ Score rules:
 | 2026-05-22T13:48:00+08:00 | Added WhatsApp Cloud API Meta integration proposal | 80 | Live Freelancer AI WhatsApp integration lead converted into a safe client-operated setup proposal with PHI/token/OAuth boundaries; not sent and not revenue |
 | 2026-05-22T13:53:00+08:00 | Added multi-platform social post automation proposal | 80 | Live Freelancer social automation lead converted into a manual-review-first queue proposal with OAuth/publishing/payment boundaries; not sent and not revenue |
 | 2026-05-22T13:56:00+08:00 | Screened Opire JS/TS quick-patch candidates | 20 | Rejected an inaccessible electron-template bounty and closed ToolJet issue before wasting clone/test cycles; not revenue |
+| 2026-05-22T13:58:00+08:00 | Added publish blocker and send queue | 50 | Converts the current no-revenue bottleneck into exact user-only profile actions and a prioritized send queue for immediate Freelancer submissions after the gate clears; not sent and not revenue |
 
 ## Total
 
-5060
+5110
