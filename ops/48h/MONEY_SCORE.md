@@ -61,7 +61,8 @@ Score rules:
 | 2026-05-22T07:50:00+08:00 | Added n8n Google Sheets Slack seed-workflow proposal | 80 | Fresh verified-client Freelancer n8n job converted into a budget-fit proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T08:15:00+08:00 | Added reserved/finalized bounty filters | 20 | Preserves public bounty cycles by skipping interview-reserved and finalized-app-review listings; not revenue |
 | 2026-05-22T08:30:00+08:00 | Added duplicate-PR bounty filters | 20 | Prevents late duplicate submissions on crowded public bounties and keeps cycles focused on unique patch opportunities; not revenue |
+| 2026-05-22T08:55:00+08:00 | Screened Opire TypeScript quick-patch candidates | 20 | Eliminated a 404 Electron bounty and closed Storybook bounty before cloning, preserving focus for viable paid patches; not revenue |
 
 ## Total
 
-1800
+1820

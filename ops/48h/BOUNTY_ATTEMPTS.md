@@ -805,3 +805,22 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: all high-fit Firecrawl issues checked have existing PRs except #3210, whose described CLI source path is not present in the current repository checkout. Coolify #6894 already has multiple competing PRs, including recent full implementations. FinMind #77 already has several PRs, while our local patch remains prepared but not submitted.
+
+## Screening 2026-05-22: Opire TypeScript quick-patch candidates
+
+- bounty URL: https://app.opire.dev/home and individual Opire issue pages.
+- reward amount: `$100` for `aueangpanit/electron-template`, `$110` for `storybookjs/storybook`, with additional Opire TypeScript/JavaScript listings reviewed from the public home/search page.
+- repos:
+  - aueangpanit/electron-template.
+  - storybookjs/storybook.
+- issues checked:
+  - https://app.opire.dev/issues/01K6K4YTSWT7XF53GM3KCTBG7S
+  - https://github.com/aueangpanit/electron-template/issues/1
+  - https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG
+  - https://github.com/storybookjs/storybook/issues/12641
+- why selected: visible Opire rewards, TypeScript/JavaScript fit, and the Electron tray-icon task looked like a fast desktop automation patch target.
+- what was done: opened the Opire listing, extracted the GitHub issue URL, checked repository and issue visibility through the GitHub connector, and searched for existing linked/competing PR context.
+- test result: not attempted; no cloneable unique target was found.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: `aueangpanit/electron-template` returned GitHub `404 Not Found`, so the repo/issue is not safely actionable despite the Opire listing. Storybook #12641 is already closed and has a referenced submitted PR, so it is not a clean current bounty target.
