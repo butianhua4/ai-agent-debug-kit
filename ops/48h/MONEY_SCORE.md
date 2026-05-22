@@ -133,7 +133,8 @@ Score rules:
 | 2026-05-22T16:30:00+08:00 | Submitted Outlook AI quote automation Freelancer bid | 150 | User submitted the filled INR 25000 / 5 day Freelancer bid; this creates real platform pipeline but is not awarded, not paid, and not revenue |
 | 2026-05-22T17:40:00+08:00 | Improved Freelancer public seller profile | 50 | Updated visible headline and summary to position the account for AI automation, webhook, API reliability, n8n, Zapier, Make, Power Automate, OpenAI, and safe sanitized-log work; not revenue |
 | 2026-05-22T17:56:00+08:00 | Added Power Automate email processor proposal | 80 | Fresh Freelancer Microsoft 365 shared-mailbox automation lead converted into a safe bid-ready proposal; not sent and not revenue |
+| 2026-05-22T18:01:00+08:00 | Added n8n webhook MySQL proposal | 80 | Fresh Freelancer n8n webhook-to-MySQL automation lead converted into a safe bid-ready proposal; not sent and not revenue |
 
 ## Total
 
-6600
+6680

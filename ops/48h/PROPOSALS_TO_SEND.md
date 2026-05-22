@@ -2341,3 +2341,33 @@ Could you share a redacted screenshot of the mailbox/folder structure and the ex
 
 Next question to ask: Do they need this to run on a schedule, on new email arrival, or both?
 User action required: Send manually through Freelancer if platform rules allow. Do not request Microsoft credentials, OAuth grants, tenant admin access, API keys, tokens, private email contents, payment access, KYC, or off-platform contact.
+
+## [LEAD #42]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/webhook-mysql-automation
+Pain: Buyer has an inbound webhook sending user data and needs an n8n workflow to parse, transform, validate, deduplicate, and save it to MySQL.
+Suggested package: Fixed seed implementation for one webhook-to-MySQL path using sanitized payloads and schema.
+Suggested price: `$250` fixed seed milestone; upsell only if there are multiple payload types, hosting/deployment work, or ongoing monitoring.
+Risk: Real database credentials, API secrets, customer data, and production n8n access must stay client-side. Start with fake payloads, sanitized schema, and a client-operated deployment.
+
+Message draft:
+
+Hi, I can help build the n8n webhook-to-MySQL workflow and keep it easy to maintain.
+
+The safest first version can work from a fake webhook payload, your sanitized MySQL table schema, and a sample of the expected final row. I do not need your database password, API keys, tokens, production customer data, OAuth grants, payment access, or private credentials to start.
+
+For the first milestone, I would:
+- map the incoming webhook payload into clear n8n fields,
+- validate required fields and normalize data before insert,
+- add duplicate prevention rules,
+- write clean MySQL insert/update logic,
+- add basic error handling and retry/failure notes,
+- deliver a short handoff doc for future field changes and redeploys.
+
+Suggested first milestone: $250 fixed for one webhook path into one MySQL table using sanitized sample data. If there are multiple payload formats or deployment/hosting work, I can scope that separately after the first workflow is stable.
+
+Can you share a fake sample webhook payload and the target MySQL column list?
+
+Next question to ask: Should duplicate prevention use email, user ID, webhook event ID, or a composite key?
+User action required: Send manually through Freelancer if platform rules allow. Do not request database passwords, production n8n credentials, API keys, tokens, OAuth grants, live customer data, payment access, KYC, or off-platform contact.
