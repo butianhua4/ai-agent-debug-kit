@@ -6,6 +6,16 @@ Purpose: the fastest compliant send path after the Freelancer profile/compliance
 
 Confirmed revenue remains `$0` until Freelancer shows an awarded/paid project.
 
+## Live Check Update
+
+2026-05-22T14:56:00+08:00 live page checks found that the previous Top 3 batch is not currently sendable:
+
+- Make.com Training System: accepted and Preferred-only.
+- Ongoing Zapier Automation Management: project page does not exist.
+- OpenClaw Business Automation: closed for bidding.
+
+Do not send this old batch unless the project page later reopens. Use `ops/48h/FREELANCER_LIVE_BLOCKERS_2026-05-22.md` before spending bids.
+
 ## Before Sending
 
 Only send if the project page is still open for bidding and the account can bid without adding funds.
@@ -14,11 +24,13 @@ Do not add funds, handle KYC, tax, payout, wallet, billing, Payoneer, Stripe, or
 
 All messages must stay inside Freelancer. Do not ask clients to move off-platform.
 
-## Send 1: Make.com Training System
+## Former Send 1: Make.com Training System
 
 URL: https://www.freelancer.com/projects/make-com/automation-specialist-for-make-com
 
-Why first: highest current fit and budget signal, `$750-1500 USD`, payment-verified buyer, explicit Make.com/Twilio/WhatsApp scheduling questions already answered.
+Current status: blocked. Live page says accepted and only Preferred Freelancers can bid.
+
+Former reason: highest current fit and budget signal, `$750-1500 USD`, payment-verified buyer, explicit Make.com/Twilio/WhatsApp scheduling questions already answered.
 
 Bid amount:
 
@@ -52,11 +64,13 @@ After sending, record status:
 sent_make_training_system
 ```
 
-## Send 2: Ongoing Zapier Automation Management
+## Former Send 2: Ongoing Zapier Automation Management
 
 URL: https://www.freelancer.com/projects/zapier/ongoing-zapier-automation-management
 
-Why second: recurring maintenance potential across Zapier, IMAP, Nanonets, OpenAI, Xero, OCR, PDFs, and email automation.
+Current status: rejected. Live page says this project does not exist.
+
+Former reason: recurring maintenance potential across Zapier, IMAP, Nanonets, OpenAI, Xero, OCR, PDFs, and email automation.
 
 Bid amount:
 
@@ -88,11 +102,13 @@ After sending, record status:
 sent_zapier_automation_management
 ```
 
-## Send 3: OpenClaw Business Automation
+## Former Send 3: OpenClaw Business Automation
 
 URL: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
 
-Why third: direct OpenClaw business automation fit, can use `agent-skill-packs` as trust asset, and starts from fake data instead of risky store/customer credentials.
+Current status: rejected. Live page says closed for bidding.
+
+Former reason: direct OpenClaw business automation fit, can use `agent-skill-packs` as trust asset, and starts from fake data instead of risky store/customer credentials.
 
 Bid amount:
 
@@ -128,12 +144,13 @@ sent_openclaw_business_automation
 
 Skip it immediately. Do not spend bids, upgrades, or funds on closed/select-only projects.
 
-Fallback order:
+Do not use the old fallback order until each page is live checked. The 2026-05-22 live check also found these fallback pages blocked:
 
-1. `ops/48h/OPENCLAW_SYSTEMS_ENGINEER_BID.md`
-2. `ops/48h/OPENCLAW_WINDOWS_AUTONOMOUS_BID.md`
-3. `ops/48h/OPENCLAW_AWS_BID.md`
-4. `ops/48h/FREELANCER_BID_FIELD_PACK.md` Bid #2: AI Bid Filter Automation
+- `ops/48h/OPENCLAW_SYSTEMS_ENGINEER_BID.md`: closed for bidding.
+- `ops/48h/OPENCLAW_WINDOWS_AUTONOMOUS_BID.md`: closed for bidding.
+- `ops/48h/OPENCLAW_AWS_BID.md`: accepted.
+
+Next valid action is to search fresh Freelancer listings and verify the page is open before sending.
 
 ## Safe Client Intake After Reply
 
