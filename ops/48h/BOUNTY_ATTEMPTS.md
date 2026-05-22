@@ -914,3 +914,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: most surfaced projects were closed or in progress, healthcare/medical outbound-call projects with sensitive data and consent risk, or old/low-budget voice automation posts. Keep monitoring for narrow `Vapi/n8n scheduling sync` repair tasks where the buyer provides sanitized workflow exports/logs and no live calling credentials.
+
+## Follow-up 2026-05-22: TypeORM PR #12532 collation feedback addressed
+
+- bounty URL: https://app.opire.dev/issues/01HWJNZ5HQMVG2TCW6XHQQJ3QT.
+- reward amount: `$120`.
+- repo: typeorm/typeorm.
+- issue: https://github.com/typeorm/typeorm/issues/3357.
+- PR: https://github.com/typeorm/typeorm/pull/12532.
+- why selected: Qodo posted a fresh actionable bug on the existing bounty PR, and addressing review feedback is the fastest path toward merge/award.
+- what was done: changed Postgres collation ALTER statements to use `this.driver.createFullType(newColumn)` and `this.driver.createFullType(oldColumn)`, preventing collation changes from dropping `varchar` length/type modifiers; added Postgres collation regression coverage for preserving length after a collation update.
+- test result: `corepack pnpm run compile` passed; `git diff --check` passed; targeted local mocha run is blocked before DB execution by this checkout's TS/ESM test module resolution for extensionless test imports.
+- PR URL or patch path: pushed commit `c1516f2` to https://github.com/typeorm/typeorm/pull/12532 and commented on the PR with validation notes.
+- payout status: no award, no merge, no confirmed revenue yet.

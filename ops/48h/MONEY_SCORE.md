@@ -94,7 +94,8 @@ Score rules:
 | 2026-05-22T10:25:00+08:00 | Added Zapier intake top-priority send brief | 50 | Converted the highest-value $1500-3000 intake automation lead into a one-page copy-ready manual-send asset; not sent and not revenue |
 | 2026-05-22T10:30:00+08:00 | Added AI order email processing proposal | 80 | EUR 250-750 Gmail/OpenAI/Trello quote workflow lead converted into a manual-review-first proposal; not sent and not revenue |
 | 2026-05-22T10:35:00+08:00 | Screened voice AI n8n scheduling leads | 20 | Filtered out closed/in-progress, medical/outbound-call risk, and old low-budget voice AI leads before switching to PR/award monitoring; not revenue |
+| 2026-05-22T10:45:00+08:00 | Addressed TypeORM collation review feedback | 40 | Existing public $120 bounty PR updated for Qodo's collation/full-type bug; compile and diff check passed; not merged, not awarded, not revenue |
 
 ## Total
 
-3980
+4020
