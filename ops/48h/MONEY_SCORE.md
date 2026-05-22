@@ -118,7 +118,8 @@ Score rules:
 | 2026-05-22T14:16:00+08:00 | Saved high-ticket Make.com pattern and rejected closed project | 50 | Verified the $1800-3000 Make.com/WhatsApp/CRM project is closed, removed it from sendable pipeline, and preserved the high-ticket reliability pattern for future live leads; not sent and not revenue |
 | 2026-05-22T14:22:00+08:00 | Added Make.com training system bid pack | 80 | Converted active $750-1500 Make.com/Twilio/WhatsApp training rollout lead into a bid-field-ready proposal with explicit answers to buyer screening questions; not sent and not revenue |
 | 2026-05-22T14:27:00+08:00 | Added OpenClaw business automation bid pack | 80 | Converted active $250-750 OpenClaw business automation lead into a bid-field-ready diagnostic proposal with safe fake-data prototype boundaries; not sent and not revenue |
+| 2026-05-22T14:32:00+08:00 | Added OpenClaw systems engineer bid pack | 80 | Converted active OpenClaw VPS/Docker/Nginx/SSL/Telegram lead into a bid-field-ready deployment diagnostic with strict secret-handling boundaries; not sent and not revenue |
 
 ## Total
 
-5400
+5480

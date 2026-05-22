@@ -36,6 +36,10 @@ Once the profile is saved, submit only projects that pass these checks:
    - URL: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
    - Budget: $250-750 USD
    - Why sixth: direct OpenClaw business automation fit with payment-verified buyer; use `ops/48h/OPENCLAW_BUSINESS_AUTOMATION_BID.md`.
+7. `AI Systems Engineer for OpenClaw Integration`
+   - URL: https://www.freelancer.com/projects/ai-development/systems-engineer-for-openclaw-40382443
+   - Budget: $250-750 AUD
+   - Why seventh: direct OpenClaw/VPS/Docker/Nginx/SSL/Telegram systems fit; use `ops/48h/OPENCLAW_SYSTEMS_ENGINEER_BID.md`.
 
 Do not bid on:
 
