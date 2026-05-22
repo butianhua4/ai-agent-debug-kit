@@ -100,7 +100,8 @@ Score rules:
 | 2026-05-22T11:05:00+08:00 | Screened Algora and Opire bounty refresh | 20 | Verified fresh-looking JS/TS/MCP bounty results against live issue status and filtered closed/rewarded/untestable/high-risk targets; not revenue |
 | 2026-05-22T11:10:00+08:00 | Added fresh n8n AI automation and seed-fix proposals | 80 | Two open Freelancer n8n leads converted into safe manual-send proposals and send queue entries; not sent and not revenue |
 | 2026-05-22T11:23:00+08:00 | Added Portuguese n8n financial-agent repair proposal | 80 | Fresh $30-250 Freelancer n8n financial-agent error lead converted into a safe Portuguese seed-repair proposal and send queue entry; not sent and not revenue |
+| 2026-05-22T11:30:00+08:00 | Added ongoing Zapier automation management proposal | 80 | Fresh CAD 250-750 Freelancer Zapier/OpenAI/OCR/Xero maintenance lead converted into a safe audit/rescue proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-4270
+4350

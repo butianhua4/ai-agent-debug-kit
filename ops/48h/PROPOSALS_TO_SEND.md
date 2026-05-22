@@ -2015,3 +2015,32 @@ Você pode enviar um print do erro, o nome do nó que falha e um export do workf
 
 Next question to ask: Qual é o nó que falha e qual era o resultado esperado do agente financeiro?
 User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid or ask for credentials.
+
+## [LEAD #31]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/zapier/ongoing-zapier-automation-management
+Pain: Buyer already has a web of Zapier workflows across IMAP, Nanonets, OpenAI, Xero, PDF passcode protection, outbound email, OCR, and invoice automation. They need ongoing workflow health, break/fix support, expansion, and concise change notes.
+Suggested package: Start with a paid automation health audit and one same-day workflow rescue, then convert to ongoing maintenance if the first workflow proves fit.
+Suggested price: `$499` diagnostic for current workflow map and first failure triage; `$750 CAD` scoped first rescue/optimization milestone inside posted budget; do not pitch the `$5,000` sprint until they confirm multiple business-critical workflows and budget.
+Risk: High credential and private document risk. No IMAP credentials, Xero credentials, Nanonets/OpenAI keys, OAuth grants, invoice data, private attachments, payment authority, or off-platform contact. Start with sanitized Zap screenshots/run history, fake email/PDF examples, redacted error samples, and client-operated screen share if needed.
+
+Message draft:
+
+Hi, this is a strong fit. I help stabilize failing Zapier/OpenAI/OCR/invoice automations and turn them into maintainable workflows with clear change logs.
+
+I do not need passwords, API keys, OAuth access, Xero access, email credentials, private invoices, or payment authority to start. A safe first step is to review a sanitized workflow map, redacted Zap run history, screenshots of failing steps, and fake sample files/emails that match the real structure.
+
+For your stack, I would start by:
+- mapping the current IMAP -> OCR/Nanonets -> OpenAI -> PDF/email/Xero workflow chain,
+- identifying fragile steps, missing guards, field-mapping drift, and failure points,
+- prioritizing the highest-business-impact Zap first,
+- adding/recommending validation, retry, and alerting paths,
+- delivering a concise change log and maintenance checklist so future rule changes are easier.
+
+Suggested first milestone: $499 for an automation health audit plus root-cause triage of the most important failing workflow. If you want me to fix/optimize one workflow path and validate it with sanitized test data, I can scope that as a $750 CAD first rescue milestone.
+
+Which workflow breaks most often right now: OCR extraction, OpenAI parsing, PDF protection/emailing, or Xero invoice creation?
+
+Next question to ask: Which workflow breaks most often and what redacted run history or fake sample input can they share first?
+User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, do not request credentials, and do not move off-platform.

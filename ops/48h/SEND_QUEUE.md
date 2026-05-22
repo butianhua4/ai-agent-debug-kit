@@ -708,3 +708,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: passwords, API keys, tokens, bank access, wallets, payment access, OAuth consent, customer financial records, private credentials, or off-platform contact.
 - first ask after reply: failing node name, sanitized workflow export, redacted error screenshot/log, fake sample payload, expected result, and deadline.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1S: Freelancer Ongoing Zapier Automation Management
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/zapier/ongoing-zapier-automation-management
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #31
+- suggested offer: `$499` workflow health audit/root-cause triage, or `$750 CAD` first rescue/optimization milestone inside posted budget.
+- why urgent: freshly visible listing, payment-relevant automation stack, explicit ongoing support need, and strong fit for Zapier/OpenAI/OCR/Xero workflow reliability.
+- send condition: user confirms Freelancer account/rules allow a compliant proposal and sends only through the platform.
+- do not ask for: IMAP credentials, Xero credentials, Nanonets/OpenAI API keys, OAuth consent, private invoices, email attachments, payment authority, wallet, KYC, private credentials, or off-platform contact.
+- first ask after reply: sanitized workflow map, redacted Zap run history, fake sample email/PDF, highest-impact failing Zap, current business rule change, and desired maintenance cadence.
+- status after user sends: move to `proposal_sent`.
