@@ -39,10 +39,22 @@ Can you share a sample FAQ, fake order example, inventory fields, preferred aler
 - URL: https://www.freelancer.com/projects/automation/openclaw-windows-autonomous-suite
 - Why third: larger `$250-750` budget and strong fit for OpenClaw, browser automation, Python, and master/sub-agent workflow.
 - Suggested opening: propose a clean Windows setup with safe public/test browser automation proof before touching real accounts.
-- Suggested offer: `$499` technical setup diagnostic leading to `$1,500` implementation sprint.
-- Safe first ask: Windows version, current install status, first safe browser automation proof.
-- Do not ask for: browser cookies, passwords, API keys, sensitive scrape targets, local private files.
+- Suggested offer: `$499` technical setup diagnostic or a budget-fit first milestone inside the posted `$250-750` range for reproducible Windows setup plus one safe demo. Discuss larger implementation only after the buyer confirms scope inside the platform.
+- Safe first ask: Windows version, current install status, preferred browser, first public/test form-filling demo, first public/test scraping target, and whether Python execution should be sandboxed.
+- Do not ask for: browser cookies, passwords, API keys, sensitive scrape targets, local private files, private account access, payment access, wallet access, OAuth grants, or off-platform contact.
+- Strict boundary: browser automation proof should use public/test websites or buyer-created dummy accounts only. No credential harvesting, no private account automation, no sensitive scraping, and no bypassing site rules.
+- Fastest safe first milestone: install/verify OpenClaw on Windows, connect a Python sandbox, create a master-agent log format, and run three demos on safe targets: form fill, structured scrape, and navigation task.
 - Draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #18.
+
+### Tight Manual Bid Variant
+
+Use this shorter version if the proposal form has limited space:
+
+I can help set up OpenClaw on Windows with browser automation, Python execution, and a simple master/sub-agent logging structure. I would start with a safe first milestone inside your posted budget: reproducible install, Python sandbox, and three public/test demos for form filling, structured scraping, and navigation.
+
+I do not need browser cookies, passwords, API keys, private account access, sensitive scrape targets, OAuth grants, payment access, or local private files. The first proof should use public/test targets or dummy accounts only, then we can document how you extend it safely.
+
+Can you share your Windows version, current OpenClaw install status, preferred browser, and the first safe public/test automation proof you want?
 
 ## Current PR Watch
 
