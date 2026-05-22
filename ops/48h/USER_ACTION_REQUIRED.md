@@ -163,3 +163,14 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Current status: buyer response pipeline; no award, no order, no payment, and no confirmed revenue yet.
 - User action required only if the buyer awards the project, requests payment/KYC/tax/payout setup, or asks for off-platform handling.
 - Safety boundary: keep communication on Freelancer. Do not share private scraped lists, personal emails from non-public sources, spam lists, credentials, private client data, payment details, KYC, tax, wallet, payout, or off-platform commission/payment handling.
+
+## 2026-05-22T19:05:00+08:00 - Freelancer bid blockers checked
+
+- Blocked project: `https://www.freelancer.com/projects/data-analysis/Excel-Sales-Tracker-Google-Sheets/details`
+  - Reason: Freelancer shows "To unlock bidding, maintain a minimum balance of $20 USD or equivalent."
+  - User action required only if the user chooses to add funds. Codex will not add funds or touch payment authorization.
+- Blocked project: `https://www.freelancer.com/projects/api-integration/WordPress-Developer-for-Amrod-API/details`
+  - Reason: project is open and the bid amount/days fields can be filled, but the current in-app browser input path does not reliably write the proposal textarea; Freelancer AI bid generation also requires a Plus membership.
+  - Safe prepared bid values: USD 180, 4 days, one milestone for Amrod API sync integration and Promotions catalog setup.
+  - User action required only if the user wants to manually paste/send the prepared proposal from Codex; do not select sponsored/sealed/highlight paid upgrades.
+- Current status: neither blocker is revenue. Continue with projects that can be submitted without recharge, membership upgrade, KYC, tax, payout, wallet, or paid upgrades.
