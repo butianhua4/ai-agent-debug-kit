@@ -528,3 +528,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: WhatsApp/Telegram credentials, bot tokens, API keys, OAuth consent, phone lists, customer data, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: scenario list, fake event payloads, desired message templates, fallback rules, current manual process, and highest-impact workflow path.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1K: Freelancer Automated WordPress Intake Rebuild
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/zapier/automated-wordpress-intake-rebuild
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #23
+- suggested offer: `$499 Architecture Diagnostic`, `$1,500 Same-Day Workflow Rescue` for one critical intake-to-CRM/payment/document path, or around `$3,000` for a scoped broader rebuild.
+- why urgent: $1,500-$3,000 fixed budget, posted less than 20 seconds ago in public crawl, and exact Zapier/Stripe/HubSpot/DocuSign/Google Drive/Xero intake automation reliability fit.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Stripe credentials, HubSpot credentials, DocuSign/PandaDoc credentials, Google Drive OAuth, Xero credentials, API keys, payment authority, client PII, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: intake form fields, fake sample payload, HubSpot field map, document trigger rules, Drive folder naming rules, Xero invoice template assumptions, and the highest-risk path.
+- status after user sends: move to `proposal_sent`.

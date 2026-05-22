@@ -215,6 +215,36 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #23]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/zapier/automated-wordpress-intake-rebuild
+Pain: Buyer is rebuilding a WordPress client-intake hub and needs Zapier to coordinate HubSpot CRM updates, Calendly prospect tagging, Stripe payments, PandaDoc/DocuSign engagement letters, Google Drive filing, and Xero invoice creation.
+Suggested package: Same-Day Workflow Rescue for the highest-risk intake path first, or a scoped full-chain build if credentials and templates are ready client-side.
+Suggested price: $499 architecture diagnostic; $1,500 for one critical intake-to-CRM/payment/document workflow; $3,000 for the broader intake automation rebuild if scope is confirmed.
+Risk: This project touches payments, CRM, signed documents, Google Drive, and accounting. Do not request or handle passwords, API keys, OAuth consent, Stripe payment authority, Xero credentials, or real client PII. Use fake payloads, sanitized screenshots, and client-side authorization only.
+
+Message draft:
+
+Hi, this is a strong fit for my automation rescue/build work because the risk is not just connecting tools. The critical part is making the intake chain reliable: form submission, CRM update, booking status, payment, engagement letter, file storage, and Xero invoice creation all need clear state, error handling, and duplicate prevention.
+
+I do not need passwords, API keys, OAuth consent, Stripe payment access, Xero credentials, Google Drive credentials, or real client PII to start. A safe first pass can be done from a sanitized intake flow diagram, fake form payloads, field maps, template rules, and screenshots of the current setup.
+
+My approach would be:
+- map each intake state: prospect, booked, opted-in, paid, document generated, document signed, filed, invoiced,
+- define the Zapier trigger/action chain with clear guards and fallback paths,
+- prevent duplicate HubSpot contacts, duplicate folders, duplicate documents, and duplicate invoices,
+- validate required fields before payment/document/accounting steps,
+- log success/failure status so failed steps can be retried safely,
+- document the handoff so your team can maintain or extend the workflows.
+
+Suggested starting scope: $499 for an architecture diagnostic and implementation plan. If you want the highest-risk path repaired or built first, I would quote $1,500 for one critical intake-to-CRM/payment/document workflow. If you want the broader chain rebuilt end to end, I can scope that around the $3,000 range after reviewing sanitized materials and confirming the exact document/accounting rules.
+
+Can you share the intake form fields, HubSpot field map, payment/document trigger rules, Google Drive folder naming rules, and Xero invoice template assumptions using fake sample data?
+
+Next question to ask: Which step is most important to make reliable first: HubSpot contact creation, Stripe payment trigger, document generation/signing, Drive filing, or Xero invoicing?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #22]
 
 Source: Freelancer
