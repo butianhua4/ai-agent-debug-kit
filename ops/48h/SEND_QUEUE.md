@@ -395,3 +395,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Google login, Slack login, OAuth access, API keys, tokens, private sheet data, or payment access.
 - first ask after reply: one fake sheet row, trigger condition, desired Slack message text, and success criteria.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1D: Freelancer n8n database workflow repair
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/workflow-automation-specialist-39773700
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #12
+- suggested offer: `$30` budget-fit seed repair if still open; `$499 Quick Diagnostic` only if the attached workflow shows broader reliability issues.
+- why urgent: public page says open, posted less than 20 seconds ago, US client has 5.0 rating and payment method verified, and the buyer explicitly has an attached n8n workflow they want fixed.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: database credentials, API keys, tokens, production rows, private records, payment access, or off-platform contact.
+- first ask after reply: sanitized workflow export, fake table/schema sample, expected destination/output, current error screenshot, and success criteria.
+- status after user sends: move to `proposal_sent`.

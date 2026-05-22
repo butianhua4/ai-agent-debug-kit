@@ -79,6 +79,7 @@ Confirmed revenue is only counted when a platform confirms an order, a bounty is
 | Freelancer | https://www.freelancer.com/projects/n8n/manychat-automation-specialist-needed | open job post | 499-1500 target | proposal_ready | User can send ManyChat+n8n/Make reliability proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.31 | No auto-bid; needs sanitized funnel outline, fake payload, and field map only |
 | Freelancer | https://www.freelancer.com/projects/n8n/automation-engineer | open job post | 499 trial target | proposal_ready | User can send n8n automation engineer paid-trial proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.24 | Low hourly range; narrow first to paid workflow audit |
 | Freelancer | https://www.freelancer.com/projects/n8n/automation-specialist-39677438 | open job post | 250-499 target | proposal_ready | User can send n8n Google Sheets + Slack seed workflow proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.29 | Lower budget; no Google/Slack OAuth or credentials handled by Codex |
+| Freelancer | https://www.freelancer.com/projects/n8n/workflow-automation-specialist-39773700 | open job post | 30-499 target | proposal_ready | User can send n8n database workflow repair seed proposal through Freelancer if account/rules allow | user | ops/48h/PROPOSALS_TO_SEND.md | 0.30 | Low budget; page has malformed active timestamp, and DB credentials/private rows must stay client-side |
 
 ## Current confirmed revenue
 

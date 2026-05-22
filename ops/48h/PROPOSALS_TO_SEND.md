@@ -120,6 +120,35 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #12]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/workflow-automation-specialist-39773700
+Pain: Buyer needs an attached n8n workflow fixed to automate data transfer between a database and other services, with reliability and efficiency improvements.
+Suggested package: Budget-fit seed repair for the posted $10-$30 project; upgrade path to Quick Diagnostic if the attached workflow reveals broader mapping, retry, or database consistency issues.
+Suggested price: $30 for a small seed repair/review inside the posted budget; $499 Quick Diagnostic only if the buyer wants a deeper workflow reliability audit.
+Risk: Low posted budget and the attached workflow may require database credentials. Do not request database credentials, API keys, tokens, or production records. Start from sanitized workflow JSON, fake rows/schema, and screenshots.
+
+Message draft:
+
+Hi, I can help fix the n8n workflow and make the database-to-service transfer more reliable.
+
+I do not need database credentials, API keys, tokens, or production data to start. For the first pass, please share a sanitized workflow export, the database table/field structure using fake sample rows, the target service/output you expect, and a screenshot of the current error or failed node.
+
+For a small scoped fix inside your posted budget, I would:
+- review the attached workflow structure,
+- identify the failing trigger, database node, mapping, or destination node,
+- check the JSON/field mapping and required values,
+- add a simple reliability guard where appropriate,
+- return the repaired workflow notes and a short validation checklist.
+
+If the workflow has multiple hidden failure paths or needs stronger retry/error handling, I would recommend a separate $499 Quick Diagnostic before rebuilding anything larger.
+
+Can you share the sanitized workflow JSON and one fake example row showing the expected input/output?
+
+Next question to ask: Is the current failure in the database read step, field mapping step, or the destination service write step?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #9]
 
 Source: Freelancer
