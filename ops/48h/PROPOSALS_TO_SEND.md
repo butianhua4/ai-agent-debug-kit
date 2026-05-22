@@ -215,6 +215,53 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #20]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/reviewer-for-business-automation-plans
+Pain: Buyer needs founder-submitted automation plans reviewed before a live build day so impossible workflows, missing access, API/webhook limitations, ambiguous data mapping, and execution blockers are caught before participants get stuck.
+Suggested package: Quick Diagnostic / automation build-plan review.
+Suggested price: $499 diagnostic or approximately $500 platform bid for a defined review batch.
+Risk: The role includes flagging missing credentials/access, but Codex should not request or handle credentials, OAuth, API keys, private customer data, or payment access. Only review sanitized plan documents and access checklists.
+
+Message draft:
+
+Hershey.
+
+Hi, I can review founder automation plans before build day and flag the technical gaps that usually turn into live implementation blockers: missing triggers, unsupported real-time APIs, unclear field mapping, missing access, duplicate-risk logic, error handling gaps, and untestable success criteria.
+
+I do not need passwords, API keys, OAuth consent, payment access, or private customer data to perform the review. I can work from founder-submitted plans, tool lists, screenshots, sanitized examples, and a simple access-readiness checklist.
+
+Describe a time I caught a critical problem before build:
+In workflow audits, a common blocker is assuming a tool supports a real-time trigger when it only supports polling or manual export. I catch that by checking the trigger source, API/webhook capability, payload shape, and whether the target action has all required fields. The fix is usually to re-scope the workflow around a scheduled sync, webhook bridge, or manual review queue before build day so the team does not lose time during implementation.
+
+For CRM → QuickBooks invoice automation, I would ask:
+- What exact event means "job complete" and where does it fire?
+- Does the CRM expose that event through webhook, API polling, or only UI/export?
+- How are customers matched between CRM and QuickBooks?
+- What fields are required for invoice line items, tax, currency, due date, and customer email?
+- What should happen if customer/account/category mapping is missing?
+- Is the invoice created as draft, sent automatically, or held for approval?
+- What duplicate-prevention key is used?
+- What error log or human-review path exists if QuickBooks rejects the request?
+
+A well-prepared pre-build document should include:
+- business goal and one owner,
+- tools involved and who controls access,
+- exact trigger,
+- data fields and example payload,
+- required actions in order,
+- edge cases,
+- success criteria,
+- credentials/access checklist for the founder to complete themselves,
+- test cases for happy path, missing data, duplicate event, API failure, and manual override,
+- clear notes for the Lead Architect on what must change before build day.
+
+Can you share your build-plan template, the note format you want for the Lead Architect, and one sanitized example plan so I can match your review style?
+
+Next question to ask: How many founder plans need review, and do you already have a standard blocker/risk rubric?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #18]
 
 Source: Freelancer

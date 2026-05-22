@@ -492,3 +492,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: Stripe/Gmail/QuickBooks credentials, OAuth consent, customer records, billing data, API keys, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: sanitized workflow list, success criteria, fake records, tools used by the Build Architect, and access-gap checklist.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 2C: Freelancer Reviewer for Business Automation Plans
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api/reviewer-for-business-automation-plans
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #20
+- suggested offer: approximately `$499` / `$500` automation build-plan review package.
+- why second-tier: strong diagnostic fit and clear screening questions, but already has 66 proposals and is less urgent than fresh build/rescue postings.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: founder credentials, OAuth consent, API keys, private customer data, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: build-plan template, note format for the Lead Architect, sanitized example plan, review batch size, and blocker rubric.
+- status after user sends: move to `proposal_sent`.

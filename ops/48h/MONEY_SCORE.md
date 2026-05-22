@@ -71,7 +71,8 @@ Score rules:
 | 2026-05-22T08:37:00+08:00 | Added Make.com training rollout proposal | 80 | Fresh $750-1500 Make.com training communication lead converted into a screening-question-ready proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T08:42:00+08:00 | Added Python Claude lead-gen diagnostic proposal | 80 | $3000-5000 AI automation lead converted into a compliance-first diagnostic proposal with clear anti-spam/credential boundaries; not sent and not revenue |
 | 2026-05-22T08:47:00+08:00 | Added automation logic specialist proposal | 80 | $250-750 one-day workflow logic lead converted into an edge-case/testability proposal; not sent and not revenue |
+| 2026-05-22T08:52:00+08:00 | Added automation plan reviewer proposal | 80 | Open $250-750 pre-build automation review lead converted into a screening-question-ready diagnostic proposal; not sent and not revenue |
 
 ## Total
 
-2480
+2560
