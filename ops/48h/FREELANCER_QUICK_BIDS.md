@@ -44,6 +44,10 @@ Once the profile is saved, submit only projects that pass these checks:
    - URL: https://www.freelancer.com/projects/automation/openclaw-windows-autonomous-suite
    - Budget: $250-750 USD
    - Why eighth: direct OpenClaw/Windows/browser automation/Python/master-agent setup fit; use `ops/48h/OPENCLAW_WINDOWS_AUTONOMOUS_BID.md`.
+9. `Set Up OpenClaw on AWS`
+   - URL: https://www.freelancer.com/projects/open-claw/set-openclaw-aws
+   - Budget: setup/implementation scope, start with $499 diagnostic
+   - Why ninth: direct AWS EC2 Windows Server 2022 OpenClaw setup fit; use `ops/48h/OPENCLAW_AWS_BID.md`.
 
 Do not bid on:
 
