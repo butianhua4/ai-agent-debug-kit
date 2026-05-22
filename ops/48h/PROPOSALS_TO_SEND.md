@@ -2164,3 +2164,32 @@ Which workflow fails most often right now, and can you share a redacted executio
 
 Next question to ask: Which one workflow has the highest business impact, and can they provide sanitized execution logs/failing-node screenshots/fake payloads?
 User action required: Freelancer profile/compliance gate must be completed before bidding. Do not request credentials, private customer data, OAuth grants, payment access, wallet, KYC, or off-platform contact.
+
+## [LEAD #36]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/power-automate/Automate-Office-Maintenance-Request
+Pain: Buyer needs to automate office building maintenance requests in Microsoft 365 / Power Automate, including request submission and stakeholder notifications.
+Suggested package: Capped first diagnostic and workflow design, then implementation if the intake/approval/notification path is clear.
+Suggested price: `$25/hour` capped first pass, or `$499` fixed workflow design/rescue milestone if they want the full first request-to-notification path implemented and documented.
+Risk: Microsoft 365 workflows often require tenant/admin permissions, OAuth grants, SharePoint/Forms/Teams/Outlook access, and internal facility data. Keep all access client-side and start from sanitized field lists, fake requests, and screen share.
+
+Message draft:
+
+Hi, I can help set up or stabilize a Microsoft 365 / Power Automate workflow for office maintenance requests.
+
+I do not need Microsoft admin credentials, passwords, OAuth grants, API keys, tenant access, payment access, or private credentials to start. A safe first step is enough: the request fields, stakeholder/notification rules, fake sample requests, expected routing/escalation behavior, and screenshots of the current Microsoft 365 setup. Any real account connection can stay client-operated on your side.
+
+For the first pass, I would:
+- map the request intake flow and required fields,
+- define who should be notified and when,
+- design the approval/escalation or status-update path,
+- identify where Power Automate should create, update, or notify records,
+- add basic failure handling and handoff notes so the workflow is maintainable.
+
+Suggested start: $25/hour with a capped first diagnostic, or $499 fixed for a scoped first workflow path from request submission to stakeholder notification with documentation.
+
+Which Microsoft 365 tools are you using for the request intake today: Forms, SharePoint List, Teams, Outlook, Planner, or something else?
+
+Next question to ask: What is the current intake source and who must be notified at each request status?
+User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request Microsoft credentials, OAuth grants, tenant admin access, private building data, payment access, KYC, or off-platform contact.
