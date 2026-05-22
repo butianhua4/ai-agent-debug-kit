@@ -850,3 +850,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: stale or unclear bounty listing; nearest ToolJet results are broad code-hinter feature requests, not the funded title. Skip until exact GitHub issue URL is available.
+
+## Follow-up 2026-05-22: TypeORM PR #12532 review feedback addressed
+
+- bounty URL: https://app.opire.dev/issues/01HWJNZ5HQMVG2TCW6XHQQJ3QT.
+- reward amount: `$120`.
+- repo: typeorm/typeorm.
+- issue: https://github.com/typeorm/typeorm/issues/3357.
+- PR: https://github.com/typeorm/typeorm/pull/12532.
+- why selected: this is the only currently submitted public bounty PR with fresh actionable review feedback.
+- what was done: addressed Qodo's review by normalizing varchar length comparison with `(length ?? "")` and adding data-preservation coverage to the functional Postgres column-length test suite.
+- test result: `corepack pnpm run compile` passed; `git diff --check` passed; targeted DB test remains blocked locally by missing root `ormconfig.json` / Postgres test DB config.
+- PR URL or patch path: pushed commit `6d30896` to the existing PR branch and commented on the PR with the validation notes.
+- payout status: no award, no merge, no confirmed revenue yet.
