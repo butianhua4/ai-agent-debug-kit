@@ -28,6 +28,11 @@ Once the profile is saved, submit only projects that pass these checks:
    - Budget: $30-250 USD
    - Why fourth: fast seed repair candidate, but lower ticket.
 
+5. `Automation Specialist for Make.com Training System`
+   - URL: https://www.freelancer.com/projects/make-com/automation-specialist-for-make-com
+   - Budget: $750-1500 USD
+   - Why fifth: payment-verified client, strong Make.com/Twilio/WhatsApp schedule-logic fit, and explicit screening questions already answered in `ops/48h/MAKE_TRAINING_SYSTEM_BID.md`.
+
 Do not bid on:
 
 - `Twilio-Vercel Integration Setup`: page says revenue-share only / no upfront payment.
