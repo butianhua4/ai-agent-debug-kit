@@ -117,7 +117,8 @@ Score rules:
 | 2026-05-22T14:07:00+08:00 | Added low-budget n8n automation engineer proposal | 80 | Fresh open Freelancer n8n/AI automation role converted into a bounded paid-test proposal, while stale Opire JS/TS bounties were filtered out; not sent and not revenue |
 | 2026-05-22T14:16:00+08:00 | Saved high-ticket Make.com pattern and rejected closed project | 50 | Verified the $1800-3000 Make.com/WhatsApp/CRM project is closed, removed it from sendable pipeline, and preserved the high-ticket reliability pattern for future live leads; not sent and not revenue |
 | 2026-05-22T14:22:00+08:00 | Added Make.com training system bid pack | 80 | Converted active $750-1500 Make.com/Twilio/WhatsApp training rollout lead into a bid-field-ready proposal with explicit answers to buyer screening questions; not sent and not revenue |
+| 2026-05-22T14:27:00+08:00 | Added OpenClaw business automation bid pack | 80 | Converted active $250-750 OpenClaw business automation lead into a bid-field-ready diagnostic proposal with safe fake-data prototype boundaries; not sent and not revenue |
 
 ## Total
 
-5320
+5400

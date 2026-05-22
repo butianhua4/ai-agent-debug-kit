@@ -32,6 +32,10 @@ Once the profile is saved, submit only projects that pass these checks:
    - URL: https://www.freelancer.com/projects/make-com/automation-specialist-for-make-com
    - Budget: $750-1500 USD
    - Why fifth: payment-verified client, strong Make.com/Twilio/WhatsApp schedule-logic fit, and explicit screening questions already answered in `ops/48h/MAKE_TRAINING_SYSTEM_BID.md`.
+6. `Openclaw AI Business Automation`
+   - URL: https://www.freelancer.com/projects/chatbot/openclaw-business-automation
+   - Budget: $250-750 USD
+   - Why sixth: direct OpenClaw business automation fit with payment-verified buyer; use `ops/48h/OPENCLAW_BUSINESS_AUTOMATION_BID.md`.
 
 Do not bid on:
 
