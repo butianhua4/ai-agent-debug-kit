@@ -149,6 +149,35 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #33]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/open-claw/devops-engineer-set-private-agent
+Pain: Buyer wants a secure private AI agent server setup and training: Ubuntu VPS, Docker, modular Python agent framework, main/sub-agent delegation, LLM integration, lightweight web UI, JSON output layer, logging, scheduled tasks, documentation, and knowledge transfer.
+Suggested package: Fixed architecture/setup diagnostic and implementation plan first; V1 setup milestone only if platform scope and credential handling are safe.
+Suggested price: $499 fixed diagnostic/architecture plan. If they want implementation after that, quote a platform milestone based on exact scope, but do not handle secrets directly.
+Risk: VPS root access, SSH keys, LLM API keys, web UI auth, and production server hardening are sensitive. Keep credentials client-side; client can type secrets on their own machine/session. Do not request or store root password, SSH private key, API key, OAuth, payment access, or wallet data.
+
+Message draft:
+
+Hi, I can help plan and set up this private AI agent server foundation in a secure, staged way.
+
+For the first step, I do not need your VPS root password, SSH private key, LLM API key, OAuth credentials, payment access, or any private tokens. You can keep all credentials on your side and enter secrets yourself during setup/training. I can work from your server specs, target architecture, and sanitized logs/screenshots.
+
+My suggested first milestone:
+- confirm the Ubuntu/Docker baseline and security assumptions,
+- design the modular Python agent framework with main/sub-agent delegation,
+- define the LLM integration boundary without exposing keys,
+- specify the lightweight web UI, JSON output contract, logging, and scheduled task model,
+- produce a setup checklist and training plan that you can operate later.
+
+Suggested scope: $499 fixed for the architecture/setup diagnostic, high-level architecture, risk checklist, phase-1 task plan, and training outline. If you want implementation after that, I can quote a separate V1 foundation milestone once we confirm access method, server constraints, and which parts you want to operate yourself.
+
+Can you share your VPS specs, whether Docker is already installed, the preferred LLM provider, and what the first safe demo task should be?
+
+Next question to ask: Do you want the first milestone to produce an architecture/setup plan only, or should it include a small local/sandbox demo before touching the VPS?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #32]
 
 Source: Freelancer

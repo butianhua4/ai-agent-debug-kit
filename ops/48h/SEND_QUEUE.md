@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 2F: Freelancer Private AI Agent Server Setup
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/open-claw/devops-engineer-set-private-agent
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #33
+- suggested offer: `$499` fixed architecture/setup diagnostic and implementation plan; implementation milestone only after platform-safe scope confirmation.
+- why second-tier: strong OpenClaw/private-agent architecture fit and recently active buyer, but public budget is anchored at `$2-8/hr`, so start with a fixed diagnostic rather than overcommitting implementation.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: VPS root password, SSH private key, LLM API key, OAuth consent, production credentials, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: VPS specs, Docker status, desired LLM provider, first safe demo task, UI access policy, logging needs, and training expectations.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 2E: Freelancer Daily PDF Upload Automation Workflow
 
 - channel: Freelancer
