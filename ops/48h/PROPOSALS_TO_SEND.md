@@ -120,6 +120,66 @@ The question I would ask first: are the silent failures mostly credentials/API s
 Next question to ask: Can they share sanitized exports/logs for 3-5 representative workflows and the last-known-good execution dates?
 User action required: User must post this manually only if subreddit rules allow helpful service replies. Do not DM automatically.
 
+## [LEAD #28]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/automation-system
+Pain: Buyer needs an n8n AI automation system built end to end, with architecture planning, API/AI/ML endpoint orchestration, data enrichment/prediction steps, follow-up actions, testing, and optimization. Public crawl shows this as open with about 14 hours left and a budget around INR 37,500-75,000.
+Suggested package: Same-Day Workflow Rescue/build for the first critical workflow path, then a larger 48-hour sprint if the system needs multiple AI/API workflows.
+Suggested price: $499 architecture diagnostic first, or $1,500 for one production-ready workflow path with tests and handoff notes. Quote larger only after reviewing sanitized scope.
+Risk: AI/ML workflows may involve API keys, OAuth, private data, or production side effects. Start from redacted process notes, fake payloads, screenshots, sanitized n8n exports, and placeholder endpoint docs only.
+
+Message draft:
+
+Hi, I can help turn the broad n8n + AI automation idea into a reliable workflow architecture and then build the first production path with tests and handoff notes.
+
+Offer page and safe intake boundary: https://butianhua4.github.io/ai-agent-debug-kit/rescue.html
+
+I do not need passwords, API keys, tokens, OAuth access, payment access, or private credentials to start. A safe first step can use sanitized workflow notes, fake API payloads, screenshots, and placeholder endpoint documentation. Any real account authorization should stay under your control.
+
+My approach would be:
+- map the business process into trigger, enrichment, AI/ML decision, and follow-up action stages,
+- identify which steps belong in native n8n nodes, function nodes, or lightweight helper scripts,
+- define failure handling for API timeouts, empty AI responses, bad JSON, duplicate events, and retry limits,
+- build and test one critical workflow path first,
+- deliver an architecture note, workflow export, test checklist, and concise handoff notes.
+
+Suggested first milestone: $499 for architecture and risk diagnostic, or $1,500 for one tested workflow path if the inputs and acceptance criteria are clear.
+
+Can you share the business process you want automated, the tools/APIs involved, and one example input/output using fake or sanitized data?
+
+Next question to ask: Which single workflow path would create the most business value if it worked reliably first?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
+## [LEAD #29]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/n8n/workflow-automation-specialist-39773700
+Pain: US buyer with verified payment and strong history needs a specific attached n8n workflow fixed for database-to-services data transfer. Budget is small ($10-30), but it is a clean seed-order repair with clear n8n/database reliability fit.
+Suggested package: Quick fixed diagnostic/repair seed order.
+Suggested price: $30 within posted budget only if scope is one existing workflow fix from sanitized export/logs. Do not position this as a high-ticket sprint unless the buyer expands scope after the seed fix.
+Risk: Database integration may involve credentials and private records. Require sanitized workflow export, redacted error screenshots, fake database rows, and client-side credential handling only.
+
+Message draft:
+
+Hi, I can help fix the attached n8n workflow and make the database-to-services transfer more reliable.
+
+I do not need database passwords, API keys, tokens, OAuth access, payment access, or private credentials. Please share a sanitized workflow export, the redacted error screenshot/log, and one fake database row that matches the real field structure.
+
+For this small fixed-price repair, I would focus on:
+- identifying the broken node or field mapping issue,
+- checking database output shape vs the downstream service input requirements,
+- fixing expression/JSON mapping, filters, or error handling,
+- adding a simple retry/failure note if needed,
+- giving you a short explanation of what changed and how to test it.
+
+Suggested scope: $30 for one existing workflow fix if the sanitized workflow and error are enough to reproduce the issue. If the workflow turns out to need a broader rebuild, I would pause and explain the scope before changing the quote.
+
+Can you share the sanitized workflow export and the exact failing node/error text?
+
+Next question to ask: Which node currently fails, and what should the successful output look like?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #26]
 
 Source: Freelancer

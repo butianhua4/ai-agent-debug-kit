@@ -672,3 +672,27 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: passwords, API keys, tokens, OAuth consent, payment access, wallet, KYC, private credentials, or off-platform contact.
 - first ask after reply: apps connected, trigger, expected output, whether scenario is already partially built, test data type, and desired failure notification behavior.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1P: Freelancer n8n AI Automation System
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/automation-system
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #28
+- suggested offer: `$499` architecture/risk diagnostic or `$1,500` for one tested n8n + AI workflow path.
+- why urgent: open listing with roughly 14 hours left, higher posted budget, direct n8n + AI/API orchestration fit, and a clear need for architecture plus implementation.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: API keys, OAuth consent, passwords, tokens, production data, payment access, wallet, KYC, private credentials, or off-platform contact.
+- first ask after reply: process map, tools/APIs involved, fake input/output examples, desired first workflow path, and acceptance criteria.
+- status after user sends: move to `proposal_sent`.
+
+## Priority 1Q: Freelancer n8n Database Workflow Seed Fix
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/n8n/workflow-automation-specialist-39773700
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #29
+- suggested offer: `$30` fixed seed fix only if one attached workflow can be repaired from sanitized export/logs.
+- why urgent: payment-verified US buyer with 5.0 rating and 102 reviews; small budget but clear seed-order repair scope and low proposal count in the public snippet.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: database passwords, API keys, OAuth consent, tokens, private records, payment access, wallet, KYC, private credentials, or off-platform contact.
+- first ask after reply: sanitized workflow export, redacted failing node/error, fake database row, expected output, and downstream service field map.
+- status after user sends: move to `proposal_sent`.
