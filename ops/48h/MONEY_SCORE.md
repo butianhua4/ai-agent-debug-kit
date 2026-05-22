@@ -125,7 +125,10 @@ Score rules:
 | 2026-05-22T14:56:00+08:00 | Verified live Freelancer blockers and corrected send queue | 20 | Live checked Make/Zapier/OpenClaw targets, rejected accepted/closed/nonexistent pages, and prevented wasted bids/funds; not sent and not revenue |
 | 2026-05-22T14:45:00+08:00 | Added Claude Cowork reseller bid brief | 50 | Extracted the live CAD 250-750 Claude Cowork automation rescue lead into a concise send-ready brief with profile and experience gates; not sent and not revenue |
 | 2026-05-22T15:05:00+08:00 | Added IBM webMethods B2B bid brief | 80 | Fresh INR 2500+/hour Freelancer API automation lead converted into a safe domain-gated bid brief; not sent and not revenue |
+| 2026-05-22T16:02:00+08:00 | Submitted IBM WebMethods Freelancer bid | 150 | User submitted the filled Freelancer bid at INR 2500/hour for 12 hours; this creates real platform pipeline but is not awarded, not paid, and not revenue |
+| 2026-05-22T16:06:00+08:00 | Rejected closed Make.com screen-share project | 20 | Live Freelancer page now says closed for bidding after 44 bids, so it was removed from sendable pipeline before wasting a bid; not revenue |
+| 2026-05-22T16:12:00+08:00 | Filled Power Automate classifier bid | 80 | Fresh 5.0-buyer Freelancer seed lead opened and bid form filled at EUR 30 / 1 day; waiting for user to click Place Bid, not sent and not revenue |
 
 ## Total
 
-5840
+6090

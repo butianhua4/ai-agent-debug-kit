@@ -108,3 +108,17 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Domain gate: the buyer asks for proven IBM webMethods Integration Server / Trading Networks / Designer / Deployer or comparable IBM middleware experience. Codex must not misrepresent experience.
 - User-only action: complete Freelancer profile/compliance fields and confirm whether the account can honestly present IBM webMethods experience. If not, use the transparent API-reliability-specialist draft in `ops/48h/IBM_WEBMETHODS_B2B_BID_BRIEF.md`.
 - Current action: Codex prepared the bid brief, but no Freelancer bid has been sent and no revenue is confirmed.
+
+## 2026-05-22T16:02:00+08:00 - IBM WebMethods Freelancer bid submitted
+
+- Action completed: User submitted the Freelancer bid after Codex filled the form with the honest API automation/reliability proposal, INR 2500/hour, 12 hours.
+- Current status: platform bid submitted; no award, no order, no payment, and no confirmed revenue yet.
+- Next user action required only if the buyer replies, awards the project, or Freelancer asks for payment/KYC/tax/payout verification.
+- Safety boundary for replies: request sanitized architecture, redacted endpoints, fake payloads, example schemas, and UAT priorities only. Do not share passwords, API keys, tokens, OAuth secrets, certificates, SIEM credentials, payment details, KYC, or off-platform contact.
+
+## 2026-05-22T16:12:00+08:00 - Power Automate classifier Freelancer bid ready to submit
+
+- Action prepared: Codex filled the open Freelancer bid form for `https://www.freelancer.com/projects/power-automate/Power-Automate-Email-Classifier-Flow/details`.
+- Filled values: EUR 30 fixed price, 1 day delivery, safety-first proposal asking for redacted screenshots/exported flow details and fake sample email text.
+- User action required: click `Place Bid` to send it. This is a platform-visible proposal and has not been submitted yet.
+- Safety boundary: no mailbox password, Microsoft password, OAuth grant, API key, token, tenant admin access, private email contents, payment, KYC, or off-platform contact.
