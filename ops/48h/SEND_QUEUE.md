@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 1P: Freelancer Power Platform Incident Reporting System
+
+- channel: Freelancer
+- url: https://www.dk.freelancer.com/projects/power-bi/power-automation-for-incident-reporting
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #28
+- suggested offer: `$499` implementation-package diagnostic and risk review, then `$1,500` phase-one prototype for one incident intake/escalation/reporting path.
+- why urgent: $750-$1,500 USD budget, 200+ properties / 11,000-unit business context, clear Power Apps/SharePoint/Power Automate/Power BI deliverables, and implementation package already exists.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Microsoft tenant admin credentials, passwords, OAuth consent, API keys, SharePoint/Power BI private data, payment access, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: sanitized implementation package, fake incident records, SharePoint schema, escalation rules, target KPIs, and the first incident workflow path to implement.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority -4: Fresh Freelancer n8n GoHighLevel automation flow
 
 - channel: Freelancer

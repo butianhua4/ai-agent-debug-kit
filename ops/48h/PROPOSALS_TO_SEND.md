@@ -149,6 +149,35 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #28]
+
+Source: Freelancer
+URL: https://www.dk.freelancer.com/projects/power-bi/power-automation-for-incident-reporting
+Pain: Buyer manages 200+ properties and 11,000 units and needs a centralized incident reporting system using Microsoft 365 Power Platform: Power Apps, SharePoint, Power Automate, and Power BI. They already have an implementation package with system map, SharePoint schema, flow requirements, dashboard summary, timeline, and partner scope.
+Suggested package: Implementation-package diagnostic first, then phase-one prototype for one incident intake/escalation/reporting path.
+Suggested price: $499 diagnostic/risk review; $1,500 for a phase-one prototype if the sanitized implementation package and first workflow path are clear.
+Risk: Full Power Platform delivery can require Microsoft tenant admin actions, OAuth, SharePoint permissions, private tenant data, and production access. Keep all tenant/admin/credential actions client-side and start from sanitized schema/examples.
+
+Message draft:
+
+Hi, I can help review and implement this Power Platform incident reporting workflow in a controlled phased way.
+
+Because this touches Microsoft 365, SharePoint, Power Automate, and Power BI, I would not need passwords, tenant admin credentials, OAuth access, API keys, payment access, or private resident/property data to start. A safe first step is to review the implementation package, sanitized SharePoint schema, fake incident records, escalation rules, and desired Power BI KPIs.
+
+My suggested approach:
+- review the system map, SharePoint list schema, and Power Automate flow requirements,
+- identify gaps around permissions, escalation logic, status transitions, notifications, and reporting refresh,
+- define the first production path: incident submission -> SharePoint record -> escalation/notification -> Power BI status visibility,
+- build or validate a small phase-one prototype with fake/test data,
+- provide a concise risk/change log and handoff checklist for the next implementation phase.
+
+Suggested scope: $499 for an implementation-package diagnostic with timeline/risk review and a precise phase-one plan. If you want a working first path/prototype, I would quote $1,500 for one incident intake/escalation/reporting path using sanitized/test data and client-side Microsoft tenant actions.
+
+Can you share the sanitized implementation package, the SharePoint list schema, and the first incident workflow you want live first?
+
+Next question to ask: Which incident path should be implemented first: submission/intake, escalation notifications, or Power BI dashboard reporting?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #27]
 
 Source: Freelancer
