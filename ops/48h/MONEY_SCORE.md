@@ -107,7 +107,8 @@ Score rules:
 | 2026-05-22T13:11:00+08:00 | Added Freelancer bid field pack | 50 | Converts proposal-ready leads into platform form-ready bid amounts, timelines, and copy for immediate submission after the profile gate; not sent and not revenue |
 | 2026-05-22T13:16:00+08:00 | Added urgent n8n workflow debugging lead and proposal target | 80 | Fresh Freelancer lead directly matches emergency rescue offer: n8n webhook/API/OpenAI/JSON mapping failures with payment-verified buyer; not sent and not revenue |
 | 2026-05-22T13:22:00+08:00 | Screened current bounty-or-patch candidates | 20 | Verified live status and duplicate/verification risk for Trovu, Cal, tscircuit, and Terminator bounty candidates before avoiding stale/duplicative PRs; not revenue |
+| 2026-05-22T13:30:00+08:00 | Verified live Freelancer submission blockers | 20 | Confirmed two top Freelancer targets are closed and/or balance/profile gated, preventing wasted bids/funds and clarifying the user-only profile/payment blocker; not revenue |
 
 ## Total
 
-4700
+4720

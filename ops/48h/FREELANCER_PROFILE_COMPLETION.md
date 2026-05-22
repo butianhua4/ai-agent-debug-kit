@@ -81,6 +81,7 @@ Skip:
 
 - `Twilio-Vercel Integration Setup`: revenue-share only / no upfront payment.
 - `N8n PDF Reader Automation`: closed and asks for funds to unlock select-freelancer bidding.
+- `n8n Automation Workflow Debugging & Optimization`: live page now says closed for bidding and asks for the same profile/balance gate, so do not spend time or funds there unless the buyer reopens it.
 
 ## Submission rule
 

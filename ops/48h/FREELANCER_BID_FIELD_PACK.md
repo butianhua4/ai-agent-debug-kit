@@ -9,6 +9,7 @@ Confirmed revenue is still `$0` until Freelancer shows an awarded/paid project o
 - Keep all messages inside Freelancer.
 - Do not ask for passwords, API keys, tokens, OAuth grants, wallet, payment access, or production credentials.
 - Do not add funds just to unlock select-freelancer projects.
+- If a project page says closed for bidding, do not submit a proposal or use bids on it.
 - Do not claim Claude Cowork experience unless the user confirms it is true.
 - Ask for sanitized workflow exports, redacted logs, fake payloads, screenshots, and client-operated screen share.
 

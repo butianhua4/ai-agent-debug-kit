@@ -18,6 +18,14 @@ Only the user should handle the items below. Codex must not perform payment, KYC
 - Any community post that requires the user's personal account context should be posted or confirmed by the user.
 - If desired, the user must fork/open an upstream PR for `567-labs/instructor-js#8` using `ops/48h/patches/0001-Add-cookbook-pages-for-existing-examples.patch`, because the current connector has pull-only access to that public repo.
 
+## 2026-05-22T13:30:00+08:00 - Freelancer live submission blocker
+
+- Live check: `https://www.freelancer.com/projects/automation/pdf-reader-automation/details` is closed for bidding and also says select-freelancer bidding requires a minimum balance of `$20 USD` or equivalent. Codex must not add funds.
+- Live check: `https://www.freelancer.com/projects/data-processing/automation-workflow-debugging` is closed for bidding and shows the same profile/balance gate.
+- User-only action before future Freelancer bids: complete personal/profile fields that Codex must not invent, including legal name, address, city, ZIP/postal code, state/region, country, date of birth, and email verification.
+- Optional but not recommended as an automatic action: the platform may ask for a balance to unlock select-freelancer projects. This is a funding/payment decision, so it is user-only. Codex must continue avoiding paid upgrades, deposits, verification purchases, KYC, payout setup, and balance top-ups.
+- Current action: keep preparing and ranking safe proposals, but do not claim any Freelancer bid was sent until the platform actually accepts a submission.
+
 ## 2026-05-22T00:30:00+08:00 - Optional upstream PR: OpenClaw skill docs
 
 - Action: If desired, fork `openclaw/openclaw`, apply `ops/48h/patches/openclaw-skill-description-trigger-quality.patch`, and open a PR.
