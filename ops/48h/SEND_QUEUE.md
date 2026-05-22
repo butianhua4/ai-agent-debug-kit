@@ -720,3 +720,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: IMAP credentials, Xero credentials, Nanonets/OpenAI API keys, OAuth consent, private invoices, email attachments, payment authority, wallet, KYC, private credentials, or off-platform contact.
 - first ask after reply: sanitized workflow map, redacted Zap run history, fake sample email/PDF, highest-impact failing Zap, current business rule change, and desired maintenance cadence.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1T: Freelancer AI Bid Filter Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/natural-language-processing/bid-filter-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #32
+- suggested offer: `$1,500` fixed MVP for rules-first spam-bid filtering with JSON/dashboard audit log, or `$750` sample-file prototype.
+- why urgent: open $750-$1,500 listing, exact automation + AI classification fit, clear requirements, and strong portfolio symmetry with the user's own bidding/lead workflow pain.
+- send condition: user confirms Freelancer account/rules allow a compliant proposal and sends only through the platform.
+- do not ask for: Freelancer credentials, cookies, private platform access, payment authority, API keys, tokens, account automation that violates platform rules, wallet, KYC, or off-platform contact.
+- first ask after reply: safe input source, 30-50 sanitized labeled bid examples, spam categories, acceptable false-positive threshold, output queue format, and whether only sample-file processing is allowed.
+- status after user sends: move to `proposal_sent`.

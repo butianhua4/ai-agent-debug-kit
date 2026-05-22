@@ -2044,3 +2044,32 @@ Which workflow breaks most often right now: OCR extraction, OpenAI parsing, PDF 
 
 Next question to ask: Which workflow breaks most often and what redacted run history or fake sample input can they share first?
 User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, do not request credentials, and do not move off-platform.
+
+## [LEAD #32]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/natural-language-processing/bid-filter-automation
+Pain: Buyer wants a small self-contained bot that reviews incoming bids and moves spam-like proposals into a separate queue in near real time, with a dashboard or JSON log showing the bid, rule triggered, and confidence score.
+Suggested package: Spam-bid filter MVP with rules-first detection, optional OpenAI moderation/classification, and an auditable JSON log.
+Suggested price: `$1,500` fixed MVP if scope is one platform/export source plus dashboard/log; `$750` diagnostic/prototype if they only want rules and sample-file processing first.
+Risk: Must not scrape private platform data or bypass platform rules. Start from exported/sanitized bid samples or client-provided webhook/API data if permitted. No Freelancer credentials, cookies, payment access, account automation that violates platform rules, or private buyer/seller data.
+
+Message draft:
+
+Hi, I can build this as a compact rules-first spam filter with an auditable JSON log/dashboard, and optionally add an OpenAI/spaCy scoring layer after the rule baseline is working.
+
+I would not need your Freelancer password, cookies, API keys, payment access, or account credentials. To start safely, please provide a sanitized export or sample set of bids with names/contact details removed, plus examples of what you consider spam vs acceptable.
+
+My suggested implementation:
+- rule engine for copy-paste repeats, excessive links, suspicious templates, keyword stuffing, and duplicated phrasing,
+- confidence score plus the exact rule(s) that fired,
+- queue output as JSON/CSV and a small dashboard for reviewing false positives,
+- conservative thresholding so good bids are not hidden too aggressively,
+- test report on a sanitized sample set before any live integration.
+
+Suggested first milestone: $1,500 fixed for a working MVP that processes an approved input source, flags spam into a review queue, and delivers logs/dashboard plus tuning notes. If you prefer a smaller first step, I can do a $750 prototype on sanitized exported bids first.
+
+What input source do you want the bot to process first: exported bid data, email notifications, webhook/API data, or a manual CSV upload?
+
+Next question to ask: What safe input source can they provide first, and can they share 30-50 sanitized examples labeled spam/not-spam?
+User action required: User must send this through Freelancer manually if account/rules allow. Do not auto-bid, scrape account pages, request credentials, or automate platform actions without an approved API/client-side export.
