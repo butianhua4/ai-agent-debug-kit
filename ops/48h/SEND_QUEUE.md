@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 1T: Freelancer AI Order Email Processing Flow
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/ai-development/ai-order-email-processing-flow
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #34
+- suggested offer: `EUR 499` architecture/safety diagnostic, or `EUR 750` MVP for fake-email parsing, Trello card creation, quote draft PDF, and manual-review follow-up queue.
+- why urgent: EUR 250-750 budget, payment verified 4.9 client, and exact OpenAI/Gmail/Trello/quote automation fit.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: Gmail OAuth grants, tokens, passwords, private emails, production sending authority, OpenAI API keys, payment data, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: fake order emails, Trello card template, quote PDF template, follow-up wording, unsubscribe policy, and manual approval requirement.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 2F: Freelancer Private AI Agent Server Setup
 
 - channel: Freelancer

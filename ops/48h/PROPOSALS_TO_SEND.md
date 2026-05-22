@@ -149,6 +149,36 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #34]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/ai-development/ai-order-email-processing-flow
+Pain: Buyer needs an automation that processes Gmail order emails across six Google Workspace users, extracts order details with OpenAI, creates Trello cards, generates quotation PDFs in Google Drive, and sends follow-up emails with unsubscribe handling.
+Suggested package: Architecture/safety diagnostic first; MVP only with fake emails, manual-review queue, and client-side OAuth.
+Suggested price: EUR 499 diagnostic; EUR 750 MVP for fake-email parsing, Trello card creation, quote draft PDF generation, and manual-review follow-up queue.
+Risk: Gmail OAuth, private emails, automated follow-up sending, unsubscribe compliance, and OpenAI API keys are sensitive. Keep OAuth/API keys/client emails client-side. Do not build unsupervised outbound sending in the first milestone; produce draft emails or a manual-review queue.
+
+Message draft:
+
+Hi, I can help build this Gmail -> OpenAI -> Trello -> quote PDF workflow, but I would scope the first milestone safely because it involves email access and outbound follow-ups.
+
+I do not need Gmail OAuth grants, passwords, tokens, OpenAI API keys, private emails, production sending authority, payment access, or off-platform contact to start. A safe first pass can use fake/sample order emails, a Trello card template, a quote PDF template, and a manual-review queue for follow-up drafts.
+
+My suggested approach:
+- define the order-email extraction schema and confidence checks,
+- parse fake/sample emails into structured order records,
+- create Trello card fields from the extracted data,
+- generate a quote PDF draft into a Drive-like folder structure,
+- generate follow-up email drafts with unsubscribe language,
+- keep sending as a manual approval step until compliance and account controls are confirmed by you.
+
+Suggested scope: EUR 499 for architecture/safety diagnostic and implementation plan. For a working MVP, I would quote EUR 750 for fake-email parsing, Trello card creation, quote PDF generation, and a manual-review follow-up queue.
+
+Can you share 3-5 fake order email examples, the Trello card fields, quote PDF template, and whether follow-ups must be draft-only or can be sent after manual approval?
+
+Next question to ask: Should the first version create follow-up drafts only, or require a human approval step before sending?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #33]
 
 Source: Freelancer
