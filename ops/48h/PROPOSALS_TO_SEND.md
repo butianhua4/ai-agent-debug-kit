@@ -2371,3 +2371,33 @@ Can you share a fake sample webhook payload and the target MySQL column list?
 
 Next question to ask: Should duplicate prevention use email, user ID, webhook event ID, or a composite key?
 User action required: Send manually through Freelancer if platform rules allow. Do not request database passwords, production n8n credentials, API keys, tokens, OAuth grants, live customer data, payment access, KYC, or off-platform contact.
+
+## [LEAD #43]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-processing/automation-workflow-debugging
+Pain: Buyer has existing n8n workflows with intermittent failures, webhook triggers not firing consistently, API node errors, inconsistent AI node outputs, JSON mapping mismatches, broken loops/conditions, missing retries, incomplete error handling, and performance slowdowns.
+Suggested package: Emergency diagnostic and stabilization pass for the highest-impact n8n workflows.
+Suggested price: `$25/hour` with an initial 8-hour cap, or `$499` fixed Quick Diagnostic if they prefer one milestone.
+Risk: Existing workflow access, credentials, live API keys, OAuth grants, and production data must stay client-side. Diagnosis should start from sanitized exports, redacted execution logs, fake payloads, and screenshots.
+
+Message draft:
+
+Hi, this is exactly the type of n8n reliability work I focus on: intermittent workflow failures, webhook issues, API node errors, AI node output problems, JSON mapping mismatches, broken branches, retries, and error handling.
+
+I do not need your n8n password, API keys, OAuth grants, tokens, payment access, or production customer data to start. The safest first step is to work from sanitized workflow exports/screenshots, redacted execution logs, fake payloads, and a short priority list of the workflows causing the biggest business impact.
+
+For the first diagnostic/stabilization pass, I would:
+- identify the top failure patterns across executions,
+- isolate webhook trigger and payload-shape problems,
+- clean up JSON mapping and expression issues,
+- add safer retry and error-handling branches,
+- document each root cause and fix,
+- leave a short prevention checklist so future workflows are easier to debug.
+
+Suggested start: $25/hour with an 8-hour cap for the first emergency diagnostic and stabilization pass. If you prefer fixed price, I can scope a $499 Quick Diagnostic around 1-2 priority workflows and a written repair plan.
+
+Can you share one sanitized workflow export or screenshots, redacted failed execution logs, and the top 2 workflows causing the most impact?
+
+Next question to ask: Which workflow failure is costing the most right now: missed webhook triggers, API errors, AI node output, JSON mapping, loop/condition logic, or missing retries?
+User action required: Send manually through Freelancer if platform rules allow. Do not request n8n passwords, API keys, OAuth grants, tokens, production data, payment access, KYC, or off-platform contact.
