@@ -1013,3 +1013,29 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no merge, no confirmed revenue.
 - rejection reason: Trovu #329 explicitly requires verified Android PWA testing that is not available here; Cal local-dev bounty redirected to a closed issue; tscircuit SparkFun board issues are closed/not planned despite stale Algora search snippets; schematic-trace-solver #34/#78/#79 are extremely crowded with many existing attempts/claims and UI/demo expectations; mediar-ai/terminator #352/#353/#357 are closed/completed despite stale search snippets. Next action should shift back to high-intent automation lead submission assets or active PR review follow-up rather than duplicate bounty submissions.
+
+## Screening 2026-05-22T13:56:00+08:00: Opire JS/TS quick patch refresh
+
+- bounty URL:
+  - https://app.opire.dev/issues/01K6K4YTSWT7XF53GM3KCTBG7S / https://github.com/aueangpanit/electron-template/issues/1.
+  - https://app.opire.dev/issues/01J8898W2WES9F4FJ57GDG0BYS / https://github.com/ToolJet/ToolJet/issues/6655.
+- reward amount:
+  - electron-template tray indicator: `$100`.
+  - ToolJet code-hinter header: `$45`.
+- repo:
+  - `aueangpanit/electron-template`.
+  - `ToolJet/ToolJet`.
+- issue:
+  - `Tray icon should have an orange dot indicator`.
+  - `incorrect code-hinter header text`.
+- why selected: both were visible on the current Opire rewards page as JavaScript/TypeScript tasks and looked small enough for a quick public patch attempt.
+- what was done:
+  - Opened the Opire and GitHub issue metadata.
+  - Attempted to clone `aueangpanit/electron-template` for the `$100` patch.
+  - Checked ToolJet issue #6655 through the GitHub connector before cloning the very large repo.
+- test result:
+  - electron-template: not attempted because `git clone https://github.com/aueangpanit/electron-template.git` returned `Repository not found` despite the GitHub issue page being visible through the web UI.
+  - ToolJet: not attempted because issue #6655 is already `closed` with state reason `completed`.
+- PR URL or patch path: none.
+- payout status: no award, no merge, no confirmed revenue.
+- rejection reason: electron-template cannot currently be cloned/fetched through GitHub APIs, so no safe patch cycle can start; ToolJet is stale/closed and would be a duplicate/no-payout path. Continue searching for open, cloneable, low-risk JS/TS/docs/CI targets.
