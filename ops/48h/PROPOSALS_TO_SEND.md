@@ -2310,3 +2310,34 @@ Which first workflow is most urgent: lead routing, CRM sync, webhook/API integra
 
 Next question to ask: Can they provide one sanitized workflow brief with sample input/output and acceptance criteria?
 User action required: Freelancer profile/compliance gate must allow bidding before sending. Do not request passwords, API keys, OAuth grants, tokens, production CRM data, payment access, wallet, KYC, or off-platform contact.
+
+## [LEAD #41]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/data-processing/power-automate-email-processor
+Pain: Buyer needs a Power Automate workflow for a shared Outlook mailbox that finds "undeliver" emails, extracts email body and received timestamp, appends the data to Excel, marks processed mail as read, and moves it to Deleted Items.
+Suggested package: Microsoft 365 email workflow build with a short diagnostic first, then a working flow and test checklist.
+Suggested price: `$25/hour` capped at 6 hours for the first build/diagnostic, or `$499` fixed if they prefer one milestone.
+Risk: Shared mailbox access and email content can be sensitive. Any Microsoft login, OAuth grant, admin access, mailbox permission, and private email content must stay client-side. Use redacted screenshots and fake sample emails for diagnosis.
+
+Message draft:
+
+Hi, I can help build and test this Power Automate workflow for the shared Outlook mailbox.
+
+The scope is clear: detect emails with "undeliver" in the subject, extract the body and received timestamp, append the result to Excel, then mark/move processed messages so the workflow can run repeatedly without duplicates.
+
+For safety, I do not need your Microsoft password, mailbox password, OAuth grant, API key, token, tenant admin access, payment access, or private production emails to start. We can begin with redacted screenshots, fake sample "undeliver" emails, your target Excel columns, and a client-operated screen share if live mailbox permissions are needed.
+
+For the first milestone, I would:
+- confirm the shared mailbox, source folder, and subject matching rule,
+- design the Excel table schema and duplicate-prevention logic,
+- build the Power Automate flow with clear error handling,
+- add test cases for matching and non-matching emails,
+- deliver a short README so your team can maintain it.
+
+Suggested bid: $25/hour with a 6-hour cap for the first working version and testing, or $499 fixed if you want a scoped milestone.
+
+Could you share a redacted screenshot of the mailbox/folder structure and the exact Excel columns you want?
+
+Next question to ask: Do they need this to run on a schedule, on new email arrival, or both?
+User action required: Send manually through Freelancer if platform rules allow. Do not request Microsoft credentials, OAuth grants, tenant admin access, API keys, tokens, private email contents, payment access, KYC, or off-platform contact.
