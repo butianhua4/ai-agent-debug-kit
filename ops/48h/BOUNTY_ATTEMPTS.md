@@ -950,3 +950,25 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: electron-template and vscode-icons issue/repo metadata was inaccessible or stale; Storybook issue #12641 is closed/completed; Formbricks issue #3302 is closed; Strapi nested-delete issue has existing PR/backport activity and no clean open issue path. Continue toward fresh open issues or active submitted PR feedback instead of late duplicate/stale submissions.
+
+## Screening 2026-05-22: Algora and Opire post-TypeORM refresh
+
+- bounty URL: public Algora/Opire/GitHub search results for JS/TS/MCP/docs/CI bounty targets.
+- reward amount: visible candidates included `$500`, `$900`, `$80`, `$70`, and challenge-style prizes, but no candidate passed the immediate patch/PR gate.
+- repos:
+  - tscircuit/tscircuit.
+  - archestra-ai/archestra.
+  - trovu/trovu.
+  - go-gitea/gitea.
+- issues checked:
+  - https://github.com/tscircuit/tscircuit/issues/176.
+  - https://github.com/tscircuit/tscircuit/issues/175.
+  - https://github.com/archestra-ai/archestra/issues/1301.
+  - https://github.com/trovu/trovu/issues/329.
+  - https://github.com/go-gitea/gitea/issues/29398 and related proposal search result.
+- why selected: this was the required next bounty scan after addressing TypeORM review feedback, focused on currently visible high-value Algora/Opire items and automation-adjacent MCP work.
+- what was done: searched fresh public bounty results, then verified each promising result against live GitHub issue metadata before cloning.
+- test result: not attempted; no repo clone/test cycle was started because no candidate passed the safe/available/actionable threshold.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: tscircuit #175/#176 are closed as not planned; Archestra #1301 is closed/completed and marked rewarded; Trovu #329 requires verified Android PWA testing and explicitly rejects untested `window.open`-style PRs; Gitea action-token work is broad Go/security product work rather than a 45-minute JS/TS/docs patch. Continue with submitted PR feedback and proposal-ready automation leads.
