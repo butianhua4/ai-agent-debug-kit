@@ -927,3 +927,26 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - test result: `corepack pnpm run compile` passed; `git diff --check` passed; targeted local mocha run is blocked before DB execution by this checkout's TS/ESM test module resolution for extensionless test imports.
 - PR URL or patch path: pushed commit `c1516f2` to https://github.com/typeorm/typeorm/pull/12532 and commented on the PR with validation notes.
 - payout status: no award, no merge, no confirmed revenue yet.
+
+## Screening 2026-05-22: Opire TypeScript quick-patch pass
+
+- bounty URL: public Opire search results for TypeScript/JavaScript quick-patch targets.
+- reward amount: `$20` to `$110` for screened candidates.
+- repos:
+  - aueangpanit/electron-template.
+  - tal7aouy/vscode-icons.
+  - storybookjs/storybook.
+  - formbricks/formbricks.
+  - strapi/strapi.
+- issues checked:
+  - https://app.opire.dev/issues/01K6K4YTSWT7XF53GM3KCTBG7S / https://github.com/aueangpanit/electron-template/issues/1.
+  - https://app.opire.dev/issues/01JH00AXGKW2B660P4QE078RKC / https://github.com/tal7aouy/vscode-icons/issues/87.
+  - https://app.opire.dev/issues/01HWT26R3S59MS778MAE9786YG / https://github.com/storybookjs/storybook/issues/12641.
+  - https://app.opire.dev/issues/01JARC75G44M6EQCJCR1DTBHD6 / https://github.com/formbricks/formbricks/issues/3302.
+  - https://app.opire.dev/issues/01HWT2MKE4GWPJXDPMAFEAHHHE / Strapi `deleteMany` nested filter results.
+- why selected: these were the highest-fit visible JS/TS quick-patch listings after the TypeORM follow-up and looked potentially suitable for a 45-minute patch cycle.
+- what was done: verified public GitHub existence/state before cloning; checked repository/issue accessibility, open/closed state, and duplicate PR signals with the GitHub connector.
+- test result: not attempted; no repo clone/test cycle was started because none passed the viability gate.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: electron-template and vscode-icons issue/repo metadata was inaccessible or stale; Storybook issue #12641 is closed/completed; Formbricks issue #3302 is closed; Strapi nested-delete issue has existing PR/backport activity and no clean open issue path. Continue toward fresh open issues or active submitted PR feedback instead of late duplicate/stale submissions.
