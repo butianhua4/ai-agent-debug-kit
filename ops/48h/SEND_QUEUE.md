@@ -431,3 +431,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: App credentials, API keys, tokens, OAuth consent, private app data, production customer events, payment access, or off-platform contact.
 - first ask after reply: sanitized App1 event payload, target App2/App3 notification schema, current failure examples, and highest-priority alert path.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 1G: Freelancer GHL/Zapier/HubSpot webhook automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/go-high-level/GoHighLevel-GHL-Automation-Integration-40360042.html
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #15
+- suggested offer: `$499 Quick Diagnostic` for one webhook/payload path, or `$1,500 Same-Day Workflow Rescue` for one critical GHL-Zapier-HubSpot flow.
+- why urgent: public crawl says posted 2 minutes ago, $15-25/hour, and the buyer explicitly needs advanced webhooks, JSON payload mapping, error handling, logging, HubSpot/Zapier/GHL integration, and workflow reliability.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: GHL login, HubSpot login, Zapier login, Clay/RB2B credentials, API keys, tokens, OAuth consent, private CRM records, customer data, payment access, or off-platform contact.
+- first ask after reply: sanitized webhook payload, fake lead sample, target field map, current error examples, and the one workflow that must work first.
+- status after user sends: move to `proposal_sent`.

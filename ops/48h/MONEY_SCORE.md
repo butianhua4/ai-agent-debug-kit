@@ -66,7 +66,8 @@ Score rules:
 | 2026-05-22T09:15:00+08:00 | Screened Claude Builders #5 bounty | 20 | Avoided a crowded duplicate n8n workflow bounty with many existing PRs and kept cycles available for cleaner targets; not revenue |
 | 2026-05-22T08:16:00+08:00 | Added n8n automation form interface proposal | 80 | Fresh $250-750 Freelancer n8n + form MVP lead converted into a safe diagnostic/sprint proposal and send queue entry; not sent and not revenue |
 | 2026-05-22T08:21:00+08:00 | Added n8n workflow alerts proposal | 80 | Fresh $250-750 Freelancer n8n alert workflow lead converted into a safe diagnostic/rescue proposal and send queue entry; not sent and not revenue |
+| 2026-05-22T08:27:00+08:00 | Added GHL webhook automation proposal | 80 | Fresh Freelancer GHL/Zapier/HubSpot webhook automation lead converted into a safe diagnostic/rescue proposal and send queue entry; not sent and not revenue |
 
 ## Total
 
-2080
+2160

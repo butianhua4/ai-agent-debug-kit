@@ -149,6 +149,40 @@ Can you share one sanitized App1 event payload, the expected App2/App3 notificat
 Next question to ask: Which one alert path is most business-critical to make reliable first?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid or request credentials.
 
+## [LEAD #15]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/go-high-level/GoHighLevel-GHL-Automation-Integration-40360042.html
+Pain: Buyer needs advanced GoHighLevel automations with inbound/outbound webhooks, Clay/RB2B/Zapier/HubSpot integrations, webhook payload mapping, reliable data transfer, logging, and lead nurture/follow-up workflows.
+Suggested package: Quick Diagnostic for one webhook/payload path first; Same-Day Workflow Rescue if they want one business-critical GHL-Zapier-HubSpot flow hardened quickly.
+Suggested price: $499 diagnostic; $1,500 for one critical workflow rescue; then continue hourly through Freelancer only if the trial goes well.
+Risk: GHL, HubSpot, Zapier, and enrichment tools can involve OAuth, API keys, CRM data, and outreach compliance. Keep access client-side and start from sanitized payload examples and screenshots only.
+
+Message draft:
+
+Hi, this is close to the kind of automation rescue and hardening work I focus on: webhook payload mapping, JSON field logic, Zapier/HubSpot/GHL data transfer, error handling, and making automation flows reliable enough for lead tracking and follow-up.
+
+I do not need passwords, API keys, tokens, OAuth consent, or private customer records to start. A safe first step is to review sanitized webhook samples, screenshots of current mappings/errors, and fake lead payloads that match the real structure.
+
+For the first milestone, I would suggest narrowing the work to one critical path, for example:
+- inbound webhook → GHL contact/opportunity update,
+- enrichment fields → HubSpot/Zapier mapping,
+- follow-up trigger → logged success/failure path.
+
+My diagnostic/build process:
+- map the source payload to required CRM fields,
+- identify missing/null field and duplicate-record risks,
+- add validation, retry, and error logging rules,
+- document the flow so your team can extend it safely,
+- hand over a concise checklist for future webhook changes.
+
+Suggested starting scope: $499 for a quick diagnostic of one webhook workflow and a precise fix plan. If you want me to repair/build and validate one production path, I would quote $1,500 for a same-day workflow rescue. Ongoing hourly work can continue through Freelancer after that paid trial.
+
+Can you share one sanitized webhook payload, the target GHL/HubSpot field map, and the first workflow that has to work reliably?
+
+Next question to ask: Which one lead-tracking or follow-up workflow is most costly when it fails?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and do not move payment off-platform.
+
 ## [LEAD #12]
 
 Source: Freelancer

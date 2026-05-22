@@ -837,3 +837,16 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: issue #5 is highly crowded, with many `/opire try` comments and numerous existing PRs already implementing the exact n8n weekly summary workflow. A late duplicate submission would have low award probability unless the maintainer explicitly asks for another variant.
+
+## Screening 2026-05-22: ToolJet code-hinter Opire listing
+
+- bounty URL: https://app.opire.dev/issues/01J8898W2WES9F4FJ57GDG0BYS.
+- reward amount: `$45`.
+- repo: ToolJet/ToolJet.
+- issue: Opire listing title is `incorrect code-hinter header text`; exact open GitHub issue URL was not visible from public search.
+- why selected: JavaScript UI bug appeared small and potentially suitable for a quick public patch.
+- what was done: searched public GitHub issue metadata for exact and near-match terms: `incorrect code-hinter header text`, `codehinter header text`, `code hinter header text`, `incorrect header text`, and `code-hinter`.
+- test result: not attempted; no clone/test cycle was started because the funded issue could not be matched to a clear open GitHub issue.
+- PR URL or patch path: none.
+- payout status: no award, no confirmed revenue.
+- rejection reason: stale or unclear bounty listing; nearest ToolJet results are broad code-hinter feature requests, not the funded title. Skip until exact GitHub issue URL is available.
