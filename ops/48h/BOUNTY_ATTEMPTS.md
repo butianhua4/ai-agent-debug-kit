@@ -985,3 +985,31 @@ I also attempted `npm.cmd run test:unit -- search.unit.test.ts` on Windows, but 
 - PR URL or patch path: none.
 - payout status: no award, no confirmed revenue.
 - rejection reason: tscircuit #175/#176 are closed as not planned; Archestra #1301 is closed/completed and marked rewarded; Trovu #329 requires verified Android PWA testing and explicitly rejects untested `window.open`-style PRs; Gitea action-token work is broad Go/security product work rather than a 45-minute JS/TS/docs patch. Continue with submitted PR feedback and proposal-ready automation leads.
+
+## Screening 2026-05-22: Bounty-or-patch strike after Freelancer proposal pack
+
+- bounty URL: public GitHub/Algora/Opire search results for active JS/TS bounty targets after the urgent n8n proposal asset shipped.
+- reward amount: screened `$70`, `$75`, `$100`, `$500`, and `$2,000` public bounty listings.
+- repos:
+  - trovu/trovu.
+  - calcom/cal.diy.
+  - tscircuit/sparkfun-boards.
+  - tscircuit/schematic-trace-solver.
+  - mediar-ai/terminator.
+- issues checked:
+  - https://github.com/trovu/trovu/issues/329.
+  - https://github.com/calcom/cal.diy/issues/23104.
+  - https://github.com/tscircuit/sparkfun-boards/issues/175.
+  - https://github.com/tscircuit/sparkfun-boards/issues/176.
+  - https://github.com/tscircuit/schematic-trace-solver/issues/34.
+  - https://github.com/tscircuit/schematic-trace-solver/issues/78.
+  - https://github.com/tscircuit/schematic-trace-solver/issues/79.
+  - https://github.com/mediar-ai/terminator/issues/352.
+  - https://github.com/mediar-ai/terminator/issues/353.
+  - https://github.com/mediar-ai/terminator/issues/357.
+- why selected: the visible results matched the preferred TypeScript/JavaScript bounty track and included several apparently current Algora/Opire items; the goal was to find one public patch that could be cloned, tested, and submitted without private credentials or platform payments.
+- what was done: verified each promising result against live issue metadata and comments before cloning; checked open/closed state, bounty attempt density, duplicate PR/claim activity, and verification requirements.
+- test result: not attempted; no clone/test cycle was started because every candidate failed the safe immediate-patch gate.
+- PR URL or patch path: none.
+- payout status: no award, no merge, no confirmed revenue.
+- rejection reason: Trovu #329 explicitly requires verified Android PWA testing that is not available here; Cal local-dev bounty redirected to a closed issue; tscircuit SparkFun board issues are closed/not planned despite stale Algora search snippets; schematic-trace-solver #34/#78/#79 are extremely crowded with many existing attempts/claims and UI/demo expectations; mediar-ai/terminator #352/#353/#357 are closed/completed despite stale search snippets. Next action should shift back to high-intent automation lead submission assets or active PR review follow-up rather than duplicate bounty submissions.
