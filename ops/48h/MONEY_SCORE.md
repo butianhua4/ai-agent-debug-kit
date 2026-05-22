@@ -91,7 +91,8 @@ Score rules:
 | 2026-05-22T10:10:00+08:00 | Tightened OpenClaw business automation send brief | 50 | Strengthened the highest-fit OpenClaw manual-send asset with payment/order/fulfillment boundaries and a compact bid variant; not sent and not revenue |
 | 2026-05-22T10:15:00+08:00 | Added private AI agent server setup proposal | 80 | OpenClaw/private-agent VPS setup lead converted into a fixed diagnostic proposal with strict secret-handling boundaries; not sent and not revenue |
 | 2026-05-22T10:20:00+08:00 | Tightened OpenClaw Windows suite send brief | 50 | Strengthened the Windows OpenClaw manual-send asset with public/test browser automation boundaries and a compact bid variant; not sent and not revenue |
+| 2026-05-22T10:25:00+08:00 | Added Zapier intake top-priority send brief | 50 | Converted the highest-value $1500-3000 intake automation lead into a one-page copy-ready manual-send asset; not sent and not revenue |
 
 ## Total
 
-3830
+3880
