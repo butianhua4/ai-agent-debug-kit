@@ -16,6 +16,18 @@ Confirmed revenue remains `$0` until an order, paid invoice, or awarded bounty i
 - first ask after reply: sanitized workflow export, redacted failed execution, expected vs actual behavior, fake/sample payload, and deadline.
 - status after user sends: move to `proposal_sent`.
 
+## Priority 1Q: Freelancer N8n PDF Reader Automation
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/automation/pdf-reader-automation
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #29
+- suggested offer: `$499` PDF extraction diagnostic and workflow design, or `$750` scoped n8n PDF extraction MVP with validation and docs.
+- why urgent: $250-$750 USD budget, freshly visible public lead, payment verified 5.0 client, and tight n8n/PDF extraction scope that can be validated from sanitized samples.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: credentials, API keys, tokens, OCR account access, private documents, payment data, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: 3-5 sanitized sample PDFs, target fields/text, text-vs-scanned mix, output destination, validation rules, and documentation preference.
+- status after user sends: move to `proposal_sent`.
+
 ## Priority 1P: Freelancer Power Platform Incident Reporting System
 
 - channel: Freelancer

@@ -84,7 +84,8 @@ Score rules:
 | 2026-05-22T09:38:00+08:00 | Added today send stack | 50 | Converted the strongest proposal-ready leads into a ranked manual-send execution asset; not sent and not revenue |
 | 2026-05-22T09:43:00+08:00 | Screened public JS/TS/docs/CI bounty results | 20 | Filtered out security-only, stale, no-payout-path, and duplicate public bounty targets before switching back to higher-intent automation leads; not revenue |
 | 2026-05-22T09:48:00+08:00 | Added Power Platform incident reporting proposal | 80 | $750-1500 Power Apps/SharePoint/Power Automate/Power BI lead converted into a phased diagnostic/prototype proposal; not sent and not revenue |
+| 2026-05-22T09:53:00+08:00 | Added n8n PDF reader automation proposal | 80 | Fresh $250-750 n8n/PDF extraction lead converted into a sanitized-sample MVP proposal; not sent and not revenue |
 
 ## Total
 
-3330
+3410

@@ -149,6 +149,35 @@ Can you share one sanitized/sample backup file, the Airtable table/field structu
 Next question to ask: Is the Tournament Planner backup format consistent across tournaments, and should the pipeline update existing Airtable records or create a new snapshot per uploaded file?
 User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
 
+## [LEAD #29]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/automation/pdf-reader-automation
+Pain: Buyer needs an n8n automation that reads PDFs and extracts text from text documents, forms, or scanned images, with documentation.
+Suggested package: PDF extraction diagnostic and scoped n8n PDF extraction MVP.
+Suggested price: $499 diagnostic/workflow design; $750 scoped MVP if they can provide sanitized sample PDFs and clear output requirements.
+Risk: PDFs may contain private or regulated data, and OCR tools may require third-party accounts. Start only from sanitized sample PDFs or synthetic examples. Do not request credentials, API keys, tokens, OCR account access, private documents, payment data, or off-platform contact.
+
+Message draft:
+
+Hi, I can help build this n8n PDF reader automation in a way that is testable and easy to maintain.
+
+I do not need passwords, API keys, tokens, OCR account access, payment access, or private documents to start. A safe first step is to use 3-5 sanitized sample PDFs that represent the real formats: text PDFs, forms, and scanned images if OCR is needed.
+
+My approach would be:
+- classify the PDF types first: text-based, form-like, or scanned/OCR,
+- define the exact fields/text blocks to extract and the required output format,
+- build a small n8n workflow that routes each PDF type through the right extraction path,
+- add validation checks for missing/low-confidence fields,
+- provide documentation so you can adjust inputs and troubleshoot failures later.
+
+Suggested scope: $499 for a diagnostic and extraction plan using your sample PDFs. If you want a working MVP, I would quote $750 for one n8n workflow that handles the agreed sample set, produces the target output, and includes setup/handoff documentation.
+
+Can you share 3-5 sanitized sample PDFs, the exact fields/text you want extracted, and where the output should go?
+
+Next question to ask: Are most of the PDFs text-based, scanned images, or a mix of both?
+User action required: User must send this through Freelancer manually if account/rules permit. Do not auto-bid.
+
 ## [LEAD #28]
 
 Source: Freelancer
