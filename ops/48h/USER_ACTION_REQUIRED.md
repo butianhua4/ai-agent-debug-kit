@@ -174,3 +174,20 @@ Only the user should handle the items below. Codex must not perform payment, KYC
   - Safe prepared bid values: USD 180, 4 days, one milestone for Amrod API sync integration and Promotions catalog setup.
   - User action required only if the user wants to manually paste/send the prepared proposal from Codex; do not select sponsored/sealed/highlight paid upgrades.
 - Current status: neither blocker is revenue. Continue with projects that can be submitted without recharge, membership upgrade, KYC, tax, payout, wallet, or paid upgrades.
+
+## 2026-05-22T19:30:00+08:00 - Yashbank trial leads workbook ready for upload
+
+- Buyer message: Yashbank sent `trial_leads_template.xlsx` in Freelancer thread `417635734`.
+- Codex limitation: Codex in-app browser cannot download the buyer attachment and cannot programmatically attach the generated workbook because the file-upload control is not exposed through the current browser automation API.
+- Prepared deliverable:
+  - `ops/48h/deliverables/yashbank_trial_leads_public_sample.xlsx`
+  - `ops/48h/deliverables/yashbank_trial_leads_public_sample.csv`
+  - `ops/48h/deliverables/yashbank_trial_leads_public_sample_preview.png`
+- User action required: upload `yashbank_trial_leads_public_sample.xlsx` to the Yashbank Freelancer chat.
+- Suggested message to send with the file:
+
+```text
+Thanks Yash, I prepared a 10-lead public-source trial sample in the requested structure. I kept it focused on companies showing CRM, web tool, cloud setup, AI workflow, or automation pain signals. I used public sources only and avoided private scraping, spam lists, login-only sources, and off-platform payment/contact.
+```
+
+- Current status: customer pipeline, no award, no order, no payment, no confirmed revenue.
