@@ -504,3 +504,15 @@ Only move to confirmed revenue after platform order/payment/award evidence exist
 - do not ask for: founder credentials, OAuth consent, API keys, private customer data, payment access, wallet, KYC, private tokens, or off-platform contact.
 - first ask after reply: build-plan template, note format for the Lead Architect, sanitized example plan, review batch size, and blocker rubric.
 - status after user sends: move to `proposal_sent`.
+
+## Priority 2D: Freelancer Automation Build Architect for Live Event
+
+- channel: Freelancer
+- url: https://www.freelancer.com/projects/api/automation-build-architect-for-live
+- draft source: `ops/48h/PROPOSALS_TO_SEND.md` lead #21
+- suggested offer: `$500-$750` one-day live diagnostic/build-day support depending on prep and live hours.
+- why second-tier: excellent emergency troubleshooting fit, but already has 84 proposals and is a one-day support role rather than direct high-ticket rescue.
+- send condition: user confirms the project is still open and platform account allows a compliant proposal.
+- do not ask for: founder credentials, API keys, OAuth consent, Stripe/QuickBooks/Gmail/CRM secrets, payment access, customer records, wallet, KYC, private tokens, or off-platform contact.
+- first ask after reply: founder tool stack, live hours, expected triage process, top integrations, and whether post-session blocker/fix log is needed.
+- status after user sends: move to `proposal_sent`.

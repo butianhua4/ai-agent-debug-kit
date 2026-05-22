@@ -215,6 +215,39 @@ Can you share a sanitized scenario map, one fake lead payload, the state transit
 Next question to ask: Which single lead-reactivation or appointment path has the highest revenue impact if it fails?
 User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
 
+## [LEAD #21]
+
+Source: Freelancer
+URL: https://www.freelancer.com/projects/api/automation-build-architect-for-live
+Pain: Buyer needs a live Build Architect for an implementation day with 20 founders, unblocking partial automations quickly across API docs, webhooks, authentication, data transformation, Stripe webhook issues, and CRM 401 errors.
+Suggested package: Live diagnostic/build-day support, positioned as a $499-$750 one-day technical unblocker role.
+Suggested price: $500-$750 depending on prep time, live hours, and post-session notes.
+Risk: Live support may involve founders showing credentials, OAuth flows, Stripe/QuickBooks/Gmail/CRM data, or payment details. Keep credentials handled by founders only; Codex/user should provide diagnostic guidance and never collect secrets.
+
+Message draft:
+
+Hershey.
+
+Hi, I can act as the live Build Architect who quickly diagnoses API, webhook, auth, payload, and data-transformation blockers so founders keep building instead of getting stuck.
+
+My fit is strongest around fast triage: reading unfamiliar API docs, checking webhook delivery logs, identifying missing scopes or wrong auth headers, spotting payload schema mismatches, and explaining the fix in plain English.
+
+Most complex automation system:
+I have worked through multi-step business automations connecting intake/job records, payment events, email follow-up, accounting status, and internal notifications. The important logic was not just "connect tool A to tool B"; it was idempotency, duplicate prevention, required-field validation, retry/fallback behavior, and clear status logging so partial failures did not silently break the business process. The outcome was a workflow that could be tested through happy path, missing-data path, duplicate event, API timeout, and manual-review cases.
+
+Stripe webhook not firing:
+First I would check whether Stripe is sending the event at all from the Stripe webhook delivery logs. Then I would verify endpoint URL, live/test mode mismatch, selected event types, endpoint reachability, response code, signature secret, and whether the downstream workflow is rejecting a valid payload because of a condition or mapping issue. If the founder is using a local/dev URL, I would confirm the tunnel/public URL is active and matches the configured endpoint.
+
+CRM integration returning 401 at 2 PM:
+I would time-box diagnosis to keep the room moving. First check token/header format against the CRM docs: Bearer vs API key vs Basic, missing tenant/account ID, expired token, wrong environment, missing scopes, or revoked connection. Then I would have the founder refresh/reconnect the credential themselves if needed, test one minimal request, and document the exact auth requirement so they can continue. If the auth path cannot be fixed quickly, I would create a safe temporary fallback: queue records for later sync, complete the rest of the workflow, and mark the CRM branch as blocked with the precise access item required.
+
+I do not need passwords, API keys, OAuth consent, payment access, or private customer records in advance. During the live day, founders should handle their own credentials while I guide the diagnostic path.
+
+Can you share which tools founders are most likely to use, how many live hours are expected, and whether you want a short post-session blocker/fix log?
+
+Next question to ask: What are the top 5 integrations founders usually struggle with during the live build day?
+User action required: User must send this through Freelancer manually if account/rules allow; do not auto-bid, do not request credentials, and keep payment inside Freelancer.
+
 ## [LEAD #20]
 
 Source: Freelancer
